@@ -1,0 +1,802 @@
+2016-02-17 09:27:22,680 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:27:22,680 :: INFO :: Logger is ready
+2016-02-17 09:27:46,842 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:27:46,842 :: INFO :: Logger is ready
+2016-02-17 09:27:46,895 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 09:27:46,907 :: INFO ::  * Restarting with stat
+2016-02-17 09:27:47,294 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:27:47,294 :: INFO :: Logger is ready
+2016-02-17 09:27:47,317 :: WARNING ::  * Debugger is active!
+2016-02-17 09:27:47,318 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:28:36,791 :: INFO :: /login		method : GET
+2016-02-17 09:28:36,793 :: INFO :: 127.0.0.1 - - [17/Feb/2016 09:28:36] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:28:37,301 :: INFO :: 127.0.0.1 - - [17/Feb/2016 09:28:37] "GET /favicon.ico HTTP/1.1" 404 -
+2016-02-17 09:28:40,996 :: INFO :: /login		method : GET
+2016-02-17 09:28:40,998 :: INFO :: 127.0.0.1 - - [17/Feb/2016 09:28:40] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:28:53,218 :: INFO :: /login		method : GET
+2016-02-17 09:28:53,220 :: INFO :: 127.0.0.1 - - [17/Feb/2016 09:28:53] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:29:57,339 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 09:29:57,367 :: INFO ::  * Restarting with stat
+2016-02-17 09:29:57,825 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:29:57,826 :: INFO :: Logger is ready
+2016-02-17 09:29:57,849 :: WARNING ::  * Debugger is active!
+2016-02-17 09:29:57,851 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:33:27,471 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 09:33:27,499 :: INFO ::  * Restarting with stat
+2016-02-17 09:36:25,829 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:36:25,829 :: INFO :: Logger is ready
+2016-02-17 09:36:25,853 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 09:36:25,864 :: INFO ::  * Restarting with stat
+2016-02-17 09:36:26,248 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:36:26,248 :: INFO :: Logger is ready
+2016-02-17 09:36:26,271 :: WARNING ::  * Debugger is active!
+2016-02-17 09:36:26,272 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:37:03,266 :: INFO :: /login		method : GET
+2016-02-17 09:37:03,268 :: INFO :: 127.0.0.1 - - [17/Feb/2016 09:37:03] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:37:50,958 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 09:37:50,989 :: INFO ::  * Restarting with stat
+2016-02-17 09:37:51,406 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:37:51,407 :: INFO :: Logger is ready
+2016-02-17 09:37:51,432 :: WARNING ::  * Debugger is active!
+2016-02-17 09:37:51,433 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:45:56,989 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:45:56,990 :: INFO :: Logger is ready
+2016-02-17 09:45:57,012 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 09:45:57,025 :: INFO ::  * Restarting with stat
+2016-02-17 09:45:57,416 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:45:57,416 :: INFO :: Logger is ready
+2016-02-17 09:45:57,440 :: WARNING ::  * Debugger is active!
+2016-02-17 09:45:57,441 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:46:16,989 :: INFO :: /login		method : GET
+2016-02-17 09:46:16,991 :: INFO :: 172.30.0.103 - - [17/Feb/2016 09:46:16] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:46:17,354 :: INFO :: 172.30.0.103 - - [17/Feb/2016 09:46:17] "GET /favicon.ico HTTP/1.1" 404 -
+2016-02-17 09:47:11,624 :: INFO :: /login		method : GET
+2016-02-17 09:47:11,626 :: INFO :: 172.30.0.103 - - [17/Feb/2016 09:47:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:48:24,608 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 09:48:24,640 :: INFO ::  * Restarting with stat
+2016-02-17 09:48:25,056 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:48:25,057 :: INFO :: Logger is ready
+2016-02-17 09:48:25,080 :: WARNING ::  * Debugger is active!
+2016-02-17 09:48:25,082 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:48:28,832 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:48:28,832 :: INFO :: Logger is ready
+2016-02-17 09:48:28,855 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 09:48:28,867 :: INFO ::  * Restarting with stat
+2016-02-17 09:48:29,251 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:48:29,252 :: INFO :: Logger is ready
+2016-02-17 09:48:29,276 :: WARNING ::  * Debugger is active!
+2016-02-17 09:48:29,277 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:48:41,404 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 09:48:41,441 :: INFO ::  * Restarting with stat
+2016-02-17 09:48:41,897 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:48:41,897 :: INFO :: Logger is ready
+2016-02-17 09:48:41,920 :: WARNING ::  * Debugger is active!
+2016-02-17 09:48:41,921 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:49:10,176 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 09:49:10,203 :: INFO ::  * Restarting with stat
+2016-02-17 09:49:10,601 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:49:10,602 :: INFO :: Logger is ready
+2016-02-17 09:49:10,624 :: WARNING ::  * Debugger is active!
+2016-02-17 09:49:10,625 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:49:13,874 :: INFO :: /login		method : GET
+2016-02-17 09:49:13,875 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:49:13,877 :: INFO :: 172.30.0.103 - - [17/Feb/2016 09:49:13] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:49:43,905 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 09:49:43,934 :: INFO ::  * Restarting with stat
+2016-02-17 09:49:44,378 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:49:44,379 :: INFO :: Logger is ready
+2016-02-17 09:49:44,404 :: WARNING ::  * Debugger is active!
+2016-02-17 09:49:44,405 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:49:45,689 :: INFO :: /login		method : GET
+2016-02-17 09:49:45,690 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:49:45,715 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:49:45,717 :: INFO :: 172.30.0.103 - - [17/Feb/2016 09:49:45] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:52:53,888 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 09:52:53,915 :: INFO ::  * Restarting with stat
+2016-02-17 09:52:54,306 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 09:52:54,307 :: INFO :: Logger is ready
+2016-02-17 09:52:54,330 :: WARNING ::  * Debugger is active!
+2016-02-17 09:52:54,332 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 09:55:11,753 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,756 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,759 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,760 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,768 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,769 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,772 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,774 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,775 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,777 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,778 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,780 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,780 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,782 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,784 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,785 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,786 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,788 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,788 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,790 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,791 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,792 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,793 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,795 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,796 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,797 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,798 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,801 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,801 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,803 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,804 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,805 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,806 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,807 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,808 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,811 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,811 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,813 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,814 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,816 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,817 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,819 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,820 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,823 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,823 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,825 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,826 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:11,829 :: INFO :: /login		method : GET
+2016-02-17 09:55:11,829 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:11,831 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:11,832 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:12,930 :: INFO :: /login		method : GET
+2016-02-17 09:55:12,931 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:12,933 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:12,935 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:12] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:51,813 :: INFO :: /login		method : GET
+2016-02-17 09:55:51,814 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:51,816 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:51,817 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:51] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:52,716 :: INFO :: /login		method : GET
+2016-02-17 09:55:52,717 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:52,719 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:52,721 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:52] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:55:59,072 :: INFO :: /login		method : GET
+2016-02-17 09:55:59,073 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:55:59,075 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:55:59,077 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:55:59] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:57:31,901 :: INFO :: /login		method : GET
+2016-02-17 09:57:31,902 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:57:31,905 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:57:31,906 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:57:31] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:57:31,921 :: INFO :: /login		method : GET
+2016-02-17 09:57:31,922 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:57:31,924 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:57:31,926 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:57:31] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:57:31,944 :: INFO :: /login		method : GET
+2016-02-17 09:57:31,945 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:57:31,947 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:57:31,948 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:57:31] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:57:31,960 :: INFO :: /login		method : GET
+2016-02-17 09:57:31,961 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:57:31,964 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:57:31,965 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:57:31] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:58:11,930 :: INFO :: /login		method : GET
+2016-02-17 09:58:11,931 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 09:58:11,933 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 09:58:11,935 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:58:11] "GET /login HTTP/1.1" 200 -
+2016-02-17 09:58:45,585 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:58:45] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 09:58:47,781 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:58:47] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 09:58:48,287 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:58:48] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 09:58:48,517 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:58:48] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 09:58:48,694 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:58:48] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 09:58:48,886 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:58:48] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 09:58:50,799 :: INFO :: 172.30.1.138 - - [17/Feb/2016 09:58:50] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:00:33,557 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:00:33,557 :: INFO :: Logger is ready
+2016-02-17 10:00:33,581 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 10:00:33,592 :: INFO ::  * Restarting with stat
+2016-02-17 10:00:33,974 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:00:33,974 :: INFO :: Logger is ready
+2016-02-17 10:00:33,997 :: WARNING ::  * Debugger is active!
+2016-02-17 10:00:33,998 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:01:02,036 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:01:02] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:01:02,039 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:01:02] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:01:02,042 :: INFO :: /login		method : GET
+2016-02-17 10:01:02,043 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:01:02,051 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 10:01:02,052 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:01:02] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:01:02,833 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:01:02] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:01:20,186 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:01:20,186 :: INFO :: Logger is ready
+2016-02-17 10:01:20,209 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 10:01:20,221 :: INFO ::  * Restarting with stat
+2016-02-17 10:01:20,605 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:01:20,605 :: INFO :: Logger is ready
+2016-02-17 10:01:20,628 :: WARNING ::  * Debugger is active!
+2016-02-17 10:01:20,630 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:01:23,157 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:01:23] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:02:15,051 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:02:15,077 :: INFO ::  * Restarting with stat
+2016-02-17 10:02:15,460 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:02:15,461 :: INFO :: Logger is ready
+2016-02-17 10:02:15,484 :: WARNING ::  * Debugger is active!
+2016-02-17 10:02:15,485 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:04:22,130 :: INFO :: /login		method : GET
+2016-02-17 10:04:22,131 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:04:22,139 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 10:04:22,140 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:04:22] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:04:22,153 :: INFO :: /login		method : GET
+2016-02-17 10:04:22,154 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:04:22,156 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 10:04:22,157 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:04:22] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:04:40,924 :: INFO :: /login		method : GET
+2016-02-17 10:04:40,925 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:04:40,926 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 10:04:40,928 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:04:40] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:04:58,719 :: INFO :: /login		method : GET
+2016-02-17 10:04:58,720 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:04:58,723 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 10:04:58,724 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:04:58] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:05:40,105 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:05:40,142 :: INFO ::  * Restarting with stat
+2016-02-17 10:05:40,591 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:05:40,591 :: INFO :: Logger is ready
+2016-02-17 10:05:40,615 :: WARNING ::  * Debugger is active!
+2016-02-17 10:05:40,616 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:06:12,318 :: INFO :: /login		method : GET
+2016-02-17 10:06:12,319 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:06:12,328 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 10:06:12,329 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:06:12] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:06:42,213 :: INFO :: /login		method : GET
+2016-02-17 10:06:42,214 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:06:42,217 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 10:06:42,218 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:06:42] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:06:44,470 :: INFO :: /login		method : GET
+2016-02-17 10:06:44,471 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:06:44,473 :: INFO :: <Response 4 bytes [200 OK]>
+2016-02-17 10:06:44,475 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:06:44] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:07:03,276 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:07:03,304 :: INFO ::  * Restarting with stat
+2016-02-17 10:07:03,706 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:07:03,707 :: INFO :: Logger is ready
+2016-02-17 10:07:03,729 :: WARNING ::  * Debugger is active!
+2016-02-17 10:07:03,731 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:07:22,226 :: INFO :: /login		method : GET
+2016-02-17 10:07:22,227 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:07:22,236 :: INFO :: True
+2016-02-17 10:07:22,237 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:07:22] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:07:39,827 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:07:39] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:07:42,270 :: INFO :: /login		method : GET
+2016-02-17 10:07:42,271 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:07:42,273 :: INFO :: True
+2016-02-17 10:07:42,275 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:07:42] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:08:32,265 :: INFO :: /login		method : GET
+2016-02-17 10:08:32,266 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:08:32,269 :: INFO :: True
+2016-02-17 10:08:32,270 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:08:32] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:08:50,585 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:08:50,612 :: INFO ::  * Restarting with stat
+2016-02-17 10:08:51,040 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:08:51,041 :: INFO :: Logger is ready
+2016-02-17 10:08:51,065 :: WARNING ::  * Debugger is active!
+2016-02-17 10:08:51,066 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:08:57,330 :: INFO :: /login		method : GET
+2016-02-17 10:08:57,331 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:08:57,342 :: INFO :: 172.30.0.103 - - [17/Feb/2016 10:08:57] "GET /login HTTP/1.1" 500 -
+2016-02-17 10:09:23,352 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:09:23,387 :: INFO ::  * Restarting with stat
+2016-02-17 10:09:23,831 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:09:23,832 :: INFO :: Logger is ready
+2016-02-17 10:09:23,854 :: WARNING ::  * Debugger is active!
+2016-02-17 10:09:23,855 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:09:35,991 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:09:36,018 :: INFO ::  * Restarting with stat
+2016-02-17 10:09:36,453 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:09:36,454 :: INFO :: Logger is ready
+2016-02-17 10:09:36,478 :: WARNING ::  * Debugger is active!
+2016-02-17 10:09:36,480 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:09:37,987 :: INFO :: /login		method : GET
+2016-02-17 10:09:37,988 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:09:37,999 :: INFO :: 172.30.0.103 - - [17/Feb/2016 10:09:37] "GET /login HTTP/1.1" 500 -
+2016-02-17 10:09:57,681 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:09:57,717 :: INFO ::  * Restarting with stat
+2016-02-17 10:09:58,116 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:09:58,117 :: INFO :: Logger is ready
+2016-02-17 10:09:58,143 :: WARNING ::  * Debugger is active!
+2016-02-17 10:09:58,144 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:10:02,291 :: INFO :: /login		method : GET
+2016-02-17 10:10:02,293 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:10:02,303 :: INFO :: 172.30.0.103 - - [17/Feb/2016 10:10:02] "GET /login HTTP/1.1" 500 -
+2016-02-17 10:10:42,531 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:10:42,561 :: INFO ::  * Restarting with stat
+2016-02-17 10:11:05,665 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:11:05,666 :: INFO :: Logger is ready
+2016-02-17 10:11:05,688 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 10:11:05,700 :: INFO ::  * Restarting with stat
+2016-02-17 10:11:06,084 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:11:06,084 :: INFO :: Logger is ready
+2016-02-17 10:11:06,107 :: WARNING ::  * Debugger is active!
+2016-02-17 10:11:06,108 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:11:10,122 :: INFO :: /login		method : GET
+2016-02-17 10:11:10,123 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:11:10,132 :: INFO :: {'Valid': 'True'}
+2016-02-17 10:11:10,134 :: INFO :: 172.30.0.103 - - [17/Feb/2016 10:11:10] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:11:32,399 :: INFO :: /login		method : GET
+2016-02-17 10:11:32,400 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:11:32,403 :: INFO :: {'Valid': 'True'}
+2016-02-17 10:11:32,404 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:11:32] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:11:37,724 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:11:37,725 :: INFO :: Logger is ready
+2016-02-17 10:11:37,747 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 10:11:37,758 :: INFO ::  * Restarting with stat
+2016-02-17 10:11:38,142 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:11:38,142 :: INFO :: Logger is ready
+2016-02-17 10:11:38,165 :: WARNING ::  * Debugger is active!
+2016-02-17 10:11:38,166 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:12:34,615 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:12:34,643 :: INFO ::  * Restarting with stat
+2016-02-17 10:12:35,036 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:12:35,036 :: INFO :: Logger is ready
+2016-02-17 10:12:35,059 :: WARNING ::  * Debugger is active!
+2016-02-17 10:12:35,060 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:12:42,776 :: INFO :: /login		method : GET
+2016-02-17 10:12:42,777 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:12:42,787 :: INFO :: {'Valid': 'True'}
+2016-02-17 10:12:42,788 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:12:42] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:13:33,545 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:13:33,576 :: INFO ::  * Restarting with stat
+2016-02-17 10:13:33,986 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:13:33,987 :: INFO :: Logger is ready
+2016-02-17 10:13:34,012 :: WARNING ::  * Debugger is active!
+2016-02-17 10:13:34,013 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:13:41,347 :: INFO :: /login		method : GET
+2016-02-17 10:13:41,348 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:13:41,356 :: INFO :: {'"Valid"': '"True"'}
+2016-02-17 10:13:41,357 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:13:41] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:14:29,496 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:14:29,524 :: INFO ::  * Restarting with stat
+2016-02-17 10:14:29,934 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:14:29,934 :: INFO :: Logger is ready
+2016-02-17 10:14:29,957 :: WARNING ::  * Debugger is active!
+2016-02-17 10:14:29,959 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:14:39,227 :: INFO :: /login		method : GET
+2016-02-17 10:14:39,228 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:14:39,238 :: INFO :: {"Valid": "True"}
+2016-02-17 10:14:39,239 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:14:39] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:14:49,483 :: INFO :: /login		method : GET
+2016-02-17 10:14:49,484 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:14:49,487 :: INFO :: {"Valid": "True"}
+2016-02-17 10:14:49,489 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:14:49] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:16:34,374 :: INFO :: /login		method : GET
+2016-02-17 10:16:34,375 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:16:34,377 :: INFO :: {"Valid": "True"}
+2016-02-17 10:16:34,378 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:16:34] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:17:12,661 :: INFO :: /login		method : GET
+2016-02-17 10:17:12,662 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:17:12,665 :: INFO :: {"Valid": "True"}
+2016-02-17 10:17:12,667 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:17:12] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:17:22,678 :: INFO :: /login		method : GET
+2016-02-17 10:17:22,679 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:17:22,682 :: INFO :: {"Valid": "True"}
+2016-02-17 10:17:22,683 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:17:22] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:17:52,704 :: INFO :: /login		method : GET
+2016-02-17 10:17:52,705 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:17:52,707 :: INFO :: {"Valid": "True"}
+2016-02-17 10:17:52,709 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:17:52] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:20:12,645 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:20:12,680 :: INFO ::  * Restarting with stat
+2016-02-17 10:20:13,111 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:20:13,112 :: INFO :: Logger is ready
+2016-02-17 10:20:13,138 :: WARNING ::  * Debugger is active!
+2016-02-17 10:20:13,140 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:20:32,794 :: INFO :: /login		method : GET
+2016-02-17 10:20:32,795 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:20:32,804 :: INFO :: [{"Valid": "True"}]
+2016-02-17 10:20:32,805 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:20:32] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:21:22,831 :: INFO :: /login		method : GET
+2016-02-17 10:21:22,833 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:21:22,835 :: INFO :: [{"Valid": "True"}]
+2016-02-17 10:21:22,837 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:21:22] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:22:32,868 :: INFO :: /login		method : GET
+2016-02-17 10:22:32,869 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:22:32,872 :: INFO :: [{"Valid": "True"}]
+2016-02-17 10:22:32,873 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:22:32] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:24:34,044 :: INFO :: /login		method : GET
+2016-02-17 10:24:34,045 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:24:34,048 :: INFO :: [{"Valid": "True"}]
+2016-02-17 10:24:34,049 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:24:34] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:25:02,375 :: INFO :: /login		method : GET
+2016-02-17 10:25:02,376 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:25:02,379 :: INFO :: [{"Valid": "True"}]
+2016-02-17 10:25:02,380 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:25:02] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:25:45,394 :: INFO :: /login		method : GET
+2016-02-17 10:25:45,395 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:25:45,398 :: INFO :: [{"Valid": "True"}]
+2016-02-17 10:25:45,399 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:25:45] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:26:28,678 :: INFO :: /login		method : GET
+2016-02-17 10:26:28,680 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:26:28,682 :: INFO :: [{"Valid": "True"}]
+2016-02-17 10:26:28,684 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:26:28] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:26:56,237 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:26:56,266 :: INFO ::  * Restarting with stat
+2016-02-17 10:26:56,658 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:26:56,659 :: INFO :: Logger is ready
+2016-02-17 10:26:56,682 :: WARNING ::  * Debugger is active!
+2016-02-17 10:26:56,683 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:27:33,053 :: INFO :: /login		method : GET
+2016-02-17 10:27:33,055 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:27:33,064 :: INFO :: [{"Valid": "True"}, {"Valid": "True"}]
+2016-02-17 10:27:33,065 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:27:33] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:28:18,337 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:28:18,365 :: INFO ::  * Restarting with stat
+2016-02-17 10:28:18,838 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:28:18,839 :: INFO :: Logger is ready
+2016-02-17 10:28:18,862 :: WARNING ::  * Debugger is active!
+2016-02-17 10:28:18,863 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:28:43,109 :: INFO :: /login		method : GET
+2016-02-17 10:28:43,110 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:28:43,118 :: INFO :: [{"display": "JavaScript Tutorial", "url": "http://www.w3schools.com/js/default.asp"}]
+2016-02-17 10:28:43,119 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:28:43] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:29:33,133 :: INFO :: /login		method : GET
+2016-02-17 10:29:33,135 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:29:33,137 :: INFO :: [{"display": "JavaScript Tutorial", "url": "http://www.w3schools.com/js/default.asp"}]
+2016-02-17 10:29:33,138 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:29:33] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:29:53,605 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:29:53,638 :: INFO ::  * Restarting with stat
+2016-02-17 10:29:54,084 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:29:54,085 :: INFO :: Logger is ready
+2016-02-17 10:29:54,113 :: WARNING ::  * Debugger is active!
+2016-02-17 10:29:54,114 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:29:57,991 :: INFO :: /login		method : GET
+2016-02-17 10:29:57,992 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:29:58,001 :: INFO :: [{"Valid": "True"}, {"Valid1": "True"}]
+2016-02-17 10:29:58,002 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:29:58] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:30:23,369 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:30:23,396 :: INFO ::  * Restarting with stat
+2016-02-17 10:30:23,780 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:30:23,781 :: INFO :: Logger is ready
+2016-02-17 10:30:23,803 :: WARNING ::  * Debugger is active!
+2016-02-17 10:30:23,805 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:30:35,402 :: INFO :: /login		method : GET
+2016-02-17 10:30:35,403 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:30:35,412 :: INFO :: [{"Valid": "True", "Valid1": "True"}]
+2016-02-17 10:30:35,413 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:30:35] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:31:53,244 :: INFO :: /login		method : GET
+2016-02-17 10:31:53,245 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:31:53,248 :: INFO :: [{"Valid": "True", "Valid1": "True"}]
+2016-02-17 10:31:53,250 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:31:53] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:32:33,263 :: INFO :: /login		method : GET
+2016-02-17 10:32:33,264 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 10:32:33,266 :: INFO :: [{"Valid": "True", "Valid1": "True"}]
+2016-02-17 10:32:33,268 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:32:33] "GET /login HTTP/1.1" 200 -
+2016-02-17 10:49:19,312 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:49:19,340 :: INFO ::  * Restarting with stat
+2016-02-17 10:49:19,755 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:49:19,755 :: INFO :: Logger is ready
+2016-02-17 10:49:19,779 :: WARNING ::  * Debugger is active!
+2016-02-17 10:49:19,780 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:49:55,253 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:49:55] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:51:18,683 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:51:18,718 :: INFO ::  * Restarting with stat
+2016-02-17 10:51:19,139 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:51:19,140 :: INFO :: Logger is ready
+2016-02-17 10:51:19,165 :: WARNING ::  * Debugger is active!
+2016-02-17 10:51:19,166 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:51:28,492 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:51:28] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:52:18,253 :: INFO :: /login		method : POST
+2016-02-17 10:52:18,254 :: INFO :: <Request 'http://172.30.0.103:8080/login' [POST]>
+2016-02-17 10:52:18,264 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:52:18] "POST /login HTTP/1.1" 400 -
+2016-02-17 10:53:04,152 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:53:04] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:53:26,843 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:53:26] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:54:21,467 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:54:21] "OPTIONS /login HTTP/1.1" 200 -
+2016-02-17 10:54:36,666 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:54:36,700 :: INFO ::  * Restarting with stat
+2016-02-17 10:54:37,128 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:54:37,129 :: INFO :: Logger is ready
+2016-02-17 10:54:37,155 :: WARNING ::  * Debugger is active!
+2016-02-17 10:54:37,156 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:55:04,164 :: INFO :: /login		method : POST
+2016-02-17 10:55:04,165 :: INFO :: <Request 'http://172.30.0.103:8080/login' [POST]>
+2016-02-17 10:55:04,175 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:55:04] "POST /login HTTP/1.1" 400 -
+2016-02-17 10:55:26,571 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:55:26,602 :: INFO ::  * Restarting with stat
+2016-02-17 10:55:27,022 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:55:27,023 :: INFO :: Logger is ready
+2016-02-17 10:55:27,056 :: WARNING ::  * Debugger is active!
+2016-02-17 10:55:27,058 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:55:37,240 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:55:37,241 :: INFO :: Logger is ready
+2016-02-17 10:55:37,263 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 10:55:37,275 :: INFO ::  * Restarting with stat
+2016-02-17 10:55:37,661 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:55:37,662 :: INFO :: Logger is ready
+2016-02-17 10:55:37,685 :: WARNING ::  * Debugger is active!
+2016-02-17 10:55:37,686 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:55:54,164 :: INFO :: /login		method : POST
+2016-02-17 10:55:54,166 :: INFO :: [{"login":"toto","password":"pouet"}]
+2016-02-17 10:55:54,168 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:55:54] "POST /login HTTP/1.1" 400 -
+2016-02-17 10:56:27,093 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:56:27,120 :: INFO ::  * Restarting with stat
+2016-02-17 10:56:27,512 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:56:27,512 :: INFO :: Logger is ready
+2016-02-17 10:56:27,535 :: WARNING ::  * Debugger is active!
+2016-02-17 10:56:27,536 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:56:54,167 :: INFO :: /login		method : POST
+2016-02-17 10:56:54,169 :: INFO :: [{"login":"toto","password":"pouet"}]
+2016-02-17 10:56:54,171 :: INFO :: [{u'login': u'toto', u'password': u'pouet'}]
+2016-02-17 10:56:54,173 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:56:54] "POST /login HTTP/1.1" 400 -
+2016-02-17 10:57:59,246 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:57:59,280 :: INFO ::  * Restarting with stat
+2016-02-17 10:57:59,738 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:57:59,739 :: INFO :: Logger is ready
+2016-02-17 10:57:59,764 :: WARNING ::  * Debugger is active!
+2016-02-17 10:57:59,766 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:58:01,815 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:58:01,843 :: INFO ::  * Restarting with stat
+2016-02-17 10:58:02,323 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:58:02,324 :: INFO :: Logger is ready
+2016-02-17 10:58:02,354 :: WARNING ::  * Debugger is active!
+2016-02-17 10:58:02,356 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:58:09,077 :: INFO :: /login		method : POST
+2016-02-17 10:58:09,079 :: INFO :: [{"login":"toto","password":"pouet"}]
+2016-02-17 10:58:09,080 :: INFO :: [{u'login': u'toto', u'password': u'pouet'}]
+2016-02-17 10:58:09,082 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:58:09] "POST /login HTTP/1.1" 400 -
+2016-02-17 10:58:53,790 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 10:58:53,821 :: INFO ::  * Restarting with stat
+2016-02-17 10:58:54,234 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 10:58:54,236 :: INFO :: Logger is ready
+2016-02-17 10:58:54,263 :: WARNING ::  * Debugger is active!
+2016-02-17 10:58:54,265 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 10:59:00,996 :: INFO :: /login		method : POST
+2016-02-17 10:59:00,998 :: INFO :: [{"login":"toto","password":"pouet"}]
+2016-02-17 10:59:01,000 :: INFO :: [{u'login': u'toto', u'password': u'pouet'}]
+2016-02-17 10:59:01,002 :: INFO :: 172.30.1.138 - - [17/Feb/2016 10:59:01] "POST /login HTTP/1.1" 400 -
+2016-02-17 11:00:34,178 :: INFO :: /login		method : POST
+2016-02-17 11:00:34,179 :: INFO :: [{"login":"toto","password":"pouet"}]
+2016-02-17 11:00:34,181 :: INFO :: [{u'login': u'toto', u'password': u'pouet'}]
+2016-02-17 11:00:34,182 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:00:34] "POST /login HTTP/1.1" 400 -
+2016-02-17 11:00:45,282 :: INFO :: /login		method : POST
+2016-02-17 11:00:45,283 :: INFO :: [{"login":"toto","password":"pouet"}]
+2016-02-17 11:00:45,285 :: INFO :: [{u'login': u'toto', u'password': u'pouet'}]
+2016-02-17 11:00:45,287 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:00:45] "POST /login HTTP/1.1" 400 -
+2016-02-17 11:01:14,180 :: INFO :: /login		method : POST
+2016-02-17 11:01:14,182 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:01:14,183 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:01:14,185 :: INFO :: toto
+2016-02-17 11:01:14,186 :: INFO :: Login toto
+2016-02-17 11:01:14,187 :: INFO :: Password pouet
+2016-02-17 11:01:14,189 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:01:14] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:01:37,533 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 11:01:37,571 :: INFO ::  * Restarting with stat
+2016-02-17 11:01:37,995 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:01:37,995 :: INFO :: Logger is ready
+2016-02-17 11:01:38,043 :: WARNING ::  * Debugger is active!
+2016-02-17 11:01:38,045 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:02:01,253 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 11:02:01,281 :: INFO ::  * Restarting with stat
+2016-02-17 11:02:01,677 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:02:01,678 :: INFO :: Logger is ready
+2016-02-17 11:02:01,701 :: WARNING ::  * Debugger is active!
+2016-02-17 11:02:01,702 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:02:24,184 :: INFO :: /login		method : POST
+2016-02-17 11:02:24,186 :: INFO :: "{\"login\":\"toto\",\"password\":\"pouet\"}"
+2016-02-17 11:02:24,188 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:02:24,217 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:02:24] "POST /login HTTP/1.1" 500 -
+2016-02-17 11:03:20,342 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 11:03:20,379 :: INFO ::  * Restarting with stat
+2016-02-17 11:03:20,808 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:03:20,809 :: INFO :: Logger is ready
+2016-02-17 11:03:20,832 :: WARNING ::  * Debugger is active!
+2016-02-17 11:03:20,833 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:03:36,987 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 11:03:37,015 :: INFO ::  * Restarting with stat
+2016-02-17 11:03:37,477 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:03:37,478 :: INFO :: Logger is ready
+2016-02-17 11:03:37,503 :: WARNING ::  * Debugger is active!
+2016-02-17 11:03:37,504 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:03:44,311 :: INFO :: /login		method : POST
+2016-02-17 11:03:44,312 :: INFO :: "{\"login\":\"toto\",\"password\":\"pouet\"}"
+2016-02-17 11:03:44,314 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:03:44,332 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:03:44] "POST /login HTTP/1.1" 500 -
+2016-02-17 11:04:24,605 :: INFO :: /login		method : POST
+2016-02-17 11:04:24,607 :: INFO :: "{\"login\":\"toto\",\"password\":\"pouet\"}"
+2016-02-17 11:04:24,608 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:04:24,625 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:04:24] "POST /login HTTP/1.1" 500 -
+2016-02-17 11:04:28,312 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:04:28,312 :: INFO :: Logger is ready
+2016-02-17 11:04:28,335 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 11:04:28,347 :: INFO ::  * Restarting with stat
+2016-02-17 11:04:28,728 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:04:28,729 :: INFO :: Logger is ready
+2016-02-17 11:04:28,752 :: WARNING ::  * Debugger is active!
+2016-02-17 11:04:28,753 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:04:44,192 :: INFO :: /login		method : POST
+2016-02-17 11:04:44,194 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:04:44,195 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:04:44,196 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:04:44,197 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:04:44,198 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:04:44] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:04:52,477 :: INFO :: /login		method : GET
+2016-02-17 11:04:52,478 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 11:04:52,487 :: INFO :: [{"Valid": "True", "Valid1": "True"}]
+2016-02-17 11:04:52,488 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:04:52] "GET /login HTTP/1.1" 200 -
+2016-02-17 11:06:14,199 :: INFO :: /login		method : POST
+2016-02-17 11:06:14,200 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:06:14,202 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:06:14,203 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:06:14,205 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:06:14,206 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:06:14] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:06:14,208 :: INFO :: /login		method : GET
+2016-02-17 11:06:14,208 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 11:06:14,210 :: INFO :: [{"Valid": "True", "Valid1": "True"}]
+2016-02-17 11:06:14,211 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:06:14] "GET /login HTTP/1.1" 200 -
+2016-02-17 11:06:25,448 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:06:25,449 :: INFO :: Logger is ready
+2016-02-17 11:06:25,472 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 11:06:25,484 :: INFO ::  * Restarting with stat
+2016-02-17 11:06:25,868 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:06:25,869 :: INFO :: Logger is ready
+2016-02-17 11:06:25,891 :: WARNING ::  * Debugger is active!
+2016-02-17 11:06:25,893 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:08:24,208 :: INFO :: /login		method : POST
+2016-02-17 11:08:24,210 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:08:24,212 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:08:24,212 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:08:24,214 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:08:24,215 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:08:24] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:08:24,217 :: INFO :: /login		method : GET
+2016-02-17 11:08:24,218 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-17 11:08:24,227 :: INFO :: [{"Valid": "True", "Valid1": "True"}]
+2016-02-17 11:08:24,228 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:08:24] "GET /login HTTP/1.1" 200 -
+2016-02-17 11:08:24,231 :: INFO :: /login		method : POST
+2016-02-17 11:08:24,232 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:08:24,233 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:08:24,233 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:08:24,235 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:08:24,236 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:08:24] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:08:24,238 :: INFO :: /login		method : POST
+2016-02-17 11:08:24,239 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:08:24,241 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:08:24,242 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:08:24,243 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:08:24,245 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:08:24] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:10:24,211 :: INFO :: /login		method : POST
+2016-02-17 11:10:24,213 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:10:24,214 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:10:24,215 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:10:24,217 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:10:24,218 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:10:24] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:12:54,220 :: INFO :: /login		method : POST
+2016-02-17 11:12:54,222 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:12:54,223 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:12:54,225 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:12:54,225 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:12:54,226 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:12:54] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:14:34,224 :: INFO :: /login		method : POST
+2016-02-17 11:14:34,225 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:14:34,227 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:14:34,228 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:14:34,229 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:14:34,230 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:14:34] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:16:30,488 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 11:16:30,527 :: INFO ::  * Restarting with stat
+2016-02-17 11:16:30,936 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:16:30,936 :: INFO :: Logger is ready
+2016-02-17 11:16:30,959 :: WARNING ::  * Debugger is active!
+2016-02-17 11:16:30,961 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:16:49,863 :: INFO :: /login		method : POST
+2016-02-17 11:16:49,865 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:16:49,866 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:16:49,868 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:16:49,869 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:16:49,870 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:16:49] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:17:10,294 :: INFO :: /login		method : POST
+2016-02-17 11:17:10,296 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:17:10,298 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:17:10,299 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:17:10,301 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:17:10,302 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:17:10] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:21:01,751 :: INFO :: /login		method : POST
+2016-02-17 11:21:01,753 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:21:01,754 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:21:01,755 :: INFO :: {u'login': u'toto', u'password': u'pouet', 'Valid': 'True'}
+2016-02-17 11:21:01,757 :: INFO :: {"Valid": "True", "login": "toto", "password": "pouet"}
+2016-02-17 11:21:01,758 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:21:01] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:24:01,406 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 11:24:01,436 :: INFO ::  * Restarting with stat
+2016-02-17 11:24:01,837 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:24:01,838 :: INFO :: Logger is ready
+2016-02-17 11:24:01,863 :: WARNING ::  * Debugger is active!
+2016-02-17 11:24:01,864 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:24:02,905 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 11:24:02,932 :: INFO ::  * Restarting with stat
+2016-02-17 11:24:03,363 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:24:03,364 :: INFO :: Logger is ready
+2016-02-17 11:24:03,394 :: WARNING ::  * Debugger is active!
+2016-02-17 11:24:03,396 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:24:05,451 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 11:24:05,478 :: INFO ::  * Restarting with stat
+2016-02-17 11:24:05,914 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:24:05,915 :: INFO :: Logger is ready
+2016-02-17 11:24:05,941 :: WARNING ::  * Debugger is active!
+2016-02-17 11:24:05,942 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:24:09,697 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:24:09,698 :: INFO :: Logger is ready
+2016-02-17 11:24:09,720 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 11:24:09,732 :: INFO ::  * Restarting with stat
+2016-02-17 11:24:10,116 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:24:10,116 :: INFO :: Logger is ready
+2016-02-17 11:24:10,139 :: WARNING ::  * Debugger is active!
+2016-02-17 11:24:10,140 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:24:24,910 :: INFO :: /login		method : POST
+2016-02-17 11:24:24,911 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:24:24,913 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:24:24,914 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:24:24,916 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:24:24] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:24:39,421 :: INFO :: /login		method : POST
+2016-02-17 11:24:39,422 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:24:39,424 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:24:39,425 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:24:39,426 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:24:39] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:26:38,070 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:26:38,071 :: INFO :: Logger is ready
+2016-02-17 11:26:38,094 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-17 11:26:38,105 :: INFO ::  * Restarting with stat
+2016-02-17 11:26:38,486 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:26:38,486 :: INFO :: Logger is ready
+2016-02-17 11:26:38,509 :: WARNING ::  * Debugger is active!
+2016-02-17 11:26:38,510 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:28:13,350 :: INFO :: /login		method : POST
+2016-02-17 11:28:13,351 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:28:13,353 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:28:13,354 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:28:13,356 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:28:13] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:28:53,378 :: INFO :: /login		method : POST
+2016-02-17 11:28:53,380 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:28:53,382 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:28:53,383 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:28:53,384 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:28:53] "POST /login HTTP/1.1" 200 -
+2016-02-17 11:29:10,709 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-17 11:29:10,743 :: INFO ::  * Restarting with stat
+2016-02-17 11:29:11,161 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:29:11,162 :: INFO :: Logger is ready
+2016-02-17 11:29:11,185 :: WARNING ::  * Debugger is active!
+2016-02-17 11:29:11,186 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:29:33,409 :: INFO :: /login		method : POST
+2016-02-17 11:29:33,410 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:29:33,412 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:29:33,413 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:29:33,415 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:29:33] "POST /login HTTP/1.1" 400 -
+2016-02-17 11:31:33,477 :: INFO :: /login		method : POST
+2016-02-17 11:31:33,479 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:31:33,480 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:31:33,481 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:31:33,483 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:31:33] "POST /login HTTP/1.1" 400 -
+2016-02-17 11:31:49,422 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-17 11:31:49,451 :: INFO ::  * Restarting with stat
+2016-02-17 11:31:49,868 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:31:49,869 :: INFO :: Logger is ready
+2016-02-17 11:31:49,903 :: WARNING ::  * Debugger is active!
+2016-02-17 11:31:49,904 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:32:32,264 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-17 11:32:32,293 :: INFO ::  * Restarting with stat
+2016-02-17 11:32:32,701 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:32:32,702 :: INFO :: Logger is ready
+2016-02-17 11:32:32,725 :: WARNING ::  * Debugger is active!
+2016-02-17 11:32:32,727 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:32:38,479 :: INFO :: /login		method : POST
+2016-02-17 11:32:38,481 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:32:38,482 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:32:38,484 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:32:38,485 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:32:38] "POST /login HTTP/1.1" 403 -
+2016-02-17 11:32:58,961 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-17 11:32:58,988 :: INFO ::  * Restarting with stat
+2016-02-17 11:32:59,424 :: INFO :: ******************** NEW SESSION ********************
+2016-02-17 11:32:59,424 :: INFO :: Logger is ready
+2016-02-17 11:32:59,447 :: WARNING ::  * Debugger is active!
+2016-02-17 11:32:59,448 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-17 11:33:02,081 :: INFO :: /login		method : POST
+2016-02-17 11:33:02,083 :: INFO :: {"login":"toto","password":"pouet"}
+2016-02-17 11:33:02,085 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:33:02,086 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
+2016-02-17 11:33:02,088 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:33:02] "POST /login HTTP/1.1" 200 -
