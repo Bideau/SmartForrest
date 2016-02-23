@@ -1,0 +1,12 @@
+{
+  "probeMonitoring": [
+    {
+      "probeID": "int",
+      "date": "date",
+      "ozone": "float",
+      "temperature": "float",
+      "hygrometrie": "float",
+      "humidity": "float"
+    }
+  ]
+}
