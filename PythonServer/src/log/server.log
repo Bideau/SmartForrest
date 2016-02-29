@@ -800,3 +800,2198 @@
 2016-02-17 11:33:02,085 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
 2016-02-17 11:33:02,086 :: INFO :: {u'login': u'toto', u'password': u'pouet'}
 2016-02-17 11:33:02,088 :: INFO :: 172.30.1.138 - - [17/Feb/2016 11:33:02] "POST /login HTTP/1.1" 200 -
+2016-02-18 11:04:53,084 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:04:53,099 :: INFO :: Logger is ready
+2016-02-18 11:04:53,164 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-18 11:04:53,176 :: INFO ::  * Restarting with stat
+2016-02-18 11:04:53,570 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:04:53,570 :: INFO :: Logger is ready
+2016-02-18 11:04:53,593 :: WARNING ::  * Debugger is active!
+2016-02-18 11:04:53,594 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:06:23,837 :: INFO :: /login		method : POST
+2016-02-18 11:06:23,839 :: INFO :: "{\"login\": \"toto\",\"password\": \"49d02d55ad10973b7b9d0dc9eba7fdf0\",\"nom\": \"Doe\",\"prenom\": \"John\",\"description\": \"Description test IT\"}"
+2016-02-18 11:06:23,840 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 11:06:23,860 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:06:23] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:07:56,090 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:07:56,090 :: INFO :: Logger is ready
+2016-02-18 11:07:56,114 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-18 11:07:56,125 :: INFO ::  * Restarting with stat
+2016-02-18 11:07:56,521 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:07:56,522 :: INFO :: Logger is ready
+2016-02-18 11:07:56,545 :: WARNING ::  * Debugger is active!
+2016-02-18 11:07:56,547 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:07:59,855 :: INFO :: /user		method : POST
+2016-02-18 11:07:59,856 :: INFO :: "{\"login\": \"toto\",\"password\": \"49d02d55ad10973b7b9d0dc9eba7fdf0\",\"nom\": \"Doe\",\"prenom\": \"John\",\"description\": \"Description test IT\"}"
+2016-02-18 11:07:59,858 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 11:07:59,877 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:07:59] "POST /user HTTP/1.1" 500 -
+2016-02-18 11:10:35,819 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:10:35,865 :: INFO ::  * Restarting with stat
+2016-02-18 11:10:36,302 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:10:36,303 :: INFO :: Logger is ready
+2016-02-18 11:10:36,327 :: WARNING ::  * Debugger is active!
+2016-02-18 11:10:36,328 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:10:44,973 :: INFO :: /user		method : POST
+2016-02-18 11:10:44,974 :: INFO :: "{\"login\": \"toto\",\"password\": \"49d02d55ad10973b7b9d0dc9eba7fdf0\",\"nom\": \"Doe\",\"prenom\": \"John\",\"description\": \"Description test IT\"}"
+2016-02-18 11:10:44,994 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:10:44] "POST /user HTTP/1.1" 500 -
+2016-02-18 11:12:40,330 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:12:40,359 :: INFO ::  * Restarting with stat
+2016-02-18 11:12:40,775 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:12:40,775 :: INFO :: Logger is ready
+2016-02-18 11:12:40,801 :: WARNING ::  * Debugger is active!
+2016-02-18 11:12:40,802 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:12:42,853 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:12:42,881 :: INFO ::  * Restarting with stat
+2016-02-18 11:12:43,362 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:12:43,363 :: INFO :: Logger is ready
+2016-02-18 11:12:43,397 :: WARNING ::  * Debugger is active!
+2016-02-18 11:12:43,399 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:12:50,936 :: INFO :: /user		method : POST
+2016-02-18 11:12:50,938 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 11:12:50,957 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:12:50] "POST /user HTTP/1.1" 500 -
+2016-02-18 11:13:29,812 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:13:29,841 :: INFO ::  * Restarting with stat
+2016-02-18 11:13:30,261 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:13:30,262 :: INFO :: Logger is ready
+2016-02-18 11:13:30,284 :: WARNING ::  * Debugger is active!
+2016-02-18 11:13:30,285 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:17:03,075 :: INFO :: /login		method : POST
+2016-02-18 11:17:03,076 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:17:03,078 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:17:03,097 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:17:03] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:17:44,000 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:17:44,001 :: INFO :: Logger is ready
+2016-02-18 11:17:44,024 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-18 11:17:44,036 :: INFO ::  * Restarting with stat
+2016-02-18 11:17:44,432 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:17:44,433 :: INFO :: Logger is ready
+2016-02-18 11:17:44,456 :: WARNING ::  * Debugger is active!
+2016-02-18 11:17:44,457 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:17:49,775 :: INFO :: /login		method : POST
+2016-02-18 11:17:49,776 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:17:49,778 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:17:49,797 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:17:49] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:22:40,026 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:22:40,026 :: INFO :: Logger is ready
+2016-02-18 11:22:40,049 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-18 11:22:40,061 :: INFO ::  * Restarting with stat
+2016-02-18 11:22:40,459 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:22:40,460 :: INFO :: Logger is ready
+2016-02-18 11:22:40,483 :: WARNING ::  * Debugger is active!
+2016-02-18 11:22:40,485 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:22:44,780 :: INFO :: /login		method : POST
+2016-02-18 11:22:44,781 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:22:44,783 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:22:44,803 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:22:44] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:24:41,753 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:24:41,754 :: INFO :: Logger is ready
+2016-02-18 11:24:41,791 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-18 11:24:41,809 :: INFO ::  * Restarting with stat
+2016-02-18 11:24:42,519 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:24:42,520 :: INFO :: Logger is ready
+2016-02-18 11:24:42,559 :: WARNING ::  * Debugger is active!
+2016-02-18 11:24:42,561 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:24:46,790 :: INFO :: /login		method : POST
+2016-02-18 11:24:46,792 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:24:46,796 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:24:46,827 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:24:46] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:25:26,984 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-18 11:25:27,011 :: INFO ::  * Restarting with stat
+2016-02-18 11:25:27,410 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:25:27,410 :: INFO :: Logger is ready
+2016-02-18 11:25:27,433 :: WARNING ::  * Debugger is active!
+2016-02-18 11:25:27,434 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:25:30,652 :: INFO :: /login		method : GET
+2016-02-18 11:25:30,653 :: INFO :: <Request 'http://172.30.0.103:8080/login' [GET]>
+2016-02-18 11:25:30,681 :: INFO :: [{"Valid": "True", "Valid1": "True"}]
+2016-02-18 11:25:30,682 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:25:30] "GET /login HTTP/1.1" 200 -
+2016-02-18 11:27:02,778 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:27:02,778 :: INFO :: Logger is ready
+2016-02-18 11:27:02,801 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-18 11:27:02,813 :: INFO ::  * Restarting with stat
+2016-02-18 11:27:03,206 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:27:03,206 :: INFO :: Logger is ready
+2016-02-18 11:27:03,229 :: WARNING ::  * Debugger is active!
+2016-02-18 11:27:03,230 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:27:08,091 :: INFO :: /login		method : POST
+2016-02-18 11:27:08,093 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:27:08,094 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:27:08,114 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:27:08] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:27:48,625 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:27:48,654 :: INFO ::  * Restarting with stat
+2016-02-18 11:27:49,131 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:27:49,132 :: INFO :: Logger is ready
+2016-02-18 11:27:49,155 :: WARNING ::  * Debugger is active!
+2016-02-18 11:27:49,156 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:27:54,854 :: INFO :: /login		method : POST
+2016-02-18 11:27:54,856 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:27:54,858 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:27:54,877 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:27:54] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:29:09,826 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:29:09,854 :: INFO ::  * Restarting with stat
+2016-02-18 11:29:10,281 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:29:10,282 :: INFO :: Logger is ready
+2016-02-18 11:29:10,305 :: WARNING ::  * Debugger is active!
+2016-02-18 11:29:10,306 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:29:49,642 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:29:49,670 :: INFO ::  * Restarting with stat
+2016-02-18 11:29:50,085 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:29:50,086 :: INFO :: Logger is ready
+2016-02-18 11:29:50,110 :: WARNING ::  * Debugger is active!
+2016-02-18 11:29:50,112 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:30:27,450 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:30:27,479 :: INFO ::  * Restarting with stat
+2016-02-18 11:30:27,921 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:30:27,922 :: INFO :: Logger is ready
+2016-02-18 11:30:27,948 :: WARNING ::  * Debugger is active!
+2016-02-18 11:30:27,949 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:30:44,650 :: INFO :: /login		method : POST
+2016-02-18 11:30:44,652 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:30:44,653 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:30:44,672 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:30:44] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:30:50,372 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:30:50,373 :: INFO :: Logger is ready
+2016-02-18 11:30:50,396 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-18 11:30:50,407 :: INFO ::  * Restarting with stat
+2016-02-18 11:30:50,802 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:30:50,803 :: INFO :: Logger is ready
+2016-02-18 11:30:50,825 :: WARNING ::  * Debugger is active!
+2016-02-18 11:30:50,826 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:30:53,129 :: INFO :: /login		method : POST
+2016-02-18 11:30:53,131 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:30:53,132 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:30:53,151 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:30:53] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:33:25,059 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-18 11:33:25,089 :: INFO ::  * Restarting with stat
+2016-02-18 11:33:25,556 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:33:25,556 :: INFO :: Logger is ready
+2016-02-18 11:33:25,579 :: WARNING ::  * Debugger is active!
+2016-02-18 11:33:25,581 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:33:34,505 :: INFO :: /login		method : POST
+2016-02-18 11:33:34,507 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:33:34,508 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:33:34,528 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:33:34] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:36:30,432 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:36:30,433 :: INFO :: Logger is ready
+2016-02-18 11:36:30,457 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-18 11:36:30,470 :: INFO ::  * Restarting with stat
+2016-02-18 11:36:30,866 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:36:30,867 :: INFO :: Logger is ready
+2016-02-18 11:36:30,891 :: WARNING ::  * Debugger is active!
+2016-02-18 11:36:30,892 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:36:34,820 :: INFO :: /login		method : POST
+2016-02-18 11:36:34,822 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:36:34,823 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:36:34,843 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:36:34] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:37:33,409 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:37:33,438 :: INFO ::  * Restarting with stat
+2016-02-18 11:37:33,921 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:37:33,922 :: INFO :: Logger is ready
+2016-02-18 11:37:33,948 :: WARNING ::  * Debugger is active!
+2016-02-18 11:37:33,949 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:37:40,519 :: INFO :: /login		method : POST
+2016-02-18 11:37:40,521 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:37:40,523 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:37:40,542 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:37:40] "POST /login HTTP/1.1" 500 -
+2016-02-18 11:37:54,142 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:37:54,170 :: INFO ::  * Restarting with stat
+2016-02-18 11:37:54,565 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:37:54,566 :: INFO :: Logger is ready
+2016-02-18 11:37:54,589 :: WARNING ::  * Debugger is active!
+2016-02-18 11:37:54,590 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:37:59,615 :: INFO :: /login		method : POST
+2016-02-18 11:37:59,617 :: INFO :: "{\"login\": \"toto\", \"password\": \"pouet\"}"
+2016-02-18 11:37:59,619 :: INFO :: {"login": "toto", "password": "pouet"}
+2016-02-18 11:37:59,620 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:37:59] "POST /login HTTP/1.1" 400 -
+2016-02-18 11:38:13,569 :: INFO :: /user		method : POST
+2016-02-18 11:38:13,571 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 11:38:13,573 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:38:13] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:39:29,051 :: INFO :: /user		method : POST
+2016-02-18 11:39:29,053 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 11:39:29,055 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:39:29] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:40:33,617 :: INFO :: /user		method : POST
+2016-02-18 11:40:33,619 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 11:40:33,621 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:40:33] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:40:55,805 :: INFO :: /user		method : POST
+2016-02-18 11:40:55,808 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 11:40:55,809 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:40:55] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:46:56,173 :: INFO :: /user		method : POST
+2016-02-18 11:46:56,174 :: INFO :: {login: toto,password: 49d02d55ad10973b7b9d0dc9eba7fdf0,nom: Doe,prenom: John,description: Description test IT}
+2016-02-18 11:46:56,176 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:46:56] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:47:20,019 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-18 11:47:20,048 :: INFO ::  * Restarting with stat
+2016-02-18 11:47:20,466 :: INFO :: ******************** NEW SESSION ********************
+2016-02-18 11:47:20,467 :: INFO :: Logger is ready
+2016-02-18 11:47:20,511 :: WARNING ::  * Debugger is active!
+2016-02-18 11:47:20,513 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-18 11:47:46,182 :: INFO :: /user		method : POST
+2016-02-18 11:47:46,184 :: INFO :: "{login: toto,password: 49d02d55ad10973b7b9d0dc9eba7fdf0,nom: Doe,prenom: John,description: Description test IT}"
+2016-02-18 11:47:46,186 :: INFO :: {login: toto,password: 49d02d55ad10973b7b9d0dc9eba7fdf0,nom: Doe,prenom: John,description: Description test IT}
+2016-02-18 11:47:46,188 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:47:46] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:51:51,880 :: INFO :: /user		method : POST
+2016-02-18 11:51:51,881 :: INFO :: "{\"login\": \"toto\",\"password\": \"49d02d55ad10973b7b9d0dc9eba7fdf0\",\"nom\": \"Doe\",\"prenom\": \"John\",\"description\": \"Description test IT\"}"
+2016-02-18 11:51:51,883 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 11:51:51,885 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:51:51] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:52:12,029 :: INFO :: /user		method : POST
+2016-02-18 11:52:12,030 :: INFO :: "{\"login\": \"toto\",\"password\": \"49d02d55ad10973b7b9d0dc9eba7fdf0\",\"nom\": \"Doe\",\"prenom\": \"John\",\"description\": \"Description test IT\"}"
+2016-02-18 11:52:12,032 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 11:52:12,034 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:52:12] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:56:55,071 :: INFO :: /user		method : POST
+2016-02-18 11:56:55,073 :: INFO :: "{\"login\": ,\"password\": d41d8cd98f00b204e9800998ecf8427e,\"nom\": ,\"prenom\": ,\"description\": }"
+2016-02-18 11:56:55,074 :: INFO :: {"login": ,"password": d41d8cd98f00b204e9800998ecf8427e,"nom": ,"prenom": ,"description": }
+2016-02-18 11:56:55,076 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:56:55] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:57:01,735 :: INFO :: /user		method : POST
+2016-02-18 11:57:01,736 :: INFO :: "{\"login\": toto,\"password\": 49d02d55ad10973b7b9d0dc9eba7fdf0,\"nom\": Doe,\"prenom\": John,\"description\": Description test IT}"
+2016-02-18 11:57:01,738 :: INFO :: {"login": toto,"password": 49d02d55ad10973b7b9d0dc9eba7fdf0,"nom": Doe,"prenom": John,"description": Description test IT}
+2016-02-18 11:57:01,740 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:57:01] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:57:28,446 :: INFO :: /user		method : POST
+2016-02-18 11:57:28,448 :: INFO :: "{\"login\": toto,\"password\": 49d02d55ad10973b7b9d0dc9eba7fdf0,\"nom\": Doe,\"prenom\": John,\"description\": Description test IT}"
+2016-02-18 11:57:28,449 :: INFO :: {"login": toto,"password": 49d02d55ad10973b7b9d0dc9eba7fdf0,"nom": Doe,"prenom": John,"description": Description test IT}
+2016-02-18 11:57:28,451 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:57:28] "POST /user HTTP/1.1" 400 -
+2016-02-18 11:58:33,908 :: INFO :: /user		method : POST
+2016-02-18 11:58:33,910 :: INFO :: {"login": toto,"password": 49d02d55ad10973b7b9d0dc9eba7fdf0,"nom": Doe,"prenom": John,"description": Description test IT}
+2016-02-18 11:58:33,912 :: INFO :: 172.30.1.138 - - [18/Feb/2016 11:58:33] "POST /user HTTP/1.1" 400 -
+2016-02-18 12:00:02,560 :: INFO :: /user		method : POST
+2016-02-18 12:00:02,561 :: INFO :: {"login": "toto","password": "49d02d55ad10973b7b9d0dc9eba7fdf0","nom": "Doe","prenom": "John","description": "Description test IT"}
+2016-02-18 12:00:02,562 :: INFO :: {u'nom': u'Doe', u'login': u'toto', u'password': u'49d02d55ad10973b7b9d0dc9eba7fdf0', u'prenom': u'John', u'description': u'Description test IT'}
+2016-02-18 12:00:02,563 :: INFO :: login toto
+2016-02-18 12:00:02,563 :: INFO :: password 49d02d55ad10973b7b9d0dc9eba7fdf0
+2016-02-18 12:00:02,564 :: INFO :: nom Doe
+2016-02-18 12:00:02,565 :: INFO :: prenom John
+2016-02-18 12:00:02,565 :: INFO :: Desc Description test IT
+2016-02-18 12:00:02,622 :: INFO :: {u'nom': u'Doe', u'login': u'toto', u'password': u'49d02d55ad10973b7b9d0dc9eba7fdf0', u'prenom': u'John', u'description': u'Description test IT'}
+2016-02-18 12:00:02,623 :: INFO :: 172.30.1.138 - - [18/Feb/2016 12:00:02] "POST /user HTTP/1.1" 403 -
+2016-02-22 09:37:31,081 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:37:31,099 :: INFO :: Logger is ready
+2016-02-22 09:37:31,153 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-22 09:37:31,165 :: INFO ::  * Restarting with stat
+2016-02-22 09:37:31,561 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:37:31,561 :: INFO :: Logger is ready
+2016-02-22 09:37:31,584 :: WARNING ::  * Debugger is active!
+2016-02-22 09:37:31,586 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:41:14,861 :: INFO :: /user		method : POST
+2016-02-22 09:41:14,863 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:41:14,865 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:41:14,866 :: INFO :: login abe
+2016-02-22 09:41:14,867 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:41:14,868 :: INFO :: nom Bes
+2016-02-22 09:41:14,869 :: INFO :: prenom Arnaud
+2016-02-22 09:41:14,869 :: INFO :: Desc pouet
+2016-02-22 09:41:15,449 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:41:15] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:43:06,330 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-22 09:43:06,358 :: INFO ::  * Restarting with stat
+2016-02-22 09:43:06,804 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:43:06,805 :: INFO :: Logger is ready
+2016-02-22 09:43:06,830 :: WARNING ::  * Debugger is active!
+2016-02-22 09:43:06,832 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:43:11,920 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:43:11,947 :: INFO ::  * Restarting with stat
+2016-02-22 09:43:12,381 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:43:12,382 :: INFO :: Logger is ready
+2016-02-22 09:43:12,406 :: WARNING ::  * Debugger is active!
+2016-02-22 09:43:12,407 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:43:22,354 :: INFO :: /user		method : POST
+2016-02-22 09:43:22,356 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:43:22,357 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:43:22,359 :: INFO :: login abe
+2016-02-22 09:43:22,360 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:43:22,360 :: INFO :: nom Bes
+2016-02-22 09:43:22,361 :: INFO :: prenom Arnaud
+2016-02-22 09:43:22,362 :: INFO :: Desc pouet
+2016-02-22 09:43:22,433 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:43:22] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:44:11,923 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:44:11,951 :: INFO ::  * Restarting with stat
+2016-02-22 09:44:12,380 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:44:12,381 :: INFO :: Logger is ready
+2016-02-22 09:44:12,404 :: WARNING ::  * Debugger is active!
+2016-02-22 09:44:12,405 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:44:43,698 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:44:43,725 :: INFO ::  * Restarting with stat
+2016-02-22 09:44:44,170 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:44:44,171 :: INFO :: Logger is ready
+2016-02-22 09:44:44,194 :: WARNING ::  * Debugger is active!
+2016-02-22 09:44:44,195 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:44:47,259 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:44:47,286 :: INFO ::  * Restarting with stat
+2016-02-22 09:44:47,759 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:44:47,760 :: INFO :: Logger is ready
+2016-02-22 09:44:47,789 :: WARNING ::  * Debugger is active!
+2016-02-22 09:44:47,791 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:44:57,677 :: INFO :: /user		method : POST
+2016-02-22 09:44:57,679 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:44:57,681 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:44:57,682 :: INFO :: login abe
+2016-02-22 09:44:57,683 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:44:57,684 :: INFO :: nom Bes
+2016-02-22 09:44:57,684 :: INFO :: prenom Arnaud
+2016-02-22 09:44:57,685 :: INFO :: Desc pouet
+2016-02-22 09:44:57,748 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:44:57] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:45:05,992 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:45:06,020 :: INFO ::  * Restarting with stat
+2016-02-22 09:45:06,494 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:45:06,495 :: INFO :: Logger is ready
+2016-02-22 09:45:06,518 :: WARNING ::  * Debugger is active!
+2016-02-22 09:45:06,519 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:45:14,652 :: INFO :: /user		method : POST
+2016-02-22 09:45:14,654 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:45:14,655 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:45:14,656 :: INFO :: login abe
+2016-02-22 09:45:14,656 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:45:14,657 :: INFO :: nom Bes
+2016-02-22 09:45:14,657 :: INFO :: prenom Arnaud
+2016-02-22 09:45:14,658 :: INFO :: Desc pouet
+2016-02-22 09:45:14,732 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:45:14] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:45:46,631 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:45:46,632 :: INFO :: Logger is ready
+2016-02-22 09:45:46,655 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-22 09:45:46,668 :: INFO ::  * Restarting with stat
+2016-02-22 09:45:47,072 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:45:47,073 :: INFO :: Logger is ready
+2016-02-22 09:45:47,096 :: WARNING ::  * Debugger is active!
+2016-02-22 09:45:47,098 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:46:24,433 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:46:24,461 :: INFO ::  * Restarting with stat
+2016-02-22 09:46:24,917 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:46:24,918 :: INFO :: Logger is ready
+2016-02-22 09:46:24,941 :: WARNING ::  * Debugger is active!
+2016-02-22 09:46:24,942 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:46:33,765 :: INFO :: /user		method : POST
+2016-02-22 09:46:33,767 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:46:33,769 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:46:33,770 :: INFO :: login abe
+2016-02-22 09:46:33,771 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:46:33,772 :: INFO :: nom Bes
+2016-02-22 09:46:33,772 :: INFO :: prenom Arnaud
+2016-02-22 09:46:33,773 :: INFO :: Desc pouet
+2016-02-22 09:46:33,965 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:46:33] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:47:10,668 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:47:10,668 :: INFO :: Logger is ready
+2016-02-22 09:47:10,692 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-22 09:47:10,704 :: INFO ::  * Restarting with stat
+2016-02-22 09:47:11,100 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:47:11,101 :: INFO :: Logger is ready
+2016-02-22 09:47:11,124 :: WARNING ::  * Debugger is active!
+2016-02-22 09:47:11,125 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:47:29,049 :: INFO :: /user		method : POST
+2016-02-22 09:47:29,051 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:47:29,053 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:47:29,054 :: INFO :: login abe
+2016-02-22 09:47:29,055 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:47:29,056 :: INFO :: nom Bes
+2016-02-22 09:47:29,057 :: INFO :: prenom Arnaud
+2016-02-22 09:47:29,057 :: INFO :: Desc pouet
+2016-02-22 09:47:29,249 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:47:29] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:47:55,518 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:47:55,545 :: INFO ::  * Restarting with stat
+2016-02-22 09:47:55,952 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:47:55,953 :: INFO :: Logger is ready
+2016-02-22 09:47:55,977 :: WARNING ::  * Debugger is active!
+2016-02-22 09:47:55,978 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:48:11,141 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:48:11,171 :: INFO ::  * Restarting with stat
+2016-02-22 09:48:11,581 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:48:11,582 :: INFO :: Logger is ready
+2016-02-22 09:48:11,610 :: WARNING ::  * Debugger is active!
+2016-02-22 09:48:11,611 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:49:01,731 :: INFO :: /user		method : POST
+2016-02-22 09:49:01,732 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:49:01,734 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:49:01,735 :: INFO :: login abe
+2016-02-22 09:49:01,736 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:49:01,737 :: INFO :: nom Bes
+2016-02-22 09:49:01,738 :: INFO :: prenom Arnaud
+2016-02-22 09:49:01,739 :: INFO :: Desc pouet
+2016-02-22 09:49:01,845 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:49:01] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:52:02,444 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:52:02,482 :: INFO ::  * Restarting with stat
+2016-02-22 09:52:02,926 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:52:02,927 :: INFO :: Logger is ready
+2016-02-22 09:52:02,951 :: WARNING ::  * Debugger is active!
+2016-02-22 09:52:02,952 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:52:17,796 :: INFO :: /user		method : POST
+2016-02-22 09:52:17,798 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:52:17,799 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:52:17,800 :: INFO :: login abe
+2016-02-22 09:52:17,800 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:52:17,801 :: INFO :: nom Bes
+2016-02-22 09:52:17,801 :: INFO :: prenom Arnaud
+2016-02-22 09:52:17,802 :: INFO :: Desc pouet
+2016-02-22 09:52:17,906 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:52:17] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:52:45,321 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-22 09:52:45,360 :: INFO ::  * Restarting with stat
+2016-02-22 09:52:45,786 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:52:45,787 :: INFO :: Logger is ready
+2016-02-22 09:52:45,812 :: WARNING ::  * Debugger is active!
+2016-02-22 09:52:45,813 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:53:01,774 :: INFO :: /user		method : POST
+2016-02-22 09:53:01,776 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:53:01,778 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:53:01,779 :: INFO :: login abe
+2016-02-22 09:53:01,780 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:53:01,781 :: INFO :: nom Bes
+2016-02-22 09:53:01,781 :: INFO :: prenom Arnaud
+2016-02-22 09:53:01,782 :: INFO :: Desc pouet
+2016-02-22 09:53:01,884 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:53:01] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:54:49,823 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:54:49,851 :: INFO ::  * Restarting with stat
+2016-02-22 09:54:50,301 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:54:50,302 :: INFO :: Logger is ready
+2016-02-22 09:54:50,329 :: WARNING ::  * Debugger is active!
+2016-02-22 09:54:50,330 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:55:04,202 :: INFO :: /user		method : POST
+2016-02-22 09:55:04,204 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:55:04,206 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:55:04,207 :: INFO :: login abe
+2016-02-22 09:55:04,208 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:55:04,209 :: INFO :: nom Bes
+2016-02-22 09:55:04,210 :: INFO :: prenom Arnaud
+2016-02-22 09:55:04,210 :: INFO :: Desc pouet
+2016-02-22 09:55:04,325 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:55:04] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:55:21,617 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-22 09:55:21,647 :: INFO ::  * Restarting with stat
+2016-02-22 09:55:22,093 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:55:22,094 :: INFO :: Logger is ready
+2016-02-22 09:55:22,118 :: WARNING ::  * Debugger is active!
+2016-02-22 09:55:22,119 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:55:48,357 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:55:48,384 :: INFO ::  * Restarting with stat
+2016-02-22 09:55:48,782 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:55:48,783 :: INFO :: Logger is ready
+2016-02-22 09:55:48,805 :: WARNING ::  * Debugger is active!
+2016-02-22 09:55:48,807 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:56:52,038 :: INFO :: /user		method : POST
+2016-02-22 09:56:52,040 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:56:52,042 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:56:52,043 :: INFO :: login abe
+2016-02-22 09:56:52,044 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:56:52,045 :: INFO :: nom Bes
+2016-02-22 09:56:52,046 :: INFO :: prenom Arnaud
+2016-02-22 09:56:52,046 :: INFO :: Desc pouet
+2016-02-22 09:56:52,171 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:56:52] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:57:49,780 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:57:49,808 :: INFO ::  * Restarting with stat
+2016-02-22 09:57:50,232 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:57:50,233 :: INFO :: Logger is ready
+2016-02-22 09:57:50,257 :: WARNING ::  * Debugger is active!
+2016-02-22 09:57:50,258 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:57:56,386 :: INFO :: /user		method : POST
+2016-02-22 09:57:56,388 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:57:56,389 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:57:56,391 :: INFO :: login abe
+2016-02-22 09:57:56,391 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:57:56,392 :: INFO :: nom Bes
+2016-02-22 09:57:56,392 :: INFO :: prenom Arnaud
+2016-02-22 09:57:56,393 :: INFO :: Desc pouet
+2016-02-22 09:57:56,509 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:57:56] "POST /user HTTP/1.1" 400 -
+2016-02-22 09:59:00,870 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:59:00,898 :: INFO ::  * Restarting with stat
+2016-02-22 09:59:01,297 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:59:01,298 :: INFO :: Logger is ready
+2016-02-22 09:59:01,321 :: WARNING ::  * Debugger is active!
+2016-02-22 09:59:01,322 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:59:27,565 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 09:59:27,593 :: INFO ::  * Restarting with stat
+2016-02-22 09:59:49,113 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:59:49,113 :: INFO :: Logger is ready
+2016-02-22 09:59:49,136 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-22 09:59:49,148 :: INFO ::  * Restarting with stat
+2016-02-22 09:59:49,542 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 09:59:49,543 :: INFO :: Logger is ready
+2016-02-22 09:59:49,566 :: WARNING ::  * Debugger is active!
+2016-02-22 09:59:49,567 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 09:59:54,159 :: INFO :: /user		method : POST
+2016-02-22 09:59:54,161 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 09:59:54,162 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 09:59:54,164 :: INFO :: login abe
+2016-02-22 09:59:54,165 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 09:59:54,166 :: INFO :: nom Bes
+2016-02-22 09:59:54,166 :: INFO :: prenom Arnaud
+2016-02-22 09:59:54,167 :: INFO :: Desc pouet
+2016-02-22 09:59:54,977 :: INFO :: 172.30.1.138 - - [22/Feb/2016 09:59:54] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:00:14,803 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:00:14,834 :: INFO ::  * Restarting with stat
+2016-02-22 10:00:15,253 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:00:15,254 :: INFO :: Logger is ready
+2016-02-22 10:00:15,281 :: WARNING ::  * Debugger is active!
+2016-02-22 10:00:15,283 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:00:18,207 :: INFO :: /user		method : POST
+2016-02-22 10:00:18,209 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:00:18,211 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:00:18,212 :: INFO :: login abe
+2016-02-22 10:00:18,213 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:00:18,214 :: INFO :: nom Bes
+2016-02-22 10:00:18,215 :: INFO :: prenom Arnaud
+2016-02-22 10:00:18,216 :: INFO :: Desc pouet
+2016-02-22 10:00:19,276 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:00:19] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:00:36,491 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:00:36,518 :: INFO ::  * Restarting with stat
+2016-02-22 10:00:36,969 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:00:36,969 :: INFO :: Logger is ready
+2016-02-22 10:00:36,994 :: WARNING ::  * Debugger is active!
+2016-02-22 10:00:36,998 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:00:45,108 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:00:45,137 :: INFO ::  * Restarting with stat
+2016-02-22 10:00:45,566 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:00:45,567 :: INFO :: Logger is ready
+2016-02-22 10:00:45,592 :: WARNING ::  * Debugger is active!
+2016-02-22 10:00:45,593 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:00:50,389 :: INFO :: /user		method : POST
+2016-02-22 10:00:50,391 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:00:50,392 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:00:50,394 :: INFO :: login abe
+2016-02-22 10:00:50,395 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:00:50,396 :: INFO :: nom Bes
+2016-02-22 10:00:50,397 :: INFO :: prenom Arnaud
+2016-02-22 10:00:50,397 :: INFO :: Desc pouet
+2016-02-22 10:00:50,848 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:00:50] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:02:33,493 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:02:33,521 :: INFO ::  * Restarting with stat
+2016-02-22 10:02:33,936 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:02:33,937 :: INFO :: Logger is ready
+2016-02-22 10:02:33,960 :: WARNING ::  * Debugger is active!
+2016-02-22 10:02:33,961 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:02:38,529 :: INFO :: /user		method : POST
+2016-02-22 10:02:38,530 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:02:38,532 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:02:38,533 :: INFO :: login abe
+2016-02-22 10:02:38,534 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:02:38,535 :: INFO :: nom Bes
+2016-02-22 10:02:38,536 :: INFO :: prenom Arnaud
+2016-02-22 10:02:38,537 :: INFO :: Desc pouet
+2016-02-22 10:02:38,765 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:02:38] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:03:02,242 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:03:02,270 :: INFO ::  * Restarting with stat
+2016-02-22 10:03:02,680 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:03:02,681 :: INFO :: Logger is ready
+2016-02-22 10:03:02,704 :: WARNING ::  * Debugger is active!
+2016-02-22 10:03:02,706 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:03:22,905 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:03:22,932 :: INFO ::  * Restarting with stat
+2016-02-22 10:03:23,409 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:03:23,410 :: INFO :: Logger is ready
+2016-02-22 10:03:23,436 :: WARNING ::  * Debugger is active!
+2016-02-22 10:03:23,437 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:03:25,478 :: INFO :: /user		method : POST
+2016-02-22 10:03:25,480 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:03:25,481 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:03:25,482 :: INFO :: login abe
+2016-02-22 10:03:25,483 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:03:25,484 :: INFO :: nom Bes
+2016-02-22 10:03:25,484 :: INFO :: prenom Arnaud
+2016-02-22 10:03:25,485 :: INFO :: Desc pouet
+2016-02-22 10:03:25,618 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:03:25] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:03:44,643 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:03:44,671 :: INFO ::  * Restarting with stat
+2016-02-22 10:03:45,081 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:03:45,082 :: INFO :: Logger is ready
+2016-02-22 10:03:45,105 :: WARNING ::  * Debugger is active!
+2016-02-22 10:03:45,107 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:03:51,143 :: INFO :: /user		method : POST
+2016-02-22 10:03:51,145 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:03:51,146 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:03:51,148 :: INFO :: login abe
+2016-02-22 10:03:51,149 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:03:51,149 :: INFO :: nom Bes
+2016-02-22 10:03:51,150 :: INFO :: prenom Arnaud
+2016-02-22 10:03:51,150 :: INFO :: Desc pouet
+2016-02-22 10:03:51,229 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:03:51] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:04:06,311 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:04:06,345 :: INFO ::  * Restarting with stat
+2016-02-22 10:05:04,594 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:05:04,595 :: INFO :: Logger is ready
+2016-02-22 10:05:04,618 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-22 10:05:04,630 :: INFO ::  * Restarting with stat
+2016-02-22 10:05:05,025 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:05:05,026 :: INFO :: Logger is ready
+2016-02-22 10:05:05,049 :: WARNING ::  * Debugger is active!
+2016-02-22 10:05:05,050 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:05:07,444 :: INFO :: /user		method : POST
+2016-02-22 10:05:07,446 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:05:07,447 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:05:07,448 :: INFO :: login abe
+2016-02-22 10:05:07,449 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:05:07,450 :: INFO :: nom Bes
+2016-02-22 10:05:07,450 :: INFO :: prenom Arnaud
+2016-02-22 10:05:07,451 :: INFO :: Desc pouet
+2016-02-22 10:05:07,493 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:05:07] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:05:19,187 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:05:19,213 :: INFO ::  * Restarting with stat
+2016-02-22 10:05:19,650 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:05:19,651 :: INFO :: Logger is ready
+2016-02-22 10:05:19,674 :: WARNING ::  * Debugger is active!
+2016-02-22 10:05:19,675 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:05:22,746 :: INFO :: /user		method : POST
+2016-02-22 10:05:22,748 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:05:22,750 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:05:22,751 :: INFO :: login abe
+2016-02-22 10:05:22,752 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:05:22,753 :: INFO :: nom Bes
+2016-02-22 10:05:22,754 :: INFO :: prenom Arnaud
+2016-02-22 10:05:22,755 :: INFO :: Desc pouet
+2016-02-22 10:05:22,804 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:05:22] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:06:20,220 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:06:20,249 :: INFO ::  * Restarting with stat
+2016-02-22 10:06:20,668 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:06:20,668 :: INFO :: Logger is ready
+2016-02-22 10:06:20,692 :: WARNING ::  * Debugger is active!
+2016-02-22 10:06:20,694 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:06:31,517 :: INFO :: /user		method : POST
+2016-02-22 10:06:31,518 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:06:31,520 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:06:31,521 :: INFO :: login abe
+2016-02-22 10:06:31,522 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:06:31,523 :: INFO :: nom Bes
+2016-02-22 10:06:31,524 :: INFO :: prenom Arnaud
+2016-02-22 10:06:31,525 :: INFO :: Desc pouet
+2016-02-22 10:06:31,572 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:06:31,574 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:06:31] "POST /user HTTP/1.1" 200 -
+2016-02-22 10:07:26,242 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:07:26,277 :: INFO ::  * Restarting with stat
+2016-02-22 10:07:40,865 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:07:40,866 :: INFO :: Logger is ready
+2016-02-22 10:07:40,889 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-22 10:07:40,901 :: INFO ::  * Restarting with stat
+2016-02-22 10:07:41,294 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:07:41,294 :: INFO :: Logger is ready
+2016-02-22 10:07:41,317 :: WARNING ::  * Debugger is active!
+2016-02-22 10:07:41,319 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:08:00,951 :: INFO :: /user		method : POST
+2016-02-22 10:08:00,953 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:08:00,954 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:08:00,956 :: INFO :: login abe
+2016-02-22 10:08:00,957 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:08:00,958 :: INFO :: nom Bes
+2016-02-22 10:08:00,958 :: INFO :: prenom Arnaud
+2016-02-22 10:08:00,959 :: INFO :: Desc pouet
+2016-02-22 10:08:01,058 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:08:01] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:08:01,060 :: INFO :: /user		method : POST
+2016-02-22 10:08:01,062 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:08:01,064 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:08:01,065 :: INFO :: login abe
+2016-02-22 10:08:01,066 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:08:01,066 :: INFO :: nom Bes
+2016-02-22 10:08:01,067 :: INFO :: prenom Arnaud
+2016-02-22 10:08:01,067 :: INFO :: Desc pouet
+2016-02-22 10:08:01,116 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:08:01] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:08:01,118 :: INFO :: /user		method : POST
+2016-02-22 10:08:01,119 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:08:01,120 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:08:01,121 :: INFO :: login abe
+2016-02-22 10:08:01,121 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:08:01,122 :: INFO :: nom Bes
+2016-02-22 10:08:01,122 :: INFO :: prenom Arnaud
+2016-02-22 10:08:01,123 :: INFO :: Desc pouet
+2016-02-22 10:08:01,187 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:08:01] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:08:12,608 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:08:12,636 :: INFO ::  * Restarting with stat
+2016-02-22 10:08:13,063 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:08:13,064 :: INFO :: Logger is ready
+2016-02-22 10:08:13,087 :: WARNING ::  * Debugger is active!
+2016-02-22 10:08:13,089 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:08:21,192 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:08:21,261 :: INFO ::  * Restarting with stat
+2016-02-22 10:08:21,683 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:08:21,683 :: INFO :: Logger is ready
+2016-02-22 10:08:21,706 :: WARNING ::  * Debugger is active!
+2016-02-22 10:08:21,708 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:08:40,952 :: INFO :: /user		method : POST
+2016-02-22 10:08:40,954 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:08:40,955 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:08:40,956 :: INFO :: login abe
+2016-02-22 10:08:40,956 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:08:40,957 :: INFO :: nom Bes
+2016-02-22 10:08:40,957 :: INFO :: prenom Arnaud
+2016-02-22 10:08:40,958 :: INFO :: Desc pouet
+2016-02-22 10:08:41,239 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:08:41] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:09:28,282 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:09:28,311 :: INFO ::  * Restarting with stat
+2016-02-22 10:09:28,770 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:09:28,771 :: INFO :: Logger is ready
+2016-02-22 10:09:28,794 :: WARNING ::  * Debugger is active!
+2016-02-22 10:09:28,796 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:10:01,091 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:10:01,121 :: INFO ::  * Restarting with stat
+2016-02-22 10:10:01,572 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:10:01,573 :: INFO :: Logger is ready
+2016-02-22 10:10:01,604 :: WARNING ::  * Debugger is active!
+2016-02-22 10:10:01,606 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:10:05,691 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:10:05,719 :: INFO ::  * Restarting with stat
+2016-02-22 10:10:06,172 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:10:06,173 :: INFO :: Logger is ready
+2016-02-22 10:10:06,198 :: WARNING ::  * Debugger is active!
+2016-02-22 10:10:06,199 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:12:50,977 :: INFO :: /user		method : POST
+2016-02-22 10:12:50,979 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:12:50,981 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:12:50,982 :: INFO :: login abe
+2016-02-22 10:12:50,982 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:12:50,983 :: INFO :: nom Bes
+2016-02-22 10:12:50,984 :: INFO :: prenom Arnaud
+2016-02-22 10:12:50,984 :: INFO :: Desc pouet
+2016-02-22 10:12:51,115 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:12:51] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:13:21,000 :: INFO :: /user		method : POST
+2016-02-22 10:13:21,001 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:13:21,003 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:13:21,004 :: INFO :: login abe
+2016-02-22 10:13:21,004 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:13:21,005 :: INFO :: nom Bes
+2016-02-22 10:13:21,006 :: INFO :: prenom Arnaud
+2016-02-22 10:13:21,007 :: INFO :: Desc pouet
+2016-02-22 10:13:21,122 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:13:21] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:13:40,997 :: INFO :: /user		method : POST
+2016-02-22 10:13:40,999 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:13:41,000 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:13:41,001 :: INFO :: login abe
+2016-02-22 10:13:41,002 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:13:41,003 :: INFO :: nom Bes
+2016-02-22 10:13:41,004 :: INFO :: prenom Arnaud
+2016-02-22 10:13:41,004 :: INFO :: Desc pouet
+2016-02-22 10:13:41,084 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:13:41] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:14:20,227 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:14:20,255 :: INFO ::  * Restarting with stat
+2016-02-22 10:14:20,666 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:14:20,666 :: INFO :: Logger is ready
+2016-02-22 10:14:20,689 :: WARNING ::  * Debugger is active!
+2016-02-22 10:14:20,691 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:14:51,050 :: INFO :: /user		method : POST
+2016-02-22 10:14:51,051 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:14:51,053 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:14:51,054 :: INFO :: login abe
+2016-02-22 10:14:51,055 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:14:51,056 :: INFO :: nom Bes
+2016-02-22 10:14:51,057 :: INFO :: prenom Arnaud
+2016-02-22 10:14:51,057 :: INFO :: Desc pouet
+2016-02-22 10:14:51,168 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:14:51] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:15:40,357 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:15:40,386 :: INFO ::  * Restarting with stat
+2016-02-22 10:15:40,794 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:15:40,794 :: INFO :: Logger is ready
+2016-02-22 10:15:40,817 :: WARNING ::  * Debugger is active!
+2016-02-22 10:15:40,819 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:16:01,104 :: INFO :: /user		method : POST
+2016-02-22 10:16:01,106 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:16:01,107 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:16:01,108 :: INFO :: login abe
+2016-02-22 10:16:01,109 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:16:01,110 :: INFO :: nom Bes
+2016-02-22 10:16:01,111 :: INFO :: prenom Arnaud
+2016-02-22 10:16:01,112 :: INFO :: Desc pouet
+2016-02-22 10:16:01,235 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:16:01] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:16:25,196 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:16:25,232 :: INFO ::  * Restarting with stat
+2016-02-22 10:16:25,703 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:16:25,704 :: INFO :: Logger is ready
+2016-02-22 10:16:25,733 :: WARNING ::  * Debugger is active!
+2016-02-22 10:16:25,735 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:16:41,892 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:16:41,920 :: INFO ::  * Restarting with stat
+2016-02-22 10:16:42,355 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:16:42,356 :: INFO :: Logger is ready
+2016-02-22 10:16:42,379 :: WARNING ::  * Debugger is active!
+2016-02-22 10:16:42,381 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:16:45,534 :: INFO :: /user		method : POST
+2016-02-22 10:16:45,536 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:16:45,537 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:16:45,539 :: INFO :: login abe
+2016-02-22 10:16:45,540 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:16:45,540 :: INFO :: nom Bes
+2016-02-22 10:16:45,541 :: INFO :: prenom Arnaud
+2016-02-22 10:16:45,542 :: INFO :: Desc pouet
+2016-02-22 10:16:45,609 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:16:45] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:20:06,437 :: INFO :: /user		method : POST
+2016-02-22 10:20:06,439 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:20:06,440 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:20:06,441 :: INFO :: login abe
+2016-02-22 10:20:06,442 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:20:06,443 :: INFO :: nom Bes
+2016-02-22 10:20:06,443 :: INFO :: prenom Arnaud
+2016-02-22 10:20:06,444 :: INFO :: Desc pouet
+2016-02-22 10:20:06,493 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:20:06] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:20:31,206 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:20:31,234 :: INFO ::  * Restarting with stat
+2016-02-22 10:20:31,641 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:20:31,642 :: INFO :: Logger is ready
+2016-02-22 10:20:31,666 :: WARNING ::  * Debugger is active!
+2016-02-22 10:20:31,667 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:22:19,554 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:22:19,582 :: INFO ::  * Restarting with stat
+2016-02-22 10:22:19,995 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:22:19,995 :: INFO :: Logger is ready
+2016-02-22 10:22:20,018 :: WARNING ::  * Debugger is active!
+2016-02-22 10:22:20,020 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:22:25,102 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:22:25,140 :: INFO ::  * Restarting with stat
+2016-02-22 10:22:25,564 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:22:25,565 :: INFO :: Logger is ready
+2016-02-22 10:22:25,601 :: WARNING ::  * Debugger is active!
+2016-02-22 10:22:25,604 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:22:45,610 :: INFO :: /user		method : POST
+2016-02-22 10:22:45,612 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:22:45,614 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:22:45,615 :: INFO :: login abe
+2016-02-22 10:22:45,616 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:22:45,617 :: INFO :: nom Bes
+2016-02-22 10:22:45,618 :: INFO :: prenom Arnaud
+2016-02-22 10:22:45,618 :: INFO :: Desc pouet
+2016-02-22 10:22:45,704 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:22:45] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:23:08,975 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:23:09,003 :: INFO ::  * Restarting with stat
+2016-02-22 10:23:09,434 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:23:09,435 :: INFO :: Logger is ready
+2016-02-22 10:23:09,458 :: WARNING ::  * Debugger is active!
+2016-02-22 10:23:09,460 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:23:29,661 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:23:29,688 :: INFO ::  * Restarting with stat
+2016-02-22 10:23:30,112 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:23:30,113 :: INFO :: Logger is ready
+2016-02-22 10:23:30,136 :: WARNING ::  * Debugger is active!
+2016-02-22 10:23:30,137 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:23:45,292 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:23:45,319 :: INFO ::  * Restarting with stat
+2016-02-22 10:23:45,763 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:23:45,764 :: INFO :: Logger is ready
+2016-02-22 10:23:45,790 :: WARNING ::  * Debugger is active!
+2016-02-22 10:23:45,791 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:23:45,817 :: INFO :: /user		method : POST
+2016-02-22 10:23:45,827 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:23:45,829 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:23:45,830 :: INFO :: login abe
+2016-02-22 10:23:45,830 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:23:45,831 :: INFO :: nom Bes
+2016-02-22 10:23:45,831 :: INFO :: prenom Arnaud
+2016-02-22 10:23:45,832 :: INFO :: Desc pouet
+2016-02-22 10:23:45,934 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:23:45] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:23:47,861 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:23:47,889 :: INFO ::  * Restarting with stat
+2016-02-22 10:23:48,434 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:23:48,435 :: INFO :: Logger is ready
+2016-02-22 10:23:48,462 :: WARNING ::  * Debugger is active!
+2016-02-22 10:23:48,463 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:23:56,569 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:23:56,602 :: INFO ::  * Restarting with stat
+2016-02-22 10:23:57,027 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:23:57,028 :: INFO :: Logger is ready
+2016-02-22 10:23:57,053 :: WARNING ::  * Debugger is active!
+2016-02-22 10:23:57,054 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:24:06,357 :: INFO :: /user		method : POST
+2016-02-22 10:24:06,358 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:24:06,360 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:24:06,361 :: INFO :: login abe
+2016-02-22 10:24:06,362 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:24:06,363 :: INFO :: nom Bes
+2016-02-22 10:24:06,364 :: INFO :: prenom Arnaud
+2016-02-22 10:24:06,365 :: INFO :: Desc pouet
+2016-02-22 10:24:06,438 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:24:06] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:25:32,854 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:25:32,882 :: INFO ::  * Restarting with stat
+2016-02-22 10:25:33,307 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:25:33,307 :: INFO :: Logger is ready
+2016-02-22 10:25:33,330 :: WARNING ::  * Debugger is active!
+2016-02-22 10:25:33,332 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:25:44,445 :: INFO :: /user		method : POST
+2016-02-22 10:25:44,447 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:25:44,449 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:25:44,450 :: INFO :: login abe
+2016-02-22 10:25:44,450 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:25:44,451 :: INFO :: nom Bes
+2016-02-22 10:25:44,452 :: INFO :: prenom Arnaud
+2016-02-22 10:25:44,453 :: INFO :: Desc pouet
+2016-02-22 10:25:44,538 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:25:44] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:26:07,652 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:26:07,683 :: INFO ::  * Restarting with stat
+2016-02-22 10:26:08,126 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:26:08,127 :: INFO :: Logger is ready
+2016-02-22 10:26:08,155 :: WARNING ::  * Debugger is active!
+2016-02-22 10:26:08,156 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:26:58,581 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:26:58,608 :: INFO ::  * Restarting with stat
+2016-02-22 10:26:59,069 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:26:59,070 :: INFO :: Logger is ready
+2016-02-22 10:26:59,094 :: WARNING ::  * Debugger is active!
+2016-02-22 10:26:59,095 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:27:05,452 :: INFO :: /user		method : POST
+2016-02-22 10:27:05,453 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:27:05,455 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:27:05,456 :: INFO :: login abe
+2016-02-22 10:27:05,457 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:27:05,458 :: INFO :: nom Bes
+2016-02-22 10:27:05,458 :: INFO :: prenom Arnaud
+2016-02-22 10:27:05,459 :: INFO :: Desc pouet
+2016-02-22 10:27:05,525 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:27:05] "POST /user HTTP/1.1" 400 -
+2016-02-22 10:27:52,541 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:27:52,575 :: INFO ::  * Restarting with stat
+2016-02-22 10:27:52,990 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:27:52,991 :: INFO :: Logger is ready
+2016-02-22 10:27:53,015 :: WARNING ::  * Debugger is active!
+2016-02-22 10:27:53,016 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:28:48,467 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:28:48,494 :: INFO ::  * Restarting with stat
+2016-02-22 10:28:48,914 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:28:48,915 :: INFO :: Logger is ready
+2016-02-22 10:28:48,939 :: WARNING ::  * Debugger is active!
+2016-02-22 10:28:48,940 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:29:15,811 :: INFO :: /user		method : POST
+2016-02-22 10:29:15,813 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:29:15,814 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:29:15,815 :: INFO :: login abe
+2016-02-22 10:29:15,816 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:29:15,817 :: INFO :: nom Bes
+2016-02-22 10:29:15,818 :: INFO :: prenom Arnaud
+2016-02-22 10:29:15,819 :: INFO :: Desc pouet
+2016-02-22 10:29:15,923 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:29:15,925 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:29:15] "POST /user HTTP/1.1" 200 -
+2016-02-22 10:29:36,357 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:29:36,386 :: INFO ::  * Restarting with stat
+2016-02-22 10:29:36,848 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:29:36,849 :: INFO :: Logger is ready
+2016-02-22 10:29:36,874 :: WARNING ::  * Debugger is active!
+2016-02-22 10:29:36,875 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:29:51,026 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:29:51,053 :: INFO ::  * Restarting with stat
+2016-02-22 10:29:51,478 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:29:51,478 :: INFO :: Logger is ready
+2016-02-22 10:29:51,504 :: WARNING ::  * Debugger is active!
+2016-02-22 10:29:51,505 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:30:25,857 :: INFO :: /user		method : POST
+2016-02-22 10:30:25,858 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:30:25,860 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:30:25,861 :: INFO :: login abe
+2016-02-22 10:30:25,861 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:30:25,862 :: INFO :: nom Bes
+2016-02-22 10:30:25,863 :: INFO :: prenom Arnaud
+2016-02-22 10:30:25,863 :: INFO :: Desc pouet
+2016-02-22 10:30:25,967 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:30:25,969 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:30:25] "POST /user HTTP/1.1" 200 -
+2016-02-22 10:30:55,058 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:30:55,094 :: INFO ::  * Restarting with stat
+2016-02-22 10:30:55,509 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:30:55,510 :: INFO :: Logger is ready
+2016-02-22 10:30:55,533 :: WARNING ::  * Debugger is active!
+2016-02-22 10:30:55,534 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:31:35,897 :: INFO :: /user		method : POST
+2016-02-22 10:31:35,898 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:31:35,900 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:31:35,901 :: INFO :: login abe
+2016-02-22 10:31:35,901 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:31:35,902 :: INFO :: nom Bes
+2016-02-22 10:31:35,902 :: INFO :: prenom Arnaud
+2016-02-22 10:31:35,903 :: INFO :: Desc pouet
+2016-02-22 10:31:35,994 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:31:35,996 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:31:35] "POST /user HTTP/1.1" 401 -
+2016-02-22 10:32:53,519 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:32:53,559 :: INFO ::  * Restarting with stat
+2016-02-22 10:32:53,986 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:32:53,987 :: INFO :: Logger is ready
+2016-02-22 10:32:54,011 :: WARNING ::  * Debugger is active!
+2016-02-22 10:32:54,012 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:33:04,140 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:33:04,167 :: INFO ::  * Restarting with stat
+2016-02-22 10:33:04,608 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:33:04,609 :: INFO :: Logger is ready
+2016-02-22 10:33:04,633 :: WARNING ::  * Debugger is active!
+2016-02-22 10:33:04,634 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:33:35,914 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-22 10:33:35,942 :: INFO ::  * Restarting with stat
+2016-02-22 10:33:36,383 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:33:36,383 :: INFO :: Logger is ready
+2016-02-22 10:33:36,407 :: WARNING ::  * Debugger is active!
+2016-02-22 10:33:36,408 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:34:15,759 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-22 10:34:15,792 :: INFO ::  * Restarting with stat
+2016-02-22 10:34:16,217 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:34:16,218 :: INFO :: Logger is ready
+2016-02-22 10:34:16,247 :: WARNING ::  * Debugger is active!
+2016-02-22 10:34:16,248 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:34:41,476 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-22 10:34:41,512 :: INFO ::  * Restarting with stat
+2016-02-22 10:34:41,997 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:34:41,998 :: INFO :: Logger is ready
+2016-02-22 10:34:42,025 :: WARNING ::  * Debugger is active!
+2016-02-22 10:34:42,027 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:34:51,144 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/LoginManager.py', reloading
+2016-02-22 10:34:51,181 :: INFO ::  * Restarting with stat
+2016-02-22 10:34:51,657 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:34:51,657 :: INFO :: Logger is ready
+2016-02-22 10:34:51,699 :: WARNING ::  * Debugger is active!
+2016-02-22 10:34:51,701 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:35:26,041 :: INFO :: /user		method : POST
+2016-02-22 10:35:26,042 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:35:26,044 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:35:26,044 :: INFO :: login abe
+2016-02-22 10:35:26,045 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:35:26,045 :: INFO :: nom Bes
+2016-02-22 10:35:26,046 :: INFO :: prenom Arnaud
+2016-02-22 10:35:26,046 :: INFO :: Desc pouet
+2016-02-22 10:35:30,499 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:35:30,501 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:35:30] "POST /user HTTP/1.1" 200 -
+2016-02-22 10:36:34,547 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-22 10:36:34,576 :: INFO ::  * Restarting with stat
+2016-02-22 10:36:35,035 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:36:35,036 :: INFO :: Logger is ready
+2016-02-22 10:36:35,060 :: WARNING ::  * Debugger is active!
+2016-02-22 10:36:35,062 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:36:42,159 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-22 10:36:42,187 :: INFO ::  * Restarting with stat
+2016-02-22 10:36:42,642 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:36:42,643 :: INFO :: Logger is ready
+2016-02-22 10:36:42,666 :: WARNING ::  * Debugger is active!
+2016-02-22 10:36:42,667 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:36:48,750 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/Server.py', reloading
+2016-02-22 10:36:48,778 :: INFO ::  * Restarting with stat
+2016-02-22 10:36:49,203 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:36:49,204 :: INFO :: Logger is ready
+2016-02-22 10:36:49,228 :: WARNING ::  * Debugger is active!
+2016-02-22 10:36:49,230 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:38:55,671 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:38:55,672 :: INFO :: Logger is ready
+2016-02-22 10:38:55,696 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-22 10:38:55,708 :: INFO ::  * Restarting with stat
+2016-02-22 10:38:56,102 :: INFO :: ******************** NEW SESSION ********************
+2016-02-22 10:38:56,103 :: INFO :: Logger is ready
+2016-02-22 10:38:56,125 :: WARNING ::  * Debugger is active!
+2016-02-22 10:38:56,126 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-22 10:42:52,280 :: INFO :: /user		method : POST
+2016-02-22 10:42:52,281 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:42:52,283 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:42:52,283 :: INFO :: login abe
+2016-02-22 10:42:52,284 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:42:52,284 :: INFO :: nom Bes
+2016-02-22 10:42:52,285 :: INFO :: prenom Arnaud
+2016-02-22 10:42:52,286 :: INFO :: Desc pouet
+2016-02-22 10:42:54,402 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:42:54,404 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:42:54] "POST /user HTTP/1.1" 1002 -
+2016-02-22 10:59:02,577 :: INFO :: /user		method : POST
+2016-02-22 10:59:02,579 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:59:02,580 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:59:02,582 :: INFO :: login abe
+2016-02-22 10:59:02,583 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:59:02,583 :: INFO :: nom Bes
+2016-02-22 10:59:02,584 :: INFO :: prenom Arnaud
+2016-02-22 10:59:02,584 :: INFO :: Desc pouet
+2016-02-22 10:59:02,682 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:59:02,684 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:59:02] "POST /user HTTP/1.1" 1002 -
+2016-02-22 10:59:49,497 :: INFO :: /user		method : POST
+2016-02-22 10:59:49,498 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 10:59:49,500 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:59:49,501 :: INFO :: login abe
+2016-02-22 10:59:49,502 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 10:59:49,503 :: INFO :: nom Bes
+2016-02-22 10:59:49,504 :: INFO :: prenom Arnaud
+2016-02-22 10:59:49,504 :: INFO :: Desc pouet
+2016-02-22 10:59:49,619 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 10:59:49,621 :: INFO :: 172.30.1.138 - - [22/Feb/2016 10:59:49] "POST /user HTTP/1.1" 1002 -
+2016-02-22 11:00:31,718 :: INFO :: /user		method : POST
+2016-02-22 11:00:31,719 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 11:00:31,721 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 11:00:31,722 :: INFO :: login abe
+2016-02-22 11:00:31,723 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 11:00:31,724 :: INFO :: nom Bes
+2016-02-22 11:00:31,724 :: INFO :: prenom Arnaud
+2016-02-22 11:00:31,725 :: INFO :: Desc pouet
+2016-02-22 11:00:31,810 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 11:00:31,812 :: INFO :: 172.30.1.138 - - [22/Feb/2016 11:00:31] "POST /user HTTP/1.1" 1002 -
+2016-02-22 11:01:19,586 :: INFO :: /user		method : POST
+2016-02-22 11:01:19,588 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 11:01:19,590 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 11:01:19,591 :: INFO :: login abe
+2016-02-22 11:01:19,592 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 11:01:19,593 :: INFO :: nom Bes
+2016-02-22 11:01:19,593 :: INFO :: prenom Arnaud
+2016-02-22 11:01:19,594 :: INFO :: Desc pouet
+2016-02-22 11:01:19,768 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 11:01:19,770 :: INFO :: 172.30.1.138 - - [22/Feb/2016 11:01:19] "POST /user HTTP/1.1" 1002 -
+2016-02-22 11:06:24,021 :: INFO :: /user		method : POST
+2016-02-22 11:06:24,023 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-22 11:06:24,024 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 11:06:24,026 :: INFO :: login abe
+2016-02-22 11:06:24,026 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-22 11:06:24,027 :: INFO :: nom Bes
+2016-02-22 11:06:24,028 :: INFO :: prenom Arnaud
+2016-02-22 11:06:24,028 :: INFO :: Desc pouet
+2016-02-22 11:06:24,486 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-22 11:06:24,488 :: INFO :: 172.30.1.138 - - [22/Feb/2016 11:06:24] "POST /user HTTP/1.1" 1002 -
+2016-02-24 09:04:22,477 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:04:22,495 :: INFO :: Logger is ready
+2016-02-24 09:04:22,564 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 09:04:22,576 :: INFO ::  * Restarting with stat
+2016-02-24 09:04:22,976 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:04:22,977 :: INFO :: Logger is ready
+2016-02-24 09:04:23,000 :: WARNING ::  * Debugger is active!
+2016-02-24 09:04:23,001 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:23:51,196 :: INFO :: /user		method : POST
+2016-02-24 09:23:51,197 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-24 09:23:51,199 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:23:51,200 :: INFO :: login abe
+2016-02-24 09:23:51,201 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-24 09:23:51,202 :: INFO :: nom Bes
+2016-02-24 09:23:51,203 :: INFO :: prenom Arnaud
+2016-02-24 09:23:51,203 :: INFO :: Desc pouet
+2016-02-24 09:23:51,520 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:23:51,522 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:23:51] "POST /user HTTP/1.1" 1005 -
+2016-02-24 09:24:09,119 :: INFO :: /user		method : POST
+2016-02-24 09:24:09,120 :: INFO :: {"login": "abe1","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-24 09:24:09,121 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:24:09,122 :: INFO :: login abe1
+2016-02-24 09:24:09,123 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-24 09:24:09,123 :: INFO :: nom Bes
+2016-02-24 09:24:09,124 :: INFO :: prenom Arnaud
+2016-02-24 09:24:09,124 :: INFO :: Desc pouet
+2016-02-24 09:24:09,240 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:24:09,241 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:24:09] "POST /user HTTP/1.1" 200 -
+2016-02-24 09:24:19,504 :: INFO :: /user		method : POST
+2016-02-24 09:24:19,505 :: INFO :: {"login": "abe1","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-24 09:24:19,507 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:24:19,508 :: INFO :: login abe1
+2016-02-24 09:24:19,509 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-24 09:24:19,510 :: INFO :: nom Bes
+2016-02-24 09:24:19,511 :: INFO :: prenom Arnaud
+2016-02-24 09:24:19,511 :: INFO :: Desc pouet
+2016-02-24 09:24:19,567 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:24:19,569 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:24:19] "POST /user HTTP/1.1" 1005 -
+2016-02-24 09:24:20,423 :: INFO :: /user		method : POST
+2016-02-24 09:24:20,424 :: INFO :: {"login": "abe1","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-24 09:24:20,426 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:24:20,427 :: INFO :: login abe1
+2016-02-24 09:24:20,428 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-24 09:24:20,429 :: INFO :: nom Bes
+2016-02-24 09:24:20,430 :: INFO :: prenom Arnaud
+2016-02-24 09:24:20,430 :: INFO :: Desc pouet
+2016-02-24 09:24:20,457 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:24:20,459 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:24:20] "POST /user HTTP/1.1" 1005 -
+2016-02-24 09:28:01,931 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:28:01,959 :: INFO ::  * Restarting with stat
+2016-02-24 09:28:21,116 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:28:21,117 :: INFO :: Logger is ready
+2016-02-24 09:28:21,140 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 09:28:21,152 :: INFO ::  * Restarting with stat
+2016-02-24 09:28:21,551 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:28:21,552 :: INFO :: Logger is ready
+2016-02-24 09:28:21,574 :: WARNING ::  * Debugger is active!
+2016-02-24 09:28:21,575 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:28:24,630 :: INFO :: /user		method : POST
+2016-02-24 09:28:24,631 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-24 09:28:24,633 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:28:24,634 :: INFO :: login abe
+2016-02-24 09:28:24,635 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-24 09:28:24,635 :: INFO :: nom Bes
+2016-02-24 09:28:24,636 :: INFO :: prenom Arnaud
+2016-02-24 09:28:24,637 :: INFO :: Desc pouet
+2016-02-24 09:28:24,671 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:28:24,672 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:28:24] "POST /user HTTP/1.1" 1005 -
+2016-02-24 09:28:46,822 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:28:46,857 :: INFO ::  * Restarting with stat
+2016-02-24 09:28:47,270 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:28:47,271 :: INFO :: Logger is ready
+2016-02-24 09:28:47,296 :: WARNING ::  * Debugger is active!
+2016-02-24 09:28:47,298 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:29:12,800 :: INFO :: /user		method : POST
+2016-02-24 09:29:12,802 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-24 09:29:12,804 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:29:12,805 :: INFO :: login abe
+2016-02-24 09:29:12,806 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-24 09:29:12,807 :: INFO :: nom Bes
+2016-02-24 09:29:12,807 :: INFO :: prenom Arnaud
+2016-02-24 09:29:12,808 :: INFO :: Desc pouet
+2016-02-24 09:29:12,861 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:29:12,863 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:29:12] "POST /user HTTP/1.1" 1005 -
+2016-02-24 09:29:13,557 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:29:13,586 :: INFO ::  * Restarting with stat
+2016-02-24 09:29:14,009 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:29:14,010 :: INFO :: Logger is ready
+2016-02-24 09:29:14,034 :: WARNING ::  * Debugger is active!
+2016-02-24 09:29:14,035 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:29:20,370 :: INFO :: /user		method : POST
+2016-02-24 09:29:20,371 :: INFO :: {"login": "abe1","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-24 09:29:20,373 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:29:20,375 :: INFO :: login abe1
+2016-02-24 09:29:20,375 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-24 09:29:20,376 :: INFO :: nom Bes
+2016-02-24 09:29:20,377 :: INFO :: prenom Arnaud
+2016-02-24 09:29:20,378 :: INFO :: Desc pouet
+2016-02-24 09:29:20,421 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:29:20,423 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:29:20] "POST /user HTTP/1.1" 1005 -
+2016-02-24 09:29:24,156 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:29:24,184 :: INFO ::  * Restarting with stat
+2016-02-24 09:29:24,591 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:29:24,592 :: INFO :: Logger is ready
+2016-02-24 09:29:24,614 :: WARNING ::  * Debugger is active!
+2016-02-24 09:29:24,616 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:29:32,154 :: INFO :: /user		method : POST
+2016-02-24 09:29:32,156 :: INFO :: {"login": "abe1","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-24 09:29:32,158 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:29:32,159 :: INFO :: login abe1
+2016-02-24 09:29:32,160 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-24 09:29:32,160 :: INFO :: nom Bes
+2016-02-24 09:29:32,161 :: INFO :: prenom Arnaud
+2016-02-24 09:29:32,161 :: INFO :: Desc pouet
+2016-02-24 09:29:32,212 :: INFO :: {u'nom': u'Bes', u'login': u'abe1', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:29:32,214 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:29:32] "POST /user HTTP/1.1" 1005 -
+2016-02-24 09:29:40,952 :: INFO :: /user		method : POST
+2016-02-24 09:29:40,954 :: INFO :: {"login": "abe2","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-24 09:29:40,955 :: INFO :: {u'nom': u'Bes', u'login': u'abe2', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:29:40,956 :: INFO :: login abe2
+2016-02-24 09:29:40,957 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-24 09:29:40,958 :: INFO :: nom Bes
+2016-02-24 09:29:40,959 :: INFO :: prenom Arnaud
+2016-02-24 09:29:40,959 :: INFO :: Desc pouet
+2016-02-24 09:29:41,036 :: INFO :: {u'nom': u'Bes', u'login': u'abe2', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-24 09:29:41,038 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:29:41] "POST /user HTTP/1.1" 200 -
+2016-02-24 09:30:20,081 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:30:20,109 :: INFO ::  * Restarting with stat
+2016-02-24 09:30:20,525 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:30:20,526 :: INFO :: Logger is ready
+2016-02-24 09:30:20,549 :: WARNING ::  * Debugger is active!
+2016-02-24 09:30:20,550 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:33:38,121 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:33:38,149 :: INFO ::  * Restarting with stat
+2016-02-24 09:33:38,603 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:33:38,603 :: INFO :: Logger is ready
+2016-02-24 09:33:38,631 :: WARNING ::  * Debugger is active!
+2016-02-24 09:33:38,632 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:33:50,762 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:33:50,790 :: INFO ::  * Restarting with stat
+2016-02-24 09:33:51,205 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:33:51,205 :: INFO :: Logger is ready
+2016-02-24 09:33:51,228 :: WARNING ::  * Debugger is active!
+2016-02-24 09:33:51,229 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:33:54,287 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:33:54,316 :: INFO ::  * Restarting with stat
+2016-02-24 09:33:54,740 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:33:54,740 :: INFO :: Logger is ready
+2016-02-24 09:33:54,763 :: WARNING ::  * Debugger is active!
+2016-02-24 09:33:54,764 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:34:04,885 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:34:04,923 :: INFO ::  * Restarting with stat
+2016-02-24 09:34:38,057 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:34:38,057 :: INFO :: Logger is ready
+2016-02-24 09:34:38,081 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 09:34:38,093 :: INFO ::  * Restarting with stat
+2016-02-24 09:34:38,516 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:34:38,516 :: INFO :: Logger is ready
+2016-02-24 09:34:38,540 :: WARNING ::  * Debugger is active!
+2016-02-24 09:34:38,541 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:35:22,944 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:35:22,974 :: INFO ::  * Restarting with stat
+2016-02-24 09:35:23,404 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:35:23,404 :: INFO :: Logger is ready
+2016-02-24 09:35:23,439 :: WARNING ::  * Debugger is active!
+2016-02-24 09:35:23,441 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:36:14,908 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:36:14,946 :: INFO ::  * Restarting with stat
+2016-02-24 09:36:15,398 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:36:15,399 :: INFO :: Logger is ready
+2016-02-24 09:36:15,422 :: WARNING ::  * Debugger is active!
+2016-02-24 09:36:15,424 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:37:31,044 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:37:31,076 :: INFO ::  * Restarting with stat
+2016-02-24 09:54:42,772 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:54:42,772 :: INFO :: Logger is ready
+2016-02-24 09:54:42,795 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 09:54:42,807 :: INFO ::  * Restarting with stat
+2016-02-24 09:54:43,200 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:54:43,201 :: INFO :: Logger is ready
+2016-02-24 09:54:43,224 :: WARNING ::  * Debugger is active!
+2016-02-24 09:54:43,225 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:55:26,598 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:55:28,468 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:55:28,468 :: INFO :: Logger is ready
+2016-02-24 09:55:28,492 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 09:55:28,504 :: INFO ::  * Restarting with stat
+2016-02-24 09:55:28,897 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:55:28,898 :: INFO :: Logger is ready
+2016-02-24 09:55:28,921 :: WARNING ::  * Debugger is active!
+2016-02-24 09:55:28,922 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:56:09,559 :: INFO :: /login		method : POST
+2016-02-24 09:56:09,560 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 09:56:09,562 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 09:56:09,673 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 09:56:09,675 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:56:09] "POST /login HTTP/1.1" 200 -
+2016-02-24 09:57:32,298 :: INFO :: /login		method : POST
+2016-02-24 09:57:32,300 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 09:57:32,301 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 09:57:32,385 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 09:57:32,387 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:57:32] "POST /login HTTP/1.1" 200 -
+2016-02-24 09:58:01,117 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:58:01,143 :: INFO ::  * Restarting with stat
+2016-02-24 09:58:01,540 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:58:01,541 :: INFO :: Logger is ready
+2016-02-24 09:58:01,564 :: WARNING ::  * Debugger is active!
+2016-02-24 09:58:01,565 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:58:04,452 :: INFO :: /login		method : POST
+2016-02-24 09:58:04,454 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 09:58:04,455 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 09:58:04,517 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 09:58:04,519 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:58:04] "POST /login HTTP/1.1" 200 -
+2016-02-24 09:58:22,768 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 09:58:22,796 :: INFO ::  * Restarting with stat
+2016-02-24 09:58:23,228 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 09:58:23,229 :: INFO :: Logger is ready
+2016-02-24 09:58:23,251 :: WARNING ::  * Debugger is active!
+2016-02-24 09:58:23,253 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 09:58:29,956 :: INFO :: /login		method : POST
+2016-02-24 09:58:29,957 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 09:58:29,959 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 09:58:30,036 :: INFO :: toto
+2016-02-24 09:58:30,038 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:58:30] "POST /login HTTP/1.1" 200 -
+2016-02-24 09:59:01,265 :: INFO :: /login		method : POST
+2016-02-24 09:59:01,267 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 09:59:01,269 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 09:59:01,340 :: INFO :: toto
+2016-02-24 09:59:01,342 :: INFO :: 172.30.1.138 - - [24/Feb/2016 09:59:01] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:00:29,291 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:00:29,319 :: INFO ::  * Restarting with stat
+2016-02-24 10:00:29,733 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:00:29,734 :: INFO :: Logger is ready
+2016-02-24 10:00:29,757 :: WARNING ::  * Debugger is active!
+2016-02-24 10:00:29,759 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:00:52,865 :: INFO :: /login		method : POST
+2016-02-24 10:00:52,867 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:00:52,868 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:00:52,949 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:00:52,950 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:00:52] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:00:52,953 :: INFO :: /login		method : POST
+2016-02-24 10:00:52,955 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:00:52,956 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:00:53,007 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:00:53,009 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:00:53] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:02:19,672 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:02:19,702 :: INFO ::  * Restarting with stat
+2016-02-24 10:02:20,144 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:02:20,145 :: INFO :: Logger is ready
+2016-02-24 10:02:20,169 :: WARNING ::  * Debugger is active!
+2016-02-24 10:02:20,172 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:02:21,272 :: INFO :: /login		method : POST
+2016-02-24 10:02:21,274 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:02:21,275 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:02:21,346 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:02:21,348 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:02:21] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:02:42,979 :: INFO :: /login		method : POST
+2016-02-24 10:02:42,980 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:02:42,982 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:02:43,050 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:02:43,051 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:02:43] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:03:13,740 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:03:13,741 :: INFO :: Logger is ready
+2016-02-24 10:03:13,764 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 10:03:13,777 :: INFO ::  * Restarting with stat
+2016-02-24 10:03:14,171 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:03:14,172 :: INFO :: Logger is ready
+2016-02-24 10:03:14,195 :: WARNING ::  * Debugger is active!
+2016-02-24 10:03:14,196 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:03:34,393 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:03:34,429 :: INFO ::  * Restarting with stat
+2016-02-24 10:03:34,854 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:03:34,855 :: INFO :: Logger is ready
+2016-02-24 10:03:34,881 :: WARNING ::  * Debugger is active!
+2016-02-24 10:03:34,884 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:03:51,056 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:03:51,084 :: INFO ::  * Restarting with stat
+2016-02-24 10:03:51,535 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:03:51,538 :: INFO :: Logger is ready
+2016-02-24 10:03:59,469 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:03:59,470 :: INFO :: Logger is ready
+2016-02-24 10:04:17,141 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:04:17,142 :: INFO :: Logger is ready
+2016-02-24 10:04:48,148 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:04:48,149 :: INFO :: Logger is ready
+2016-02-24 10:05:11,747 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:05:11,748 :: INFO :: Logger is ready
+2016-02-24 10:05:31,637 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:05:31,638 :: INFO :: Logger is ready
+2016-02-24 10:05:31,664 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 10:05:31,680 :: INFO ::  * Restarting with stat
+2016-02-24 10:05:32,097 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:05:32,098 :: INFO :: Logger is ready
+2016-02-24 10:05:32,121 :: WARNING ::  * Debugger is active!
+2016-02-24 10:05:32,122 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:05:36,961 :: INFO :: /login		method : POST
+2016-02-24 10:05:36,963 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:05:36,965 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:05:37,036 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:05:37,037 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:05:37] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:05:47,278 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:05:47,306 :: INFO ::  * Restarting with stat
+2016-02-24 10:05:47,769 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:05:47,770 :: INFO :: Logger is ready
+2016-02-24 10:05:47,794 :: WARNING ::  * Debugger is active!
+2016-02-24 10:05:47,795 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:05:55,949 :: INFO :: /login		method : POST
+2016-02-24 10:05:55,950 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:05:55,952 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:05:56,040 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:05:56,042 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:05:56] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:06:00,949 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:06:00,978 :: INFO ::  * Restarting with stat
+2016-02-24 10:06:01,448 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:06:01,449 :: INFO :: Logger is ready
+2016-02-24 10:06:01,477 :: WARNING ::  * Debugger is active!
+2016-02-24 10:06:01,478 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:06:09,580 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/ServerSocket.py', reloading
+2016-02-24 10:06:09,614 :: INFO ::  * Restarting with stat
+2016-02-24 10:06:10,058 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:06:10,058 :: INFO :: Logger is ready
+2016-02-24 10:06:10,085 :: WARNING ::  * Debugger is active!
+2016-02-24 10:06:10,087 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:06:36,917 :: INFO :: /login		method : POST
+2016-02-24 10:06:36,919 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:06:36,921 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:06:36,996 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:06:36,998 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:06:36] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:07:13,183 :: INFO :: /login		method : POST
+2016-02-24 10:07:13,185 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:07:13,186 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:07:13,286 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:07:13,287 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:07:13] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:08:03,218 :: INFO :: /login		method : POST
+2016-02-24 10:08:03,219 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:08:03,220 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:08:03,306 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:08:03,308 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:08:03] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:08:43,268 :: INFO :: /login		method : POST
+2016-02-24 10:08:43,270 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:08:43,272 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:08:43,356 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:08:43,358 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:08:43] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:08:46,398 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:08:46,426 :: INFO ::  * Restarting with stat
+2016-02-24 10:08:46,855 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:08:46,856 :: INFO :: Logger is ready
+2016-02-24 10:08:46,882 :: WARNING ::  * Debugger is active!
+2016-02-24 10:08:46,883 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:08:49,955 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:08:49,993 :: INFO ::  * Restarting with stat
+2016-02-24 10:08:50,455 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:08:50,456 :: INFO :: Logger is ready
+2016-02-24 10:08:50,486 :: WARNING ::  * Debugger is active!
+2016-02-24 10:08:50,487 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:08:53,464 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:08:53,465 :: INFO :: Logger is ready
+2016-02-24 10:08:53,491 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:08:53,503 :: INFO ::  * Restarting with stat
+2016-02-24 10:08:53,905 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:08:53,905 :: INFO :: Logger is ready
+2016-02-24 10:08:53,931 :: WARNING ::  * Debugger is active!
+2016-02-24 10:08:53,933 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:09:11,111 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:09:11,141 :: INFO ::  * Restarting with stat
+2016-02-24 10:09:11,601 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:09:11,601 :: INFO :: Logger is ready
+2016-02-24 10:09:11,627 :: WARNING ::  * Debugger is active!
+2016-02-24 10:09:11,628 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:09:14,042 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:09:14,042 :: INFO :: Logger is ready
+2016-02-24 10:09:14,068 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:09:14,080 :: INFO ::  * Restarting with stat
+2016-02-24 10:09:14,474 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:09:14,475 :: INFO :: Logger is ready
+2016-02-24 10:09:14,499 :: WARNING ::  * Debugger is active!
+2016-02-24 10:09:14,500 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:09:34,705 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:09:34,733 :: INFO ::  * Restarting with stat
+2016-02-24 10:09:35,180 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:09:35,181 :: INFO :: Logger is ready
+2016-02-24 10:09:35,205 :: WARNING ::  * Debugger is active!
+2016-02-24 10:09:35,206 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:09:37,832 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:09:37,833 :: INFO :: Logger is ready
+2016-02-24 10:09:37,856 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 10:09:37,868 :: INFO ::  * Restarting with stat
+2016-02-24 10:09:38,264 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:09:38,265 :: INFO :: Logger is ready
+2016-02-24 10:09:38,289 :: WARNING ::  * Debugger is active!
+2016-02-24 10:09:38,290 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:09:50,433 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:09:52,511 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:09:52,512 :: INFO :: Logger is ready
+2016-02-24 10:09:52,538 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 10:09:52,549 :: INFO ::  * Restarting with stat
+2016-02-24 10:09:52,942 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:09:52,943 :: INFO :: Logger is ready
+2016-02-24 10:09:52,968 :: WARNING ::  * Debugger is active!
+2016-02-24 10:09:52,969 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:10:23,242 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:10:25,254 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:10:25,254 :: INFO :: Logger is ready
+2016-02-24 10:10:25,278 :: INFO ::  * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+2016-02-24 10:10:25,290 :: INFO ::  * Restarting with stat
+2016-02-24 10:10:25,684 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:10:25,685 :: INFO :: Logger is ready
+2016-02-24 10:10:25,711 :: WARNING ::  * Debugger is active!
+2016-02-24 10:10:25,712 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:10:36,841 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:10:38,360 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:10:38,361 :: INFO :: Logger is ready
+2016-02-24 10:10:38,385 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:10:38,396 :: INFO ::  * Restarting with stat
+2016-02-24 10:10:38,791 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:10:38,792 :: INFO :: Logger is ready
+2016-02-24 10:10:38,816 :: WARNING ::  * Debugger is active!
+2016-02-24 10:10:38,817 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:11:46,414 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:11:47,865 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:11:47,866 :: INFO :: Logger is ready
+2016-02-24 10:11:47,891 :: INFO ::  * Running on http://172.30.0.103:8082/ (Press CTRL+C to quit)
+2016-02-24 10:11:47,902 :: INFO ::  * Restarting with stat
+2016-02-24 10:11:48,305 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:11:48,306 :: INFO :: Logger is ready
+2016-02-24 10:11:48,330 :: WARNING ::  * Debugger is active!
+2016-02-24 10:11:48,332 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:12:01,474 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:12:05,190 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:12:05,191 :: INFO :: Logger is ready
+2016-02-24 10:12:05,214 :: INFO ::  * Running on http://172.30.0.103:8082/ (Press CTRL+C to quit)
+2016-02-24 10:12:05,226 :: INFO ::  * Restarting with stat
+2016-02-24 10:12:05,624 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:12:05,624 :: INFO :: Logger is ready
+2016-02-24 10:12:05,648 :: WARNING ::  * Debugger is active!
+2016-02-24 10:12:05,649 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:13:19,286 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:13:21,624 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:13:21,625 :: INFO :: Logger is ready
+2016-02-24 10:13:21,649 :: INFO ::  * Running on http://172.30.0.103:8082/ (Press CTRL+C to quit)
+2016-02-24 10:13:21,661 :: INFO ::  * Restarting with stat
+2016-02-24 10:13:22,056 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:13:22,057 :: INFO :: Logger is ready
+2016-02-24 10:13:22,081 :: WARNING ::  * Debugger is active!
+2016-02-24 10:13:22,083 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:14:19,610 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:14:21,081 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:14:21,082 :: INFO :: Logger is ready
+2016-02-24 10:14:21,106 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:14:21,117 :: INFO ::  * Restarting with stat
+2016-02-24 10:14:21,525 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:14:21,525 :: INFO :: Logger is ready
+2016-02-24 10:14:21,550 :: WARNING ::  * Debugger is active!
+2016-02-24 10:14:21,551 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:15:48,301 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:15:48,345 :: INFO ::  * Restarting with stat
+2016-02-24 10:15:48,769 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:15:48,770 :: INFO :: Logger is ready
+2016-02-24 10:15:48,795 :: WARNING ::  * Debugger is active!
+2016-02-24 10:15:48,796 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:15:50,393 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:15:50,394 :: INFO :: Logger is ready
+2016-02-24 10:15:50,418 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:15:50,430 :: INFO ::  * Restarting with stat
+2016-02-24 10:15:50,825 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:15:50,825 :: INFO :: Logger is ready
+2016-02-24 10:15:50,850 :: WARNING ::  * Debugger is active!
+2016-02-24 10:15:50,851 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:16:19,118 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:16:19,154 :: INFO ::  * Restarting with stat
+2016-02-24 10:16:19,572 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:16:19,573 :: INFO :: Logger is ready
+2016-02-24 10:16:19,598 :: WARNING ::  * Debugger is active!
+2016-02-24 10:16:19,599 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:16:20,699 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:16:20,700 :: INFO :: Logger is ready
+2016-02-24 10:16:20,722 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:16:20,733 :: INFO ::  * Restarting with stat
+2016-02-24 10:16:21,129 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:16:21,130 :: INFO :: Logger is ready
+2016-02-24 10:16:21,153 :: WARNING ::  * Debugger is active!
+2016-02-24 10:16:21,154 :: INFO ::  * Debugger pin code: 161-376-340
+2016-02-24 10:16:40,350 :: INFO ::  * Detected change in '/media/guinux/Data/Cours/Old/2015-2016/ProjetIndu/SmartForrest/PythonServer/src/WebServer.py', reloading
+2016-02-24 10:16:40,378 :: INFO ::  * Restarting with stat
+2016-02-24 10:16:40,823 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:16:40,823 :: INFO :: Logger is ready
+2016-02-24 10:16:43,409 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:16:43,409 :: INFO :: Logger is ready
+2016-02-24 10:16:43,423 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:16:52,321 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:16:52,322 :: INFO :: Logger is ready
+2016-02-24 10:16:52,337 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:17:31,011 :: INFO :: /login		method : POST
+2016-02-24 10:17:31,012 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:17:31,013 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:17:31,095 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:17:31,096 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:17:31] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:17:57,528 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:17:57,529 :: INFO :: Logger is ready
+2016-02-24 10:17:57,543 :: INFO ::  * Running on http://172.30.0.103:8082/ (Press CTRL+C to quit)
+2016-02-24 10:18:48,638 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:18:48,639 :: INFO :: Logger is ready
+2016-02-24 10:18:48,654 :: INFO ::  * Running on http://172.30.0.103:8082/ (Press CTRL+C to quit)
+2016-02-24 10:19:18,259 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:19:18,260 :: INFO :: Logger is ready
+2016-02-24 10:19:18,273 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:19:23,012 :: INFO :: /login		method : POST
+2016-02-24 10:19:23,018 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:19:23,021 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:19:23,107 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:19:23,108 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:19:23] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:21:14,437 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:21:14,438 :: INFO :: Logger is ready
+2016-02-24 10:21:14,457 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:31:17,361 :: INFO :: /login		method : POST
+2016-02-24 10:31:17,363 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:31:17,365 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:31:17,549 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:31:17,551 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:31:17] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:48:35,100 :: INFO :: /login		method : POST
+2016-02-24 10:48:35,102 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:48:35,103 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:48:35,165 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:48:35,167 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:48:35] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:49:47,523 :: INFO :: /login		method : POST
+2016-02-24 10:49:47,525 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:49:47,526 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:49:47,571 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:49:47,573 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:49:47] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:52:53,066 :: INFO :: /login		method : POST
+2016-02-24 10:52:53,067 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:52:53,069 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:52:53,181 :: INFO :: {"login": "abe", "password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:52:53,183 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:52:53] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:53:50,990 :: INFO :: ******************** NEW SESSION ********************
+2016-02-24 10:53:50,991 :: INFO :: Logger is ready
+2016-02-24 10:53:51,006 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-24 10:54:10,338 :: INFO :: /login		method : POST
+2016-02-24 10:54:10,339 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:54:10,341 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:54:10,525 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-24 10:54:10,527 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:54:10] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:54:40,805 :: INFO :: /login		method : POST
+2016-02-24 10:54:40,807 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:54:40,808 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:54:40,888 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-24 10:54:40,889 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:54:40] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:54:40,892 :: INFO :: /login		method : POST
+2016-02-24 10:54:40,894 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:54:40,895 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:54:41,019 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-24 10:54:41,020 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:54:41] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:55:10,837 :: INFO :: /login		method : POST
+2016-02-24 10:55:10,838 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:55:10,840 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:55:10,898 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-24 10:55:10,899 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:55:10] "POST /login HTTP/1.1" 200 -
+2016-02-24 10:55:36,629 :: INFO :: /login		method : POST
+2016-02-24 10:55:36,630 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-24 10:55:36,632 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-24 10:55:36,709 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-24 10:55:36,711 :: INFO :: 172.30.1.138 - - [24/Feb/2016 10:55:36] "POST /login HTTP/1.1" 200 -
+2016-02-25 08:45:41,978 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 08:45:41,989 :: INFO :: Logger is ready
+2016-02-25 08:45:42,086 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 08:50:19,710 :: INFO :: /login		method : POST
+2016-02-25 08:50:19,711 :: INFO :: {"login": "abe","password": "ab31e42ae008997c643bc731965d3664"}
+2016-02-25 08:50:19,713 :: INFO :: {u'login': u'abe', u'password': u'ab31e42ae008997c643bc731965d3664'}
+2016-02-25 08:50:19,844 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-25 08:50:19,846 :: INFO :: 172.30.1.138 - - [25/Feb/2016 08:50:19] "POST /login HTTP/1.1" 1003 -
+2016-02-25 08:50:28,836 :: INFO :: /login		method : POST
+2016-02-25 08:50:28,837 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-25 08:50:28,838 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-25 08:50:28,888 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-25 08:50:28,889 :: INFO :: 172.30.1.138 - - [25/Feb/2016 08:50:28] "POST /login HTTP/1.1" 200 -
+2016-02-25 08:52:05,091 :: INFO :: /login		method : POST
+2016-02-25 08:52:05,092 :: INFO :: {"login": "abe","password": "0a362e75e70952b78d05b7dba2ef8e5e"}
+2016-02-25 08:52:05,094 :: INFO :: {u'login': u'abe', u'password': u'0a362e75e70952b78d05b7dba2ef8e5e'}
+2016-02-25 08:52:05,142 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-25 08:52:05,144 :: INFO :: 172.30.1.138 - - [25/Feb/2016 08:52:05] "POST /login HTTP/1.1" 1003 -
+2016-02-25 08:53:07,324 :: INFO :: /login		method : POST
+2016-02-25 08:53:07,325 :: INFO :: {"login": "abe","password": "a4e18f75fbf0f469c4466d35ca3a0ce0"}
+2016-02-25 08:53:07,328 :: INFO :: {u'login': u'abe', u'password': u'a4e18f75fbf0f469c4466d35ca3a0ce0'}
+2016-02-25 08:53:07,388 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-25 08:53:07,389 :: INFO :: 172.30.1.138 - - [25/Feb/2016 08:53:07] "POST /login HTTP/1.1" 1003 -
+2016-02-25 08:54:56,998 :: INFO :: /login		method : POST
+2016-02-25 08:54:57,000 :: INFO :: {"login": "abea","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-25 08:54:57,001 :: INFO :: {u'login': u'abea', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-25 08:54:57,047 :: INFO :: {"description": "toto", "nom": "toto", "prenom": "toto"}
+2016-02-25 08:54:57,049 :: INFO :: 172.30.1.138 - - [25/Feb/2016 08:54:57] "POST /login HTTP/1.1" 1002 -
+2016-02-25 09:12:30,081 :: INFO :: /user		method : POST
+2016-02-25 09:12:30,083 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6","nom": "Bes","prenom": "Arnaud","description": "pouet"}
+2016-02-25 09:12:30,084 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-25 09:12:30,085 :: INFO :: login abe
+2016-02-25 09:12:30,086 :: INFO :: password f71dbe52628a3f83a77ab494817525c6
+2016-02-25 09:12:30,087 :: INFO :: nom Bes
+2016-02-25 09:12:30,087 :: INFO :: prenom Arnaud
+2016-02-25 09:12:30,088 :: INFO :: Desc pouet
+2016-02-25 09:12:30,329 :: INFO :: {u'nom': u'Bes', u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6', u'prenom': u'Arnaud', u'description': u'pouet'}
+2016-02-25 09:12:30,332 :: INFO :: 172.30.1.138 - - [25/Feb/2016 09:12:30] "POST /user HTTP/1.1" 1005 -
+2016-02-25 09:13:45,264 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 09:13:45,265 :: INFO :: Logger is ready
+2016-02-25 09:13:45,278 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 09:14:10,669 :: INFO :: /login		method : POST
+2016-02-25 09:14:10,671 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-25 09:14:10,672 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-25 09:14:10,915 :: INFO :: {"description": "pouet", "nom": "Bes", "prenom": "Arnaud"}
+2016-02-25 09:14:10,917 :: INFO :: 172.30.1.138 - - [25/Feb/2016 09:14:10] "POST /login HTTP/1.1" 200 -
+2016-02-25 10:01:33,673 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 10:01:33,673 :: INFO :: Logger is ready
+2016-02-25 10:01:33,686 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 10:38:32,685 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 10:38:32,686 :: INFO :: Logger is ready
+2016-02-25 10:38:32,702 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 11:23:22,841 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 11:23:22,842 :: INFO :: Logger is ready
+2016-02-25 11:23:22,858 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 11:23:58,167 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 11:23:58,168 :: INFO :: Logger is ready
+2016-02-25 11:23:58,181 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 11:25:03,561 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 11:25:03,562 :: INFO :: Logger is ready
+2016-02-25 11:25:03,574 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 11:28:40,124 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 11:28:40,125 :: INFO :: Logger is ready
+2016-02-25 11:28:40,138 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 11:32:04,368 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 11:32:04,368 :: INFO :: Logger is ready
+2016-02-25 11:32:04,383 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 11:32:26,090 :: INFO :: /login		method : POST
+2016-02-25 11:32:26,092 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-25 11:32:26,094 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-25 11:32:26,225 :: INFO :: {"description": "pouet", "nom": "Bes", "prenom": "Arnaud"}
+2016-02-25 11:32:26,227 :: INFO :: 172.30.1.138 - - [25/Feb/2016 11:32:26] "POST /login HTTP/1.1" 200 -
+2016-02-25 11:34:00,872 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 11:34:00,873 :: INFO :: Logger is ready
+2016-02-25 11:34:00,885 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 11:34:35,700 :: INFO :: /login		method : POST
+2016-02-25 11:34:35,701 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-25 11:34:35,703 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-25 11:34:35,795 :: INFO :: {"description": "pouet", "nom": "Bes", "prenom": "Arnaud"}
+2016-02-25 11:34:35,797 :: INFO :: 172.30.1.138 - - [25/Feb/2016 11:34:35] "POST /login HTTP/1.1" 200 -
+2016-02-25 11:35:22,221 :: INFO :: ******************** NEW SESSION ********************
+2016-02-25 11:35:22,222 :: INFO :: Logger is ready
+2016-02-25 11:35:22,235 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-25 11:35:29,534 :: INFO :: /login		method : POST
+2016-02-25 11:35:29,536 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-25 11:35:29,538 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-25 11:35:29,620 :: INFO :: {"description": "pouet", "login": "abe", "nom": "Bes", "prenom": "Arnaud"}
+2016-02-25 11:35:29,622 :: INFO :: 172.30.1.138 - - [25/Feb/2016 11:35:29] "POST /login HTTP/1.1" 200 -
+2016-02-26 09:14:27,714 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 09:14:27,726 :: INFO :: Logger is ready
+2016-02-26 09:14:27,765 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 09:38:49,755 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 09:38:49,756 :: INFO :: Logger is ready
+2016-02-26 09:38:49,769 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 09:39:22,162 :: INFO :: /capteur		method : POST
+2016-02-26 09:39:22,164 :: INFO :: {"login": "abe","capteurId": "3","dateDebut": "1454457600","dateFin": "1455667200","mesure": "hygrometrie"}
+2016-02-26 09:39:22,166 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454457600', u'dateFin': u'1455667200', u'capteurId': u'3', u'mesure': u'hygrometrie'}
+2016-02-26 09:39:22,167 :: INFO :: 172.30.1.138 - - [26/Feb/2016 09:39:22] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 09:40:15,813 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 09:40:15,814 :: INFO :: Logger is ready
+2016-02-26 09:40:15,827 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 09:40:26,883 :: INFO :: /capteur		method : POST
+2016-02-26 09:40:26,885 :: INFO :: {"login": "abe","capteurId": "6","dateDebut": "1454976000","dateFin": "1456272000","mesure": "ozone"}
+2016-02-26 09:40:26,886 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454976000', u'dateFin': u'1456272000', u'capteurId': u'6', u'mesure': u'ozone'}
+2016-02-26 09:40:26,994 :: INFO :: 172.30.1.138 - - [26/Feb/2016 09:40:26] "POST /capteur HTTP/1.1" 1006 -
+2016-02-26 09:56:32,102 :: INFO :: /capteur		method : POST
+2016-02-26 09:56:32,104 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "NaN","dateFin": "NaN","mesure": "temperature"}
+2016-02-26 09:56:32,106 :: INFO :: {u'login': u'abe', u'dateDebut': u'NaN', u'dateFin': u'NaN', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 09:56:32,218 :: INFO :: 172.30.1.138 - - [26/Feb/2016 09:56:32] "POST /capteur HTTP/1.1" 1007 -
+2016-02-26 09:56:42,461 :: INFO :: /capteur		method : POST
+2016-02-26 09:56:42,463 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454457600","mesure": "temperature"}
+2016-02-26 09:56:42,464 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454457600', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 09:56:42,567 :: INFO :: 172.30.1.138 - - [26/Feb/2016 09:56:42] "POST /capteur HTTP/1.1" 1007 -
+2016-02-26 09:57:28,485 :: INFO :: /capteur		method : POST
+2016-02-26 09:57:28,487 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454544000","dateFin": "1454716800","mesure": "temperature"}
+2016-02-26 09:57:28,489 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454544000', u'dateFin': u'1454716800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 09:57:28,584 :: INFO :: 172.30.1.138 - - [26/Feb/2016 09:57:28] "POST /capteur HTTP/1.1" 1007 -
+2016-02-26 09:58:28,065 :: INFO :: /capteur		method : POST
+2016-02-26 09:58:28,067 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454630400","mesure": "temperature"}
+2016-02-26 09:58:28,068 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454630400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 09:58:28,185 :: INFO :: []
+2016-02-26 09:58:28,187 :: INFO :: 172.30.1.138 - - [26/Feb/2016 09:58:28] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:17:37,057 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:17:37,058 :: INFO :: Logger is ready
+2016-02-26 10:17:37,075 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:17:41,049 :: INFO :: /capteur		method : POST
+2016-02-26 10:17:41,050 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:17:41,052 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:17:41,160 :: INFO :: {"releve": []}
+2016-02-26 10:17:41,162 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:17:41] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:18:53,194 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:18:53,195 :: INFO :: Logger is ready
+2016-02-26 10:18:53,207 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:18:58,976 :: INFO :: /capteur		method : POST
+2016-02-26 10:18:58,978 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:18:58,979 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:18:59,077 :: INFO :: {"releve": []}
+2016-02-26 10:18:59,079 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:18:59] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:19:57,111 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:19:57,111 :: INFO :: Logger is ready
+2016-02-26 10:19:57,124 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:20:02,130 :: INFO :: /capteur		method : POST
+2016-02-26 10:20:02,132 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:20:02,134 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:20:02,429 :: INFO :: {"releve": []}
+2016-02-26 10:20:02,431 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:20:02] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:23:10,040 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:23:10,041 :: INFO :: Logger is ready
+2016-02-26 10:23:10,054 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:23:14,163 :: INFO :: /capteur		method : POST
+2016-02-26 10:23:14,165 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:23:14,167 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:23:14,299 :: INFO :: {"releve": []}
+2016-02-26 10:23:14,301 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:23:14] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:24:56,941 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:24:56,941 :: INFO :: Logger is ready
+2016-02-26 10:24:56,954 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:25:02,612 :: INFO :: /capteur		method : POST
+2016-02-26 10:25:02,614 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:25:02,615 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:25:02,699 :: INFO :: {"releve": []}
+2016-02-26 10:25:02,701 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:25:02] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:25:34,486 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:25:34,486 :: INFO :: Logger is ready
+2016-02-26 10:25:34,499 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:25:41,419 :: INFO :: /capteur		method : POST
+2016-02-26 10:25:41,420 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:25:41,422 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:25:41,537 :: INFO :: {"releve": []}
+2016-02-26 10:25:41,539 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:25:41] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:26:44,887 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:26:44,887 :: INFO :: Logger is ready
+2016-02-26 10:26:44,900 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:26:49,407 :: INFO :: /capteur		method : POST
+2016-02-26 10:26:49,409 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:26:49,411 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:26:49,554 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:26:49] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:28:16,467 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:28:16,468 :: INFO :: Logger is ready
+2016-02-26 10:28:16,481 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:28:20,644 :: INFO :: /capteur		method : POST
+2016-02-26 10:28:20,646 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:28:20,648 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:28:20,741 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:28:20] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:29:00,229 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:29:00,230 :: INFO :: Logger is ready
+2016-02-26 10:29:00,244 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:29:02,867 :: INFO :: /capteur		method : POST
+2016-02-26 10:29:02,869 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:29:02,870 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:29:02,978 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:29:02] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:29:20,489 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:29:20,489 :: INFO :: Logger is ready
+2016-02-26 10:29:20,503 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:29:24,915 :: INFO :: /capteur		method : POST
+2016-02-26 10:29:24,917 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:29:24,918 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:29:25,036 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:29:25] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:29:48,295 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:29:48,296 :: INFO :: Logger is ready
+2016-02-26 10:29:48,308 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:29:51,408 :: INFO :: /capteur		method : POST
+2016-02-26 10:29:51,409 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:29:51,411 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:29:51,547 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:29:51] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:30:33,030 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:30:33,031 :: INFO :: Logger is ready
+2016-02-26 10:30:33,047 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:30:37,209 :: INFO :: /capteur		method : POST
+2016-02-26 10:30:37,210 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:30:37,212 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:30:37,312 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:30:37] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:32:06,499 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:32:06,500 :: INFO :: Logger is ready
+2016-02-26 10:32:06,512 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:32:11,761 :: INFO :: /capteur		method : POST
+2016-02-26 10:32:11,763 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:32:11,764 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:32:11,890 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:32:11] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:32:33,487 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:32:33,487 :: INFO :: Logger is ready
+2016-02-26 10:32:33,500 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:32:37,785 :: INFO :: /capteur		method : POST
+2016-02-26 10:32:37,787 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:32:37,789 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:32:37,896 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:32:37] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:32:58,623 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:32:58,623 :: INFO :: Logger is ready
+2016-02-26 10:32:58,636 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:33:02,146 :: INFO :: /capteur		method : POST
+2016-02-26 10:33:02,147 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:33:02,148 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:33:02,235 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:33:02] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:33:35,477 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:33:35,478 :: INFO :: Logger is ready
+2016-02-26 10:33:35,491 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:33:40,490 :: INFO :: /capteur		method : POST
+2016-02-26 10:33:40,491 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:33:40,493 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:33:40,655 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:33:40] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:37:59,106 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:37:59,106 :: INFO :: Logger is ready
+2016-02-26 10:37:59,119 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:38:03,200 :: INFO :: /capteur		method : POST
+2016-02-26 10:38:03,202 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:38:03,203 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:38:03,332 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:38:03] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:41:59,838 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:41:59,839 :: INFO :: Logger is ready
+2016-02-26 10:41:59,852 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:42:05,888 :: INFO :: /capteur		method : POST
+2016-02-26 10:42:05,890 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:42:05,892 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:42:06,038 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:42:06] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:43:22,240 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:43:22,240 :: INFO :: Logger is ready
+2016-02-26 10:43:22,255 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:43:25,784 :: INFO :: /capteur		method : POST
+2016-02-26 10:43:25,786 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:43:25,787 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:43:26,220 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:43:26] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:46:45,999 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:46:45,999 :: INFO :: Logger is ready
+2016-02-26 10:46:46,033 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:46:49,545 :: INFO :: /capteur		method : POST
+2016-02-26 10:46:49,547 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:46:49,548 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:46:49,785 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:46:49] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:49:24,157 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:49:24,158 :: INFO :: Logger is ready
+2016-02-26 10:49:24,172 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:49:27,885 :: INFO :: /capteur		method : POST
+2016-02-26 10:49:27,887 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:49:27,888 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:49:28,080 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:49:28] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:50:03,512 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:50:03,513 :: INFO :: Logger is ready
+2016-02-26 10:50:03,539 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:50:04,547 :: INFO :: /capteur		method : POST
+2016-02-26 10:50:04,548 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:50:04,550 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:50:04,827 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 10:50:04,829 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:50:04] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:50:28,524 :: INFO :: /capteur		method : POST
+2016-02-26 10:50:28,526 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:50:28,528 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:50:28,713 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 10:50:28,715 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:50:28] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:51:10,740 :: INFO :: /capteur		method : POST
+2016-02-26 10:51:10,742 :: INFO :: {"login": "abe","capteurId": "2","dateDebut": "1451606400","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:51:10,744 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'2', u'mesure': u'temperature'}
+2016-02-26 10:51:10,899 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:51:10] "POST /capteur HTTP/1.1" 1006 -
+2016-02-26 10:51:32,912 :: INFO :: /capteur		method : POST
+2016-02-26 10:51:32,913 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "ozone"}
+2016-02-26 10:51:32,915 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'ozone'}
+2016-02-26 10:51:33,097 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:51:33] "POST /capteur HTTP/1.1" 1004 -
+2016-02-26 10:52:34,356 :: INFO :: ******************** NEW SESSION ********************
+2016-02-26 10:52:34,357 :: INFO :: Logger is ready
+2016-02-26 10:52:34,370 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-26 10:52:38,814 :: INFO :: /capteur		method : POST
+2016-02-26 10:52:38,815 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "ozone"}
+2016-02-26 10:52:38,817 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'ozone'}
+2016-02-26 10:52:39,135 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 12.0}]}
+2016-02-26 10:52:39,137 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:52:39] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:53:06,943 :: INFO :: /capteur		method : POST
+2016-02-26 10:53:06,945 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "ozone"}
+2016-02-26 10:53:06,947 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'ozone'}
+2016-02-26 10:53:07,196 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 12.0}]}
+2016-02-26 10:53:07,198 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:53:07] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:53:46,152 :: INFO :: /capteur		method : POST
+2016-02-26 10:53:46,153 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1456790400","mesure": "humidite"}
+2016-02-26 10:53:46,155 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'humidite'}
+2016-02-26 10:53:46,354 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 12.0}]}
+2016-02-26 10:53:46,356 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:53:46] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:54:22,980 :: INFO :: /capteur		method : POST
+2016-02-26 10:54:22,982 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:54:22,983 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:54:23,120 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 10:54:23,122 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:54:23] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:54:48,646 :: INFO :: /capteur		method : POST
+2016-02-26 10:54:48,648 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:54:48,649 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:54:48,728 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 10:54:48,730 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:54:48] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:55:02,193 :: INFO :: /capteur		method : POST
+2016-02-26 10:55:02,194 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:55:02,196 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:55:02,302 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 10:55:02,304 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:55:02] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:55:37,474 :: INFO :: /capteur		method : POST
+2016-02-26 10:55:37,475 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:55:37,477 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:55:37,581 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 10:55:37,583 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:55:37] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 10:56:16,274 :: INFO :: /capteur		method : POST
+2016-02-26 10:56:16,276 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451260800","dateFin": "1456790400","mesure": "temperature"}
+2016-02-26 10:56:16,278 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451260800', u'dateFin': u'1456790400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 10:56:16,571 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 10:56:16,573 :: INFO :: 172.30.1.138 - - [26/Feb/2016 10:56:16] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:02:44,229 :: INFO :: /capteur		method : POST
+2016-02-26 11:02:44,231 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1457222400","mesure": "temperature"}
+2016-02-26 11:02:44,232 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1457222400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:02:44,505 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:02:44,507 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:02:44] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:04:44,946 :: INFO :: /capteur		method : POST
+2016-02-26 11:04:44,947 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451606400","dateFin": "1454371200","mesure": "temperature"}
+2016-02-26 11:04:44,948 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451606400', u'dateFin': u'1454371200', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:04:45,125 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:04:45,127 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:04:45] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:05:38,272 :: INFO :: /capteur		method : POST
+2016-02-26 11:05:38,273 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1455148800","mesure": "temperature"}
+2016-02-26 11:05:38,274 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1455148800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:05:38,386 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:05:38,387 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:05:38] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:06:28,313 :: INFO :: /capteur		method : POST
+2016-02-26 11:06:28,315 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1455148800","mesure": "temperature"}
+2016-02-26 11:06:28,316 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1455148800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:06:28,579 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:06:28,580 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:06:28] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:08:22,649 :: INFO :: /capteur		method : POST
+2016-02-26 11:08:22,651 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451260800","dateFin": "1455840000","mesure": "temperature"}
+2016-02-26 11:08:22,652 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451260800', u'dateFin': u'1455840000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:08:22,725 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:08:22,726 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:08:22] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:08:58,403 :: INFO :: /capteur		method : POST
+2016-02-26 11:08:58,404 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451952000","dateFin": "1455926400","mesure": "temperature"}
+2016-02-26 11:08:58,405 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451952000', u'dateFin': u'1455926400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:08:58,502 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:08:58,503 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:08:58] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:09:48,517 :: INFO :: /capteur		method : POST
+2016-02-26 11:09:48,518 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451952000","dateFin": "1456531200","mesure": "temperature"}
+2016-02-26 11:09:48,519 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451952000', u'dateFin': u'1456531200', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:09:50,658 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:09:50,659 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:09:50] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:12:28,482 :: INFO :: /capteur		method : POST
+2016-02-26 11:12:28,484 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1452038400","dateFin": "1455926400","mesure": "temperature"}
+2016-02-26 11:12:28,485 :: INFO :: {u'login': u'abe', u'dateDebut': u'1452038400', u'dateFin': u'1455926400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:12:28,672 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:12:28,673 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:12:28] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:13:18,501 :: INFO :: /capteur		method : POST
+2016-02-26 11:13:18,503 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1455235200","mesure": "temperature"}
+2016-02-26 11:13:18,505 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1455235200', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:13:18,701 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:13:18,702 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:13:18] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:14:28,543 :: INFO :: /capteur		method : POST
+2016-02-26 11:14:28,544 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "NaN","dateFin": "NaN","mesure": "temperature"}
+2016-02-26 11:14:28,546 :: INFO :: {u'login': u'abe', u'dateDebut': u'NaN', u'dateFin': u'NaN', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:14:28,669 :: INFO :: {"releve": []}
+2016-02-26 11:14:28,670 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:14:28] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:14:41,770 :: INFO :: /capteur		method : POST
+2016-02-26 11:14:41,772 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1456531200","mesure": "temperature"}
+2016-02-26 11:14:41,773 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1456531200', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:14:41,888 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:14:41,890 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:14:41] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:14:56,578 :: INFO :: /capteur		method : POST
+2016-02-26 11:14:56,580 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1456531200","mesure": "temperature"}
+2016-02-26 11:14:56,582 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1456531200', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:14:56,717 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:14:56,718 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:14:56] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:17:28,699 :: INFO :: /capteur		method : POST
+2016-02-26 11:17:28,701 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1452038400","dateFin": "1455926400","mesure": "temperature"}
+2016-02-26 11:17:28,702 :: INFO :: {u'login': u'abe', u'dateDebut': u'1452038400', u'dateFin': u'1455926400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:17:28,777 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:17:28,779 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:17:28] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:19:08,750 :: INFO :: /capteur		method : POST
+2016-02-26 11:19:08,752 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1452556800","dateFin": "1455926400","mesure": "temperature"}
+2016-02-26 11:19:08,753 :: INFO :: {u'login': u'abe', u'dateDebut': u'1452556800', u'dateFin': u'1455926400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:19:08,836 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:19:08,838 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:19:08] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:20:28,802 :: INFO :: /capteur		method : POST
+2016-02-26 11:20:28,803 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "NaN","dateFin": "NaN","mesure": "temperature"}
+2016-02-26 11:20:28,804 :: INFO :: {u'login': u'abe', u'dateDebut': u'NaN', u'dateFin': u'NaN', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:20:28,943 :: INFO :: {"releve": []}
+2016-02-26 11:20:28,944 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:20:28] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:21:58,813 :: INFO :: /capteur		method : POST
+2016-02-26 11:21:58,815 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "NaN","dateFin": "NaN","mesure": "temperature"}
+2016-02-26 11:21:58,816 :: INFO :: {u'login': u'abe', u'dateDebut': u'NaN', u'dateFin': u'NaN', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:21:58,918 :: INFO :: {"releve": []}
+2016-02-26 11:21:58,919 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:21:58] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:24:32,855 :: INFO :: /capteur		method : POST
+2016-02-26 11:24:32,863 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451260800","dateFin": "1455840000","mesure": "temperature"}
+2016-02-26 11:24:32,865 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451260800', u'dateFin': u'1455840000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:24:33,253 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:24:33,255 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:24:33] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:27:14,480 :: INFO :: /capteur		method : POST
+2016-02-26 11:27:14,481 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451865600","dateFin": "1455926400","mesure": "temperature"}
+2016-02-26 11:27:14,483 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451865600', u'dateFin': u'1455926400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:27:14,601 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:27:14,602 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:27:14] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:28:46,871 :: INFO :: /capteur		method : POST
+2016-02-26 11:28:46,872 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1451260800","dateFin": "1455926400","mesure": "temperature"}
+2016-02-26 11:28:46,874 :: INFO :: {u'login': u'abe', u'dateDebut': u'1451260800', u'dateFin': u'1455926400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:28:47,362 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:28:47,363 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:28:47] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:31:38,587 :: INFO :: /capteur		method : POST
+2016-02-26 11:31:38,589 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454544000","mesure": "temperature"}
+2016-02-26 11:31:38,590 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454544000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:31:38,685 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:31:38,686 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:31:38] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:32:34,720 :: INFO :: /capteur		method : POST
+2016-02-26 11:32:34,722 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454630400","mesure": "temperature"}
+2016-02-26 11:32:34,723 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454630400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:32:35,014 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:32:35,015 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:32:35] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:33:29,335 :: INFO :: /capteur		method : POST
+2016-02-26 11:33:29,337 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454630400","mesure": "temperature"}
+2016-02-26 11:33:29,338 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454630400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:33:29,508 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:33:29,509 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:33:29] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:34:51,162 :: INFO :: /capteur		method : POST
+2016-02-26 11:34:51,163 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454716800","mesure": "temperature"}
+2016-02-26 11:34:51,164 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454716800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:34:51,515 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:34:51,516 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:34:51] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:39:01,204 :: INFO :: /capteur		method : POST
+2016-02-26 11:39:01,206 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454630400","mesure": "temperature"}
+2016-02-26 11:39:01,207 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454630400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:39:01,327 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:39:01,328 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:39:01] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:41:01,231 :: INFO :: /capteur		method : POST
+2016-02-26 11:41:01,232 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454544000","mesure": "temperature"}
+2016-02-26 11:41:01,234 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454544000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:41:01,439 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:41:01,441 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:41:01] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:42:21,249 :: INFO :: /capteur		method : POST
+2016-02-26 11:42:21,250 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454630400","mesure": "temperature"}
+2016-02-26 11:42:21,251 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454630400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:42:21,356 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:42:21,358 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:42:21] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:43:31,260 :: INFO :: /capteur		method : POST
+2016-02-26 11:43:31,261 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "NaN","dateFin": "NaN","mesure": "temperature"}
+2016-02-26 11:43:31,262 :: INFO :: {u'login': u'abe', u'dateDebut': u'NaN', u'dateFin': u'NaN', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:43:31,382 :: INFO :: {"releve": []}
+2016-02-26 11:43:31,383 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:43:31] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:45:01,278 :: INFO :: /capteur		method : POST
+2016-02-26 11:45:01,280 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454630400","mesure": "temperature"}
+2016-02-26 11:45:01,281 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454630400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:45:01,398 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}]}
+2016-02-26 11:45:01,400 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:45:01] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:48:46,697 :: INFO :: /capteur		method : POST
+2016-02-26 11:48:46,698 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454544000","mesure": "temperature"}
+2016-02-26 11:48:46,700 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454544000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:48:46,800 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-26 11:48:46,801 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:48:46] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:55:58,086 :: INFO :: /capteur		method : POST
+2016-02-26 11:55:58,087 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454544000","mesure": "temperature"}
+2016-02-26 11:55:58,088 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454544000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:55:58,182 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-26 11:55:58,184 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:55:58] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 11:59:26,776 :: INFO :: /capteur		method : POST
+2016-02-26 11:59:26,777 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454544000","mesure": "temperature"}
+2016-02-26 11:59:26,779 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454544000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 11:59:26,857 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-26 11:59:26,859 :: INFO :: 172.30.1.138 - - [26/Feb/2016 11:59:26] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 13:39:55,296 :: INFO :: /capteur		method : POST
+2016-02-26 13:39:55,297 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454544000","mesure": "temperature"}
+2016-02-26 13:39:55,299 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454544000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 13:39:55,432 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-26 13:39:55,434 :: INFO :: 172.30.1.138 - - [26/Feb/2016 13:39:55] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 13:42:05,651 :: INFO :: /capteur		method : POST
+2016-02-26 13:42:05,653 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455148800","mesure": "temperature"}
+2016-02-26 13:42:05,654 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455148800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 13:42:05,764 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-26 13:42:05,765 :: INFO :: 172.30.1.138 - - [26/Feb/2016 13:42:05] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 13:44:04,034 :: INFO :: /capteur		method : POST
+2016-02-26 13:44:04,036 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455148800","mesure": "ozone"}
+2016-02-26 13:44:04,037 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455148800', u'capteurId': u'1', u'mesure': u'ozone'}
+2016-02-26 13:44:04,191 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 12.0}, {"dateReleve": 1454371200, "mesure": 12.0}]}
+2016-02-26 13:44:04,193 :: INFO :: 172.30.1.138 - - [26/Feb/2016 13:44:04] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 13:44:12,273 :: INFO :: /capteur		method : POST
+2016-02-26 13:44:12,275 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455148800","mesure": "humidite"}
+2016-02-26 13:44:12,276 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455148800', u'capteurId': u'1', u'mesure': u'humidite'}
+2016-02-26 13:44:12,403 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 12.0}, {"dateReleve": 1454371200, "mesure": 12.0}]}
+2016-02-26 13:44:12,405 :: INFO :: 172.30.1.138 - - [26/Feb/2016 13:44:12] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 13:44:18,985 :: INFO :: /capteur		method : POST
+2016-02-26 13:44:18,986 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455148800","mesure": "hygrometrie"}
+2016-02-26 13:44:18,988 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455148800', u'capteurId': u'1', u'mesure': u'hygrometrie'}
+2016-02-26 13:44:19,130 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 12.0}, {"dateReleve": 1454371200, "mesure": 12.0}]}
+2016-02-26 13:44:19,131 :: INFO :: 172.30.1.138 - - [26/Feb/2016 13:44:19] "POST /capteur HTTP/1.1" 200 -
+2016-02-26 13:44:30,767 :: INFO :: /capteur		method : POST
+2016-02-26 13:44:30,769 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455148800","mesure": "temperature"}
+2016-02-26 13:44:30,770 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455148800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-26 13:44:30,865 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-26 13:44:30,867 :: INFO :: 172.30.1.138 - - [26/Feb/2016 13:44:30] "POST /capteur HTTP/1.1" 200 -
