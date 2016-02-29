@@ -1,0 +1,14 @@
+CREATE TABLE info_puce (idPuce int not null auto_increment,nom varchar(255), dateDeployment Date,PRIMARY KEY(idPuce));
+CREATE TABLE donnees_gps (idReleve int not null auto_increment,idPuce int, longitude double,latitude double,dateReleve Date,PRIMARY KEY(idReleve),FOREIGN KEY (idPuce) REFERENCES info_puce(idPuce));
+
+CREATE TABLE info_balise (idBalise int not null auto_increment,nom varchar(255), longitude double,latitude double,dateDeployment Date,PRIMARY KEY(idBalise));
+CREATE TABLE donnees_lora (idReleve int not null auto_increment,idBalise int,hygrometrie dec, temperature dec,ozone dec,humidite dec,dateReleve Date,PRIMARY KEY(idReleve),FOREIGN KEY (idBalise) REFERENCES info_puce(idBalise));
+
+CREATE TABLE info_station (idStation int not null auto_increment,nom varchar(255), longitude double,latitude double,dateDeployment Date,PRIMARY KEY(idStation));
+CREATE TABLE donnees_meteo (idReleve int not null auto_increment,idStation int, precipitaion dec,ensoileillement dec,vitesseVent dec,orientationVent dec,dateReleve Date,PRIMARY KEY(idReleve),FOREIGN KEY (idStation) REFERENCES info_puce(idStation));
+
+CREATE TABLE info_utilisateur (idUser int not null auto_increment,nom varchar(255),prenom varchar(255),PRIMARY KEY(idUser));
+CREATE TABLE acces_puce (idAcces int not null auto_increment,idUser int,idStation int,PRIMARY KEY (idAcces),FOREIGN KEY (idUser) REFERENCES info_utilisateur(idUser),FOREIGN KEY (idStation) REFERENCES info_station(idStation));
+CREATE TABLE acces_station (idAcces int not null auto_increment,idUser int,idStation int,PRIMARY KEY (idAcces),FOREIGN KEY (idUser) REFERENCES info_utilisateur(idUser),FOREIGN KEY (idStation) REFERENCES info_station(idStation));
+CREATE TABLE acces_balise (idAcces int not null auto_increment,idUser int,idBalise int,PRIMARY KEY (idAcces),FOREIGN KEY (idUser) REFERENCES info_utilisateur(idUser),FOREIGN KEY (idBalise) REFERENCES info_balise(idBalise));
+CREATE TABLE info_connexion (idConnection int not null auto_increment, idUser int, login varchar(16), motDePasse varchar(16),cleAdmin bool,PRIMARY KEY(idConnection),FOREIGN KEY (idUser) REFERENCES info_utilisateur(idUser));
