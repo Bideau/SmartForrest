@@ -6,7 +6,9 @@
     <schema name="" catalog=""/>
     <table name="probe" schema="" catalog="" type="TABLE">
       <column name="p_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
-      <column name="p_name" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="p_name" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="p_longitude" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="p_latitude" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
       <primary-key columns="p_id"/>
     </table>
     <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
@@ -15,14 +17,81 @@
     </table>
     <table name="value" schema="" catalog="" type="TABLE">
       <column name="v_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
-      <column name="v_date" sqlType="NUMERIC" precision="0" scale="-1" nullable="false" jdbcType="6"/>
-      <column name="v_ozone" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
-      <column name="v_temperature" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
-      <column name="v_groundHumidity" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
-      <column name="v_airHumidity" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="v_date" sqlType="NUMERIC" precision="0" scale="-1" nullable="true" jdbcType="6"/>
+      <column name="v_ozone" sqlType="REAL" precision="0" scale="-1" nullable="true" jdbcType="6"/>
+      <column name="v_temperature" sqlType="REAL" precision="0" scale="-1" nullable="true" jdbcType="6"/>
+      <column name="v_groundHumidity" sqlType="REAL" precision="0" scale="-1" nullable="true" jdbcType="6"/>
+      <column name="v_airHumidity" sqlType="REAL" precision="0" scale="-1" nullable="true" jdbcType="6"/>
+      <column name="v_waterTemperature" sqlType="REAL" precision="0" scale="-1" nullable="true" jdbcType="6"/>
+      <column name="v_waterLevel" sqlType="REAL" precision="0" scale="-1" nullable="true" jdbcType="6"/>
       <column name="v_probe" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
       <primary-key columns="v_id"/>
       <foreign-key name="#FAKE_value_1" columns="v_probe" ref-table="probe" ref-schema="" ref-catalog="" ref-columns="p_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+  </data-source>
+  <data-source name="Sqlite (Xerial) - db2.db" uuid="bd6ba743-bae5-4c53-a21c-4d0f2a446a5f">
+    <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <schema name="" catalog=""/>
+    <table name="airHumidity" schema="" catalog="" type="TABLE">
+      <column name="a_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="a_value" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="a_probe" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <primary-key columns="a_id"/>
+      <foreign-key name="#FAKE_airHumidity_1" columns="a_probe" ref-table="probe" ref-schema="" ref-catalog="" ref-columns="p_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="date" schema="" catalog="" type="TABLE">
+      <column name="d_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="d_date" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="d_probe" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <primary-key columns="d_id"/>
+      <foreign-key name="#FAKE_date_1" columns="d_probe" ref-table="probe" ref-schema="" ref-catalog="" ref-columns="p_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="groundHumidity" schema="" catalog="" type="TABLE">
+      <column name="g_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="g_value" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="g_probe" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <primary-key columns="g_id"/>
+      <foreign-key name="#FAKE_groundHumidity_1" columns="g_probe" ref-table="probe" ref-schema="" ref-catalog="" ref-columns="p_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="ozone" schema="" catalog="" type="TABLE">
+      <column name="o_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="o_value" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="o_probe" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <primary-key columns="o_id"/>
+      <foreign-key name="#FAKE_ozone_1" columns="o_probe" ref-table="probe" ref-schema="" ref-catalog="" ref-columns="p_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="probe" schema="" catalog="" type="TABLE">
+      <column name="p_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="p_name" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="p_longitude" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="p_latitude" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <primary-key columns="p_id"/>
+    </table>
+    <table name="sqlite_sequence" schema="" catalog="" type="TABLE">
+      <column name="name" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="seq" sqlType="" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="temperature" schema="" catalog="" type="TABLE">
+      <column name="t_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="t_value" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="t_probe" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <primary-key columns="t_id"/>
+      <foreign-key name="#FAKE_temperature_1" columns="t_probe" ref-table="probe" ref-schema="" ref-catalog="" ref-columns="p_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="waterLevel" schema="" catalog="" type="TABLE">
+      <column name="wl_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="wl_value" sqlType="NUMERIC" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="wl_probe" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <primary-key columns="wl_id"/>
+      <foreign-key name="#FAKE_waterLevel_1" columns="wl_probe" ref-table="probe" ref-schema="" ref-catalog="" ref-columns="p_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="waterTemperature" schema="" catalog="" type="TABLE">
+      <column name="wt_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="wt_value" sqlType="REAL" precision="0" scale="-1" nullable="false" jdbcType="6"/>
+      <column name="wt_probe" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <primary-key columns="wt_id"/>
+      <foreign-key name="#FAKE_waterTemperature_1" columns="wt_probe" ref-table="probe" ref-schema="" ref-catalog="" ref-columns="p_id" update-rule="3" delete-rule="3" deferrability="1"/>
     </table>
   </data-source>
 </component>

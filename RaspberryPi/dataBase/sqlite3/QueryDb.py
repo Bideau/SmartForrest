@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 """
 The MIT License (MIT)
 Copyright (c) 2015 Christophe Aubert
@@ -14,6 +17,26 @@ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABI
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-__author__ = "Christophe Aubert"
-__version__ = "1.0"
+import dataBase.sqlite3.ProbeData
+from dataBase.sqlite3 import ConnectDB
 
+
+class DbQuery(ConnectDB.ConnectDB):
+    def __init__(self, path, name):
+        ConnectDB.ConnectDB.__init__(self, path, name)
+        self.connect()
+
+    def query(self):
+        _data = self.cursor.execute('''SELECT v_probe,
+                                              v_date,
+                                              v_ozone,
+                                              v_temperature,
+                                              v_groundHumidity,
+                                              v_airHumidity FROM value''')
+
+        _probeData = dataBase.sqlite3.ProbeData.ProbeData()
+
+        for row in _data:
+
+            _probeData.setValue(row['v_probe'],row['v_date'],row['v_ozone'],row['v_temperature'],row['v_groundHumidity'],row['v_airHumidity'])
+            #print _probeData.toJson()

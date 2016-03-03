@@ -21,50 +21,34 @@ __author__ = "Christophe Aubert"
 __version__ = "1.0"
 
 
-import ThEmission
-import ThReception
-import socket
-import sys
+import dataBase.sqlite3
 
-class Client(object):
+class ConnectDB(object):
     """
-    Classe client
+    Class connect db est une classe abstraite qui permet de se connecter a une base de donnée sqlite3
     """
-
-    def __init__(self,host,port):
+    def __init__(self, path, name):
         """
-        init
-
-        @param host:
-        @param port:
-
+        Init
+        @param path:
+        @param name:
         """
-        self.host = host # adresse du serveur
-        self.port = port # port de connection au serveur
-        self.socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+        self.path = path
+        self.name = name
+        self.connection = None
+        self.cursor = None
 
-        try:
-            self.socket.connect((host,port)) #connection au serveur
-            print "Connection on " + host + " {}".format(port) + "."
-
-        except socket.error:
-            print "connection failed."
-            sys.exit() #arret du client
-
-        self.thE = ThEmission.ThEmission(self.socket) #création du du thread d'émission
-        self.thR = ThReception.ThReception(self.socket,self.thE) #création du thread de réception
-
-        #démarage des threads
-        self.thE.start()
-        self.thR.start()
-
-    def sendMsg(self,msg):
-
+    def connect(self):
         """
-        Methode pour envoyé les message au serveur
-
-        @param msg:
-
+        Méthode de création d'une connexion a la base de donnée
         """
+        self.connection = dataBase.sqlite3.connect(self.path + self.name)
+        self.connection.row_factory = dataBase.sqlite3.Row #facilite la vie pour le traitement des données
+        self.cursor = self.connection.cursor() # création d'un curseur pour interagir avec la basse de donnée
 
-        self.thE.sendMsg(msg)
+    def close(self):
+        """
+        Méthode qui permet de fermé une basse de données
+        """
+        self.connection.commit()
+        self.connection.close()

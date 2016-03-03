@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*
 
 """
 The MIT License (MIT)
@@ -20,51 +20,35 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 __author__ = "Christophe Aubert"
 __version__ = "1.0"
 
+from dataBase.sqlite3 import ConnectDB
 
-import ThEmission
-import ThReception
-import socket
-import sys
 
-class Client(object):
+class DeleteTableDb(ConnectDB.ConnectDB):
     """
-    Classe client
+    Class DeleteTableDb permet de supprimer les valeurs dans la base de donnée
     """
-
-    def __init__(self,host,port):
+    def __init__(self, path, name):
         """
-        init
+        Init
 
-        @param host:
-        @param port:
-
+        @param path:
+        @param name:
         """
-        self.host = host # adresse du serveur
-        self.port = port # port de connection au serveur
-        self.socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+        ConnectDB.ConnectDB.__init__(self, path, name)
+        self.connect()
 
-        try:
-            self.socket.connect((host,port)) #connection au serveur
-            print "Connection on " + host + " {}".format(port) + "."
-
-        except socket.error:
-            print "connection failed."
-            sys.exit() #arret du client
-
-        self.thE = ThEmission.ThEmission(self.socket) #création du du thread d'émission
-        self.thR = ThReception.ThReception(self.socket,self.thE) #création du thread de réception
-
-        #démarage des threads
-        self.thE.start()
-        self.thR.start()
-
-    def sendMsg(self,msg):
-
+    def deleteFromProbe(self):
         """
-        Methode pour envoyé les message au serveur
-
-        @param msg:
-
+         Méthode qui permet de surppriser toute les valeur de la table probe
         """
+        self.cursor.execute("DELETE FROM probe")
+        self.cursor.execute("VACUUM")
+        print" Data in probe are delete."
 
-        self.thE.sendMsg(msg)
+    def deleteFromValue(self):
+        """
+         Méthode qui permet de surppriser toute les valeur de la table value
+        """
+        self.cursor.execute("DELETE FROM value")
+        self.cursor.execute("VACUUM")
+        print "Data in value are delete."

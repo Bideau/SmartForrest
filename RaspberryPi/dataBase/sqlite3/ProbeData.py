@@ -21,50 +21,36 @@ __author__ = "Christophe Aubert"
 __version__ = "1.0"
 
 
-import ThEmission
-import ThReception
-import socket
-import sys
+class ProbeData(object):
 
-class Client(object):
-    """
-    Classe client
     """
 
-    def __init__(self,host,port):
-        """
-        init
+    """
 
-        @param host:
-        @param port:
+    def __init__(self):
+        self.date = None
+        self.ozone = None
+        self.temperature = None
+        self.groundHumidity = None
+        self.airHumidity = None
+        self.probe = None
 
-        """
-        self.host = host # adresse du serveur
-        self.port = port # port de connection au serveur
-        self.socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    def setValue(self,probe,date,ozone,temperature,humidity,hygrometry):
+        self.date = date
+        self.ozone = ozone
+        self.temperature = temperature
+        self.airHumidity = humidity
+        self.groundHumidity = hygrometry
+        self.probe = probe
 
-        try:
-            self.socket.connect((host,port)) #connection au serveur
-            print "Connection on " + host + " {}".format(port) + "."
-
-        except socket.error:
-            print "connection failed."
-            sys.exit() #arret du client
-
-        self.thE = ThEmission.ThEmission(self.socket) #création du du thread d'émission
-        self.thR = ThReception.ThReception(self.socket,self.thE) #création du thread de réception
-
-        #démarage des threads
-        self.thE.start()
-        self.thR.start()
-
-    def sendMsg(self,msg):
-
-        """
-        Methode pour envoyé les message au serveur
-
-        @param msg:
-
-        """
-
-        self.thE.sendMsg(msg)
+    def toJson(self):
+        _json = ("{" +
+                 "probeID" + ":" + str(self.probe) + "," +
+                 "date" + ":" + str(self.date) + "," +
+                 "ozone" ":" + str(self.ozone) + "," +
+                 "temperature" + ":" + str(self.temperature) + "," +
+                 "groundHumidity" + ":" + str(self.groundHumidity) + "," +
+                 "airHumidity" + ":" + str(self.airHumidity) +
+                 "}"
+                 )
+        return _json

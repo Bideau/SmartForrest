@@ -20,51 +20,38 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 __author__ = "Christophe Aubert"
 __version__ = "1.0"
 
+import os
 
-import ThEmission
-import ThReception
-import socket
-import sys
 
-class Client(object):
-    """
-    Classe client
+class JsonFile(object):
+
     """
 
-    def __init__(self,host,port):
-        """
-        init
+    """
 
-        @param host:
-        @param port:
+    def __init__(self):
+        self.data = []
 
-        """
-        self.host = host # adresse du serveur
-        self.port = port # port de connection au serveur
-        self.socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    def addData(self,data):
 
-        try:
-            self.socket.connect((host,port)) #connection au serveur
-            print "Connection on " + host + " {}".format(port) + "."
+        self.data.append(data)
+        print self.data
 
-        except socket.error:
-            print "connection failed."
-            sys.exit() #arret du client
 
-        self.thE = ThEmission.ThEmission(self.socket) #création du du thread d'émission
-        self.thR = ThReception.ThReception(self.socket,self.thE) #création du thread de réception
+    def writeToJson(self):
 
-        #démarage des threads
-        self.thE.start()
-        self.thR.start()
+        fichier = open("test.json","w")
+        _i = 0
+        _jsonData = ""
+        _json = "["
 
-    def sendMsg(self,msg):
+        while(_i != (self.data.__len__()-2)):
 
-        """
-        Methode pour envoyé les message au serveur
+            _jsonData += self.data[_i] + ","
+            _i+= 1
 
-        @param msg:
+        _jsonData += self.data[self.data.__len__()-1]
+        _json = _json + _jsonData + "]"
 
-        """
-
-        self.thE.sendMsg(msg)
+        fichier.write(_json)
+        fichier.close()
