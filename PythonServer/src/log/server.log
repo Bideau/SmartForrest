@@ -2995,3 +2995,215 @@
 2016-02-26 13:44:30,770 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455148800', u'capteurId': u'1', u'mesure': u'temperature'}
 2016-02-26 13:44:30,865 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
 2016-02-26 13:44:30,867 :: INFO :: 172.30.1.138 - - [26/Feb/2016 13:44:30] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:18:52,898 :: INFO :: ******************** NEW SESSION ********************
+2016-02-29 09:18:52,898 :: INFO :: Logger is ready
+2016-02-29 09:18:52,927 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-29 09:18:53,674 :: INFO :: /login		method : POST
+2016-02-29 09:18:53,675 :: INFO :: {"login": "abe","password": "f71dbe52628a3f83a77ab494817525c6"}
+2016-02-29 09:18:53,676 :: INFO :: {u'login': u'abe', u'password': u'f71dbe52628a3f83a77ab494817525c6'}
+2016-02-29 09:18:53,834 :: INFO :: {"description": "pouet", "login": "abe", "nom": "Bes", "prenom": "Arnaud"}
+2016-02-29 09:18:53,836 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:18:53] "POST /login HTTP/1.1" 200 -
+2016-02-29 09:19:13,345 :: INFO :: /capteur		method : POST
+2016-02-29 09:19:13,346 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455926400","mesure": "temperature"}
+2016-02-29 09:19:13,362 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455926400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:19:13,500 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:19:13,502 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:19:13] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:25:37,249 :: INFO :: /capteur		method : POST
+2016-02-29 09:25:37,251 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454544000","mesure": "temperature"}
+2016-02-29 09:25:37,252 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454544000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:25:37,393 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:25:37,395 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:25:37] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:25:37,398 :: INFO :: /capteur		method : POST
+2016-02-29 09:25:37,399 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454544000","mesure": "temperature"}
+2016-02-29 09:25:37,400 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454544000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:25:37,492 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:25:37,493 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:25:37] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:26:47,268 :: INFO :: /capteur		method : POST
+2016-02-29 09:26:47,269 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455235200","mesure": "temperature"}
+2016-02-29 09:26:47,271 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455235200', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:26:47,394 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:26:47,396 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:26:47] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:46:32,354 :: INFO :: /capteur		method : POST
+2016-02-29 09:46:32,355 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454630400","mesure": "temperature"}
+2016-02-29 09:46:32,357 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454630400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:46:32,432 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:46:32,434 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:46:32] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:47:22,011 :: INFO :: /capteur		method : POST
+2016-02-29 09:47:22,013 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455840000","mesure": "temperature"}
+2016-02-29 09:47:22,014 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455840000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:47:22,128 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:47:22,129 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:47:22] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:48:18,952 :: INFO :: /capteur		method : POST
+2016-02-29 09:48:18,953 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455840000","mesure": "temperature"}
+2016-02-29 09:48:18,955 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455840000', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:48:19,109 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:48:19,111 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:48:19] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:48:46,482 :: INFO :: /capteur		method : POST
+2016-02-29 09:48:46,484 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455235200","mesure": "temperature"}
+2016-02-29 09:48:46,486 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455235200', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:48:46,617 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:48:46,619 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:48:46] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:52:27,910 :: INFO :: /capteur		method : POST
+2016-02-29 09:52:27,911 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1456617600","mesure": "temperature"}
+2016-02-29 09:52:27,913 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1456617600', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:52:28,094 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:52:28,095 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:52:28] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:52:58,491 :: INFO :: /capteur		method : POST
+2016-02-29 09:52:58,493 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455926400","mesure": "temperature"}
+2016-02-29 09:52:58,494 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455926400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:52:58,613 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:52:58,614 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:52:58] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:53:12,622 :: INFO :: /capteur		method : POST
+2016-02-29 09:53:12,623 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1455926400","mesure": "temperature"}
+2016-02-29 09:53:12,624 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1455926400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:53:12,797 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:53:12,799 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:53:12] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:54:19,610 :: INFO :: /capteur		method : POST
+2016-02-29 09:54:19,611 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454630400","mesure": "temperature"}
+2016-02-29 09:54:19,613 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454630400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:54:20,154 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:54:20,156 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:54:20] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 09:57:56,501 :: INFO :: /capteur		method : POST
+2016-02-29 09:57:56,502 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1454630400","mesure": "temperature"}
+2016-02-29 09:57:56,504 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1454630400', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-02-29 09:57:56,659 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-02-29 09:57:56,661 :: INFO :: 172.30.1.138 - - [29/Feb/2016 09:57:56] "POST /capteur HTTP/1.1" 200 -
+2016-02-29 10:08:20,882 :: INFO :: ******************** NEW SESSION ********************
+2016-02-29 10:08:20,882 :: INFO :: Logger is ready
+2016-02-29 10:08:20,888 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-02-29 14:51:35,472 :: INFO :: ******************** NEW SESSION ********************
+2016-02-29 14:51:35,472 :: INFO :: Logger is ready
+2016-02-29 14:51:35,477 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-03-02 08:12:42,951 :: INFO :: ******************** NEW SESSION ********************
+2016-03-02 08:12:42,991 :: INFO :: Logger is ready
+2016-03-02 08:12:43,034 :: INFO ::  * Running on http://172.30.0.103:8080/ (Press CTRL+C to quit)
+2016-03-02 08:26:30,469 :: INFO :: /capteur		method : POST
+2016-03-02 08:26:30,471 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1456963200","mesure": "temperature"}
+2016-03-02 08:26:30,473 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1456963200', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 08:26:30,744 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 08:26:30,746 :: INFO :: 172.30.1.138 - - [02/Mar/2016 08:26:30] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 08:28:10,266 :: INFO :: /capteur		method : POST
+2016-03-02 08:28:10,267 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1457568000","dateFin": "NaN","mesure": "temperature"}
+2016-03-02 08:28:10,269 :: INFO :: {u'login': u'abe', u'dateDebut': u'1457568000', u'dateFin': u'NaN', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 08:28:10,439 :: INFO :: {"releve": []}
+2016-03-02 08:28:10,440 :: INFO :: 172.30.1.138 - - [02/Mar/2016 08:28:10] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 08:28:56,040 :: INFO :: /capteur		method : POST
+2016-03-02 08:28:56,041 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 08:28:56,042 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 08:28:56,253 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 08:28:56,254 :: INFO :: 172.30.1.138 - - [02/Mar/2016 08:28:56] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 08:29:37,951 :: INFO :: /capteur		method : POST
+2016-03-02 08:29:37,952 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 08:29:37,953 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 08:29:38,086 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 08:29:38,088 :: INFO :: 172.30.1.138 - - [02/Mar/2016 08:29:38] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 08:38:17,741 :: INFO :: /capteur		method : POST
+2016-03-02 08:38:17,742 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 08:38:17,743 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 08:38:17,926 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 08:38:17,927 :: INFO :: 172.30.1.138 - - [02/Mar/2016 08:38:17] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 08:38:57,788 :: INFO :: /capteur		method : POST
+2016-03-02 08:38:57,790 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 08:38:57,792 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 08:38:59,900 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 08:38:59,902 :: INFO :: 172.30.1.138 - - [02/Mar/2016 08:38:59] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:10:01,758 :: INFO :: /capteur		method : POST
+2016-03-02 09:10:01,760 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:10:01,761 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:10:02,096 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:10:02,103 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:10:02] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:15:17,390 :: INFO :: /capteur		method : POST
+2016-03-02 09:15:17,391 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:15:17,392 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:15:17,593 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:15:17,595 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:15:17] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:16:51,343 :: INFO :: /capteur		method : POST
+2016-03-02 09:16:51,344 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:16:51,345 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:16:51,666 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:16:51,668 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:16:51] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:17:57,060 :: INFO :: /capteur		method : POST
+2016-03-02 09:17:57,061 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:17:57,062 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:17:57,266 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:17:57,267 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:17:57] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:19:17,384 :: INFO :: /capteur		method : POST
+2016-03-02 09:19:17,385 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:19:17,387 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:19:17,597 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:19:17,599 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:19:17] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:21:27,401 :: INFO :: /capteur		method : POST
+2016-03-02 09:21:27,402 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:21:27,404 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:21:27,579 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:21:27,580 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:21:27] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:22:12,436 :: INFO :: /capteur		method : POST
+2016-03-02 09:22:12,437 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:22:12,439 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:22:12,598 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:22:12,600 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:22:12] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:24:51,048 :: INFO :: /capteur		method : POST
+2016-03-02 09:24:51,050 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:24:51,052 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:24:51,197 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:24:51,199 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:24:51] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:35:53,469 :: INFO :: /capteur		method : POST
+2016-03-02 09:35:53,470 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:35:53,472 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:35:53,592 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:35:53,594 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:35:53] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:36:33,471 :: INFO :: /capteur		method : POST
+2016-03-02 09:36:33,472 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:36:33,473 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:36:33,567 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:36:33,568 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:36:33] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:37:43,475 :: INFO :: /capteur		method : POST
+2016-03-02 09:37:43,476 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:37:43,478 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:37:43,613 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:37:43,615 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:37:43] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:40:28,127 :: INFO :: /capteur		method : POST
+2016-03-02 09:40:28,129 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:40:28,130 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:40:28,336 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:40:28,337 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:40:28] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:44:41,535 :: INFO :: /capteur		method : POST
+2016-03-02 09:44:41,536 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:44:41,538 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:44:41,966 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:44:41,968 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:44:41] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:48:59,081 :: INFO :: /capteur		method : POST
+2016-03-02 09:48:59,082 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:48:59,086 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:48:59,508 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:48:59,510 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:48:59] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:52:29,092 :: INFO :: /capteur		method : POST
+2016-03-02 09:52:29,094 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:52:29,096 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:52:29,425 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:52:29,427 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:52:29] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:52:48,384 :: INFO :: /capteur		method : POST
+2016-03-02 09:52:48,385 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:52:48,387 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:52:48,957 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:52:48,958 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:52:48] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:52:52,193 :: INFO :: /capteur		method : POST
+2016-03-02 09:52:52,195 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:52:52,196 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:52:52,480 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:52:52,482 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:52:52] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:54:58,486 :: INFO :: /capteur		method : POST
+2016-03-02 09:54:58,487 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:54:58,489 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:54:58,606 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:54:58,607 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:54:58] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 09:55:35,323 :: INFO :: /capteur		method : POST
+2016-03-02 09:55:35,325 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 09:55:35,326 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 09:55:43,188 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 09:55:43,190 :: INFO :: 172.30.1.138 - - [02/Mar/2016 09:55:43] "POST /capteur HTTP/1.1" 200 -
+2016-03-02 10:08:31,982 :: INFO :: /capteur		method : POST
+2016-03-02 10:08:31,984 :: INFO :: {"login": "abe","capteurId": "1","dateDebut": "1454284800","dateFin": "1459468800","mesure": "temperature"}
+2016-03-02 10:08:31,985 :: INFO :: {u'login': u'abe', u'dateDebut': u'1454284800', u'dateFin': u'1459468800', u'capteurId': u'1', u'mesure': u'temperature'}
+2016-03-02 10:08:32,167 :: INFO :: {"releve": [{"dateReleve": 1454284800, "mesure": 14.0}, {"dateReleve": 1454371200, "mesure": 14.2}]}
+2016-03-02 10:08:32,168 :: INFO :: 172.30.1.138 - - [02/Mar/2016 10:08:32] "POST /capteur HTTP/1.1" 200 -

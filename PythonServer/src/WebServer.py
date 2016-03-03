@@ -237,7 +237,7 @@ def capteur_POST():
 						myArray=Login.temperatureValue(login,capteurId,dateDebut,dateFin)
 					elif(mesure == "ozone"):
 						myArray=Login.ozoneValue(login,capteurId,dateDebut,dateFin)
-						4print(myArray)
+						print(myArray)
 					elif(mesure == "hygrometrie"):
 						myArray=Login.hygrometrieValue(login,capteurId,dateDebut,dateFin)
 					elif(mesure == "humidite"):
