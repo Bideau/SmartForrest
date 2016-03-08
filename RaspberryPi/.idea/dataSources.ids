@@ -94,4 +94,280 @@
       <foreign-key name="#FAKE_waterTemperature_1" columns="wt_probe" ref-table="probe" ref-schema="" ref-catalog="" ref-columns="p_id" update-rule="3" delete-rule="3" deferrability="1"/>
     </table>
   </data-source>
+  <data-source name="MySQL - smartforest@localhost" uuid="fc71a9c8-6c53-4978-ac4d-ab267c583be6">
+    <database-info product="MySQL" version="5.5.47-0ubuntu0.14.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="smartforest"/>
+    </database-model>
+  </data-source>
+  <data-source name="MySQL - SmartForest@srvmysql.imerir.com" uuid="a38487fa-acdc-476b-9881-89ceb36a5079">
+    <database-info product="MySQL" version="5.1.73" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="SmartForest"/>
+      <table id="2" parent="1" name="acces_balise"/>
+      <table id="3" parent="1" name="acces_puce"/>
+      <table id="4" parent="1" name="acces_station"/>
+      <table id="5" parent="1" name="donnees_gps"/>
+      <table id="6" parent="1" name="donnees_lora"/>
+      <table id="7" parent="1" name="donnees_meteo"/>
+      <table id="8" parent="1" name="info_balise"/>
+      <table id="9" parent="1" name="info_connexion"/>
+      <table id="10" parent="1" name="info_puce"/>
+      <table id="11" parent="1" name="info_station"/>
+      <table id="12" parent="1" name="info_utilisateur"/>
+      <column id="13" parent="2" name="idAcces">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="14" parent="2" name="idUser">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="15" parent="2" name="idBalise">
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="16" parent="2" name="idBalise">
+        <columns>idBalise</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="17" parent="2" name="idUser">
+        <columns>idUser</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="18" parent="2" name="PRIMARY">
+        <columns>idAcces</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="3" name="idAcces">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="20" parent="3" name="idUser">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="21" parent="3" name="idPuce">
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="22" parent="3" name="idPuce">
+        <columns>idPuce</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="23" parent="3" name="idUser">
+        <columns>idUser</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="24" parent="3" name="PRIMARY">
+        <columns>idAcces</columns>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="4" name="idAcces">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="26" parent="4" name="idUser">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="27" parent="4" name="idStation">
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="28" parent="4" name="idStation">
+        <columns>idStation</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="29" parent="4" name="idUser">
+        <columns>idUser</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="30" parent="4" name="PRIMARY">
+        <columns>idAcces</columns>
+        <primary>1</primary>
+      </key>
+      <column id="31" parent="5" name="idReleve">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="32" parent="5" name="idPuce">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="33" parent="5" name="longitude">
+        <data-type>double</data-type>
+      </column>
+      <column id="34" parent="5" name="latitude">
+        <data-type>double</data-type>
+      </column>
+      <column id="35" parent="5" name="dateReleve">
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="36" parent="5" name="idPuce">
+        <columns>idPuce</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="37" parent="5" name="PRIMARY">
+        <columns>idReleve</columns>
+        <primary>1</primary>
+      </key>
+      <column id="38" parent="6" name="idReleve">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="39" parent="6" name="idBalise">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="40" parent="6" name="temperature">
+        <data-type>float</data-type>
+      </column>
+      <column id="41" parent="6" name="ozone">
+        <data-type>float</data-type>
+      </column>
+      <column id="42" parent="6" name="humidite">
+        <data-type>float</data-type>
+      </column>
+      <column id="43" parent="6" name="dateReleve">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="44" parent="6" name="hygrometrie">
+        <data-type>float</data-type>
+      </column>
+      <index id="45" parent="6" name="idBalise">
+        <columns>idBalise</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="46" parent="6" name="PRIMARY">
+        <columns>idReleve</columns>
+        <primary>1</primary>
+      </key>
+      <column id="47" parent="7" name="idReleve">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="48" parent="7" name="idStation">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="49" parent="7" name="ensoileillement">
+        <data-type>float</data-type>
+      </column>
+      <column id="50" parent="7" name="vitesseVent">
+        <data-type>float</data-type>
+      </column>
+      <column id="51" parent="7" name="orientationVent">
+        <data-type>float</data-type>
+      </column>
+      <column id="52" parent="7" name="dateReleve">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="53" parent="7" name="precipitation">
+        <data-type>float</data-type>
+      </column>
+      <index id="54" parent="7" name="idStation">
+        <columns>idStation</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="55" parent="7" name="PRIMARY">
+        <columns>idReleve</columns>
+        <primary>1</primary>
+      </key>
+      <column id="56" parent="8" name="idBalise">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="57" parent="8" name="nom">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="58" parent="8" name="longitude">
+        <data-type>double</data-type>
+      </column>
+      <column id="59" parent="8" name="latitude">
+        <data-type>double</data-type>
+      </column>
+      <column id="60" parent="8" name="dateDeploiement">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="61" parent="8" name="PRIMARY">
+        <columns>idBalise</columns>
+        <primary>1</primary>
+      </key>
+      <column id="62" parent="9" name="idConnection">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="63" parent="9" name="idUser">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="64" parent="9" name="login">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="65" parent="9" name="motDePasse">
+        <data-type>varchar(70)</data-type>
+      </column>
+      <column id="66" parent="9" name="cleAdmin">
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <index id="67" parent="9" name="idUser">
+        <columns>idUser</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="68" parent="9" name="PRIMARY">
+        <columns>idConnection</columns>
+        <primary>1</primary>
+      </key>
+      <column id="69" parent="10" name="idPuce">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="70" parent="10" name="nom">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="71" parent="10" name="dateDeploiement">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="72" parent="10" name="PRIMARY">
+        <columns>idPuce</columns>
+        <primary>1</primary>
+      </key>
+      <column id="73" parent="11" name="idStation">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="74" parent="11" name="nom">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="75" parent="11" name="longitude">
+        <data-type>double</data-type>
+      </column>
+      <column id="76" parent="11" name="latitude">
+        <data-type>double</data-type>
+      </column>
+      <column id="77" parent="11" name="dateDeploiement">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="78" parent="11" name="PRIMARY">
+        <columns>idStation</columns>
+        <primary>1</primary>
+      </key>
+      <column id="79" parent="12" name="idUser">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="80" parent="12" name="nom">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="81" parent="12" name="prenom">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="82" parent="12" name="description">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="83" parent="12" name="PRIMARY">
+        <columns>idUser</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
 </component>

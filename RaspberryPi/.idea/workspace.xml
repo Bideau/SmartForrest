@@ -2,45 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="817db758-563a-4b98-8b7b-9e2f97f8692f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/noDB/JsonFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/noDB/ProbeData.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/noDB/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/noDB/maintest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/sqlite3/ConnectDB.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/sqlite3/CreateDB.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/sqlite3/CreateDB2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/sqlite3/DeleteTableDb.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/sqlite3/InsertDb.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/sqlite3/Main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/sqlite3/ProbeData.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/sqlite3/QueryDb.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/sqlite3/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/toto.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ressources/ModeleCommunication.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataBase/ConnectDB.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataBase/CreateDB.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataBase/DeleteTableDb.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataBase/InsertDb.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataBase/Main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataBase/ProbeData.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dataBase/QueryDb.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/Diagram Database.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/Digram Client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/diagram 10 000.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ressources/db.db" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/mysql/ConnectMysqlDb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/mysql/CreateMysqlTable.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/mysql/InsertMysqlDB.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/mysql/SqlCommand.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/mysql/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/mysql/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/oldmysql/ConnectMysqlDb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/oldmysql/CreateMysqlDb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/oldmysql/CreateTableMysqlDb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/oldmysql/DropMysqlDb.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/oldmysql/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/oldmysql/createtable.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataBase/oldmysql/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RaspberryPi.iml" afterPath="$PROJECT_DIR$/.idea/RaspberryPi.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/Client.py" afterPath="$PROJECT_DIR$/client/Client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/Main.py" afterPath="$PROJECT_DIR$/client/Main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/ThEmission.py" afterPath="$PROJECT_DIR$/client/ThEmission.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/ThReception.py" afterPath="$PROJECT_DIR$/client/ThReception.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/__init__.py" afterPath="$PROJECT_DIR$/client/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataBase/__init__.py" afterPath="$PROJECT_DIR$/dataBase/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ressources/modeleData.json" afterPath="$PROJECT_DIR$/ressources/modeleData.json" />
     </list>
     <ignored path="RaspberryPi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,11 +33,13 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/RaspberryPi$CreateDB2.coverage" NAME="CreateDB2 Coverage Results" MODIFIED="1456929335344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataBase" />
     <SUITE FILE_PATH="coverage/RaspberryPi$maintest.coverage" NAME="maintest Coverage Results" MODIFIED="1457000178311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataBase" />
-    <SUITE FILE_PATH="coverage/RaspberryPi$client3.coverage" NAME="client3 Coverage Results" MODIFIED="1456419283391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RaspberryPi$CreateDB2.coverage" NAME="CreateDB2 Coverage Results" MODIFIED="1456929335344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataBase" />
     <SUITE FILE_PATH="coverage/RaspberryPi$Main.coverage" NAME="Main Coverage Results" MODIFIED="1456994191920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataBase" />
+    <SUITE FILE_PATH="coverage/RaspberryPi$client3.coverage" NAME="client3 Coverage Results" MODIFIED="1456419283391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RaspberryPi$testmultitarg.coverage" NAME="testmultitarg Coverage Results" MODIFIED="1457053146323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataBase/mysql" />
     <SUITE FILE_PATH="coverage/RaspberryPi$CreateDB.coverage" NAME="CreateDB Coverage Results" MODIFIED="1456419299754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataBase" />
+    <SUITE FILE_PATH="coverage/RaspberryPi$test.coverage" NAME="test Coverage Results" MODIFIED="1457477342992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataBase/mysql" />
     <SUITE FILE_PATH="coverage/RaspberryPi$ConnectDB.coverage" NAME="ConnectDB Coverage Results" MODIFIED="1456510840308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataBase" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -75,8 +56,18 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
+    </PATH>
+    <PATH>
       <PATH_ELEMENT>
-        <option name="myItemId" value="Sqlite (Xerial) - db2.db" />
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - SmartForest@srvmysql.imerir.com" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="info_utilisateur" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -86,7 +77,7 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="Sqlite (Xerial) - db.db" />
+        <option name="myItemId" value="MySQL - SmartForest@srvmysql.imerir.com" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -101,7 +92,92 @@
     <favorites_list name="RaspberryPi" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ConnectMysqlDb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataBase/mysql/ConnectMysqlDb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateMysqlTable.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataBase/mysql/CreateMysqlTable.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27061856">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <marker date="1457476756414" expanded="true" signature="1455:1479" placeholder="CREATE TABLE... sensorType" />
+                <marker date="1457476756414" expanded="true" signature="1455:1561" placeholder="CREATE TABLE... sensorType" />
+                <marker date="1457476756414" expanded="true" signature="1455:1630" placeholder="CREATE TABLE... sensorType" />
+                <marker date="1457476756414" expanded="true" signature="1455:1688" placeholder="CREATE TABLE... sensorType" />
+                <marker date="1457476756414" expanded="true" signature="1455:1727" placeholder="CREATE TABLE... sensorType" />
+                <marker date="1457476756414" expanded="true" signature="1989:2342" placeholder="CREATE TABLE... measure" />
+                <marker date="1457476756414" expanded="true" signature="1989:2344" placeholder="CREATE TABLE... measure" />
+                <marker date="1457476756414" expanded="true" signature="1989:2383" placeholder="CREATE TABLE... measure" />
+                <marker date="1457476756414" expanded="true" signature="2430:2992" placeholder="CREATE TABLE... measure" />
+                <marker date="1457476756414" expanded="true" signature="2620:2640" placeholder="CREATE TABLE... sensor" />
+                <marker date="1457476756414" expanded="true" signature="2620:2722" placeholder="CREATE TABLE... sensor" />
+                <marker date="1457476756414" expanded="true" signature="2620:2783" placeholder="CREATE TABLE... sensor" />
+                <marker date="1457476756414" expanded="true" signature="2620:2844" placeholder="CREATE TABLE... sensor" />
+                <marker date="1457476756414" expanded="true" signature="2620:2903" placeholder="CREATE TABLE... sensor" />
+                <marker date="1457476756414" expanded="true" signature="2620:2906" placeholder="CREATE TABLE... sensor" />
+                <marker date="1457476756414" expanded="true" signature="2620:2944" placeholder="CREATE TABLE... sensor" />
+                <marker date="1457476756414" expanded="true" signature="3182:3512" placeholder="CREATE TABLE... station" />
+                <marker date="1457476756414" expanded="true" signature="3182:3584" placeholder="CREATE TABLE... station" />
+                <marker date="1457476756414" expanded="true" signature="3182:3688" placeholder="CREATE TABLE... station" />
+                <marker date="1457476756414" expanded="true" signature="3817:4440" placeholder="ALTER TABLE #" />
+                <marker date="1457476756414" expanded="true" signature="3921:4014" placeholder="ALTER TABLE measure... " />
+                <marker date="1457476756414" expanded="true" signature="4080:4178" placeholder="ALTER TABLE sensor... " />
+                <marker date="1457476756414" expanded="true" signature="4244:4342" placeholder="ALTER TABLE sensor... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataBase/mysql/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding>
+                <element signature="e#1185#1205#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertMysqlDB.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataBase/mysql/InsertMysqlDB.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="126" selection-start-line="40" selection-start-column="126" selection-end-line="40" selection-end-column="126" />
+              <folding>
+                <marker date="1457477021209" expanded="true" signature="1370:1409" placeholder="INSERT INTO sensorType... " />
+                <marker date="1457477021209" expanded="true" signature="1370:1430" placeholder="INSERT INTO sensorType... " />
+                <marker date="1457477021209" expanded="true" signature="1550:1590" placeholder="INSERT INTO sensor... " />
+                <marker date="1457477021209" expanded="true" signature="1550:1617" placeholder="INSERT INTO sensor... " />
+                <marker date="1457477021209" expanded="true" signature="1550:1641" placeholder="INSERT INTO sensor... " />
+                <marker date="1457477021209" expanded="true" signature="1773:1854" placeholder="INSERT INTO station... " />
+                <marker date="1457477021209" expanded="true" signature="1773:1897" placeholder="INSERT INTO station... " />
+                <marker date="1457477021209" expanded="true" signature="1773:1912" placeholder="INSERT INTO station... " />
+                <marker date="1457477021209" expanded="true" signature="1773:1929" placeholder="INSERT INTO station... " />
+                <marker date="1457477021209" expanded="true" signature="1773:1935" placeholder="INSERT INTO station... " />
+                <marker date="1457477021209" expanded="true" signature="1773:1957" placeholder="INSERT INTO station... " />
+                <marker date="1457477021209" expanded="true" signature="1773:1979" placeholder="INSERT INTO station... " />
+                <marker date="1457477021209" expanded="true" signature="1773:1982" placeholder="INSERT INTO station... " />
+                <marker date="1457477021209" expanded="true" signature="2095:2145" placeholder="INSERT INTO measure... " />
+                <marker date="1457477021209" expanded="true" signature="2095:2163" placeholder="INSERT INTO measure... " />
+                <marker date="1457477021209" expanded="true" signature="2095:2182" placeholder="INSERT INTO measure... " />
+                <marker date="1457477021209" expanded="true" signature="2095:2200" placeholder="INSERT INTO measure... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -116,13 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/ressources/main.py" />
-        <option value="$PROJECT_DIR$/client/client.py" />
-        <option value="$PROJECT_DIR$/client/GuiClient.py" />
-        <option value="$PROJECT_DIR$/cars.py" />
-        <option value="$PROJECT_DIR$/client2.py" />
-        <option value="$PROJECT_DIR$/client3.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/client/main.py" />
         <option value="$PROJECT_DIR$/dataBase/CreateDb.py" />
@@ -152,10 +221,28 @@
         <option value="$PROJECT_DIR$/dataBase/JsonFile.py" />
         <option value="$PROJECT_DIR$/dataBase/maintest.py" />
         <option value="$PROJECT_DIR$/dataBase/sqlite3/ConnectDB.py" />
-        <option value="$PROJECT_DIR$/dataBase/sqlite3/CreateDB.py" />
         <option value="$PROJECT_DIR$/dataBase/sqlite3/CreateDB2.py" />
         <option value="$PROJECT_DIR$/dataBase/sqlite3/Main.py" />
         <option value="$PROJECT_DIR$/dataBase/sqlite3/QueryDb.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/ConnectDB.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/CreateDB.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/ConnectMysqlDB.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/CreateMysqlDB.py" />
+        <option value="$PROJECT_DIR$/dataBase/sqlite3/CreateDB.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/CreateMysqlDb.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/DropMysqlDb.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/testmultitarg.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/createtable.sql" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/CreateTableMysqlDb.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/CodeSQL.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/CreateTable.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/SqlCommand.py" />
+        <option value="dbtable:/162e9472/fc71a9c8-6c53-4978-ac4d-ab267c583be6/smartforest.measure" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fc71a9c8-6c53-4978-ac4d-ab267c583be6/console.sql" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/ConnectMysqlDb.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/CreateMysqlTable.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/InsertMysqlDB.py" />
+        <option value="$PROJECT_DIR$/dataBase/mysql/test.py" />
       </list>
     </option>
   </component>
@@ -212,7 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -242,34 +328,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ressources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RaspberryPi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RaspberryPi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RaspberryPi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RaspberryPi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="dataBase" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -288,25 +346,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sqlite3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RaspberryPi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RaspberryPi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dataBase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="noDB" />
+              <option name="myItemId" value="mysql" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,116 +366,46 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="SQLite" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dataBase/mysql" />
+      <recent name="$PROJECT_DIR$/dataBase/noDB" />
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$/dataBase" />
+      <recent name="$PROJECT_DIR$/ressources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dataBase/noDB" />
       <recent name="$PROJECT_DIR$/dataBase/mysql" />
       <recent name="$PROJECT_DIR$/dataBase/sqlite3" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dataBase/noDB" />
-      <recent name="$PROJECT_DIR$/client" />
-      <recent name="$PROJECT_DIR$/dataBase" />
-      <recent name="$PROJECT_DIR$/ressources" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.maintest">
-    <configuration default="false" name="CreateDB" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataBase" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataBase/mysql" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RaspberryPi" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataBase/sqlite3/CreateDB.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataBase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RaspberryPi" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataBase/sqlite3/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ConnectDB" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataBase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RaspberryPi" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataBase/sqlite3/ConnectDB.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CreateDB2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataBase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RaspberryPi" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataBase/sqlite3/CreateDB2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="maintest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataBase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RaspberryPi" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataBase/noDB/maintest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataBase/mysql/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -633,20 +603,12 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.CreateDB" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Main" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ConnectDB" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CreateDB2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.maintest" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.test" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.maintest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.CreateDB2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ConnectDB" />
-        <item index="4" class="java.lang.String" itemvalue="Python.CreateDB" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -661,31 +623,39 @@
       <option name="number" value="Default" />
       <updated>1456237421245</updated>
     </task>
+    <task id="LOCAL-00001" summary="réorganisation des fichier du depot Raspberry, création des class pour le no DB">
+      <created>1457002065510</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1457002065510</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="942" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.49375" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23854166" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.48125" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399757" sideWeight="0.49375" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33778858" sideWeight="0.51875" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.49583334" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.102604166" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33778858" sideWeight="0.51875" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.49375" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399757" sideWeight="0.48125" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49574727" sideWeight="0.55572915" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.48333332" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.48333332" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.48333332" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399757" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33778858" sideWeight="0.48125" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399757" sideWeight="0.48541668" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
@@ -700,6 +670,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="réorganisation des fichier du depot Raspberry, création des class pour le no DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="réorganisation des fichier du depot Raspberry, création des class pour le no DB" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
@@ -709,222 +683,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/InsertDb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/ProbeData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ressources/modeleData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/ConnectDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/CreateDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="69" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/QueryDb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/DeleteTableDb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/InsertDb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/ProbeData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ressources/modeleData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/ThEmission.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/ThReception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="29" selection-start-line="7" selection-start-column="0" selection-end-line="31" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/ThEmission.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/ThReception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2591007">
-          <caret line="1801" column="0" selection-start-line="1801" selection-start-column="0" selection-end-line="1801" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://Python/#/home/christophe/Documents/SmartForrest/RaspberryPi/dataBase/Main.py">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Python</ID>
-          <OriginalElement>#/home/christophe/Documents/SmartForrest/RaspberryPi/dataBase/Main.py</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="731.0" y="249.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://Python/#/home/christophe/Documents/SmartForrest/RaspberryPi/dataBase">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Python</ID>
-          <OriginalElement>#/home/christophe/Documents/SmartForrest/RaspberryPi/dataBase</OriginalElement>
-          <nodes>
-            <node x="" y="">dataBase.ProbeData.ProbeData</node>
-            <node x="" y="">dataBase.CreateDB.CreateDB</node>
-            <node x="" y="">dataBase.DeleteTableDb.DeleteTableDb</node>
-            <node x="" y="">dataBase.InsertDb.InsertDb</node>
-            <node x="" y="">_abcoll.Hashable</node>
-            <node x="" y="">object</node>
-            <node x="" y="">dataBase.QueryDb.DbQuery</node>
-            <node x="" y="">dataBase.ConnectDB.ConnectDB</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.518210197710718" x="527.0" y="471.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -939,38 +702,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/ThReception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32035175">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ressources/modeleData.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46632123">
           <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86809045">
-          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/ThEmission.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77386934">
-          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -989,26 +724,26 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/162e9472/bd6ba743-bae5-4c53-a21c-4d0f2a446a5f/probe">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/162e9472/69f72518-006f-4956-9c0e-27a4341ea2e1/value">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1020,14 +755,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/162e9472/69f72518-006f-4956-9c0e-27a4341ea2e1/probe">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1060,17 +795,17 @@
               <point x="619.9285714285714" y="144.0" />
               <point x="-54.571428571428555" y="57.0" />
             </edge>
-            <edge source="bd6ba743-bae5-4c53-a21c-4d0f2a446a5f.TABLE:waterTemperature" target="bd6ba743-bae5-4c53-a21c-4d0f2a446a5f.TABLE:probe">
-              <point x="0.0" y="-46.5" />
-              <point x="479.0" y="154.0" />
-              <point x="647.2142857142858" y="154.0" />
-              <point x="-27.28571428571422" y="57.0" />
-            </edge>
             <edge source="bd6ba743-bae5-4c53-a21c-4d0f2a446a5f.TABLE:temperature" target="bd6ba743-bae5-4c53-a21c-4d0f2a446a5f.TABLE:probe">
               <point x="0.0" y="-46.5" />
               <point x="1055.0" y="144.0" />
               <point x="729.0714285714286" y="144.0" />
               <point x="54.571428571428555" y="57.0" />
+            </edge>
+            <edge source="bd6ba743-bae5-4c53-a21c-4d0f2a446a5f.TABLE:waterTemperature" target="bd6ba743-bae5-4c53-a21c-4d0f2a446a5f.TABLE:probe">
+              <point x="0.0" y="-46.5" />
+              <point x="479.0" y="154.0" />
+              <point x="647.2142857142858" y="154.0" />
+              <point x="-27.28571428571422" y="57.0" />
             </edge>
             <edge source="bd6ba743-bae5-4c53-a21c-4d0f2a446a5f.TABLE:date" target="bd6ba743-bae5-4c53-a21c-4d0f2a446a5f.TABLE:probe">
               <point x="0.0" y="-46.5" />
@@ -1120,27 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/ConnectDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/CreateDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataBase/noDB/JsonFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,25 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/noDB/ProbeData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/noDB/maintest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82625484">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="e#43#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1174,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7972973">
           <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,16 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.028957529">
           <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
-          <folding>
-            <marker date="1457001388136" expanded="true" signature="1800:2072" placeholder="CREATE TABLE... sensorType" />
-            <marker date="1457001388136" expanded="true" signature="2287:2729" placeholder="CREATE TABLE... Probe" />
-            <marker date="1457001388136" expanded="true" signature="2944:3387" placeholder="CREATE TABLE... ozone" />
-            <marker date="1457001388136" expanded="true" signature="3608:4057" placeholder="CREATE TABLE... temperature" />
-            <marker date="1457001388136" expanded="true" signature="4281:4733" placeholder="CREATE TABLE... groundHumidity" />
-            <marker date="1457001388136" expanded="true" signature="4954:5403" placeholder="CREATE TABLE... airHumidity" />
-            <marker date="1457001388136" expanded="true" signature="5630:6088" placeholder="CREATE TABLE... waterTemperature" />
-            <marker date="1457001388136" expanded="true" signature="6309:6764" placeholder="CREATE TABLE... waterLevel" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,28 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7567568">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <marker date="1457001372048" expanded="true" signature="1719:1736" placeholder="DELETE FROM " />
-            <marker date="1457001372048" expanded="true" signature="1981:1998" placeholder="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/InsertDb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62355214">
-          <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7972973">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1228,7 +894,325 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56563705">
           <caret line="33" column="63" selection-start-line="28" selection-start-column="20" selection-end-line="33" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/noDB/maintest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/noDB/ProbeData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6857143">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/oldmysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/noDB/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/mysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/CreateDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="11" selection-start-line="42" selection-start-column="8" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <marker date="1457001382952" expanded="true" signature="1754:2192" placeholder="CREATE TABLE... probe" />
+            <marker date="1457001382952" expanded="true" signature="2407:3288" placeholder="CREATE TABLE... value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/InsertDb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="57" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="57" />
+          <folding>
+            <marker date="1457001372052" expanded="true" signature="1806:1972" placeholder="INSERT INTO probe... " />
+            <marker date="1457001372052" expanded="true" signature="2329:2745" placeholder="INSERT INTO value... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/ConnectDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a38487fa-acdc-476b-9881-89ceb36a5079/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/a38487fa-acdc-476b-9881-89ceb36a5079">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>a38487fa-acdc-476b-9881-89ceb36a5079</OriginalElement>
+          <nodes>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.donnees_lora</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.info_connexion</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.donnees_gps</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.info_balise</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.acces_balise</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.info_station</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.info_utilisateur</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.donnees_meteo</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.info_puce</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.acces_puce</node>
+            <node x="" y="">a38487fa-acdc-476b-9881-89ceb36a5079.TABLE:SmartForest.acces_station</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7575757575757576" x="612.0" y="407.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/oldmysql/DropMysqlDb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5288945">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding>
+            <element signature="e#1185#1206#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/oldmysql/testmultitarg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30150753">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/oldmysql/createtable.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32035175">
+          <caret line="17" column="61" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/oldmysql/CreateMysqlDb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+          <folding>
+            <element signature="e#1185#1206#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/mysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/oldmysql/ConnectMysqlDb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6590476">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/oldmysql/CreateTableMysqlDb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37904763">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#1185#1206#0" expanded="false" />
+            <marker date="1457341803255" expanded="true" signature="1854:2157" placeholder="CREATE TABLE... sensorType" />
+            <marker date="1457341803255" expanded="true" signature="2547:2935" placeholder="CREATE TABLE... station" />
+            <marker date="1457341803255" expanded="true" signature="3145:3433" placeholder="CREATE TABLE... sensorType" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/ThReception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/ThEmission.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/mysql/SqlCommand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47110552">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/oldmysql/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6972362">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding>
+            <element signature="e#1185#1205#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/sqlite3/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9864865">
+          <caret line="43" column="43" selection-start-line="39" selection-start-column="8" selection-end-line="43" selection-end-column="43" />
+          <folding>
+            <element signature="e#43#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fc71a9c8-6c53-4978-ac4d-ab267c583be6/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/dist-packages/mysql/connector/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.582474">
+          <caret line="552" column="0" selection-start-line="552" selection-start-column="0" selection-end-line="552" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/mysql/ConnectMysqlDb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/mysql/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="e#1185#1205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53608245">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/mysql/InsertMysqlDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="126" selection-start-line="40" selection-start-column="126" selection-end-line="40" selection-end-column="126" />
+          <folding>
+            <marker date="1457477021209" expanded="true" signature="1370:1409" placeholder="INSERT INTO sensorType... " />
+            <marker date="1457477021209" expanded="true" signature="1370:1430" placeholder="INSERT INTO sensorType... " />
+            <marker date="1457477021209" expanded="true" signature="1550:1590" placeholder="INSERT INTO sensor... " />
+            <marker date="1457477021209" expanded="true" signature="1550:1617" placeholder="INSERT INTO sensor... " />
+            <marker date="1457477021209" expanded="true" signature="1550:1641" placeholder="INSERT INTO sensor... " />
+            <marker date="1457477021209" expanded="true" signature="1773:1854" placeholder="INSERT INTO station... " />
+            <marker date="1457477021209" expanded="true" signature="1773:1897" placeholder="INSERT INTO station... " />
+            <marker date="1457477021209" expanded="true" signature="1773:1912" placeholder="INSERT INTO station... " />
+            <marker date="1457477021209" expanded="true" signature="1773:1929" placeholder="INSERT INTO station... " />
+            <marker date="1457477021209" expanded="true" signature="1773:1935" placeholder="INSERT INTO station... " />
+            <marker date="1457477021209" expanded="true" signature="1773:1957" placeholder="INSERT INTO station... " />
+            <marker date="1457477021209" expanded="true" signature="1773:1979" placeholder="INSERT INTO station... " />
+            <marker date="1457477021209" expanded="true" signature="1773:1982" placeholder="INSERT INTO station... " />
+            <marker date="1457477021209" expanded="true" signature="2095:2145" placeholder="INSERT INTO measure... " />
+            <marker date="1457477021209" expanded="true" signature="2095:2163" placeholder="INSERT INTO measure... " />
+            <marker date="1457477021209" expanded="true" signature="2095:2182" placeholder="INSERT INTO measure... " />
+            <marker date="1457477021209" expanded="true" signature="2095:2200" placeholder="INSERT INTO measure... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataBase/mysql/CreateMysqlTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27061856">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1457476756414" expanded="true" signature="1455:1479" placeholder="CREATE TABLE... sensorType" />
+            <marker date="1457476756414" expanded="true" signature="1455:1561" placeholder="CREATE TABLE... sensorType" />
+            <marker date="1457476756414" expanded="true" signature="1455:1630" placeholder="CREATE TABLE... sensorType" />
+            <marker date="1457476756414" expanded="true" signature="1455:1688" placeholder="CREATE TABLE... sensorType" />
+            <marker date="1457476756414" expanded="true" signature="1455:1727" placeholder="CREATE TABLE... sensorType" />
+            <marker date="1457476756414" expanded="true" signature="1989:2342" placeholder="CREATE TABLE... measure" />
+            <marker date="1457476756414" expanded="true" signature="1989:2344" placeholder="CREATE TABLE... measure" />
+            <marker date="1457476756414" expanded="true" signature="1989:2383" placeholder="CREATE TABLE... measure" />
+            <marker date="1457476756414" expanded="true" signature="2430:2992" placeholder="CREATE TABLE... measure" />
+            <marker date="1457476756414" expanded="true" signature="2620:2640" placeholder="CREATE TABLE... sensor" />
+            <marker date="1457476756414" expanded="true" signature="2620:2722" placeholder="CREATE TABLE... sensor" />
+            <marker date="1457476756414" expanded="true" signature="2620:2783" placeholder="CREATE TABLE... sensor" />
+            <marker date="1457476756414" expanded="true" signature="2620:2844" placeholder="CREATE TABLE... sensor" />
+            <marker date="1457476756414" expanded="true" signature="2620:2903" placeholder="CREATE TABLE... sensor" />
+            <marker date="1457476756414" expanded="true" signature="2620:2906" placeholder="CREATE TABLE... sensor" />
+            <marker date="1457476756414" expanded="true" signature="2620:2944" placeholder="CREATE TABLE... sensor" />
+            <marker date="1457476756414" expanded="true" signature="3182:3512" placeholder="CREATE TABLE... station" />
+            <marker date="1457476756414" expanded="true" signature="3182:3584" placeholder="CREATE TABLE... station" />
+            <marker date="1457476756414" expanded="true" signature="3182:3688" placeholder="CREATE TABLE... station" />
+            <marker date="1457476756414" expanded="true" signature="3817:4440" placeholder="ALTER TABLE #" />
+            <marker date="1457476756414" expanded="true" signature="3921:4014" placeholder="ALTER TABLE measure... " />
+            <marker date="1457476756414" expanded="true" signature="4080:4178" placeholder="ALTER TABLE sensor... " />
+            <marker date="1457476756414" expanded="true" signature="4244:4342" placeholder="ALTER TABLE sensor... " />
+          </folding>
         </state>
       </provider>
     </entry>

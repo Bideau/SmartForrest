@@ -9,5 +9,17 @@
       <secret-storage>master_key</secret-storage>
       <auth-required>false</auth-required>
     </data-source>
+    <data-source name="MySQL - smartforest@localhost" uuid="fc71a9c8-6c53-4978-ac4d-ab267c583be6">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>smartforest.*</schema-pattern>
+      <default-schemas>smartforest.*</default-schemas>
+    </data-source>
+    <data-source name="MySQL - SmartForest@srvmysql.imerir.com" uuid="a38487fa-acdc-476b-9881-89ceb36a5079">
+      <secret-storage>master_key</secret-storage>
+      <user-name>SmartForest</user-name>
+      <schema-pattern>SmartForest.*</schema-pattern>
+      <default-schemas>SmartForest.*</default-schemas>
+    </data-source>
   </component>
 </project>
