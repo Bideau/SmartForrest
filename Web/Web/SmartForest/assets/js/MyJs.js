@@ -1,19 +1,16 @@
 /**
  * Created by Arnaud on 11/02/2016.
  */
-function popup() {
-    window.alert("Test");
-}
+
+var adresseIPServeur = "http://172.30.0.103:8080/";
 
 function remplissageAutomatiqueEnregistrement() {
-    //alert("auto");
     document.getElementById("login").value = "toto";
     document.getElementById("password").value = "toto";
     document.getElementById("nom").value = "toto";
     document.getElementById("prenom").value = "toto";
     document.getElementById("description").value = "toto";
 }
-
 
 //***********************************************************//
 //***********************************************************//
@@ -34,9 +31,7 @@ function enregistrement() {
 
     var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '","nom": "' + nom + '","prenom": "' + prenom + '","description": "' + description + '"}';
 
-    //HttpPost("http://172.30.0.103:8080/user", trame);
-
-    xmlhttp.open("POST", "http://172.30.0.103:8080/user");
+    xmlhttp.open("POST", adresseIPServeur + "user");
 
     xmlhttp.send(trame);
 
@@ -101,7 +96,6 @@ function resetPasswordErrorConnexion() {
     document.getElementById("Wrong_password_connexion").innerHTML = "";
 }
 
-
 function connexion() {
 
     var xmlhttp = new XMLHttpRequest();
@@ -113,7 +107,7 @@ function connexion() {
 
     var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '"}';
 
-    xmlhttp.open("POST", "http://172.30.0.103:8080/login");
+    xmlhttp.open("POST", adresseIPServeur +  +"login");
 
     xmlhttp.send(trame);
 
@@ -227,7 +221,7 @@ function initProfileAdministrateur(password){
     // Verifier Admin ou Utilisateur
     var trame = '{"login": "' + login_Utilisateur + '","password": "' + passwordChiffre + '"}';
 
-    xmlhttp.open("POST", "http://172.30.0.103:8080/login");
+    xmlhttp.open("POST", adresseIPServeur +  "login");
 
     xmlhttp.send(trame);
 
@@ -274,7 +268,7 @@ function initSuppressionUtilisateurs(){
 
     // HTTP UTILISATEURS
     var xmlhttp = new XMLHttpRequest();
-    var url = "http://172.30.0.103:8080/userList";
+    var url = adresseIPServeur +  "userList";
 
     var stop = false;
 
@@ -300,14 +294,11 @@ function initSuppressionUtilisateurs(){
                         nom.push(myArr[i].nom);
                         prenom.push(myArr[i].prenom);
                         login.push(myArr[i].login);
-                        //alert(nom[i] + "  " +  prenom[i] + "  " + login[i]);
 
                         chaine = chaine + '<option value="">' + login[i] + ' - ' + prenom[i] + ' - ' + nom[i] + '</option>';
                     }
 
                     chaine = chaine + '</select>';
-
-                    //alert(chaine);
 
                     document.getElementById("listeUtilisateurs").innerHTML = chaine;
                 }
@@ -323,14 +314,10 @@ function ModifierProfilUtilisateur(){
     var stop = false;
 
     var desc = document.getElementById("inputDescription").value;
-
     var login = getCookie("login_utilisateur");
-
     var trame = '{"login": "' + login + '", "description" : "' + desc + '"}';
 
-    //alert(trame);
-
-    xmlhttp.open("POST", "http://172.30.0.103:8080/ModifyDescription");
+    xmlhttp.open("POST", adresseIPServeur + "ModifyDescription");
 
     xmlhttp.send(trame);
 
@@ -344,6 +331,8 @@ function ModifierProfilUtilisateur(){
                     alert("Description modifié.");
                     setCookie("description_utilisateur",desc);
 
+                    // Redirection vers le corps du site
+                    window.location.href = "profil.html";
                 }
                 break;
             default:
@@ -356,7 +345,6 @@ function ModifierProfilUtilisateur(){
 
 }
 
-
 function initAjouterSonde(){
 
     var nom_utilisateur = getCookie("nom_utilisateur");
@@ -368,7 +356,7 @@ function initAjouterSonde(){
 
     // HTTP UTILISATEURS
     var xmlhttp = new XMLHttpRequest();
-    var url = "http://172.30.0.103:8080/probeList";
+    var url = adresseIPServeur + "probeList";
 
     var stop = false;
 
@@ -413,7 +401,6 @@ function initAjouterTypeCapteur(){
     document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
 }
 
-
 function ModifierPasswordUtilisateur(){
 
 }
@@ -447,7 +434,7 @@ function SuppressionUtilisateur(){
 
         var trame = '{"login": "' + login + '"}';
 
-        xmlhttp.open("POST", "http://172.30.0.103:8080/deletedUser");
+        xmlhttp.open("POST", adresseIPServeur + "deletedUser");
 
         xmlhttp.send(trame);
 
@@ -508,29 +495,24 @@ function GetSensorData(choix) {
     var myDateDebut = new Date(dateDebutValue);
     var myDateFin = new Date(dateFinValue);
 
-    var dateDebut = (myDateDebut.getTime() / 1000).toFixed(0);
-    var dateFin = (myDateFin.getTime() / 1000).toFixed(0);
+    var dateDebut = ((myDateDebut.getTime() / 1000).toFixed(0)) - 3600;
+    var dateFin = ((myDateFin.getTime() / 1000).toFixed(0)) - 3600;
 
     // Trame pour récupérer les informations d'un capteur
     var trame = '{"login": "' + login + '","capteurId": "' + capteurId + '","dateDebut": "' + dateDebut + '","dateFin": "' + dateFin + '","mesure": "' + mesure + '"}';
 
-    //alert(trame);
-
-    xmlhttp.open("POST", "http://172.30.0.103:8080/capteur");
+    xmlhttp.open("POST", adresseIPServeur + "capteur");
 
     xmlhttp.send(trame);
 
     xmlhttp.onreadystatechange = function () {
 
-        //alert("Switch : " + xmlhttp.status + "    " + choix);
-
         switch (xmlhttp.status) {
             case 200:
-                if (xmlhttp.responseText != "" && stop == false) {
+                if (xmlhttp.readyState == 4 && xmlhttp.responseText != "" && stop == false) {
                     stop = true;
 
                     if(choix == "Graphique"){
-                        //alert("Graph");
 
                         var donnees = [];
                         var dates =  [];
@@ -623,7 +605,7 @@ function CreateGraphic(_donnees, _date) {
             }
         }],
         "chartScrollbar": {
-            "autoGridCount": true,
+            "autoGridCount": false,
             "graph": "g1",
             "scrollbarHeight": 40
         },
@@ -632,10 +614,11 @@ function CreateGraphic(_donnees, _date) {
         },
         "categoryField": "date",
         "categoryAxis": {
-            "parseDates": true,
+            "parseDates": false,
             "axisColor": "#DADADA",
             "dashLength": 1,
-            "minorGridEnabled": true
+            "minorGridEnabled": true,
+            "labelRotation": 90
         },
         "export": {
             "enabled": true
@@ -654,13 +637,29 @@ function CreateGraphic(_donnees, _date) {
     // generate some random data, quite different range
     function generateChartData(donnees, date) {
         var chartData = [];
+        var toto = false;
 
         for (var i = 0; i < donnees.length; i++) {
 
             var dateFormatte = new Date(date[i]*1000);
 
+            var newnewdate = dateFormatte.getDate() + "/" + (dateFormatte.getMonth() + 1) + "/" + dateFormatte.getFullYear() + " \
+                 " + dateFormatte.getHours() + ":" + dateFormatte.getMinutes() + ":" + dateFormatte.getSeconds();
+
+            if(toto == false){
+                toto = true;
+                alert("go");
+
+                alert(dateFormatte + "\n" + newnewdate);
+
+            }
+
+
+            console.log("d : " + newnewdate);
+            console.log("v : " + donnees[i]);
+
             chartData.push({
-                date: dateFormatte,
+                date: newnewdate,
                 visits: donnees[i]
             });
         }
@@ -668,39 +667,6 @@ function CreateGraphic(_donnees, _date) {
         //alert("ChartData : " + chartData)
 
         return chartData;
-    }
-}
-
-//***********************************************************//
-//***************************** HTTP ************************//
-//***********************************************************//
-
-function HttpGet() {
-    var xmlhttp = new XMLHttpRequest();
-    var url = "http://172.30.0.103:8080/login";
-    //var url = "toto.txt";
-
-    // Valide le fonctionnement du protocole HTTP sur le naviguateur
-    xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            var myArr = JSON.parse(xmlhttp.responseText);
-            GetInformations(myArr);
-        } else {
-            alert("Erreur HTTP\nready state : " + xmlhttp.readyState + "        status : " + xmlhttp.status);
-        }
-    };
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
-
-    function GetInformations(arr) {
-        var out = "";
-        var i;
-
-        for (i = 0; i < arr.length; i++) {
-            out += '<p>' + arr[i].Valid + '</p><br>';
-        }
-
-        document.getElementById("id01").innerHTML = out;
     }
 }
 
@@ -921,8 +887,9 @@ function timeConverter(UNIX_timestamp){
     return time;
 }
 
+//******************************************************//
 //******************* IO FILES *************************//
-
+//******************************************************//
 
 // JSON --> CSV
 // http://jsfiddle.net/hybrid13i/JXrwM/
