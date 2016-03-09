@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>69f72518-006f-4956-9c0e-27a4341ea2e1</OriginalElement>
+  <nodes>
+    <node x="0.0" y="122.0">69f72518-006f-4956-9c0e-27a4341ea2e1.TABLE:value</node>
+    <node x="49.0" y="0.0">69f72518-006f-4956-9c0e-27a4341ea2e1.TABLE:probe</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="69f72518-006f-4956-9c0e-27a4341ea2e1.TABLE:value" target="69f72518-006f-4956-9c0e-27a4341ea2e1.TABLE:probe">
+      <point x="0.0" y="-88.5" />
+      <point x="0.0" y="36.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="217.5" y="149.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
