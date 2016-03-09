@@ -1,0 +1,1011 @@
+/**
+ * Created by Arnaud on 11/02/2016.
+ */
+function popup() {
+    window.alert("Test");
+}
+
+function remplissageAutomatiqueEnregistrement() {
+    //alert("auto");
+    document.getElementById("login").value = "toto";
+    document.getElementById("password").value = "toto";
+    document.getElementById("nom").value = "toto";
+    document.getElementById("prenom").value = "toto";
+    document.getElementById("description").value = "toto";
+}
+
+
+//***********************************************************//
+//***********************************************************//
+
+function enregistrement() {
+
+    var xmlhttp = new XMLHttpRequest();
+
+    var stop = false;
+
+    var login = document.getElementById("login").value;
+    var motDePasse = document.getElementById("password").value;
+    var nom = document.getElementById("nom").value;
+    var prenom = document.getElementById("prenom").value;
+    var description = document.getElementById("description").value;
+
+    var motDePasseChiffre = calcMD5(motDePasse);
+
+    var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '","nom": "' + nom + '","prenom": "' + prenom + '","description": "' + description + '"}';
+
+    //HttpPost("http://172.30.0.103:8080/user", trame);
+
+    xmlhttp.open("POST", "http://172.30.0.103:8080/user");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("Enregistrement effectué");
+                }
+                break;
+            case 1000:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue");
+                }
+                break;
+            case 1001:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Erreur de base de données");
+                }
+                break;
+            case 1004:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Erreur de communication JSON");
+                }
+                break;
+            case 1005:
+                document.getElementById("Wrong_login_enregistrement").innerHTML = "Login déjà utilisé";
+                break;
+            case 0:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Serveur injoignable");
+                }
+                break;
+            default:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("OTHER : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+function resetLoginErrorEnregistrement() {
+    document.getElementById("Wrong_login_enregistrement").innerHTML = "";
+}
+
+function resetPasswordErrorEnregistrement() {
+    document.getElementById("Wrong_password_enregistrement").innerHTML = "";
+}
+
+function resetLoginErrorConnexion() {
+    document.getElementById("Wrong_login_connexion").innerHTML = "";
+}
+
+function resetPasswordErrorConnexion() {
+    document.getElementById("Wrong_password_connexion").innerHTML = "";
+}
+
+
+function connexion() {
+
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var login = document.getElementById("login").value;
+    var motDePasse = document.getElementById("password").value;
+    var motDePasseChiffre = calcMD5(motDePasse);
+
+    var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '"}';
+
+    xmlhttp.open("POST", "http://172.30.0.103:8080/login");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    // JSON Parsing
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    // Gestion des cookies
+                    setCookie("login_utilisateur", myArr.login);
+                    setCookie("nom_utilisateur", myArr.nom);
+                    setCookie("prenom_utilisateur", myArr.prenom);
+                    setCookie("description_utilisateur", myArr.description);
+                    setCookie("admin_button_view", myArr.isAdmin);
+
+                    // Redirection vers le corps du site
+                    window.location.href = "index.html";
+                }
+                break;
+            case 1002:
+                document.getElementById("Wrong_login_connexion").innerHTML = "Login incorrect";
+                result = false;
+                break;
+            case 1003:
+                document.getElementById("Wrong_password_connexion").innerHTML = "Mot de passe incorrect";
+                result = false;
+                break;
+            case 0:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Serveur injoignable");
+                }
+                break;
+            default:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("OTHER : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+//*****************************************************//
+//****************** INITIALISATIONS ******************//
+//*****************************************************//
+
+function initConnexion() {
+
+    if (navigator.cookieEnabled) {
+        // Cookies acceptés
+        if (getCookie("nom_utilisateur") != null) {
+            document.getElementById("login").innerHTML = getCookie("nom_utilisateur");
+            document.getElementById("password").innerHTML = getCookie("mot_de_passe_utilisateur");
+        }
+    }
+}
+
+function initIndex() {
+
+    if (navigator.cookieEnabled) {
+        // Cookies acceptés
+    } else {
+        alert("Vos cookies sont désactivés.\nActivez les pour vous connecter.");
+    }
+
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+}
+
+function initProfile(){
+
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("nomUtilisateur").innerHTML = "Nom : " + nom_utilisateur + "<br />";
+    document.getElementById("prenomUtilisateur").innerHTML = "Prenom : " + prenom_utilisateur + "<br />";
+    document.getElementById("descriptionUtilisateur").innerHTML = 'Description : <input id="inputDescription" style="width:50%" size="20" value="' + Description_Utilisateur + '"/>';
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+
+    if(getCookie("admin_button_view") == "true"){
+        document.getElementById("logAdmin").innerHTML = '<input id="adminPassword" type="password" style="width:30%" size="20" placeholder="admin password"/> <br /><a id="accesAdmin" onclick="AccesAdmin()" class="button">Commandes administrateur</a>'
+    }
+}
+
+function AccesAdmin(){
+    // Récupération du statut (Utilisateur ou Admin)
+    //alert(document.getElementById("adminPassword").value);
+    initProfileAdministrateur(document.getElementById("adminPassword").value);
+}
+
+function initProfileAdministrateur(password){
+
+    var xmlhttp = new XMLHttpRequest();
+    var login_Utilisateur = getCookie("login_utilisateur");
+    var stop = false;
+
+    var passwordChiffre = calcMD5(password);
+
+    // Verifier Admin ou Utilisateur
+    var trame = '{"login": "' + login_Utilisateur + '","password": "' + passwordChiffre + '"}';
+
+    xmlhttp.open("POST", "http://172.30.0.103:8080/login");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    //alert(xmlhttp.responseText);
+
+                    // JSON Parsing
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    if(myArr.isAdmin == true){
+
+                        document.getElementById("adminPassword").remove();
+                        document.getElementById("accesAdmin").remove();
+
+                        document.getElementById("PannelAdministrateur").innerHTML = '<h3>Commandes Administrateur</h3>';
+                        document.getElementById("DivAjouterUtilisateur").innerHTML = '<a onclick="AjouterUtilisateur()" class="button">Ajouter Utilisateur</a>';
+                        document.getElementById("DivSupprimerUtilisateur").innerHTML = '<a onclick="SupprimerUtilisateur()" class="button">Supprimer Utilisateur</a>';
+                        document.getElementById("DivDroitsUtilisateur").innerHTML = '<a onclick="ModificationDroitsUtilisateur()" class="button">Modifier Utilisateur</a>';
+                        document.getElementById("DivModificationSonde").innerHTML = '<a onclick="ModificationSonde()" class="button">Modifier Sonde</a>';
+                        document.getElementById("DivAjoutTypeCapteur").innerHTML = '<a onclick="AjouterTypeCapteur()" class="button">Ajouter Capteur</a>';
+                    }
+                }
+            default:
+                // Utilisateur
+        }
+    };
+}
+
+function initSuppressionUtilisateurs(){
+
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+
+    // HTTP UTILISATEURS
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://172.30.0.103:8080/userList";
+
+    var stop = false;
+
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    var nom = [];
+                    var prenom = [];
+                    var login = [];
+
+                    var chaine = '<select name="demo-category" id="UserList">';
+
+                    for (var i = 0; i < myArr.length; i++) {
+                        nom.push(myArr[i].nom);
+                        prenom.push(myArr[i].prenom);
+                        login.push(myArr[i].login);
+                        //alert(nom[i] + "  " +  prenom[i] + "  " + login[i]);
+
+                        chaine = chaine + '<option value="">' + login[i] + ' - ' + prenom[i] + ' - ' + nom[i] + '</option>';
+                    }
+
+                    chaine = chaine + '</select>';
+
+                    //alert(chaine);
+
+                    document.getElementById("listeUtilisateurs").innerHTML = chaine;
+                }
+                break;
+        }
+    };
+}
+
+function ModifierProfilUtilisateur(){
+
+    var xmlhttp = new XMLHttpRequest();
+
+    var stop = false;
+
+    var desc = document.getElementById("inputDescription").value;
+
+    var login = getCookie("login_utilisateur");
+
+    var trame = '{"login": "' + login + '", "description" : "' + desc + '"}';
+
+    //alert(trame);
+
+    xmlhttp.open("POST", "http://172.30.0.103:8080/ModifyDescription");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+
+                    alert("Description modifié.");
+                    setCookie("description_utilisateur",desc);
+
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+
+}
+
+
+function initAjouterSonde(){
+
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+
+    // HTTP UTILISATEURS
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://172.30.0.103:8080/probeList";
+
+    var stop = false;
+
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    var sonde = [];
+
+                    var chaine = '<select name="demo-category" id="sondeList">';
+
+                    for (var i = 0; i < myArr.length; i++) {
+
+                        sonde.push(myArr[i][1]);
+
+                        chaine = chaine + '<option value="">' + sonde[i] + '</option>';
+                    }
+
+                    chaine = chaine + '</select>';
+
+                    document.getElementById("listeSonde").innerHTML += chaine;
+                }
+                break;
+        }
+    };
+}
+
+function initAjouterTypeCapteur(){
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+}
+
+
+function ModifierPasswordUtilisateur(){
+
+}
+
+//***********************************************************//
+//*********************** ADMIN FUNCTIONS *******************//
+//***********************************************************//
+
+function AjouterUtilisateur(){
+    document.location.href="enregistrement.html";
+}
+
+function SupprimerUtilisateur(){
+    document.location.href="suppressionUtilisateur.html";
+}
+
+function SuppressionUtilisateur(){
+
+    var index = document.getElementById("UserList");
+    var all = index.options[index.selectedIndex].text;
+
+    var login = all.split("-");
+
+    login = login[0].trimRight();
+
+    var answer = confirm("Voulez-vous vraiment supprimer " + login + " ?");
+    if (answer){
+        var xmlhttp = new XMLHttpRequest();
+
+        var stop = false;
+
+        var trame = '{"login": "' + login + '"}';
+
+        xmlhttp.open("POST", "http://172.30.0.103:8080/deletedUser");
+
+        xmlhttp.send(trame);
+
+        xmlhttp.onreadystatechange = function () {
+
+            switch (xmlhttp.status) {
+                case 200:
+                    if (stop == false){
+                        stop = true;
+
+                        alert(login + " supprimé.");
+
+                        document.location.href="suppressionUtilisateur.html";
+
+                    }
+                    break;
+                default:
+                    alert("Erreur inconnue : " + xmlhttp.status);
+            }
+        };
+    }
+}
+
+function ModificationDroitsUtilisateur(){
+
+}
+
+function AjouterSonde(){
+    document.location.href="ajouterSonde.html";
+}
+
+function AjouterTypeCapteur(){
+    document.location.href="ajouterTypeCapteur.html";
+
+}
+
+//***********************************************************//
+//*********************** GRAPHICS **************************//
+//***********************************************************//
+
+
+function GetSensorData(choix) {
+
+    var stop = false;
+
+    var xmlhttp = new XMLHttpRequest();
+
+    var login = getCookie("login_utilisateur");
+    var capteurId = document.getElementById("capteurId").value;
+
+    var dateDebutValue = document.getElementById("dateDebut").value;
+    var dateFinValue = document.getElementById("dateFin").value;
+
+    var $radio = $('input[name=demo-priority]:checked');
+    var mesure = $radio.attr('id');
+
+    // Conversion Date to Timestamp
+    var myDateDebut = new Date(dateDebutValue);
+    var myDateFin = new Date(dateFinValue);
+
+    var dateDebut = (myDateDebut.getTime() / 1000).toFixed(0);
+    var dateFin = (myDateFin.getTime() / 1000).toFixed(0);
+
+    // Trame pour récupérer les informations d'un capteur
+    var trame = '{"login": "' + login + '","capteurId": "' + capteurId + '","dateDebut": "' + dateDebut + '","dateFin": "' + dateFin + '","mesure": "' + mesure + '"}';
+
+    //alert(trame);
+
+    xmlhttp.open("POST", "http://172.30.0.103:8080/capteur");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        //alert("Switch : " + xmlhttp.status + "    " + choix);
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    if(choix == "Graphique"){
+                        //alert("Graph");
+
+                        var donnees = [];
+                        var dates =  [];
+
+                        // JSON Parsing
+                        var myArr = JSON.parse(xmlhttp.responseText);
+
+                        for (var i = 0; i < myArr.releve.length; i++) {
+                            var counter = myArr.releve[i];
+                            console.log(counter.mesure);
+
+                            donnees.push(myArr.releve[i].mesure);
+                            dates.push(myArr.releve[i].dateReleve);
+                        }
+                        CreateGraphic(donnees, dates);
+
+                    }else if(choix == "CSV"){
+                        JSONToCSVConvertor(xmlhttp.responseText, mesure, true);
+                    }else if(choix == "XML"){
+                        // Create x2js instance with default config
+                        var x2js = new X2JS();
+
+                        // JSON Parsing
+                        var myArr = JSON.parse(xmlhttp.responseText);
+
+                        var xmlAsStr = x2js.json2xml_str(myArr);
+
+                        alert(xmlAsStr);
+
+                        download(xmlAsStr, mesure + ".xml", "application/xml");
+
+                    }
+                }
+                break;
+            case 1006:
+                document.getElementById("Invalid_Graph").innerHTML = "Balise inconnue";
+                result = false;
+                break;
+            case 1007:
+                document.getElementById("Invalid_Graph").innerHTML = "Accées interdit à " + getCookie("login_utilisateur");
+                result = false;
+                break;
+            case 0:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Serveur injoignable");
+                }
+                break;
+            default:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("OTHER : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+//********************************************************************//
+//*********************** GENERATION GRAPHIQUE ***********************//
+//********************************************************************//
+
+function CreateGraphic(_donnees, _date) {
+
+    var chartData = generateChartData(_donnees, _date);
+    var chart = AmCharts.makeChart("chartdiv", {
+        "type": "serial",
+        "theme": "light",
+        "marginRight": 80,
+        "autoMarginOffset": 20,
+        "marginTop": 7,
+        "dataProvider": chartData,
+        "valueAxes": [{
+            "axisAlpha": 0.2,
+            "dashLength": 1,
+            "position": "left"
+        }],
+        "mouseWheelZoomEnabled": true,
+        "graphs": [{
+            "id": "g1",
+            "balloonText": "[[value]]",
+            "bullet": "round",
+            "bulletBorderAlpha": 1,
+            "bulletColor": "#FFFFFF",
+            "hideBulletsCount": 50,
+            "title": "red line",
+            "valueField": "visits",
+            "useLineColorForBulletBorder": true,
+            "balloon":{
+                "drop":true
+            }
+        }],
+        "chartScrollbar": {
+            "autoGridCount": true,
+            "graph": "g1",
+            "scrollbarHeight": 40
+        },
+        "chartCursor": {
+            "limitToGraph":"g1"
+        },
+        "categoryField": "date",
+        "categoryAxis": {
+            "parseDates": true,
+            "axisColor": "#DADADA",
+            "dashLength": 1,
+            "minorGridEnabled": true
+        },
+        "export": {
+            "enabled": true
+        }
+    });
+
+    chart.addListener("rendered", zoomChart);
+    zoomChart();
+
+    // this method is called when chart is first inited as we listen for "rendered" event
+    function zoomChart() {
+        // different zoom methods can be used - zoomToIndexes, zoomToDates, zoomToCategoryValues
+        chart.zoomToIndexes(chartData.length - 40, chartData.length - 1);
+    }
+
+    // generate some random data, quite different range
+    function generateChartData(donnees, date) {
+        var chartData = [];
+
+        for (var i = 0; i < donnees.length; i++) {
+
+            var dateFormatte = new Date(date[i]*1000);
+
+            chartData.push({
+                date: dateFormatte,
+                visits: donnees[i]
+            });
+        }
+
+        //alert("ChartData : " + chartData)
+
+        return chartData;
+    }
+}
+
+//***********************************************************//
+//***************************** HTTP ************************//
+//***********************************************************//
+
+function HttpGet() {
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://172.30.0.103:8080/login";
+    //var url = "toto.txt";
+
+    // Valide le fonctionnement du protocole HTTP sur le naviguateur
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var myArr = JSON.parse(xmlhttp.responseText);
+            GetInformations(myArr);
+        } else {
+            alert("Erreur HTTP\nready state : " + xmlhttp.readyState + "        status : " + xmlhttp.status);
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    function GetInformations(arr) {
+        var out = "";
+        var i;
+
+        for (i = 0; i < arr.length; i++) {
+            out += '<p>' + arr[i].Valid + '</p><br>';
+        }
+
+        document.getElementById("id01").innerHTML = out;
+    }
+}
+
+//***********************************************************//
+//***************** GESTION DES COOKIES *********************//
+//***********************************************************//
+
+// Enregistrer un cookie sur le naviguateur
+function setCookie(nom, Valeur) {
+    var today = new Date(), expires = new Date();
+    // Expire au bout de 7 jours
+    expires.setTime(today.getTime() + (7 * 24 * 60 * 60 * 1000));
+    document.cookie = nom + "=" + encodeURIComponent(Valeur) + ";expires=" + expires.toGMTString();
+}
+
+// Récupérer un cookie
+function getCookie(nom) {
+    var cookContent = document.cookie, cookEnd, i, j;
+    var sName = nom + "=";
+
+    for (i = 0, c = cookContent.length; i < c; i++) {
+        j = i + sName.length;
+        if (cookContent.substring(i, j) == sName) {
+            cookEnd = cookContent.indexOf(";", j);
+            if (cookEnd == -1) {
+                cookEnd = cookContent.length;
+            }
+            return decodeURIComponent(cookContent.substring(j, cookEnd));
+        }
+    }
+    return null;
+}
+
+
+//****************************************************************//
+//************************ CHIFFRAGE MD5 *************************//
+//****************************************************************//
+
+
+/*
+ * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
+ * Digest Algorithm, as defined in RFC 1321.
+ * Copyright (C) Paul Johnston 1999 - 2000.
+ * Updated by Greg Holt 2000 - 2001.
+ * See http://pajhome.org.uk/site/legal.html for details.
+ */
+
+/*
+ * Convert a 32-bit number to a hex string with ls-byte first
+ */
+var hex_chr = "0123456789abcdef";
+function rhex(num) {
+    str = "";
+    for (j = 0; j <= 3; j++)
+        str += hex_chr.charAt((num >> (j * 8 + 4)) & 0x0F) +
+            hex_chr.charAt((num >> (j * 8)) & 0x0F);
+    return str;
+}
+
+/*
+ * Convert a string to a sequence of 16-word blocks, stored as an array.
+ * Append padding bits and the length, as described in the MD5 standard.
+ */
+function str2blks_MD5(str) {
+    nblk = ((str.length + 8) >> 6) + 1;
+    blks = new Array(nblk * 16);
+    for (i = 0; i < nblk * 16; i++) blks[i] = 0;
+    for (i = 0; i < str.length; i++)
+        blks[i >> 2] |= str.charCodeAt(i) << ((i % 4) * 8);
+    blks[i >> 2] |= 0x80 << ((i % 4) * 8);
+    blks[nblk * 16 - 2] = str.length * 8;
+    return blks;
+}
+
+/*
+ * Add integers, wrapping at 2^32. This uses 16-bit operations internally
+ * to work around bugs in some JS interpreters.
+ */
+function add(x, y) {
+    var lsw = (x & 0xFFFF) + (y & 0xFFFF);
+    var msw = (x >> 16) + (y >> 16) + (lsw >> 16);
+    return (msw << 16) | (lsw & 0xFFFF);
+}
+
+/*
+ * Bitwise rotate a 32-bit number to the left
+ */
+function rol(num, cnt) {
+    return (num << cnt) | (num >>> (32 - cnt));
+}
+
+/*
+ * These functions implement the basic operation for each round of the
+ * algorithm.
+ */
+function cmn(q, a, b, x, s, t) {
+    return add(rol(add(add(a, q), add(x, t)), s), b);
+}
+function ff(a, b, c, d, x, s, t) {
+    return cmn((b & c) | ((~b) & d), a, b, x, s, t);
+}
+function gg(a, b, c, d, x, s, t) {
+    return cmn((b & d) | (c & (~d)), a, b, x, s, t);
+}
+function hh(a, b, c, d, x, s, t) {
+    return cmn(b ^ c ^ d, a, b, x, s, t);
+}
+function ii(a, b, c, d, x, s, t) {
+    return cmn(c ^ (b | (~d)), a, b, x, s, t);
+}
+
+/*
+ * Take a string and return the hex representation of its MD5.
+ */
+function calcMD5(str) {
+    x = str2blks_MD5(str);
+    a = 1732584193;
+    b = -271733879;
+    c = -1732584194;
+    d = 271733878;
+
+    for (i = 0; i < x.length; i += 16) {
+        olda = a;
+        oldb = b;
+        oldc = c;
+        oldd = d;
+
+        a = ff(a, b, c, d, x[i + 0], 7, -680876936);
+        d = ff(d, a, b, c, x[i + 1], 12, -389564586);
+        c = ff(c, d, a, b, x[i + 2], 17, 606105819);
+        b = ff(b, c, d, a, x[i + 3], 22, -1044525330);
+        a = ff(a, b, c, d, x[i + 4], 7, -176418897);
+        d = ff(d, a, b, c, x[i + 5], 12, 1200080426);
+        c = ff(c, d, a, b, x[i + 6], 17, -1473231341);
+        b = ff(b, c, d, a, x[i + 7], 22, -45705983);
+        a = ff(a, b, c, d, x[i + 8], 7, 1770035416);
+        d = ff(d, a, b, c, x[i + 9], 12, -1958414417);
+        c = ff(c, d, a, b, x[i + 10], 17, -42063);
+        b = ff(b, c, d, a, x[i + 11], 22, -1990404162);
+        a = ff(a, b, c, d, x[i + 12], 7, 1804603682);
+        d = ff(d, a, b, c, x[i + 13], 12, -40341101);
+        c = ff(c, d, a, b, x[i + 14], 17, -1502002290);
+        b = ff(b, c, d, a, x[i + 15], 22, 1236535329);
+
+        a = gg(a, b, c, d, x[i + 1], 5, -165796510);
+        d = gg(d, a, b, c, x[i + 6], 9, -1069501632);
+        c = gg(c, d, a, b, x[i + 11], 14, 643717713);
+        b = gg(b, c, d, a, x[i + 0], 20, -373897302);
+        a = gg(a, b, c, d, x[i + 5], 5, -701558691);
+        d = gg(d, a, b, c, x[i + 10], 9, 38016083);
+        c = gg(c, d, a, b, x[i + 15], 14, -660478335);
+        b = gg(b, c, d, a, x[i + 4], 20, -405537848);
+        a = gg(a, b, c, d, x[i + 9], 5, 568446438);
+        d = gg(d, a, b, c, x[i + 14], 9, -1019803690);
+        c = gg(c, d, a, b, x[i + 3], 14, -187363961);
+        b = gg(b, c, d, a, x[i + 8], 20, 1163531501);
+        a = gg(a, b, c, d, x[i + 13], 5, -1444681467);
+        d = gg(d, a, b, c, x[i + 2], 9, -51403784);
+        c = gg(c, d, a, b, x[i + 7], 14, 1735328473);
+        b = gg(b, c, d, a, x[i + 12], 20, -1926607734);
+
+        a = hh(a, b, c, d, x[i + 5], 4, -378558);
+        d = hh(d, a, b, c, x[i + 8], 11, -2022574463);
+        c = hh(c, d, a, b, x[i + 11], 16, 1839030562);
+        b = hh(b, c, d, a, x[i + 14], 23, -35309556);
+        a = hh(a, b, c, d, x[i + 1], 4, -1530992060);
+        d = hh(d, a, b, c, x[i + 4], 11, 1272893353);
+        c = hh(c, d, a, b, x[i + 7], 16, -155497632);
+        b = hh(b, c, d, a, x[i + 10], 23, -1094730640);
+        a = hh(a, b, c, d, x[i + 13], 4, 681279174);
+        d = hh(d, a, b, c, x[i + 0], 11, -358537222);
+        c = hh(c, d, a, b, x[i + 3], 16, -722521979);
+        b = hh(b, c, d, a, x[i + 6], 23, 76029189);
+        a = hh(a, b, c, d, x[i + 9], 4, -640364487);
+        d = hh(d, a, b, c, x[i + 12], 11, -421815835);
+        c = hh(c, d, a, b, x[i + 15], 16, 530742520);
+        b = hh(b, c, d, a, x[i + 2], 23, -995338651);
+
+        a = ii(a, b, c, d, x[i + 0], 6, -198630844);
+        d = ii(d, a, b, c, x[i + 7], 10, 1126891415);
+        c = ii(c, d, a, b, x[i + 14], 15, -1416354905);
+        b = ii(b, c, d, a, x[i + 5], 21, -57434055);
+        a = ii(a, b, c, d, x[i + 12], 6, 1700485571);
+        d = ii(d, a, b, c, x[i + 3], 10, -1894986606);
+        c = ii(c, d, a, b, x[i + 10], 15, -1051523);
+        b = ii(b, c, d, a, x[i + 1], 21, -2054922799);
+        a = ii(a, b, c, d, x[i + 8], 6, 1873313359);
+        d = ii(d, a, b, c, x[i + 15], 10, -30611744);
+        c = ii(c, d, a, b, x[i + 6], 15, -1560198380);
+        b = ii(b, c, d, a, x[i + 13], 21, 1309151649);
+        a = ii(a, b, c, d, x[i + 4], 6, -145523070);
+        d = ii(d, a, b, c, x[i + 11], 10, -1120210379);
+        c = ii(c, d, a, b, x[i + 2], 15, 718787259);
+        b = ii(b, c, d, a, x[i + 9], 21, -343485551);
+
+        a = add(a, olda);
+        b = add(b, oldb);
+        c = add(c, oldc);
+        d = add(d, oldd);
+    }
+    return rhex(a) + rhex(b) + rhex(c) + rhex(d);
+}
+
+ //******************* TIME CONVERTER *********************//
+
+// TIMESTAMP --> Date personnalisée
+function timeConverter(UNIX_timestamp){
+    var a = new Date(UNIX_timestamp * 1000);
+    var months = [01,02,03,04,05,06,07,08,09,10,11,12];
+    var year = a.getFullYear();
+    var month = months[a.getMonth()];
+    var date = a.getDate();
+    var hour = a.getHours();
+    var min = a.getMinutes();
+    var sec = a.getSeconds();
+    //yyyy-MM-dd HH:mm:ss
+    var time = year + '-' + month + '-' + date + ' ' + hour + ':' + min + ':' + sec ;
+    return time;
+}
+
+//******************* IO FILES *************************//
+
+
+// JSON --> CSV
+// http://jsfiddle.net/hybrid13i/JXrwM/
+
+function JSONToCSVConvertor(JSONData, ReportTitle, ShowLabel) {
+
+    //If JSONData is not an object then JSON.parse will parse the JSON string in an Object
+    var arrData = typeof JSONData != 'object' ? JSON.parse(JSONData) : JSONData;
+
+    var CSV = '';
+
+    //Set Report title in first row or line
+    CSV += ReportTitle + '\r\n\n';
+
+    //This condition will generate the Label/Header
+    if (ShowLabel) {
+        var row = "";
+
+        //This loop will extract the label from 1st index of on array
+        for (var index in arrData[0]) {
+
+            //Now convert each value to string and comma-seprated
+            row += index + ',';
+        }
+
+        row = row.slice(0, -1);
+
+        //append Label row with line break
+        CSV += row + '\r\n';
+    }
+
+    // Format Expressions
+    for(var j = 0;  j < arrData.releve.length; j++) {
+
+        arrData.releve[j].dateReleve = timeConverter(arrData.releve[j].dateReleve);
+
+        arrData.releve[j].mesure = arrData.releve[j].mesure.toString().replace('.',',');
+
+    }
+
+    //1st loop is to extract each row
+    for (var i = 0; i < arrData.releve.length; i++) {
+        var row = "";
+
+        //2nd loop will extract each column and convert it in string comma-seprated
+        for (var index in arrData.releve[i]) {
+            row += '"' + arrData.releve[i][index] + '";';
+        }
+
+        row.slice(0, row.length - 1);
+
+        //add a line break after each row
+        CSV += row + '\r\n';
+    }
+
+    if (CSV == '') {
+        alert("Invalid data");
+        return;
+    }
+
+    //Generate a file name
+    var fileName = "MyReport_";
+    //this will remove the blank-spaces from the title and replace it with an underscore
+    fileName += ReportTitle.replace(/ /g,"_");
+
+    //Initialize file format you want csv or xls
+    var uri = 'data:text/csv;charset=utf-8,' + escape(CSV);
+
+    // Now the little tricky part.
+    // you can use either>> window.open(uri);
+    // but this will not work in some browsers
+    // or you will not get the correct file extension
+
+    //this trick will generate a temp <a /> tag
+    var link = document.createElement("a");
+    link.href = uri;
+
+    //set the visibility hidden so it will not effect on your web-layout
+    link.style = "visibility:hidden";
+    link.download = fileName + ".csv";
+
+    //this part will append the anchor tag and remove it after automatic click
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
