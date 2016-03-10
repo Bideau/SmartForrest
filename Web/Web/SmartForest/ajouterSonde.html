@@ -21,7 +21,8 @@
 <!-- Header -->
 <section id="header">
     <header>
-        <span class="image avatar"><img src="images/Profil.png" alt=""/></span>
+        <span class="image avatar"><img class="imageProfil" src="images/Profil.png" alt=""
+                                        onclick='window.location.href="profil.html";'/></span>
         <h1 id="logo">Default</h1>
         <p id="Description_Utilisateur">Default Description</p>
     </header>
@@ -64,11 +65,25 @@
                 </div>
 
                 <div class="row uniform">
-                    <div class="6u 12u(xsmall)"><input type="date" name="dateDeploiement" id="dateDeploiement"/></div>
+                    <div class="6u 12u(xsmall)">Date d'installation &nbsp <input type="date" name="dateDeploiement" id="dateDeploiement"/></div>
                     <br/>
                 </div>
 
-                <div id="listeSonde"><br /><br /></div>
+                <div class="row uniform">
+                    <div class="6u 12u(xsmall)">Nombre de capteur &nbsp <input onchange="ajoutCapteurASonde()" type="number" name="nombreCapteur" id="nombreCapteur"/>
+                        <!--<input type="button" class="special" value="Selectionner" onclick="ajoutCapteurASonde()"/>-->
+                    </div>
+                    <br/>
+                </div>
+
+                <div class="menu-container">
+                    <div class="row uniform">
+                        <div class="12u">
+                            <div class="select-wrapper" style="width:120%">
+                                <span id="listeSonde"></span>
+                            </div>
+                        </div>
+                    </div>
 
                 <div class="row uniform">
                     <div class="12u">

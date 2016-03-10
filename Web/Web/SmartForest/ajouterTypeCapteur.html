@@ -21,7 +21,8 @@
 <!-- Header -->
 <section id="header">
     <header>
-        <span class="image avatar"><img src="images/Profil.png" alt=""/></span>
+        <span class="image avatar"><img class="imageProfil" src="images/Profil.png" alt=""
+                                        onclick='window.location.href="profil.html";'/></span>
         <h1 id="logo">Default</h1>
         <p id="Description_Utilisateur">Default Description</p>
     </header>
@@ -49,31 +50,14 @@
                 </header>
 
                 <div class="row uniform">
-                    <div class="6u 12u(xsmall)"><input type="text" name="nomSonde" id="nomSonde" placeholder="nom"/></div>
+                    <div class="6u 12u(xsmall)"><input type="text" name="TypeCapteur" id="TypeCapteur" placeholder="Type Capteur"/></div>
                     <br/>
                 </div>
-
-                <div class="row uniform">
-                    <div class="6u 12u(xsmall)"><input type="text" name="longitude" id="longitude" placeholder="longitude"/></div>
-                    <br/>
-                </div>
-
-                <div class="row uniform">
-                    <div class="6u 12u(xsmall)"><input type="text" name="latitude" id="latitude" placeholder="latitude"/></div>
-                    <br/>
-                </div>
-
-                <div class="row uniform">
-                    <div class="6u 12u(xsmall)"><input type="date" name="dateDeploiement" id="dateDeploiement"/></div>
-                    <br/>
-                </div>
-
-                <div id="listeSonde"><br /><br /></div>
 
                 <div class="row uniform">
                     <div class="12u">
                         <ul class="actions">
-                            <li><input type="button" class="special" value="Ajouter" onclick="AjouterSonde()"/></li>
+                            <li><input type="button" class="special" value="Ajouter" onclick="AjouterTypeCapteur()"/></li>
                             <!--<li><input type="button" class="special" value="Auto" onclick="remplissageAutomatiqueEnregistrement()"/></li>
                             <li><input type="reset" value="Reset Form"/></li>-->
                         </ul>

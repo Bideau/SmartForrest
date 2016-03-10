@@ -107,7 +107,7 @@ function connexion() {
 
     var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '"}';
 
-    xmlhttp.open("POST", adresseIPServeur +  +"login");
+    xmlhttp.open("POST", adresseIPServeur + "login");
 
     xmlhttp.send(trame);
 
@@ -122,11 +122,11 @@ function connexion() {
                     var myArr = JSON.parse(xmlhttp.responseText);
 
                     // Gestion des cookies
-                    setCookie("login_utilisateur", myArr.login);
-                    setCookie("nom_utilisateur", myArr.nom);
-                    setCookie("prenom_utilisateur", myArr.prenom);
-                    setCookie("description_utilisateur", myArr.description);
-                    setCookie("admin_button_view", myArr.isAdmin);
+                    setCookie("login_utilisateur", myArr.login,7);
+                    setCookie("nom_utilisateur", myArr.nom,7);
+                    setCookie("prenom_utilisateur", myArr.prenom,7);
+                    setCookie("description_utilisateur", myArr.description,7);
+                    setCookie("admin_button_view", myArr.isAdmin,7);
 
                     // Redirection vers le corps du site
                     window.location.href = "index.html";
@@ -233,8 +233,6 @@ function initProfileAdministrateur(password){
                 if (xmlhttp.responseText != "" && stop == false) {
                     stop = true;
 
-                    //alert(xmlhttp.responseText);
-
                     // JSON Parsing
                     var myArr = JSON.parse(xmlhttp.responseText);
 
@@ -246,13 +244,14 @@ function initProfileAdministrateur(password){
                         document.getElementById("PannelAdministrateur").innerHTML = '<h3>Commandes Administrateur</h3>';
                         document.getElementById("DivAjouterUtilisateur").innerHTML = '<a onclick="AjouterUtilisateur()" class="button">Ajouter Utilisateur</a>';
                         document.getElementById("DivSupprimerUtilisateur").innerHTML = '<a onclick="SupprimerUtilisateur()" class="button">Supprimer Utilisateur</a>';
+                        document.getElementById("DivAjoutTypeCapteur").innerHTML = '<a onclick="PageAjouterTypeCapteur()" class="button">Ajouter Capteur</a>';
+                        document.getElementById("DivModificationSonde").innerHTML = '<a onclick="PageAjouterSonde()" class="button">Ajouter Sonde</a>';
                         document.getElementById("DivDroitsUtilisateur").innerHTML = '<a onclick="ModificationDroitsUtilisateur()" class="button">Modifier Utilisateur</a>';
-                        document.getElementById("DivModificationSonde").innerHTML = '<a onclick="ModificationSonde()" class="button">Modifier Sonde</a>';
-                        document.getElementById("DivAjoutTypeCapteur").innerHTML = '<a onclick="AjouterTypeCapteur()" class="button">Ajouter Capteur</a>';
+
                     }
                 }
             default:
-                // Utilisateur
+                //alert("Code HTTP : " + xmlhttp.status);
         }
     };
 }
@@ -307,6 +306,19 @@ function initSuppressionUtilisateurs(){
     };
 }
 
+function initAjouterSonde() {
+
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+}
+
+
+//****************************************************************//
+
 function ModifierProfilUtilisateur(){
 
     var xmlhttp = new XMLHttpRequest();
@@ -329,7 +341,7 @@ function ModifierProfilUtilisateur(){
                     stop = true;
 
                     alert("Description modifié.");
-                    setCookie("description_utilisateur",desc);
+                    setCookie("description_utilisateur",desc,7);
 
                     // Redirection vers le corps du site
                     window.location.href = "profil.html";
@@ -342,10 +354,14 @@ function ModifierProfilUtilisateur(){
                 }
         }
     };
-
 }
 
-function initAjouterSonde(){
+function ajoutCapteurASonde(nombreCapteur){
+    var nombreCapteur = document.getElementById("nombreCapteur").value;
+    ajoutCapteurASondeRequete(nombreCapteur);
+}
+
+function ajoutCapteurASondeRequete(nombreCapteur){
 
     var nom_utilisateur = getCookie("nom_utilisateur");
     var prenom_utilisateur = getCookie("prenom_utilisateur");
@@ -356,7 +372,7 @@ function initAjouterSonde(){
 
     // HTTP UTILISATEURS
     var xmlhttp = new XMLHttpRequest();
-    var url = adresseIPServeur + "probeList";
+    var url = adresseIPServeur + "sensorList";
 
     var stop = false;
 
@@ -368,28 +384,90 @@ function initAjouterSonde(){
         switch (xmlhttp.status) {
             case 200:
                 if (xmlhttp.responseText != "" && stop == false) {
+
                     stop = true;
 
                     var myArr = JSON.parse(xmlhttp.responseText);
 
-                    var sonde = [];
+                    document.getElementById("listeSonde").innerHTML = "";
 
-                    var chaine = '<select name="demo-category" id="sondeList">';
+                    for (var j = 0; j < nombreCapteur; j++){
 
-                    for (var i = 0; i < myArr.length; i++) {
+                        var id = "sondeList" + j;
 
-                        sonde.push(myArr[i][1]);
+                        var chaine = '<select name="demo-category" id="' +  id + '">';
 
-                        chaine = chaine + '<option value="">' + sonde[i] + '</option>';
+                        for (var i = 0; i < myArr.capteur.length; i++) {
+                            chaine = chaine + '<option value="">' + myArr.capteur[i] + '</option>';
+                        }
+
+                        chaine = chaine + '</select>';
+
+                        document.getElementById("listeSonde").innerHTML += chaine;
                     }
-
-                    chaine = chaine + '</select>';
-
-                    document.getElementById("listeSonde").innerHTML += chaine;
                 }
                 break;
         }
     };
+}
+
+function AjouterSonde(){
+
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var nomSonde = document.getElementById("nomSonde").value;
+    var longitude = document.getElementById("longitude").value;
+    var latitude = document.getElementById("latitude").value;
+    var dateDeploiementBrut = document.getElementById("dateDeploiement").value;
+    var nombreCapteur = document.getElementById("nombreCapteur").value;
+
+    // Conversion Date to Timestamp
+    var dateDeploiementDATE = new Date(dateDeploiementBrut);
+
+    var dateDeploiement = ((dateDeploiementDATE.getTime() / 1000).toFixed(0)) - 3600;
+
+    var trame = '{"nom": "' + nomSonde + '", "longitude" : "' + longitude + '", "latitude" : "' + latitude +'",\
+    "dateDeploiement": "' + dateDeploiement + '", "capteurs" : [';
+
+
+    for(var i = 0; i < nombreCapteur; i++){
+        var id = "sondeList" + i;
+
+        var index = document.getElementById(id);
+        var sensorValue = index.options[index.selectedIndex].text;
+
+        trame = trame + '"' +  sensorValue + '",';
+    }
+
+    // Retire la derniere virgule
+    trame = trame.substring(0,trame.length-1);
+
+    trame = trame + "]}";
+
+    alert(trame);
+
+    xmlhttp.open("POST", adresseIPServeur + "addStation");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("Sonde ajouté");
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+
 }
 
 function initAjouterTypeCapteur(){
@@ -462,14 +540,76 @@ function ModificationDroitsUtilisateur(){
 
 }
 
-function AjouterSonde(){
+function PageAjouterSonde(){
     document.location.href="ajouterSonde.html";
 }
 
-function AjouterTypeCapteur(){
+function PageAjouterTypeCapteur(){
     document.location.href="ajouterTypeCapteur.html";
 
 }
+
+function PageFullScreenGraph(){
+
+    var login = getCookie("login_utilisateur");
+    var capteurId = document.getElementById("capteurId").value;
+
+    var dateDebutValue = document.getElementById("dateDebut").value;
+    var dateFinValue = document.getElementById("dateFin").value;
+
+    var $radio = $('input[name=demo-priority]:checked');
+    var mesure = $radio.attr('id');
+
+    // Conversion Date to Timestamp
+    var myDateDebut = new Date(dateDebutValue);
+    var myDateFin = new Date(dateFinValue);
+
+    var dateDebut = ((myDateDebut.getTime() / 1000).toFixed(0)) - 3600;
+    var dateFin = ((myDateFin.getTime() / 1000).toFixed(0)) - 3600;
+
+    // Trame pour récupérer les informations d'un capteur
+    //var trame = '{"login": "' + login + '","capteurId": "' + capteurId + '","dateDebut": "' + dateDebut + '","dateFin": "' + dateFin + '","mesure": "' + mesure + '"}';
+
+    setCookie("capteurID",capteurId,1);
+    setCookie("dateDebut",dateDebut,1);
+    setCookie("dateFin",dateFin,1);
+    setCookie("mesureSave",mesure,1);
+
+    var win = window.open("graphiquePleinePage.html", '_blank');
+    win.focus();
+}
+
+function AjouterTypeCapteur(){
+    var TypeCateur = document.getElementById("TypeCapteur").value;
+
+    var xmlhttp = new XMLHttpRequest();
+
+    var stop = false;
+
+    var trame = '{"nom": "' + TypeCateur + '"}';
+
+    alert(trame);
+
+    xmlhttp.open("POST", adresseIPServeur + "addSensor");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false){
+                    stop = true;
+                    alert("Capteur ajouté.");
+                }
+                break;
+            default:
+                alert("Erreur inconnue : " + xmlhttp.status);
+        }
+    };
+}
+
+
 
 //***********************************************************//
 //*********************** GRAPHICS **************************//
@@ -540,10 +680,23 @@ function GetSensorData(choix) {
 
                         var xmlAsStr = x2js.json2xml_str(myArr);
 
-                        alert(xmlAsStr);
-
                         download(xmlAsStr, mesure + ".xml", "application/xml");
+                    }else if("FullScreen"){
 
+                        var donnees = [];
+                        var dates =  [];
+
+                        // JSON Parsing
+                        var myArr = JSON.parse(xmlhttp.responseText);
+
+                        for (var i = 0; i < myArr.releve.length; i++) {
+                            var counter = myArr.releve[i];
+                            console.log(counter.mesure);
+
+                            donnees.push(myArr.releve[i].mesure);
+                            dates.push(myArr.releve[i].dateReleve);
+                        }
+                        CreateGraphic(donnees, dates);
                     }
                 }
                 break;
@@ -646,14 +799,6 @@ function CreateGraphic(_donnees, _date) {
             var newnewdate = dateFormatte.getDate() + "/" + (dateFormatte.getMonth() + 1) + "/" + dateFormatte.getFullYear() + " \
                  " + dateFormatte.getHours() + ":" + dateFormatte.getMinutes() + ":" + dateFormatte.getSeconds();
 
-            if(toto == false){
-                toto = true;
-                alert("go");
-
-                alert(dateFormatte + "\n" + newnewdate);
-
-            }
-
 
             console.log("d : " + newnewdate);
             console.log("v : " + donnees[i]);
@@ -663,9 +808,6 @@ function CreateGraphic(_donnees, _date) {
                 visits: donnees[i]
             });
         }
-
-        //alert("ChartData : " + chartData)
-
         return chartData;
     }
 }
@@ -675,10 +817,10 @@ function CreateGraphic(_donnees, _date) {
 //***********************************************************//
 
 // Enregistrer un cookie sur le naviguateur
-function setCookie(nom, Valeur) {
+function setCookie(nom, Valeur, Time) {
     var today = new Date(), expires = new Date();
     // Expire au bout de 7 jours
-    expires.setTime(today.getTime() + (7 * 24 * 60 * 60 * 1000));
+    expires.setTime(today.getTime() + (Time * 24 * 60 * 60 * 1000));
     document.cookie = nom + "=" + encodeURIComponent(Valeur) + ";expires=" + expires.toGMTString();
 }
 
