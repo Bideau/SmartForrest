@@ -1,12 +1,10 @@
 #include <LowPower.h>
 
-const int LED=4;
+const int LED=4; // Led on the D4 port
 
 void setup() {
   // put your setup code here, to run once:
-
   pinMode(LED, OUTPUT);
-
 }
 
 void loop() {
@@ -18,5 +16,4 @@ void loop() {
   digitalWrite(LED, HIGH);
   // Sleep for 8 s with ADC module and BOD module off
   LowPower.powerDown(SLEEP_4S, ADC_OFF, BOD_OFF);
-  
 }
