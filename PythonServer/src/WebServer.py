@@ -7,6 +7,7 @@
 
 import sys, json, os, string, thread
 import LoginManager as Login
+import ProbeManager as Probe
 from flask import *
 
 import ServerSocket
@@ -91,7 +92,7 @@ def redirectToMain():
 
 
 @app.route('/login', methods=['GET'])
-##	Retourne toutes les locations
+##	Retourne les login
 def login_GET():
 	logger.info('/login		method : GET')
 	logger.info(request)
@@ -144,9 +145,11 @@ def login_POST():
 		# Si login faux 1002
 		else:
 			resp.status_code = 1002
+		# Conversion Reponse to JSON
 		resp.data=json.dumps(tmp)
 		logger.info(resp.data)
-	except:
+	except Exception as e:
+		print (e)
 		# si une erreur de format retour erreur 1004
 		resp.status_code = 1004
 		resp.data = "error 1004 : Bad format json"
@@ -155,14 +158,6 @@ def login_POST():
 	return resp
 
 
-#
-# {
-# "login": "toto",
-# "password": "tata",
-# "nom": "Doe",
-# "prenom": "John",
-# "description": "Description Test IT"
-# }
 @app.route('/user', methods=['POST'])
 ##	Permet de creer un nouveau user
 def user_POST():
@@ -178,31 +173,113 @@ def user_POST():
 		logger.info(req_data)
 		# recuperation du login
 		login = str(req_data["login"])
-		logger.info("login " + login)
 		# recuperation du password
 		password = str(req_data["password"])
-		logger.info("password " + password)
 		# recuperation du nom
 		nom = str(req_data["nom"])
-		logger.info("nom " + nom)
 		# recuperation du prenom
 		prenom = str(req_data["prenom"])
-		logger.info("prenom " + prenom)
+		# recuperation du mail
+		mail = str(req_data["mail"])
 		# recuperation du description
 		desc = str(req_data["description"])
-		logger.info("Desc " + desc)
 		if (Login.isLogin(login) == False):
-			resp.status_code = Login.insertUser(login, password, nom, prenom, desc)
+			resp.status_code = Login.insertUser(login, password, nom, prenom, desc,mail)
 		# Si login existe deja 1005
 		else:
 			resp.status_code = 1005
 		logger.info(req_data)
 
-	except:
-		# si une erreur de format retour erreur 1003
-		resp.status_code = 1003
-		resp.data = "error 400 : Bad format json"
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
 		return resp
+	return resp
+
+@app.route('/deletedUser', methods=['POST'])
+##	Permet de supprimer un nouveau user
+def deletedUser_POST():
+	logger.info('/deletedUser		method : POST')
+	logger.info(request.data)
+	resp = make_response()
+	addCorsHeaders(resp)
+	# si aucune erreur alors le JSON est au bon format
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# recuperation de la donnee envoyer au serveur
+		req_data = json.loads(request.data)
+		logger.info("REQ_DATA "+str(req_data))
+		# recuperation du login
+		login = str(req_data["login"])
+		logger.info(login)
+		if (Login.isLogin(login) == True):
+			resp.status_code = Login.userSuppr(login)
+			logger.info("toto")
+		# Si login existe deja 1002
+		else:
+			resp.status_code = 1002
+		#logger.info(req_data)
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	return resp
+
+@app.route('/userList', methods=['GET'])
+##	Retourne tous les users
+def userlist_GET():
+	logger.info('/userList		method : GET')
+	logger.info(request)
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data=Login.userList()
+		resp.data = json.dumps(req_data)
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	logger.info(resp.data)
+	return resp
+
+@app.route('/ModifyDescription', methods=['POST'])
+##	Modifie la description d'un utilisateur
+def ModifyDescription_POST():
+	logger.info('/ModifyDescription		method : POST')
+	logger.info(request.data)
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data = json.loads(request.data)
+		logger.info(req_data)
+		# recuperation du login
+		login = str(req_data["login"])
+		# recuperation de la description
+		desc = str(req_data["description"])
+		# recuperation de la description
+		mail = str(req_data["mail"])
+		req_data=Login.descModif(login,desc)
+		req_data=Login.mailModif(login,mail)
+		resp.status_code=req_data
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	logger.info(resp.data)
 	return resp
 
 @app.route('/capteur', methods=['POST'])
@@ -231,19 +308,18 @@ def capteur_POST():
 		dateFin = req_data["dateFin"]
 		myArray=[]
 		if (Login.isLogin(login) == True):
-			if ( Login.isBalise(capteurId)==True):
+			if ( Probe.isBalise(capteurId)==True):
 				if(Login.userAccess(login,capteurId)==True):
 					if(mesure == "temperature"):
-						myArray=Login.temperatureValue(login,capteurId,dateDebut,dateFin)
+						myArray=Probe.temperatureValue(login,capteurId,dateDebut,dateFin)
 					elif(mesure == "ozone"):
-						myArray=Login.ozoneValue(login,capteurId,dateDebut,dateFin)
-						print(myArray)
+						myArray=Probe.ozoneValue(login,capteurId,dateDebut,dateFin)
 					elif(mesure == "hygrometrie"):
-						myArray=Login.hygrometrieValue(login,capteurId,dateDebut,dateFin)
+						myArray=Probe.hygrometrieValue(login,capteurId,dateDebut,dateFin)
 					elif(mesure == "humidite"):
-						myArray=Login.humiditeValue(login,capteurId,dateDebut,dateFin)
+						myArray=Probe.humiditeValue(login,capteurId,dateDebut,dateFin)
 					else:
-						myArray=Login.capteurValue(login,capteurId,dateDebut,dateFin)
+						myArray=Probe.capteurValue(login,capteurId,dateDebut,dateFin)
 
 					#result={"releve":myArray}
 					result["releve"]=myArray
@@ -267,15 +343,290 @@ def capteur_POST():
 		return resp
 	return resp
 
+@app.route('/stationList', methods=['GET'])
+##	Retourne tous les sondes
+def probeList_GET():
+	logger.info('/stationList		method : GET')
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data=Probe.stationList()
+		resp.data = json.dumps(req_data)
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	logger.info(resp.data)
+	return resp
+
+@app.route('/sensorList', methods=['GET'])
+##	Retourne tous les sondes
+def sensorList_GET():
+	logger.info('/sensorList		method : GET')
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data=Probe.sensorList()
+		resp.data = json.dumps(req_data)
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	logger.info(resp.data)
+	return resp
+
+@app.route('/addStation', methods=['POST'])
+##	Ajout d'une station
+def addStation_POST():
+	logger.info('/addStation		method : POST')
+	logger.info(request.data)
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data = json.loads(request.data)
+		logger.info(req_data)
+		# recuperation du nom
+		nom = str(req_data["nom"])
+		# recuperation de la longitude
+		longitude = str(req_data["longitude"])
+		# recuperation de la latitude
+		latitude = str(req_data["latitude"])
+		# recuperation de la date
+		date =req_data["dateDeploiement"]
+		# recuperation des capteurs
+		capteur = req_data["capteurs"]
+		resp.status_code=Probe.createStation(nom,longitude,latitude,date,capteur)
+		#resp.data = json.dumps(req_data)
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	logger.info(resp.data)
+	return resp
+
+@app.route('/addSensor', methods=['POST'])
+##	Ajout d'une station
+def addSensor_POST():
+	logger.info('/addSensor		method : POST')
+	logger.info(request.data)
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data = json.loads(request.data)
+		logger.info(req_data)
+		# recuperation du nom
+		nom = str(req_data["nom"])
+
+		resp.status_code=Probe.createSensor(nom)
+		#resp.data = json.dumps(req_data)
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	logger.info(resp.data)
+	return resp
+
+@app.route('/accessList', methods=['POST'])
+##	Ajout d'une station
+def accessList_POST():
+	logger.info('/accessList		method : POST')
+	logger.info(request.data)
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data = json.loads(request.data)
+		logger.info(req_data)
+		# recuperation du login
+		login = str(req_data["login"])
+		access=Probe.accessList(login)
+		list=Probe.stationList()
+		myArray=[]
+
+		for tmpList in list:
+			tmpJSON={"nom":"name","access":False}
+			valid=False
+			for tmpAccess in access:
+				if tmpList["name"]==tmpAccess["name"]:
+					valid=True
+					break
+			tmpJSON["access"]=valid
+			tmpJSON["nom"]=tmpList["name"]
+			myArray.append(tmpJSON)
+		req_data={"liste":[]}
+		req_data["liste"]=myArray
+		resp.data = json.dumps(req_data)
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	logger.info("Response")
+	logger.info(resp.data)
+	return resp
+
+@app.route('/userRights', methods=['POST'])
+##	Ajout d'une station
+def userRights_POST():
+	logger.info('/userRights		method : POST')
+	logger.info(request.data)
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data = json.loads(request.data)
+		logger.info(req_data)
+		# recuperation du login
+		login = str(req_data["login"])
+		# recuperation de la liste des droits
+		liste = req_data["liste"]
+		resp.status_code=Probe.userRights(login,liste)
+
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	return resp
+
+@app.route('/modifyPassword', methods=['POST'])
+##	Ajout d'une station
+def modifyPassword_POST():
+	logger.info('/modifyPassword		method : POST')
+	logger.info(request.data)
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data = json.loads(request.data)
+		logger.info(req_data)
+		# recuperation du login
+		login = str(req_data["login"])
+		# recuperation du ancienPassword
+		aPassword = str(req_data["ancienPassword"])
+		# recuperation du newPassword
+		nPassword = str(req_data["newPassword"])
+		if (Login.isLogin(login) == True):
+			# Si login et password valid 200
+			if (Login.isPass(login, aPassword) == True):
+				resp.status_code = 200
+				tmp=Login.changePass(login,nPassword)
+			# Si password faux 1003
+			else:
+				resp.status_code = 1003
+		# Si login faux 1002
+		else:
+			resp.status_code = 1002
+
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	return resp
+
+@app.route('/forgotPassword', methods=['POST'])
+##	Ajout d'une station
+def forgotPassword_POST():
+	logger.info('/forgotPassword		method : POST')
+	logger.info(request.data)
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data = json.loads(request.data)
+		logger.info(req_data)
+		# recuperation du login
+		login = str(req_data["login"])
+		# recuperation du mail
+		mail = str(req_data["mail"])
+		if (Login.isLogin(login) == True):
+			# Si login et password valid 200
+			resp.status_code=Login.forgetPassword(login,mail)
+		# Si login faux 1002
+		else:
+			resp.status_code = 1002
+
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	return resp
+
+@app.route('/erasePassword', methods=['POST'])
+##	Ajout d'une station
+def erasePassword_POST():
+	logger.info('/erasePassword		method : POST')
+	logger.info(request.data)
+	resp = make_response()
+	addCorsHeaders(resp)
+	try:
+		resp.headers['Content-Type'] = 'application/json'
+		# si tu se passe bien retour d'un code erreur 200
+		resp.status_code = 200
+		req_data = json.loads(request.data)
+		logger.info(req_data)
+		# recuperation du login
+		login = str(req_data["login"])
+		# recuperation du password
+		password = str(req_data["password"])
+		if (Login.isLogin(login) == True):
+			# Si login et password valid 200
+			resp.status_code=Login.changePass(login,password)
+		# Si login faux 1002
+		else:
+			resp.status_code = 1002
+
+	except Exception as e:
+		print (e)
+		# si une erreur de format retour erreur 1004
+		resp.status_code = 1004
+		resp.data = "error 1004 : Bad format json"
+		return resp
+	return resp
+
 
 # *#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 # *#*#*#*#*#*#*#*#*#*#*#*#*#* Launch the server #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # *#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-try:
-	thread.start_new_thread( ServerSocket.socketServer, ("Thread-2",'172.30.0.103',8081,) )
-	thread.start_new_thread( app.run(host='172.30.0.103', port=8080, debug=False), ("Thread-1", ) )
-except:
-	print ("Error: unable to start thread")
+#try:
+#	thread.start_new_thread( ServerSocket.socketServer, ("Thread-2",'172.30.0.103',8081,) )
+#	thread.start_new_thread( app.run(host='172.30.0.103', port=8080, debug=False), ("Thread-1", ) )
+#except:
+#	print ("Error: unable to start thread")
 #thread.start_new_thread( ServerSocket.socketServer, ("Thread-2",'127.0.0.1',8083,) )
-#app.run(host='172.30.0.103', port=8080, debug=False)
+app.run(host='172.30.0.103', port=8080, debug=False)
 
