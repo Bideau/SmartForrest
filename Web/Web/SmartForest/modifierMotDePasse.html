@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>Capteur</title>
+    <title>Mot de passe</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
@@ -16,7 +16,7 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
 </head>
-<body onload="initAjouterTypeCapteur()">
+<body onload="initModifierMotDePasse()">
 
 <!-- Header -->
 <section id="header">
@@ -28,7 +28,7 @@
     </header>
     <nav id="nav">
         <ul>
-            <li><a href="#one" class="active">Capteur</a></li>
+            <li><a href="#one" class="active">Mot de passe</a></li>
             <li><a class="imageProfil" alt="" onclick='window.location.href="menu.html";'>Index</a></li>
 
         </ul>
@@ -46,18 +46,33 @@
             <div class="container">
 
                 <header class="major">
-                    <h2>Ajouter type de capteur</h2>
+                    <h2>Modifier mon mot de passe</h2>
                 </header>
 
                 <div class="row uniform">
-                    <div class="6u 12u(xsmall)"><input type="text" name="TypeCapteur" id="TypeCapteur" placeholder="Type Capteur"/></div>
+                    <div class="6u 12u(xsmall)"><input type="text" name="login" id="login" placeholder="Login"/></div>
+                    <br/>
+                </div>
+
+                <div class="row uniform">
+                    <div class="6u 12u(xsmall)"><input type="password" name="ancienMotDePasse" id="ancienMotDePasse" placeholder="Ancien mot de passe"/></div>
+                    <br/>
+                </div>
+
+                <div class="row uniform">
+                    <div class="6u 12u(xsmall)"><input type="password" name="nouveauMotDePasse" id="nouveauMotDePasse" placeholder="Nouveau mot de passe"/></div>
+                    <br/>
+                </div>
+
+                <div class="row uniform">
+                    <div class="6u 12u(xsmall)"><input type="password" name="nouveauMotDePasse2" id="nouveauMotDePasse2" placeholder="Nouveau mot de passe"/></div>
                     <br/>
                 </div>
 
                 <div class="row uniform">
                     <div class="12u">
                         <ul class="actions">
-                            <li><input type="button" class="special" value="Ajouter" onclick="AjouterTypeCapteur()"/></li>
+                            <li><input type="button" class="special" value="Modifier" onclick="ModifierPasswordUtilisateur()"/></li>
                             <!--<li><input type="button" class="special" value="Auto" onclick="remplissageAutomatiqueEnregistrement()"/></li>
                             <li><input type="reset" value="Reset Form"/></li>-->
                         </ul>

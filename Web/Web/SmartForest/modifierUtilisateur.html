@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>Capteur</title>
+    <title>Modification Utilisateurs</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
@@ -16,7 +16,7 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
 </head>
-<body onload="initAjouterTypeCapteur()">
+<body onload="initModificationUtilisateurs()">
 
 <!-- Header -->
 <section id="header">
@@ -28,9 +28,8 @@
     </header>
     <nav id="nav">
         <ul>
-            <li><a href="#one" class="active">Capteur</a></li>
+            <li><a href="#one" class="active">Modification</a></li>
             <li><a class="imageProfil" alt="" onclick='window.location.href="menu.html";'>Index</a></li>
-
         </ul>
     </nav>
 </section>
@@ -46,23 +45,24 @@
             <div class="container">
 
                 <header class="major">
-                    <h2>Ajouter type de capteur</h2>
+                    <h2>Modification Utilisateurs</h2>
                 </header>
 
-                <div class="row uniform">
-                    <div class="6u 12u(xsmall)"><input type="text" name="TypeCapteur" id="TypeCapteur" placeholder="Type Capteur"/></div>
-                    <br/>
-                </div>
 
-                <div class="row uniform">
-                    <div class="12u">
-                        <ul class="actions">
-                            <li><input type="button" class="special" value="Ajouter" onclick="AjouterTypeCapteur()"/></li>
-                            <!--<li><input type="button" class="special" value="Auto" onclick="remplissageAutomatiqueEnregistrement()"/></li>
-                            <li><input type="reset" value="Reset Form"/></li>-->
-                        </ul>
+
+                <div class="menu-container">
+                    <div class="row uniform">
+                        <div class="12u">
+                            <div class="select-wrapper" style="width:100%">
+                                <span id="listeUtilisateur"></span><br />
+                                <span id="liste"></span><br /><br />
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <a onclick="ModificationUtilisateur()" class="button">Modifier</a>
+
             </div>
         </section>
 

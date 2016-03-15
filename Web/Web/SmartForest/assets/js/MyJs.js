@@ -10,6 +10,7 @@ function remplissageAutomatiqueEnregistrement() {
     document.getElementById("nom").value = "toto";
     document.getElementById("prenom").value = "toto";
     document.getElementById("description").value = "toto";
+    document.getElementById("mail").value = "toto.toto@toto.toto";
 }
 
 //***********************************************************//
@@ -18,7 +19,6 @@ function remplissageAutomatiqueEnregistrement() {
 function enregistrement() {
 
     var xmlhttp = new XMLHttpRequest();
-
     var stop = false;
 
     var login = document.getElementById("login").value;
@@ -26,10 +26,13 @@ function enregistrement() {
     var nom = document.getElementById("nom").value;
     var prenom = document.getElementById("prenom").value;
     var description = document.getElementById("description").value;
+    var mail = document.getElementById("mail").value;
 
     var motDePasseChiffre = calcMD5(motDePasse);
 
-    var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '","nom": "' + nom + '","prenom": "' + prenom + '","description": "' + description + '"}';
+    var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '","nom": "' + nom + '","prenom": "' + prenom + '","description": "' + description + '","mail":"' + mail + '"}';
+
+    //alert(trame);
 
     xmlhttp.open("POST", adresseIPServeur + "user");
 
@@ -107,9 +110,13 @@ function connexion() {
 
     var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '"}';
 
+    alert(trame);
+
     xmlhttp.open("POST", adresseIPServeur + "login");
 
     xmlhttp.send(trame);
+
+    alert("toto");
 
     xmlhttp.onreadystatechange = function () {
 
@@ -118,18 +125,29 @@ function connexion() {
                 if (xmlhttp.responseText != "" && stop == false) {
                     stop = true;
 
+                    //alert(xmlhttp.responseText);
+
                     // JSON Parsing
                     var myArr = JSON.parse(xmlhttp.responseText);
 
                     // Gestion des cookies
-                    setCookie("login_utilisateur", myArr.login,7);
-                    setCookie("nom_utilisateur", myArr.nom,7);
-                    setCookie("prenom_utilisateur", myArr.prenom,7);
-                    setCookie("description_utilisateur", myArr.description,7);
-                    setCookie("admin_button_view", myArr.isAdmin,7);
+                    setCookie("login_utilisateur", myArr.login, 7);
+                    setCookie("nom_utilisateur", myArr.nom, 7);
+                    setCookie("prenom_utilisateur", myArr.prenom, 7);
+                    setCookie("description_utilisateur", myArr.description, 7);
+                    setCookie("admin_button_view", myArr.isAdmin, 7);
+                    setCookie("mail_utilisateur", myArr.mail, 7);
+
+                    if(myArr.motDePasseUnique == true) {
+
+                        // Redirection vers le corps du site
+                        window.location.href = "ecraserMotDePasse.html";
+
+                        return 0;
+                    }
 
                     // Redirection vers le corps du site
-                    window.location.href = "index.html";
+                    window.location.href = "menu.html";
                 }
                 break;
             case 1002:
@@ -161,6 +179,8 @@ function connexion() {
 
 function initConnexion() {
 
+    alert("toto");
+
     if (navigator.cookieEnabled) {
         // Cookies acceptés
         if (getCookie("nom_utilisateur") != null) {
@@ -178,6 +198,8 @@ function initIndex() {
         alert("Vos cookies sont désactivés.\nActivez les pour vous connecter.");
     }
 
+    //alert(getCookie("nom_utilisateur"));
+
     var nom_utilisateur = getCookie("nom_utilisateur");
     var prenom_utilisateur = getCookie("prenom_utilisateur");
     var Description_Utilisateur = getCookie("description_utilisateur");
@@ -186,31 +208,33 @@ function initIndex() {
     document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
 }
 
-function initProfile(){
+function initProfile() {
 
     var nom_utilisateur = getCookie("nom_utilisateur");
     var prenom_utilisateur = getCookie("prenom_utilisateur");
     var Description_Utilisateur = getCookie("description_utilisateur");
+    var mail = getCookie("mail_utilisateur");
 
     document.getElementById("nomUtilisateur").innerHTML = "Nom : " + nom_utilisateur + "<br />";
     document.getElementById("prenomUtilisateur").innerHTML = "Prenom : " + prenom_utilisateur + "<br />";
     document.getElementById("descriptionUtilisateur").innerHTML = 'Description : <input id="inputDescription" style="width:50%" size="20" value="' + Description_Utilisateur + '"/>';
+    document.getElementById("mailUtilisateur").innerHTML = 'Adresse mail : <input id="inputMail" style="width:50%" size="20" value="' + mail + '"/>';
 
     document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
     document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
 
-    if(getCookie("admin_button_view") == "true"){
+    if (getCookie("admin_button_view") == "true") {
         document.getElementById("logAdmin").innerHTML = '<input id="adminPassword" type="password" style="width:30%" size="20" placeholder="admin password"/> <br /><a id="accesAdmin" onclick="AccesAdmin()" class="button">Commandes administrateur</a>'
     }
 }
 
-function AccesAdmin(){
+function AccesAdmin() {
     // Récupération du statut (Utilisateur ou Admin)
     //alert(document.getElementById("adminPassword").value);
     initProfileAdministrateur(document.getElementById("adminPassword").value);
 }
 
-function initProfileAdministrateur(password){
+function initProfileAdministrateur(password) {
 
     var xmlhttp = new XMLHttpRequest();
     var login_Utilisateur = getCookie("login_utilisateur");
@@ -221,7 +245,7 @@ function initProfileAdministrateur(password){
     // Verifier Admin ou Utilisateur
     var trame = '{"login": "' + login_Utilisateur + '","password": "' + passwordChiffre + '"}';
 
-    xmlhttp.open("POST", adresseIPServeur +  "login");
+    xmlhttp.open("POST", adresseIPServeur + "login");
 
     xmlhttp.send(trame);
 
@@ -236,7 +260,7 @@ function initProfileAdministrateur(password){
                     // JSON Parsing
                     var myArr = JSON.parse(xmlhttp.responseText);
 
-                    if(myArr.isAdmin == true){
+                    if (myArr.isAdmin == true) {
 
                         document.getElementById("adminPassword").remove();
                         document.getElementById("accesAdmin").remove();
@@ -246,17 +270,17 @@ function initProfileAdministrateur(password){
                         document.getElementById("DivSupprimerUtilisateur").innerHTML = '<a onclick="SupprimerUtilisateur()" class="button">Supprimer Utilisateur</a>';
                         document.getElementById("DivAjoutTypeCapteur").innerHTML = '<a onclick="PageAjouterTypeCapteur()" class="button">Ajouter Capteur</a>';
                         document.getElementById("DivModificationSonde").innerHTML = '<a onclick="PageAjouterSonde()" class="button">Ajouter Sonde</a>';
-                        document.getElementById("DivDroitsUtilisateur").innerHTML = '<a onclick="ModificationDroitsUtilisateur()" class="button">Modifier Utilisateur</a>';
+                        document.getElementById("DivDroitsUtilisateur").innerHTML = '<a onclick="PageModificationDroitsUtilisateur()" class="button">Modifier Utilisateur</a>';
 
                     }
                 }
             default:
-                //alert("Code HTTP : " + xmlhttp.status);
+            //alert("Code HTTP : " + xmlhttp.status);
         }
     };
 }
 
-function initSuppressionUtilisateurs(){
+function initSuppressionUtilisateurs() {
 
     var nom_utilisateur = getCookie("nom_utilisateur");
     var prenom_utilisateur = getCookie("prenom_utilisateur");
@@ -267,7 +291,7 @@ function initSuppressionUtilisateurs(){
 
     // HTTP UTILISATEURS
     var xmlhttp = new XMLHttpRequest();
-    var url = adresseIPServeur +  "userList";
+    var url = adresseIPServeur + "userList";
 
     var stop = false;
 
@@ -316,18 +340,75 @@ function initAjouterSonde() {
     document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
 }
 
+function initModificationUtilisateurs() {
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+
+    // HTTP UTILISATEURS
+    var xmlhttp = new XMLHttpRequest();
+    var url = adresseIPServeur + "userList";
+
+    var stop = false;
+
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    var nom = [];
+                    var prenom = [];
+                    var login = [];
+
+                    var chaine = '<select onchange="AffichageSondeModificationUtilisateurs()" name="demo-category" id="UserList">';
+
+                    for (var i = 0; i < myArr.length; i++) {
+                        nom.push(myArr[i].nom);
+                        prenom.push(myArr[i].prenom);
+                        login.push(myArr[i].login);
+
+                        chaine = chaine + '<option value="">' + login[i] + ' - ' + prenom[i] + ' - ' + nom[i] + '</option>';
+                    }
+
+                    chaine = chaine + '</select>';
+
+                    document.getElementById("listeUtilisateur").innerHTML = chaine;
+                }
+                break;
+        }
+    };
+
+
+    // HTTP SONDES
+
+
+}
+
 
 //****************************************************************//
 
-function ModifierProfilUtilisateur(){
+function ModifierProfilUtilisateur() {
 
     var xmlhttp = new XMLHttpRequest();
 
     var stop = false;
 
     var desc = document.getElementById("inputDescription").value;
+    var mail = document.getElementById("inputMail").value;
     var login = getCookie("login_utilisateur");
-    var trame = '{"login": "' + login + '", "description" : "' + desc + '"}';
+    var trame = '{"login": "' + login + '", "description" : "' + desc + '","mail":"' + mail + '"}';
+
+    alert(trame);
 
     xmlhttp.open("POST", adresseIPServeur + "ModifyDescription");
 
@@ -341,7 +422,8 @@ function ModifierProfilUtilisateur(){
                     stop = true;
 
                     alert("Description modifié.");
-                    setCookie("description_utilisateur",desc,7);
+                    setCookie("description_utilisateur", desc, 7);
+                    setCookie("mail_utilisateur", mail, 7);
 
                     // Redirection vers le corps du site
                     window.location.href = "profil.html";
@@ -356,12 +438,12 @@ function ModifierProfilUtilisateur(){
     };
 }
 
-function ajoutCapteurASonde(nombreCapteur){
+function ajoutCapteurASonde(nombreCapteur) {
     var nombreCapteur = document.getElementById("nombreCapteur").value;
     ajoutCapteurASondeRequete(nombreCapteur);
 }
 
-function ajoutCapteurASondeRequete(nombreCapteur){
+function ajoutCapteurASondeRequete(nombreCapteur) {
 
     var nom_utilisateur = getCookie("nom_utilisateur");
     var prenom_utilisateur = getCookie("prenom_utilisateur");
@@ -391,11 +473,11 @@ function ajoutCapteurASondeRequete(nombreCapteur){
 
                     document.getElementById("listeSonde").innerHTML = "";
 
-                    for (var j = 0; j < nombreCapteur; j++){
+                    for (var j = 0; j < nombreCapteur; j++) {
 
                         var id = "sondeList" + j;
 
-                        var chaine = '<select name="demo-category" id="' +  id + '">';
+                        var chaine = '<select name="demo-category" id="' + id + '">';
 
                         for (var i = 0; i < myArr.capteur.length; i++) {
                             chaine = chaine + '<option value="">' + myArr.capteur[i] + '</option>';
@@ -411,7 +493,7 @@ function ajoutCapteurASondeRequete(nombreCapteur){
     };
 }
 
-function AjouterSonde(){
+function AjouterSonde() {
 
     var xmlhttp = new XMLHttpRequest();
     var stop = false;
@@ -427,21 +509,21 @@ function AjouterSonde(){
 
     var dateDeploiement = ((dateDeploiementDATE.getTime() / 1000).toFixed(0)) - 3600;
 
-    var trame = '{"nom": "' + nomSonde + '", "longitude" : "' + longitude + '", "latitude" : "' + latitude +'",\
+    var trame = '{"nom": "' + nomSonde + '", "longitude" : "' + longitude + '", "latitude" : "' + latitude + '",\
     "dateDeploiement": "' + dateDeploiement + '", "capteurs" : [';
 
 
-    for(var i = 0; i < nombreCapteur; i++){
+    for (var i = 0; i < nombreCapteur; i++) {
         var id = "sondeList" + i;
 
         var index = document.getElementById(id);
         var sensorValue = index.options[index.selectedIndex].text;
 
-        trame = trame + '"' +  sensorValue + '",';
+        trame = trame + '"' + sensorValue + '",';
     }
 
     // Retire la derniere virgule
-    trame = trame.substring(0,trame.length-1);
+    trame = trame.substring(0, trame.length - 1);
 
     trame = trame + "]}";
 
@@ -470,7 +552,20 @@ function AjouterSonde(){
 
 }
 
-function initAjouterTypeCapteur(){
+function initAjouterTypeCapteur() {
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+}
+
+function PageModifierPasswordUtilisateur() {
+    document.location.href = "modifierMotDePasse.html";
+}
+
+function initModifierMotDePasse(){
     var nom_utilisateur = getCookie("nom_utilisateur");
     var prenom_utilisateur = getCookie("prenom_utilisateur");
     var Description_Utilisateur = getCookie("description_utilisateur");
@@ -480,22 +575,278 @@ function initAjouterTypeCapteur(){
 }
 
 function ModifierPasswordUtilisateur(){
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
 
+    var ancienpassword = document.getElementById("ancienMotDePasse").value;
+    var newpassword = document.getElementById("nouveauMotDePasse").value;
+    var newpassword2 = document.getElementById("nouveauMotDePasse2").value;
+    var login = document.getElementById("login").value;
+
+    //alert(newpassword + " " + newpassword2);
+
+    if(newpassword != newpassword2){
+        alert("Vous avez entré deux nouveaux mot de passe différent");
+        return 0;
+    }
+
+    ancienpassword = calcMD5(ancienpassword);
+    newpassword = calcMD5(newpassword);
+
+    var trame = '{"login": "' + login + '","ancienPassword":"' + ancienpassword + '","newPassword":"' + newpassword + '"}';
+
+    alert("trame : " + trame);
+
+    //return 0;
+
+    xmlhttp.open("POST", adresseIPServeur + "modifyPassword");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("Mot de passe modifié");
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+function PageMotDePasseOublie(){
+    document.location.href = "motDePasseOublie.html";
+}
+
+function reinitialisationMotDePasse(){
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var login = document.getElementById("login").value;
+    var mail = document.getElementById("mail").value;
+
+    var trame = '{"login": "' + login + '","mail":"' + mail + '"}';
+
+    //alert("trame : " + trame);
+
+    //return 0;
+
+    xmlhttp.open("POST", adresseIPServeur + "forgotPassword");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("mail envoyé");
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+function ecraserPassword(){
+
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var login = document.getElementById("login").value;
+    var password = document.getElementById("password").value;
+
+    password = calcMD5(password);
+
+    var trame = '{"login": "' + login + '","password":"' + password + '"}';
+
+    //alert("trame : " + trame);
+
+    //return 0;
+
+    xmlhttp.open("POST", adresseIPServeur + "erasePassword");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("Mot de passe modifié");
+                    document.location.href = "index.html";
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+
+}
+
+function ModificationUtilisateur() {
+
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    //LOGIN
+    var index = document.getElementById("UserList");
+    var all = index.options[index.selectedIndex].text;
+
+    var login = all.split("-");
+
+    login = login[0].trimRight();
+
+    var trame = '{"login": "' + login + '","liste" : [';
+
+    //OTHER
+
+    var chaineCookie = getCookie("Stations");
+    var chaine = chaineCookie.split("-");
+
+    // DROITS
+
+    var nombreStation = getCookie("numberStation");
+
+    for(var i = 0; i<nombreStation;i++){
+
+        var station = chaine[i];
+        trame = trame + '{"nom":"' + station + '","access":' + document.getElementById('check' + station).checked + '},';
+
+    }
+
+    // Retire la derniere virgule
+    trame = trame.substring(0, trame.length - 1);
+
+    trame = trame + ']}';
+
+    //alert("trame : " + trame);
+
+    //return 0;
+
+    xmlhttp.open("POST", adresseIPServeur + "userRights");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Droits modifiés");
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+
+}
+
+function AffichageSondeModificationUtilisateurs() {
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var index = document.getElementById("UserList");
+    var all = index.options[index.selectedIndex].text;
+
+    var login = all.split("-");
+
+    login = login[0].trimRight();
+
+    var trame = '{"login": "' + login + '"}';
+
+    //alert(trame);
+
+    xmlhttp.open("POST", adresseIPServeur + "accessList");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    //alert("ResponseText : " + xmlhttp.responseText);
+
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    document.getElementById("liste").innerHTML = "";
+
+                    //alert("size : " + myArr.liste.length);
+
+                    var chaine ="";
+                    var listeStation = "";
+
+                    setCookie("numberStation",myArr.liste.length,1);
+
+                    for (var i = 0; i < myArr.liste.length; i++) {
+                        var id = myArr.liste[i].nom;
+
+                        listeStation = listeStation + id + "-";
+
+                        if(myArr.liste[i].access == true){
+                            chaine = chaine + '<span>' + id + '</span> \
+                         <input type="checkbox" id="check' + id + '" name="demo-human" checked> &nbsp \
+                         <label for="check' + id + '"></label><br />';
+                        }else{
+                            chaine = chaine + '<span>' + id + '</span> \
+                         <input type="checkbox" id="check' + id + '" name="demo-human"> &nbsp \
+                         <label for="check' + id + '"></label><br />';
+                        }
+
+
+                    }
+
+                    setCookie("Stations",listeStation,1);
+
+                    document.getElementById("liste").innerHTML += chaine;
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
 }
 
 //***********************************************************//
 //*********************** ADMIN FUNCTIONS *******************//
 //***********************************************************//
 
-function AjouterUtilisateur(){
-    document.location.href="enregistrement.html";
+function AjouterUtilisateur() {
+    document.location.href = "enregistrement.html";
 }
 
-function SupprimerUtilisateur(){
-    document.location.href="suppressionUtilisateur.html";
+function SupprimerUtilisateur() {
+    document.location.href = "suppressionUtilisateur.html";
 }
 
-function SuppressionUtilisateur(){
+function SuppressionUtilisateur() {
 
     var index = document.getElementById("UserList");
     var all = index.options[index.selectedIndex].text;
@@ -505,7 +856,7 @@ function SuppressionUtilisateur(){
     login = login[0].trimRight();
 
     var answer = confirm("Voulez-vous vraiment supprimer " + login + " ?");
-    if (answer){
+    if (answer) {
         var xmlhttp = new XMLHttpRequest();
 
         var stop = false;
@@ -520,12 +871,12 @@ function SuppressionUtilisateur(){
 
             switch (xmlhttp.status) {
                 case 200:
-                    if (stop == false){
+                    if (stop == false) {
                         stop = true;
 
                         alert(login + " supprimé.");
 
-                        document.location.href="suppressionUtilisateur.html";
+                        document.location.href = "suppressionUtilisateur.html";
 
                     }
                     break;
@@ -536,20 +887,20 @@ function SuppressionUtilisateur(){
     }
 }
 
-function ModificationDroitsUtilisateur(){
+function PageModificationDroitsUtilisateur() {
+    document.location.href = "modifierUtilisateur.html";
+}
+
+function PageAjouterSonde() {
+    document.location.href = "ajouterSonde.html";
+}
+
+function PageAjouterTypeCapteur() {
+    document.location.href = "ajouterTypeCapteur.html";
 
 }
 
-function PageAjouterSonde(){
-    document.location.href="ajouterSonde.html";
-}
-
-function PageAjouterTypeCapteur(){
-    document.location.href="ajouterTypeCapteur.html";
-
-}
-
-function PageFullScreenGraph(){
+function PageFullScreenGraph() {
 
     var login = getCookie("login_utilisateur");
     var capteurId = document.getElementById("capteurId").value;
@@ -570,20 +921,19 @@ function PageFullScreenGraph(){
     // Trame pour récupérer les informations d'un capteur
     //var trame = '{"login": "' + login + '","capteurId": "' + capteurId + '","dateDebut": "' + dateDebut + '","dateFin": "' + dateFin + '","mesure": "' + mesure + '"}';
 
-    setCookie("capteurID",capteurId,1);
-    setCookie("dateDebut",dateDebut,1);
-    setCookie("dateFin",dateFin,1);
-    setCookie("mesureSave",mesure,1);
+    setCookie("capteurID", capteurId, 1);
+    setCookie("dateDebut", dateDebut, 1);
+    setCookie("dateFin", dateFin, 1);
+    setCookie("mesureSave", mesure, 1);
 
     var win = window.open("graphiquePleinePage.html", '_blank');
     win.focus();
 }
 
-function AjouterTypeCapteur(){
+function AjouterTypeCapteur() {
     var TypeCateur = document.getElementById("TypeCapteur").value;
 
     var xmlhttp = new XMLHttpRequest();
-
     var stop = false;
 
     var trame = '{"nom": "' + TypeCateur + '"}';
@@ -598,7 +948,7 @@ function AjouterTypeCapteur(){
 
         switch (xmlhttp.status) {
             case 200:
-                if (stop == false){
+                if (stop == false) {
                     stop = true;
                     alert("Capteur ajouté.");
                 }
@@ -608,7 +958,6 @@ function AjouterTypeCapteur(){
         }
     };
 }
-
 
 
 //***********************************************************//
@@ -652,10 +1001,10 @@ function GetSensorData(choix) {
                 if (xmlhttp.readyState == 4 && xmlhttp.responseText != "" && stop == false) {
                     stop = true;
 
-                    if(choix == "Graphique"){
+                    if (choix == "Graphique") {
 
                         var donnees = [];
-                        var dates =  [];
+                        var dates = [];
 
                         // JSON Parsing
                         var myArr = JSON.parse(xmlhttp.responseText);
@@ -669,9 +1018,9 @@ function GetSensorData(choix) {
                         }
                         CreateGraphic(donnees, dates);
 
-                    }else if(choix == "CSV"){
+                    } else if (choix == "CSV") {
                         JSONToCSVConvertor(xmlhttp.responseText, mesure, true);
-                    }else if(choix == "XML"){
+                    } else if (choix == "XML") {
                         // Create x2js instance with default config
                         var x2js = new X2JS();
 
@@ -681,10 +1030,10 @@ function GetSensorData(choix) {
                         var xmlAsStr = x2js.json2xml_str(myArr);
 
                         download(xmlAsStr, mesure + ".xml", "application/xml");
-                    }else if("FullScreen"){
+                    } else if ("FullScreen") {
 
                         var donnees = [];
-                        var dates =  [];
+                        var dates = [];
 
                         // JSON Parsing
                         var myArr = JSON.parse(xmlhttp.responseText);
@@ -753,8 +1102,8 @@ function CreateGraphic(_donnees, _date) {
             "title": "red line",
             "valueField": "visits",
             "useLineColorForBulletBorder": true,
-            "balloon":{
-                "drop":true
+            "balloon": {
+                "drop": true
             }
         }],
         "chartScrollbar": {
@@ -763,7 +1112,7 @@ function CreateGraphic(_donnees, _date) {
             "scrollbarHeight": 40
         },
         "chartCursor": {
-            "limitToGraph":"g1"
+            "limitToGraph": "g1"
         },
         "categoryField": "date",
         "categoryAxis": {
@@ -794,7 +1143,7 @@ function CreateGraphic(_donnees, _date) {
 
         for (var i = 0; i < donnees.length; i++) {
 
-            var dateFormatte = new Date(date[i]*1000);
+            var dateFormatte = new Date(date[i] * 1000);
 
             var newnewdate = dateFormatte.getDate() + "/" + (dateFormatte.getMonth() + 1) + "/" + dateFormatte.getFullYear() + " \
                  " + dateFormatte.getHours() + ":" + dateFormatte.getMinutes() + ":" + dateFormatte.getSeconds();
@@ -819,7 +1168,7 @@ function CreateGraphic(_donnees, _date) {
 // Enregistrer un cookie sur le naviguateur
 function setCookie(nom, Valeur, Time) {
     var today = new Date(), expires = new Date();
-    // Expire au bout de 7 jours
+    // Expire au bout de "Time" jours
     expires.setTime(today.getTime() + (Time * 24 * 60 * 60 * 1000));
     document.cookie = nom + "=" + encodeURIComponent(Valeur) + ";expires=" + expires.toGMTString();
 }
@@ -1012,12 +1361,12 @@ function calcMD5(str) {
     return rhex(a) + rhex(b) + rhex(c) + rhex(d);
 }
 
- //******************* TIME CONVERTER *********************//
+//******************* TIME CONVERTER *********************//
 
 // TIMESTAMP --> Date personnalisée
-function timeConverter(UNIX_timestamp){
+function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp * 1000);
-    var months = [01,02,03,04,05,06,07,08,09,10,11,12];
+    var months = [01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12];
     var year = a.getFullYear();
     var month = months[a.getMonth()];
     var date = a.getDate();
@@ -1025,7 +1374,7 @@ function timeConverter(UNIX_timestamp){
     var min = a.getMinutes();
     var sec = a.getSeconds();
     //yyyy-MM-dd HH:mm:ss
-    var time = year + '-' + month + '-' + date + ' ' + hour + ':' + min + ':' + sec ;
+    var time = year + '-' + month + '-' + date + ' ' + hour + ':' + min + ':' + sec;
     return time;
 }
 
@@ -1064,11 +1413,11 @@ function JSONToCSVConvertor(JSONData, ReportTitle, ShowLabel) {
     }
 
     // Format Expressions
-    for(var j = 0;  j < arrData.releve.length; j++) {
+    for (var j = 0; j < arrData.releve.length; j++) {
 
         arrData.releve[j].dateReleve = timeConverter(arrData.releve[j].dateReleve);
 
-        arrData.releve[j].mesure = arrData.releve[j].mesure.toString().replace('.',',');
+        arrData.releve[j].mesure = arrData.releve[j].mesure.toString().replace('.', ',');
 
     }
 
@@ -1095,7 +1444,7 @@ function JSONToCSVConvertor(JSONData, ReportTitle, ShowLabel) {
     //Generate a file name
     var fileName = "MyReport_";
     //this will remove the blank-spaces from the title and replace it with an underscore
-    fileName += ReportTitle.replace(/ /g,"_");
+    fileName += ReportTitle.replace(/ /g, "_");
 
     //Initialize file format you want csv or xls
     var uri = 'data:text/csv;charset=utf-8,' + escape(CSV);
