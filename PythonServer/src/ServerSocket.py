@@ -2,10 +2,45 @@
 # Definition d'un serveur reseau rudimentaire
 # Ce serveur attend la connexion d'un client, pour entamer un dialogue avec lui
 
-import socket, sys,time
-#print(socket.gethostbyname(socket.gethostname()))
-#HOST = '127.0.0.1'
-#PORT = 8081
+import socket, sys,json
+import MySQLdb as mdb
+
+#probeID
+#date
+#ozone
+#temperature
+#hygrometrie
+#humidity
+def parsing(myJSON):
+	try:
+		req_data = json.loads(myJSON)
+		# recuperation du probeID
+		probeID = req_data["probeID"]
+		# recuperation de la valeur d'ozone
+		ozone = req_data["ozone"]
+		# recuperation de la valeur de temperature
+		temperature = req_data["mesure"]
+		# recuperation de la valeur d'hygrometrie
+		hygrometrie = req_data["hygrometrie"]
+		# recuperation de la valeur de humidite
+		humidity = req_data["humidity"]
+		# recuperation de date
+		date = req_data["date"]
+		con = mdb.connect('srvmysql.imerir.com', 'SmartForest', 'LjcX7vWRMs84jJ3h', 'SmartForest')
+		with con:
+			cur = con.cursor()
+			print("toto")
+			print("fuck")
+			cur.execute("INSERT INTO donnes_lora values (NULL,\'"+str(probeID)+"\',\'"+str(temperature)+"\',\'"+str(ozone)+"\',"+
+															"\'"+str(humidity)+"\',\'"+str(date)+"\',\'"+str(hygrometrie)+"\')")
+	except mdb.Error as e:
+		print("Error %d: %s") % (e.args[0], e.args[1])
+		error=1001
+	except Exception as e:
+		# si une erreur de format retour erreur 1000
+		print(e)
+		error=1000
+
 
 def socketServer(threadName,HOST,PORT):
 	print ("%s : %s:%s" % ( threadName,str(HOST),str(PORT) ))
@@ -32,7 +67,8 @@ def socketServer(threadName,HOST,PORT):
 		connexion.send("Vous etes connecte au serveur Toto. Envoyez vos messages.")
 		msgClient = connexion.recv(1024)
 		#while 1:
-		print ("C>", msgClient)
+		print (msgClient)
+		parsing(msgClient)
 		#if msgClient.upper() == "FIN" or msgClient =="":
 		#	break
 		#msgServeur = raw_input("S> ")
