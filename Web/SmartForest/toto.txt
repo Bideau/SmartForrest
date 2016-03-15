@@ -1,6 +1,0 @@
-[
-{
-"display": "JavaScript Tutorial",
-"url": "http://www.w3schools.com/js/default.asp"
-}
-]

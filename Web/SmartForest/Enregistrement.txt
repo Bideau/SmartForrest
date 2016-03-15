@@ -1,7 +1,0 @@
-{
-"login": "toto",
-"password": "tata",
-"nom": "Doe",
-"prenom": "John",
-"description": "Description Test IT"
-}
