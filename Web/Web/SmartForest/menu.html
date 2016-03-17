@@ -7,6 +7,9 @@
 <html>
 <head>
     <title>SmartForest</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favico.ico" />
+
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
@@ -27,23 +30,20 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
 </head>
-<body onload="initIndex()">
+<body onload="initMenu()">
 
 <!-- Header -->
 <section id="header">
     <header>
         <span class="image avatar"><img class="imageProfil" src="images/Profil.png" alt=""
                                         onclick='window.location.href="profil.html";'/></span>
-        <h1 id="logo">No login</h1>
-        <p id="Description_Utilisateur">Ingénieur de Recherche<br/>
-            CNRS, Banyuls</p>
+        <h1 id="logo"></h1>
+        <p id="Description_Utilisateur"></p>
     </header>
     <nav id="nav">
         <ul>
             <li><a href="#one" class="active">Accueil</a></li>
-            <li><a href="#two">Données LoRa</a></li>
-            <li><a href="#three">Station Météo</a></li>
-            <li><a href="#four">Puces Suiveuses</a></li>
+            <li><a href="#two">Données Massane</a></li>
         </ul>
     </nav>
 </section>
@@ -124,74 +124,8 @@
 
                 <!--<div id="chartdiv" style="width: 640px; height: 400px;"></div>-->
                 <div id="chartdiv"></div>
-
             </div>
         </section>
-
-        <!-- Three -->
-        <section id="three">
-            <div class="container">
-                <h3>Station météo</h3>
-                <p>Section en developpement.</p>
-                <!--<div class="features">
-                    <article>
-                        <a href="#" class="image"><img src="images/pic01.jpg" alt=""/></a>
-                        <div class="inner">
-                            <h4>Possibly broke spacetime</h4>
-                            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus
-                                integer adipiscing ornare amet.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="#" class="image"><img src="images/pic02.jpg" alt=""/></a>
-                        <div class="inner">
-                            <h4>Terraformed a small moon</h4>
-                            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus
-                                integer adipiscing ornare amet.</p>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="#" class="image"><img src="images/pic03.jpg" alt=""/></a>
-                        <div class="inner">
-                            <h4>Snapped dark matter in the wild</h4>
-                            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus
-                                integer adipiscing ornare amet.</p>
-                        </div>
-                    </article>
-                </div>-->
-            </div>
-        </section>
-
-        <!-- Four -->
-        <section id="four">
-            <div class="container">
-                <h3>Puces suiveuses</h3>
-                <p>Section en developpement.</p>
-                <!--<form method="post" action="#">
-                    <div class="row uniform">
-                        <div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name"/></div>
-                        <div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email"/>
-                        </div>
-                    </div>
-                    <div class="row uniform">
-                        <div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject"/></div>
-                    </div>
-                    <div class="row uniform">
-                        <div class="12u"><textarea name="message" id="message" placeholder="Message"
-                                                   rows="6"></textarea></div>
-                    </div>
-                    <div class="row uniform">
-                        <div class="12u">
-                            <ul class="actions">
-                                <li><input type="submit" class="special" value="Send Message"/></li>
-                                <li><input type="reset" value="Reset Form"/></li>
-                            </ul>
-                        </div>
-                    </div>
-                </form>-->
-            </div>
-        </section>
-
     </div>
 
     <!-- Footer -->

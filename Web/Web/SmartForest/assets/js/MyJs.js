@@ -2,86 +2,12 @@
  * Created by Arnaud on 11/02/2016.
  */
 
+// Adresse IP du serveur hebergant le programme Python
 var adresseIPServeur = "http://172.30.0.103:8080/";
 
-function remplissageAutomatiqueEnregistrement() {
-    document.getElementById("login").value = "toto";
-    document.getElementById("password").value = "toto";
-    document.getElementById("nom").value = "toto";
-    document.getElementById("prenom").value = "toto";
-    document.getElementById("description").value = "toto";
-    document.getElementById("mail").value = "toto.toto@toto.toto";
-}
-
-//***********************************************************//
-//***********************************************************//
-
-function enregistrement() {
-
-    var xmlhttp = new XMLHttpRequest();
-    var stop = false;
-
-    var login = document.getElementById("login").value;
-    var motDePasse = document.getElementById("password").value;
-    var nom = document.getElementById("nom").value;
-    var prenom = document.getElementById("prenom").value;
-    var description = document.getElementById("description").value;
-    var mail = document.getElementById("mail").value;
-
-    var motDePasseChiffre = calcMD5(motDePasse);
-
-    var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '","nom": "' + nom + '","prenom": "' + prenom + '","description": "' + description + '","mail":"' + mail + '"}';
-
-    //alert(trame);
-
-    xmlhttp.open("POST", adresseIPServeur + "user");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (stop == false) {
-                    stop = true;
-                    alert("Enregistrement effectué");
-                }
-                break;
-            case 1000:
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-                    alert("Erreur inconnue");
-                }
-                break;
-            case 1001:
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-                    alert("Erreur de base de données");
-                }
-                break;
-            case 1004:
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-                    alert("Erreur de communication JSON");
-                }
-                break;
-            case 1005:
-                document.getElementById("Wrong_login_enregistrement").innerHTML = "Login déjà utilisé";
-                break;
-            case 0:
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-                    alert("Serveur injoignable");
-                }
-                break;
-            default:
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-                    alert("OTHER : " + xmlhttp.status);
-                }
-        }
-    };
-}
+//*******************************************************************//
+//****************** FONCTIONS DE RESET DES CHAMPS ******************//
+//*******************************************************************//
 
 function resetLoginErrorEnregistrement() {
     document.getElementById("Wrong_login_enregistrement").innerHTML = "";
@@ -99,8 +25,26 @@ function resetPasswordErrorConnexion() {
     document.getElementById("Wrong_password_connexion").innerHTML = "";
 }
 
+//*****************************************************//
+//********************* CONNEXION *********************//
+//*****************************************************//
+
+// Vérifie si le naviguateur accepte les cookies
+function initConnexion() {
+
+    if (navigator.cookieEnabled) {
+        // Cookies acceptés
+        if (getCookie("nom_utilisateur") != null) {
+            document.getElementById("login").innerHTML = getCookie("nom_utilisateur");
+            document.getElementById("password").innerHTML = getCookie("mot_de_passe_utilisateur");
+        }
+    }
+}
+
+// Communication permettant à un utilisateur de se connecter
 function connexion() {
 
+    // http://www.w3schools.com/ajax/ajax_xmlhttprequest_send.asp
     var xmlhttp = new XMLHttpRequest();
     var stop = false;
 
@@ -110,13 +54,9 @@ function connexion() {
 
     var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '"}';
 
-    alert(trame);
-
     xmlhttp.open("POST", adresseIPServeur + "login");
 
     xmlhttp.send(trame);
-
-    alert("toto");
 
     xmlhttp.onreadystatechange = function () {
 
@@ -124,8 +64,6 @@ function connexion() {
             case 200:
                 if (xmlhttp.responseText != "" && stop == false) {
                     stop = true;
-
-                    //alert(xmlhttp.responseText);
 
                     // JSON Parsing
                     var myArr = JSON.parse(xmlhttp.responseText);
@@ -174,23 +112,10 @@ function connexion() {
 }
 
 //*****************************************************//
-//****************** INITIALISATIONS ******************//
+//*********************** MENU ************************//
 //*****************************************************//
 
-function initConnexion() {
-
-    alert("toto");
-
-    if (navigator.cookieEnabled) {
-        // Cookies acceptés
-        if (getCookie("nom_utilisateur") != null) {
-            document.getElementById("login").innerHTML = getCookie("nom_utilisateur");
-            document.getElementById("password").innerHTML = getCookie("mot_de_passe_utilisateur");
-        }
-    }
-}
-
-function initIndex() {
+function initMenu() {
 
     if (navigator.cookieEnabled) {
         // Cookies acceptés
@@ -198,772 +123,18 @@ function initIndex() {
         alert("Vos cookies sont désactivés.\nActivez les pour vous connecter.");
     }
 
-    //alert(getCookie("nom_utilisateur"));
-
     var nom_utilisateur = getCookie("nom_utilisateur");
     var prenom_utilisateur = getCookie("prenom_utilisateur");
     var Description_Utilisateur = getCookie("description_utilisateur");
-
-    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
-    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
-}
-
-function initProfile() {
-
-    var nom_utilisateur = getCookie("nom_utilisateur");
-    var prenom_utilisateur = getCookie("prenom_utilisateur");
-    var Description_Utilisateur = getCookie("description_utilisateur");
-    var mail = getCookie("mail_utilisateur");
-
-    document.getElementById("nomUtilisateur").innerHTML = "Nom : " + nom_utilisateur + "<br />";
-    document.getElementById("prenomUtilisateur").innerHTML = "Prenom : " + prenom_utilisateur + "<br />";
-    document.getElementById("descriptionUtilisateur").innerHTML = 'Description : <input id="inputDescription" style="width:50%" size="20" value="' + Description_Utilisateur + '"/>';
-    document.getElementById("mailUtilisateur").innerHTML = 'Adresse mail : <input id="inputMail" style="width:50%" size="20" value="' + mail + '"/>';
-
-    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
-    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
-
-    if (getCookie("admin_button_view") == "true") {
-        document.getElementById("logAdmin").innerHTML = '<input id="adminPassword" type="password" style="width:30%" size="20" placeholder="admin password"/> <br /><a id="accesAdmin" onclick="AccesAdmin()" class="button">Commandes administrateur</a>'
-    }
-}
-
-function AccesAdmin() {
-    // Récupération du statut (Utilisateur ou Admin)
-    //alert(document.getElementById("adminPassword").value);
-    initProfileAdministrateur(document.getElementById("adminPassword").value);
-}
-
-function initProfileAdministrateur(password) {
-
-    var xmlhttp = new XMLHttpRequest();
-    var login_Utilisateur = getCookie("login_utilisateur");
-    var stop = false;
-
-    var passwordChiffre = calcMD5(password);
-
-    // Verifier Admin ou Utilisateur
-    var trame = '{"login": "' + login_Utilisateur + '","password": "' + passwordChiffre + '"}';
-
-    xmlhttp.open("POST", adresseIPServeur + "login");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-
-                    // JSON Parsing
-                    var myArr = JSON.parse(xmlhttp.responseText);
-
-                    if (myArr.isAdmin == true) {
-
-                        document.getElementById("adminPassword").remove();
-                        document.getElementById("accesAdmin").remove();
-
-                        document.getElementById("PannelAdministrateur").innerHTML = '<h3>Commandes Administrateur</h3>';
-                        document.getElementById("DivAjouterUtilisateur").innerHTML = '<a onclick="AjouterUtilisateur()" class="button">Ajouter Utilisateur</a>';
-                        document.getElementById("DivSupprimerUtilisateur").innerHTML = '<a onclick="SupprimerUtilisateur()" class="button">Supprimer Utilisateur</a>';
-                        document.getElementById("DivAjoutTypeCapteur").innerHTML = '<a onclick="PageAjouterTypeCapteur()" class="button">Ajouter Capteur</a>';
-                        document.getElementById("DivModificationSonde").innerHTML = '<a onclick="PageAjouterSonde()" class="button">Ajouter Sonde</a>';
-                        document.getElementById("DivDroitsUtilisateur").innerHTML = '<a onclick="PageModificationDroitsUtilisateur()" class="button">Modifier Utilisateur</a>';
-
-                    }
-                }
-            default:
-            //alert("Code HTTP : " + xmlhttp.status);
-        }
-    };
-}
-
-function initSuppressionUtilisateurs() {
-
-    var nom_utilisateur = getCookie("nom_utilisateur");
-    var prenom_utilisateur = getCookie("prenom_utilisateur");
-    var Description_Utilisateur = getCookie("description_utilisateur");
-
-    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
-    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
-
-    // HTTP UTILISATEURS
-    var xmlhttp = new XMLHttpRequest();
-    var url = adresseIPServeur + "userList";
-
-    var stop = false;
-
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-
-                    var myArr = JSON.parse(xmlhttp.responseText);
-
-                    var nom = [];
-                    var prenom = [];
-                    var login = [];
-
-                    var chaine = '<select name="demo-category" id="UserList">';
-
-                    for (var i = 0; i < myArr.length; i++) {
-                        nom.push(myArr[i].nom);
-                        prenom.push(myArr[i].prenom);
-                        login.push(myArr[i].login);
-
-                        chaine = chaine + '<option value="">' + login[i] + ' - ' + prenom[i] + ' - ' + nom[i] + '</option>';
-                    }
-
-                    chaine = chaine + '</select>';
-
-                    document.getElementById("listeUtilisateurs").innerHTML = chaine;
-                }
-                break;
-        }
-    };
-}
-
-function initAjouterSonde() {
-
-    var nom_utilisateur = getCookie("nom_utilisateur");
-    var prenom_utilisateur = getCookie("prenom_utilisateur");
-    var Description_Utilisateur = getCookie("description_utilisateur");
-
-    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
-    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
-}
-
-function initModificationUtilisateurs() {
-    var nom_utilisateur = getCookie("nom_utilisateur");
-    var prenom_utilisateur = getCookie("prenom_utilisateur");
-    var Description_Utilisateur = getCookie("description_utilisateur");
-
-    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
-    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
-
-    // HTTP UTILISATEURS
-    var xmlhttp = new XMLHttpRequest();
-    var url = adresseIPServeur + "userList";
-
-    var stop = false;
-
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-
-                    var myArr = JSON.parse(xmlhttp.responseText);
-
-                    var nom = [];
-                    var prenom = [];
-                    var login = [];
-
-                    var chaine = '<select onchange="AffichageSondeModificationUtilisateurs()" name="demo-category" id="UserList">';
-
-                    for (var i = 0; i < myArr.length; i++) {
-                        nom.push(myArr[i].nom);
-                        prenom.push(myArr[i].prenom);
-                        login.push(myArr[i].login);
-
-                        chaine = chaine + '<option value="">' + login[i] + ' - ' + prenom[i] + ' - ' + nom[i] + '</option>';
-                    }
-
-                    chaine = chaine + '</select>';
-
-                    document.getElementById("listeUtilisateur").innerHTML = chaine;
-                }
-                break;
-        }
-    };
-
-
-    // HTTP SONDES
-
-
-}
-
-
-//****************************************************************//
-
-function ModifierProfilUtilisateur() {
-
-    var xmlhttp = new XMLHttpRequest();
-
-    var stop = false;
-
-    var desc = document.getElementById("inputDescription").value;
-    var mail = document.getElementById("inputMail").value;
     var login = getCookie("login_utilisateur");
-    var trame = '{"login": "' + login + '", "description" : "' + desc + '","mail":"' + mail + '"}';
-
-    alert(trame);
-
-    xmlhttp.open("POST", adresseIPServeur + "ModifyDescription");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (stop == false) {
-                    stop = true;
-
-                    alert("Description modifié.");
-                    setCookie("description_utilisateur", desc, 7);
-                    setCookie("mail_utilisateur", mail, 7);
-
-                    // Redirection vers le corps du site
-                    window.location.href = "profil.html";
-                }
-                break;
-            default:
-                if (stop == false) {
-                    stop = true;
-                    alert("Erreur inconnue : " + xmlhttp.status);
-                }
-        }
-    };
-}
-
-function ajoutCapteurASonde(nombreCapteur) {
-    var nombreCapteur = document.getElementById("nombreCapteur").value;
-    ajoutCapteurASondeRequete(nombreCapteur);
-}
-
-function ajoutCapteurASondeRequete(nombreCapteur) {
-
-    var nom_utilisateur = getCookie("nom_utilisateur");
-    var prenom_utilisateur = getCookie("prenom_utilisateur");
-    var Description_Utilisateur = getCookie("description_utilisateur");
-
-    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
-    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
-
-    // HTTP UTILISATEURS
-    var xmlhttp = new XMLHttpRequest();
-    var url = adresseIPServeur + "sensorList";
-
-    var stop = false;
-
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (xmlhttp.responseText != "" && stop == false) {
-
-                    stop = true;
-
-                    var myArr = JSON.parse(xmlhttp.responseText);
-
-                    document.getElementById("listeSonde").innerHTML = "";
-
-                    for (var j = 0; j < nombreCapteur; j++) {
-
-                        var id = "sondeList" + j;
-
-                        var chaine = '<select name="demo-category" id="' + id + '">';
-
-                        for (var i = 0; i < myArr.capteur.length; i++) {
-                            chaine = chaine + '<option value="">' + myArr.capteur[i] + '</option>';
-                        }
-
-                        chaine = chaine + '</select>';
-
-                        document.getElementById("listeSonde").innerHTML += chaine;
-                    }
-                }
-                break;
-        }
-    };
-}
-
-function AjouterSonde() {
-
-    var xmlhttp = new XMLHttpRequest();
-    var stop = false;
-
-    var nomSonde = document.getElementById("nomSonde").value;
-    var longitude = document.getElementById("longitude").value;
-    var latitude = document.getElementById("latitude").value;
-    var dateDeploiementBrut = document.getElementById("dateDeploiement").value;
-    var nombreCapteur = document.getElementById("nombreCapteur").value;
-
-    // Conversion Date to Timestamp
-    var dateDeploiementDATE = new Date(dateDeploiementBrut);
-
-    var dateDeploiement = ((dateDeploiementDATE.getTime() / 1000).toFixed(0)) - 3600;
-
-    var trame = '{"nom": "' + nomSonde + '", "longitude" : "' + longitude + '", "latitude" : "' + latitude + '",\
-    "dateDeploiement": "' + dateDeploiement + '", "capteurs" : [';
-
-
-    for (var i = 0; i < nombreCapteur; i++) {
-        var id = "sondeList" + i;
-
-        var index = document.getElementById(id);
-        var sensorValue = index.options[index.selectedIndex].text;
-
-        trame = trame + '"' + sensorValue + '",';
-    }
-
-    // Retire la derniere virgule
-    trame = trame.substring(0, trame.length - 1);
-
-    trame = trame + "]}";
-
-    alert(trame);
-
-    xmlhttp.open("POST", adresseIPServeur + "addStation");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (stop == false) {
-                    stop = true;
-                    alert("Sonde ajouté");
-                }
-                break;
-            default:
-                if (stop == false) {
-                    stop = true;
-                    alert("Erreur inconnue : " + xmlhttp.status);
-                }
-        }
-    };
-
-}
-
-function initAjouterTypeCapteur() {
-    var nom_utilisateur = getCookie("nom_utilisateur");
-    var prenom_utilisateur = getCookie("prenom_utilisateur");
-    var Description_Utilisateur = getCookie("description_utilisateur");
 
     document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
     document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
 }
 
-function PageModifierPasswordUtilisateur() {
-    document.location.href = "modifierMotDePasse.html";
-}
-
-function initModifierMotDePasse(){
-    var nom_utilisateur = getCookie("nom_utilisateur");
-    var prenom_utilisateur = getCookie("prenom_utilisateur");
-    var Description_Utilisateur = getCookie("description_utilisateur");
-
-    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
-    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
-}
-
-function ModifierPasswordUtilisateur(){
-    var xmlhttp = new XMLHttpRequest();
-    var stop = false;
-
-    var ancienpassword = document.getElementById("ancienMotDePasse").value;
-    var newpassword = document.getElementById("nouveauMotDePasse").value;
-    var newpassword2 = document.getElementById("nouveauMotDePasse2").value;
-    var login = document.getElementById("login").value;
-
-    //alert(newpassword + " " + newpassword2);
-
-    if(newpassword != newpassword2){
-        alert("Vous avez entré deux nouveaux mot de passe différent");
-        return 0;
-    }
-
-    ancienpassword = calcMD5(ancienpassword);
-    newpassword = calcMD5(newpassword);
-
-    var trame = '{"login": "' + login + '","ancienPassword":"' + ancienpassword + '","newPassword":"' + newpassword + '"}';
-
-    alert("trame : " + trame);
-
-    //return 0;
-
-    xmlhttp.open("POST", adresseIPServeur + "modifyPassword");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (stop == false) {
-                    stop = true;
-                    alert("Mot de passe modifié");
-                }
-                break;
-            default:
-                if (stop == false) {
-                    stop = true;
-                    alert("Erreur inconnue : " + xmlhttp.status);
-                }
-        }
-    };
-}
-
-function PageMotDePasseOublie(){
-    document.location.href = "motDePasseOublie.html";
-}
-
-function reinitialisationMotDePasse(){
-    var xmlhttp = new XMLHttpRequest();
-    var stop = false;
-
-    var login = document.getElementById("login").value;
-    var mail = document.getElementById("mail").value;
-
-    var trame = '{"login": "' + login + '","mail":"' + mail + '"}';
-
-    //alert("trame : " + trame);
-
-    //return 0;
-
-    xmlhttp.open("POST", adresseIPServeur + "forgotPassword");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (stop == false) {
-                    stop = true;
-                    alert("mail envoyé");
-                }
-                break;
-            default:
-                if (stop == false) {
-                    stop = true;
-                    alert("Erreur inconnue : " + xmlhttp.status);
-                }
-        }
-    };
-}
-
-function ecraserPassword(){
-
-    var xmlhttp = new XMLHttpRequest();
-    var stop = false;
-
-    var login = document.getElementById("login").value;
-    var password = document.getElementById("password").value;
-
-    password = calcMD5(password);
-
-    var trame = '{"login": "' + login + '","password":"' + password + '"}';
-
-    //alert("trame : " + trame);
-
-    //return 0;
-
-    xmlhttp.open("POST", adresseIPServeur + "erasePassword");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (stop == false) {
-                    stop = true;
-                    alert("Mot de passe modifié");
-                    document.location.href = "index.html";
-                }
-                break;
-            default:
-                if (stop == false) {
-                    stop = true;
-                    alert("Erreur inconnue : " + xmlhttp.status);
-                }
-        }
-    };
-
-}
-
-function ModificationUtilisateur() {
-
-    var xmlhttp = new XMLHttpRequest();
-    var stop = false;
-
-    //LOGIN
-    var index = document.getElementById("UserList");
-    var all = index.options[index.selectedIndex].text;
-
-    var login = all.split("-");
-
-    login = login[0].trimRight();
-
-    var trame = '{"login": "' + login + '","liste" : [';
-
-    //OTHER
-
-    var chaineCookie = getCookie("Stations");
-    var chaine = chaineCookie.split("-");
-
-    // DROITS
-
-    var nombreStation = getCookie("numberStation");
-
-    for(var i = 0; i<nombreStation;i++){
-
-        var station = chaine[i];
-        trame = trame + '{"nom":"' + station + '","access":' + document.getElementById('check' + station).checked + '},';
-
-    }
-
-    // Retire la derniere virgule
-    trame = trame.substring(0, trame.length - 1);
-
-    trame = trame + ']}';
-
-    //alert("trame : " + trame);
-
-    //return 0;
-
-    xmlhttp.open("POST", adresseIPServeur + "userRights");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-                    alert("Droits modifiés");
-                }
-                break;
-            default:
-                if (stop == false) {
-                    stop = true;
-                    alert("Erreur inconnue : " + xmlhttp.status);
-                }
-        }
-    };
-
-}
-
-function AffichageSondeModificationUtilisateurs() {
-    var xmlhttp = new XMLHttpRequest();
-    var stop = false;
-
-    var index = document.getElementById("UserList");
-    var all = index.options[index.selectedIndex].text;
-
-    var login = all.split("-");
-
-    login = login[0].trimRight();
-
-    var trame = '{"login": "' + login + '"}';
-
-    //alert(trame);
-
-    xmlhttp.open("POST", adresseIPServeur + "accessList");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (xmlhttp.responseText != "" && stop == false) {
-                    stop = true;
-
-                    //alert("ResponseText : " + xmlhttp.responseText);
-
-                    var myArr = JSON.parse(xmlhttp.responseText);
-
-                    document.getElementById("liste").innerHTML = "";
-
-                    //alert("size : " + myArr.liste.length);
-
-                    var chaine ="";
-                    var listeStation = "";
-
-                    setCookie("numberStation",myArr.liste.length,1);
-
-                    for (var i = 0; i < myArr.liste.length; i++) {
-                        var id = myArr.liste[i].nom;
-
-                        listeStation = listeStation + id + "-";
-
-                        if(myArr.liste[i].access == true){
-                            chaine = chaine + '<span>' + id + '</span> \
-                         <input type="checkbox" id="check' + id + '" name="demo-human" checked> &nbsp \
-                         <label for="check' + id + '"></label><br />';
-                        }else{
-                            chaine = chaine + '<span>' + id + '</span> \
-                         <input type="checkbox" id="check' + id + '" name="demo-human"> &nbsp \
-                         <label for="check' + id + '"></label><br />';
-                        }
-
-
-                    }
-
-                    setCookie("Stations",listeStation,1);
-
-                    document.getElementById("liste").innerHTML += chaine;
-                }
-                break;
-            default:
-                if (stop == false) {
-                    stop = true;
-                    alert("Erreur inconnue : " + xmlhttp.status);
-                }
-        }
-    };
-}
-
-//***********************************************************//
-//*********************** ADMIN FUNCTIONS *******************//
-//***********************************************************//
-
-function AjouterUtilisateur() {
-    document.location.href = "enregistrement.html";
-}
-
-function SupprimerUtilisateur() {
-    document.location.href = "suppressionUtilisateur.html";
-}
-
-function SuppressionUtilisateur() {
-
-    var index = document.getElementById("UserList");
-    var all = index.options[index.selectedIndex].text;
-
-    var login = all.split("-");
-
-    login = login[0].trimRight();
-
-    var answer = confirm("Voulez-vous vraiment supprimer " + login + " ?");
-    if (answer) {
-        var xmlhttp = new XMLHttpRequest();
-
-        var stop = false;
-
-        var trame = '{"login": "' + login + '"}';
-
-        xmlhttp.open("POST", adresseIPServeur + "deletedUser");
-
-        xmlhttp.send(trame);
-
-        xmlhttp.onreadystatechange = function () {
-
-            switch (xmlhttp.status) {
-                case 200:
-                    if (stop == false) {
-                        stop = true;
-
-                        alert(login + " supprimé.");
-
-                        document.location.href = "suppressionUtilisateur.html";
-
-                    }
-                    break;
-                default:
-                    alert("Erreur inconnue : " + xmlhttp.status);
-            }
-        };
-    }
-}
-
-function PageModificationDroitsUtilisateur() {
-    document.location.href = "modifierUtilisateur.html";
-}
-
-function PageAjouterSonde() {
-    document.location.href = "ajouterSonde.html";
-}
-
-function PageAjouterTypeCapteur() {
-    document.location.href = "ajouterTypeCapteur.html";
-
-}
-
-function PageFullScreenGraph() {
-
-    var login = getCookie("login_utilisateur");
-    var capteurId = document.getElementById("capteurId").value;
-
-    var dateDebutValue = document.getElementById("dateDebut").value;
-    var dateFinValue = document.getElementById("dateFin").value;
-
-    var $radio = $('input[name=demo-priority]:checked');
-    var mesure = $radio.attr('id');
-
-    // Conversion Date to Timestamp
-    var myDateDebut = new Date(dateDebutValue);
-    var myDateFin = new Date(dateFinValue);
-
-    var dateDebut = ((myDateDebut.getTime() / 1000).toFixed(0)) - 3600;
-    var dateFin = ((myDateFin.getTime() / 1000).toFixed(0)) - 3600;
-
-    // Trame pour récupérer les informations d'un capteur
-    //var trame = '{"login": "' + login + '","capteurId": "' + capteurId + '","dateDebut": "' + dateDebut + '","dateFin": "' + dateFin + '","mesure": "' + mesure + '"}';
-
-    setCookie("capteurID", capteurId, 1);
-    setCookie("dateDebut", dateDebut, 1);
-    setCookie("dateFin", dateFin, 1);
-    setCookie("mesureSave", mesure, 1);
-
-    var win = window.open("graphiquePleinePage.html", '_blank');
-    win.focus();
-}
-
-function AjouterTypeCapteur() {
-    var TypeCateur = document.getElementById("TypeCapteur").value;
-
-    var xmlhttp = new XMLHttpRequest();
-    var stop = false;
-
-    var trame = '{"nom": "' + TypeCateur + '"}';
-
-    alert(trame);
-
-    xmlhttp.open("POST", adresseIPServeur + "addSensor");
-
-    xmlhttp.send(trame);
-
-    xmlhttp.onreadystatechange = function () {
-
-        switch (xmlhttp.status) {
-            case 200:
-                if (stop == false) {
-                    stop = true;
-                    alert("Capteur ajouté.");
-                }
-                break;
-            default:
-                alert("Erreur inconnue : " + xmlhttp.status);
-        }
-    };
-}
-
-
-//***********************************************************//
-//*********************** GRAPHICS **************************//
-//***********************************************************//
-
+//**********************************************************//
+//*********************** GRAPHIQUE ************************//
+//**********************************************************//
 
 function GetSensorData(choix) {
 
@@ -1072,9 +243,813 @@ function GetSensorData(choix) {
     };
 }
 
-//********************************************************************//
-//*********************** GENERATION GRAPHIQUE ***********************//
-//********************************************************************//
+function PageFullScreenGraph() {
+
+    var login = getCookie("login_utilisateur");
+    var capteurId = document.getElementById("capteurId").value;
+
+    var dateDebutValue = document.getElementById("dateDebut").value;
+    var dateFinValue = document.getElementById("dateFin").value;
+
+    var $radio = $('input[name=demo-priority]:checked');
+    var mesure = $radio.attr('id');
+
+    // Conversion Date to Timestamp
+    var myDateDebut = new Date(dateDebutValue);
+    var myDateFin = new Date(dateFinValue);
+
+    var dateDebut = ((myDateDebut.getTime() / 1000).toFixed(0)) - 3600;
+    var dateFin = ((myDateFin.getTime() / 1000).toFixed(0)) - 3600;
+
+    setCookie("capteurID", capteurId, 1);
+    setCookie("dateDebut", dateDebut, 1);
+    setCookie("dateFin", dateFin, 1);
+    setCookie("mesureSave", mesure, 1);
+
+    var win = window.open("graphiquePleinePage.html", '_blank');
+    win.focus();
+}
+
+
+//****************** PROFIL UTILISATEUR ********************//
+
+//**********************************************************//
+//******************* MODIFIER PROFIL **********************//
+//**********************************************************//
+
+function initProfile() {
+
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+    var mail = getCookie("mail_utilisateur");
+
+    document.getElementById("nomUtilisateur").innerHTML = "Nom : " + nom_utilisateur + "<br />";
+    document.getElementById("prenomUtilisateur").innerHTML = "Prenom : " + prenom_utilisateur + "<br />";
+    document.getElementById("descriptionUtilisateur").innerHTML = 'Description : <input id="inputDescription" style="width:50%" size="20" value="' + Description_Utilisateur + '"/>';
+    document.getElementById("mailUtilisateur").innerHTML = 'Adresse mail : <input id="inputMail" style="width:50%" size="20" value="' + mail + '"/>';
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+
+    if (getCookie("admin_button_view") == "true") {
+        document.getElementById("logAdmin").innerHTML = '<input id="adminPassword" type="password" style="width:30%" size="20" placeholder="admin password"/> <br /><a id="accesAdmin" onclick="initProfileAdministrateur()" class="button">Commandes administrateur</a>'
+    }
+}
+
+function ModifierProfilUtilisateur() {
+
+    var xmlhttp = new XMLHttpRequest();
+
+    var stop = false;
+
+    var desc = document.getElementById("inputDescription").value;
+    var mail = document.getElementById("inputMail").value;
+    var login = getCookie("login_utilisateur");
+    var trame = '{"login": "' + login + '", "description" : "' + desc + '","mail":"' + mail + '"}';
+
+    xmlhttp.open("POST", adresseIPServeur + "ModifyDescription");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+
+                    alert("Description modifié.");
+                    setCookie("description_utilisateur", desc, 7);
+                    setCookie("mail_utilisateur", mail, 7);
+
+                    // Redirection vers le corps du site
+                    window.location.href = "profil.html";
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+//**********************************************************//
+//**************** MODIFIER MOT DE PASSE *******************//
+//**********************************************************//
+
+function PageModifierPasswordUtilisateur() {
+    document.location.href = "modifierMotDePasse.html";
+}
+
+function initModifierMotDePasse(){
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+}
+
+function ModifierPasswordUtilisateur(){
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var ancienpassword = document.getElementById("ancienMotDePasse").value;
+    var newpassword = document.getElementById("nouveauMotDePasse").value;
+    var newpassword2 = document.getElementById("nouveauMotDePasse2").value;
+    var login = document.getElementById("login").value;
+
+    if(newpassword != newpassword2){
+        alert("Vous avez entré deux nouveaux mot de passe différent");
+        document.getElementById("nouveauMotDePasse").value = "";
+        document.getElementById("nouveauMotDePasse2").value = "";
+        return 0;
+    }
+
+    ancienpassword = calcMD5(ancienpassword);
+    newpassword = calcMD5(newpassword);
+
+    var trame = '{"login": "' + login + '","ancienPassword":"' + ancienpassword + '","newPassword":"' + newpassword + '"}';
+
+    xmlhttp.open("POST", adresseIPServeur + "modifyPassword");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("Mot de passe modifié");
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+//***********************************************************************//
+//********************** COMMANDES ADMINISTRATEUR ***********************//
+//***********************************************************************//
+
+function initProfileAdministrateur() {
+
+    var password = document.getElementById("adminPassword").value;
+
+    var xmlhttp = new XMLHttpRequest();
+    var login_Utilisateur = getCookie("login_utilisateur");
+    var stop = false;
+
+    var passwordChiffre = calcMD5(password);
+
+    // Verifier Admin ou Utilisateur
+    var trame = '{"login": "' + login_Utilisateur + '","password": "' + passwordChiffre + '"}';
+
+    xmlhttp.open("POST", adresseIPServeur + "login");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    // JSON Parsing
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    if (myArr.isAdmin == true) {
+
+                        document.getElementById("adminPassword").remove();
+                        document.getElementById("accesAdmin").remove();
+
+                        document.getElementById("PannelAdministrateur").innerHTML = '<h3>Commandes Administrateur</h3>';
+                        document.getElementById("DivAjouterUtilisateur").innerHTML = '<a onclick="AjouterUtilisateur()" class="button">Ajouter Utilisateur</a>';
+                        document.getElementById("DivSupprimerUtilisateur").innerHTML = '<a onclick="SupprimerUtilisateur()" class="button">Supprimer Utilisateur</a>';
+                        document.getElementById("DivAjoutTypeCapteur").innerHTML = '<a onclick="PageAjouterTypeCapteur()" class="button">Ajouter Capteur</a>';
+                        document.getElementById("DivModificationSonde").innerHTML = '<a onclick="PageAjouterSonde()" class="button">Ajouter Sonde</a>';
+                        document.getElementById("DivDroitsUtilisateur").innerHTML = '<a onclick="PageModificationDroitsUtilisateur()" class="button">Modifier Utilisateur</a>';
+                    }
+                }
+            default:
+        }
+    };
+}
+
+//*******************************************************//
+//***************** AJOUTER UTILISATEUR *****************//
+//*******************************************************//
+
+function AjouterUtilisateur() {
+    document.location.href = "enregistrement.html";
+}
+
+function enregistrement() {
+
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var login = document.getElementById("login").value;
+    var motDePasse = document.getElementById("password").value;
+    var nom = document.getElementById("nom").value;
+    var prenom = document.getElementById("prenom").value;
+    var description = document.getElementById("description").value;
+    var mail = document.getElementById("mail").value;
+
+    var motDePasseChiffre = calcMD5(motDePasse);
+
+    var trame = '{"login": "' + login + '","password": "' + motDePasseChiffre + '","nom": "' + nom + '","prenom": "' + prenom + '","description": "' + description + '","mail":"' + mail + '"}'
+
+    xmlhttp.open("POST", adresseIPServeur + "user");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("Enregistrement effectué");
+                }
+                break;
+            case 1000:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue");
+                }
+                break;
+            case 1001:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Erreur de base de données");
+                }
+                break;
+            case 1004:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Erreur de communication JSON");
+                }
+                break;
+            case 1005:
+                document.getElementById("Wrong_login_enregistrement").innerHTML = "Login déjà utilisé";
+                break;
+            case 0:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Serveur injoignable");
+                }
+                break;
+            default:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+//*********************************************************//
+//***************** SUPPRIMER UTILISATEUR *****************//
+//*********************************************************//
+
+function SupprimerUtilisateur() {
+    document.location.href = "suppressionUtilisateur.html";
+}
+
+function initSuppressionUtilisateurs() {
+
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+
+    // HTTP UTILISATEURS
+    var xmlhttp = new XMLHttpRequest();
+    var url = adresseIPServeur + "userList";
+
+    var stop = false;
+
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    var nom = [];
+                    var prenom = [];
+                    var login = [];
+
+                    var chaine = '<select name="demo-category" id="UserList">';
+
+                    for (var i = 0; i < myArr.length; i++) {
+                        nom.push(myArr[i].nom);
+                        prenom.push(myArr[i].prenom);
+                        login.push(myArr[i].login);
+
+                        chaine = chaine + '<option value="">' + login[i] + ' - ' + prenom[i] + ' - ' + nom[i] + '</option>';
+                    }
+
+                    chaine = chaine + '</select>';
+
+                    document.getElementById("listeUtilisateurs").innerHTML = chaine;
+                }
+                break;
+        }
+    };
+}
+
+function SuppressionUtilisateur() {
+
+    var index = document.getElementById("UserList");
+    var all = index.options[index.selectedIndex].text;
+
+    var login = all.split("-");
+
+    login = login[0].trimRight();
+
+    var answer = confirm("Voulez-vous vraiment supprimer " + login + " ?");
+    if (answer) {
+        var xmlhttp = new XMLHttpRequest();
+
+        var stop = false;
+
+        var trame = '{"login": "' + login + '"}';
+
+        xmlhttp.open("POST", adresseIPServeur + "deletedUser");
+
+        xmlhttp.send(trame);
+
+        xmlhttp.onreadystatechange = function () {
+
+            switch (xmlhttp.status) {
+                case 200:
+                    if (stop == false) {
+                        stop = true;
+
+                        alert(login + " supprimé.");
+
+                        document.location.href = "suppressionUtilisateur.html";
+
+                    }
+                    break;
+                default:
+                    alert("Erreur inconnue : " + xmlhttp.status);
+            }
+        };
+    }
+}
+
+//********************************************************//
+//***************** MODIFIER UTILISATEUR *****************//
+//********************************************************//
+
+function PageModificationDroitsUtilisateur() {
+    document.location.href = "modifierUtilisateur.html";
+}
+
+function initModificationUtilisateurs() {
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+
+    // HTTP UTILISATEURS
+    var xmlhttp = new XMLHttpRequest();
+    var url = adresseIPServeur + "userList";
+
+    var stop = false;
+
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    var nom = [];
+                    var prenom = [];
+                    var login = [];
+
+                    var chaine = '<select onchange="AffichageSondeModificationUtilisateurs()" name="demo-category" id="UserList">';
+
+                    for (var i = 0; i < myArr.length; i++) {
+                        nom.push(myArr[i].nom);
+                        prenom.push(myArr[i].prenom);
+                        login.push(myArr[i].login);
+
+                        chaine = chaine + '<option value="">' + login[i] + ' - ' + prenom[i] + ' - ' + nom[i] + '</option>';
+                    }
+
+                    chaine = chaine + '</select>';
+
+                    document.getElementById("listeUtilisateur").innerHTML = chaine;
+                }
+                break;
+        }
+    };
+}
+
+function ModificationUtilisateur() {
+
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    //LOGIN
+    var index = document.getElementById("UserList");
+    var all = index.options[index.selectedIndex].text;
+
+    var login = all.split("-");
+
+    login = login[0].trimRight();
+
+    var trame = '{"login": "' + login + '","liste" : [';
+
+    //OTHER
+
+    var chaineCookie = getCookie("Stations");
+    var chaine = chaineCookie.split("-");
+
+    // DROITS
+
+    var nombreStation = getCookie("numberStation");
+
+    for(var i = 0; i<nombreStation;i++){
+
+        var station = chaine[i];
+        trame = trame + '{"nom":"' + station + '","access":' + document.getElementById('check' + station).checked + '},';
+
+    }
+
+    // Retire la derniere virgule
+    trame = trame.substring(0, trame.length - 1);
+
+    trame = trame + ']}';
+
+    xmlhttp.open("POST", adresseIPServeur + "userRights");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+                    alert("Droits modifiés");
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+function AffichageSondeModificationUtilisateurs() {
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var index = document.getElementById("UserList");
+    var all = index.options[index.selectedIndex].text;
+
+    var login = all.split("-");
+
+    login = login[0].trimRight();
+
+    var trame = '{"login": "' + login + '"}';
+
+    xmlhttp.open("POST", adresseIPServeur + "accessList");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+                    stop = true;
+
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    document.getElementById("liste").innerHTML = "";
+
+                    var chaine ="";
+                    var listeStation = "";
+
+                    setCookie("numberStation",myArr.liste.length,1);
+
+                    for (var i = 0; i < myArr.liste.length; i++) {
+                        var id = myArr.liste[i].nom;
+
+                        listeStation = listeStation + id + "-";
+
+                        if(myArr.liste[i].access == true){
+                            chaine = chaine + '<span>' + id + '</span> \
+                         <input type="checkbox" id="check' + id + '" name="demo-human" checked> &nbsp \
+                         <label for="check' + id + '"></label><br />';
+                        }else{
+                            chaine = chaine + '<span>' + id + '</span> \
+                         <input type="checkbox" id="check' + id + '" name="demo-human"> &nbsp \
+                         <label for="check' + id + '"></label><br />';
+                        }
+
+
+                    }
+
+                    setCookie("Stations",listeStation,1);
+
+                    document.getElementById("liste").innerHTML += chaine;
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+//************************************************************//
+//******************* AJOUTER UNE SONDE **********************//
+//************************************************************//
+
+function PageAjouterSonde() {
+    document.location.href = "ajouterSonde.html";
+}
+
+function initAjouterSonde() {
+
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+}
+
+function ajoutCapteurASonde(nombreCapteur) {
+    var nombreCapteur = document.getElementById("nombreCapteur").value;
+    ajoutCapteurASondeRequete(nombreCapteur);
+}
+
+function ajoutCapteurASondeRequete(nombreCapteur) {
+
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+
+    // HTTP UTILISATEURS
+    var xmlhttp = new XMLHttpRequest();
+    var url = adresseIPServeur + "sensorList";
+
+    var stop = false;
+
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.responseText != "" && stop == false) {
+
+                    stop = true;
+
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    document.getElementById("listeSonde").innerHTML = "";
+
+                    for (var j = 0; j < nombreCapteur; j++) {
+
+                        var id = "sondeList" + j;
+
+                        var chaine = '<select name="demo-category" id="' + id + '">';
+
+                        for (var i = 0; i < myArr.capteur.length; i++) {
+                            chaine = chaine + '<option value="">' + myArr.capteur[i] + '</option>';
+                        }
+
+                        chaine = chaine + '</select>';
+
+                        document.getElementById("listeSonde").innerHTML += chaine;
+                    }
+                }
+                break;
+        }
+    };
+}
+
+function AjouterSonde() {
+
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var nomSonde = document.getElementById("nomSonde").value;
+    var longitude = document.getElementById("longitude").value;
+    var latitude = document.getElementById("latitude").value;
+    var dateDeploiementBrut = document.getElementById("dateDeploiement").value;
+    var nombreCapteur = document.getElementById("nombreCapteur").value;
+
+    // Conversion Date to Timestamp
+    var dateDeploiementDATE = new Date(dateDeploiementBrut);
+
+    var dateDeploiement = ((dateDeploiementDATE.getTime() / 1000).toFixed(0)) - 3600;
+
+    var trame = '{"nom": "' + nomSonde + '", "longitude" : "' + longitude + '", "latitude" : "' + latitude + '",\
+    "dateDeploiement": "' + dateDeploiement + '", "capteurs" : [';
+
+
+    for (var i = 0; i < nombreCapteur; i++) {
+        var id = "sondeList" + i;
+
+        var index = document.getElementById(id);
+        var sensorValue = index.options[index.selectedIndex].text;
+
+        trame = trame + '"' + sensorValue + '",';
+    }
+
+    // Retire la derniere virgule
+    trame = trame.substring(0, trame.length - 1);
+
+    trame = trame + "]}";
+
+    xmlhttp.open("POST", adresseIPServeur + "addStation");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("Sonde ajouté");
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+
+}
+
+//************************************************************//
+//************* AJOUTER UN TYPE DE  CAPTEUR ******************//
+//************************************************************//
+
+function PageAjouterTypeCapteur() {
+    document.location.href = "ajouterTypeCapteur.html";
+}
+
+function initAjouterTypeCapteur() {
+    var nom_utilisateur = getCookie("nom_utilisateur");
+    var prenom_utilisateur = getCookie("prenom_utilisateur");
+    var Description_Utilisateur = getCookie("description_utilisateur");
+
+    document.getElementById("logo").innerHTML = prenom_utilisateur + " " + nom_utilisateur;
+    document.getElementById("Description_Utilisateur").innerHTML = Description_Utilisateur;
+}
+
+function AjouterTypeCapteur() {
+    var TypeCateur = document.getElementById("TypeCapteur").value;
+
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var trame = '{"nom": "' + TypeCateur + '"}';
+
+    xmlhttp.open("POST", adresseIPServeur + "addSensor");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("Capteur ajouté.");
+                }
+                break;
+            default:
+                alert("Erreur inconnue : " + xmlhttp.status);
+        }
+    };
+}
+
+//***********************************************************************//
+//******************** REINITIALISER MOT DE PASSE ***********************//
+//***********************************************************************//
+
+function PageMotDePasseOublie(){
+    document.location.href = "motDePasseOublie.html";
+}
+
+function reinitialisationMotDePasse(){
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var login = document.getElementById("login").value;
+    var mail = document.getElementById("mail").value;
+
+    var trame = '{"login": "' + login + '","mail":"' + mail + '"}';
+
+    xmlhttp.open("POST", adresseIPServeur + "forgotPassword");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("mail envoyé");
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+}
+
+function ecraserPassword(){
+
+    var xmlhttp = new XMLHttpRequest();
+    var stop = false;
+
+    var login = document.getElementById("login").value;
+    var password = document.getElementById("password").value;
+
+    password = calcMD5(password);
+
+    var trame = '{"login": "' + login + '","password":"' + password + '"}';
+
+    xmlhttp.open("POST", adresseIPServeur + "erasePassword");
+
+    xmlhttp.send(trame);
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (stop == false) {
+                    stop = true;
+                    alert("Mot de passe modifié");
+                    document.location.href = "index.html";
+                }
+                break;
+            default:
+                if (stop == false) {
+                    stop = true;
+                    alert("Erreur inconnue : " + xmlhttp.status);
+                }
+        }
+    };
+
+}
+
+//*****************************************************************************//
+//*********************** GENERATION GRAPHIQUE AMCHARTS ***********************//
+//*****************************************************************************//
 
 function CreateGraphic(_donnees, _date) {
 
@@ -1437,7 +1412,7 @@ function JSONToCSVConvertor(JSONData, ReportTitle, ShowLabel) {
     }
 
     if (CSV == '') {
-        alert("Invalid data");
+        alert("Invalid data for CSV");
         return;
     }
 
