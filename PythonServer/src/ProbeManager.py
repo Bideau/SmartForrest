@@ -2,13 +2,16 @@
 
 import sys,json
 import MySQLdb as mdb
+from subprocess import Popen,PIPE
 error=0
-HOST='srvmysql.imerir.com'
-DB='SmartForest'
-PASSWORD='LjcX7vWRMs84jJ3h'
-USER='SmartForest'
+PATH_SCRIPT="../../Script"
+HOST=Popen(PATH_SCRIPT+"/GetInfo.sh HOST", stdout=PIPE, shell=True).stdout.read()
+DB=Popen(PATH_SCRIPT+"/GetInfo.sh DB", stdout=PIPE, shell=True).stdout.read()
+PASSWORD=Popen(PATH_SCRIPT+"/GetInfo.sh PASS", stdout=PIPE, shell=True).stdout.read()
+USER=Popen(PATH_SCRIPT+"/GetInfo.sh USER", stdout=PIPE, shell=True).stdout.read()
 
-# Verification du login
+# Verification de la balise
+# Boolean
 def isBalise(capteurId):
 	valid = False
 	try:
@@ -26,10 +29,10 @@ def isBalise(capteurId):
 		sys.exit(1)
 	finally:
 		con.close()
-	print(valid)
 	return valid
 
 # Renvoie la listes des stations
+# JSON [{"name":"name","longitude":"longitude","latitude":"latitude"}]
 def stationList():
 	try:
 		con = mdb.connect(HOST, USER, PASSWORD, DB)
@@ -57,6 +60,7 @@ def stationList():
 	return myArray
 
 # Renvoie la listes des capteurs
+# JSON {"capteur":[]}
 def sensorList():
 	try:
 		con = mdb.connect(HOST, USER, PASSWORD, DB)
@@ -77,6 +81,7 @@ def sensorList():
 	return tmp
 
 # Renvoie la liste des stations avec les access pour un utilisateur
+# JSON [{"name":"name"}]
 def accessList(login):
 	try:
 		con = mdb.connect(HOST, USER, PASSWORD, DB)
@@ -104,23 +109,27 @@ def accessList(login):
 	return myArray
 
 
-# Renvoie la liste des stations avec les access pour un utilisateur
+# Met a jour les droits d'un utilisateur sur les stations
+# Error Code
 def userRights(login,liste):
 	error=200
 	try:
 		con = mdb.connect(HOST, USER, PASSWORD, DB)
 		with con:
 			cur = con.cursor()
+			# Recuperation de l'id d'un utilisateur
 			cur.execute("SELECT u_id FROM connection where c_login=\'"+str(login)+"\'")
 			row= cur.fetchone()
 			userId=row[0]
 			access=accessList(login)
-			list=stationList()
+			station=stationList()
 			myArray=[]
 
-			for tmpList in list:
+			# Mise en forme de la liste des station
+			for tmpList in station:
 				tmpJSON={"nom":"name","access":False}
 				valid=False
+				# Comparaison des listes
 				for tmpAccess in access:
 					if tmpList["name"]==tmpAccess["name"]:
 						valid=True
@@ -130,18 +139,17 @@ def userRights(login,liste):
 				myArray.append(tmpJSON)
 			originList=myArray
 
-			# Compare liste
+			# Compare liste pour decouvrir les changements
 			for tmp in liste:
 				for elem in originList:
 					if tmp["nom"]==elem["nom"]:
-						print("toto1")
 						if tmp["access"]!=elem["access"]:
-							print("toto2")
+							# Recuperation de l'id de la station en cas de changement
 							cur.execute("SELECT sta_id FROM station where sta_name=\'"+str(tmp["nom"])+"\'")
 							row= cur.fetchone()
 							stationId=row[0]
+							# Mise a jour de la db
 							if tmp["access"]== True:
-								print("Insert")
 								cur.execute("INSERT INTO stationAccess values (NULL,\'"+str(userId)+"\',\'"
 											+str(stationId)+"\')")
 							else:
@@ -158,6 +166,7 @@ def userRights(login,liste):
 
 
 # Creation de balise
+# Error Code
 def createStation(nom,longitude,latitude,date,capteur):
 	try:
 		con = mdb.connect(HOST, USER, PASSWORD, DB)
