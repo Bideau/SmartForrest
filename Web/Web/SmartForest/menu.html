@@ -16,7 +16,7 @@
     <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <script type="text/javascript" src="assets/js/MyJs.js"></script>
     <script type="text/javascript" src="assets/js/x2js.js"></script>
-    <script type="text/javascript" src="assets/js/download.js"></script>
+    <script type="text/javascript" src="assets/js/vkbeautify.js"></script>
 
     <!-- AMCHARTS for Graphics -->
     <script src="amcharts/amcharts.js" type="text/javascript"></script>
@@ -115,10 +115,15 @@
                     <span class="marge1"><input type="date" id="dateFin" value="2016-02-02"></span>
                 </p>
 
-                <a onclick='GetSensorData("Graphique")' class="button">Graphique</a>
-                <a onclick='PageFullScreenGraph()' class="button">Pleine page</a>
-                <a onclick='GetSensorData("CSV")' class="button">Export CSV</a>
-                <a onclick='GetSensorData("XML")' class="button">Export XML</a>
+                <input type="button" class="special" value="Graphique" onclick='GetSensorData("Graphique")()'/>
+                <input type="button" class="special" value="Pleine page" onclick='PageFullScreenGraph()'/>
+                <input type="button" class="special" value="Export CSV" onclick='GetSensorData("CSV")'/>
+                <input type="button" class="special" value="Export XML" onclick='GetSensorData("XML")'/>
+
+                <!--<input type="button" onclick='GetSensorData("Graphique")' class="button">Graphique</input>
+                <input type="button" onclick='PageFullScreenGraph()' class="button">Pleine page</input>
+                <input type="button" onclick='GetSensorData("CSV")' class="button">Export CSV</input>
+                <input type="button" onclick='GetSensorData("XML")' class="button">Export XML</input>-->
                 <p id="Invalid_Graph" class="badrequest"></p>
                 <br /><br />
 

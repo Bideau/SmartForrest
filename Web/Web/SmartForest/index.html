@@ -27,7 +27,7 @@
     <form method="post" action="#">
         <div class="row uniform">
 
-            <div class="6u 12u(xsmall)"><input type="text" name="name" id="login" placeholder="Login" onChange="resetLoginErrorConnexion()"/>
+            <div class="6u 12u(xsmall)"><input type="text"  name="name" id="login" placeholder="Login" onkeypress="connexionKeyPressListener(event)" onChange="resetLoginErrorConnexion()"/>
             <p id="Wrong_login_connexion" class="badrequest"></p>
             </div>
             <br/>
@@ -36,7 +36,7 @@
         <p id="invalid_login" class="badrequest"></p>
 
         <div class="row uniform">
-            <div class="6u 12u(xsmall)"><input type="password" name="name" id="password" placeholder="Password" onChange="resetPasswordErrorConnexion()"/>
+            <div class="6u 12u(xsmall)"><input type="password" name="name" id="password" placeholder="Password" onkeypress="connexionKeyPressListener(event)" onChange="resetPasswordErrorConnexion()"/>
             <p id="Wrong_password_connexion" class="badrequest"></p>
             </div>
             <br/>
