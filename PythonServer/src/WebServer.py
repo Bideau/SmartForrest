@@ -10,8 +10,6 @@ import LoginManager as Login
 import ProbeManager as Probe
 from flask import *
 
-import ServerSocket
-
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
