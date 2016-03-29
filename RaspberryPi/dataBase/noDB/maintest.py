@@ -10,21 +10,20 @@ from dataBase.sqlite3 import ProbeData
 json = JsonFile.JsonFile()
 
 for _i in range(0,144):
-    _date = time.time()
-    _ozone = random.uniform(40,70)
-    _temperature = random.uniform(20,30)
-    _groudHumidity = random.uniform(10, 60)
-    _airHumidity = random.uniform(10,60)
+    date = time.time()
+    ozone = random.uniform(40,70)
+    temperature = random.uniform(20,30)
+    groudHumidity = random.uniform(10, 60)
+    airHumidity = random.uniform(10,60)
 
-    _probeData = ProbeData.ProbeData()
-    _probeData.setValue(_i,
-                        _date,
-                        _ozone,
-                        _temperature,
-                        _groudHumidity,
-                        _airHumidity)
+    probeData = ProbeData.ProbeData()
+    probeData.setValue(_i,
+                        date,
+                        ozone,
+                        temperature,
+                        groudHumidity,
+                        airHumidity)
 
-    json.addData(_probeData.toJson())
-    #json.addData("toto ")
+    json.addData(probeData.toJson())
 
 json.writeToJson()

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*
 
 """
 The MIT License (MIT)
@@ -20,36 +20,21 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 __author__ = "Christophe Aubert"
 __version__ = "1.0"
 
+import SqlCommand
 
-class ProbeData(object):
-    """
-
-    """
+class QueryMysqlDB(SqlCommand.SqlCommand):
 
     def __init__(self):
-        self.date = None
-        self.ozone = None
-        self.temperature = None
-        self.groundHumidity = None
-        self.airHumidity = None
-        self.probe = None
 
-    def setValue(self, probe, date, ozone, temperature, humidity, hygrometry):
-        self.date = date
-        self.ozone = ozone
-        self.temperature = temperature
-        self.airHumidity = humidity
-        self.groundHumidity = hygrometry
-        self.probe = probe
+        self.sqlCommand = None
 
-    def toJson(self):
-        json = ("{" +
-                "\"probeID\"" + ":" + str(self.probe) + ", " +
-                "\"date\"" + ":" + str(self.date) + "," +
-                "\"ozone\"" ":" + str(self.ozone) + "," +
-                "\"temperature\"" + ":" + str(self.temperature) + "," +
-                "\"groundHumidity\"" + ":" + str(self.groundHumidity) + "," +
-                "\"airHumidity\"" + ":" + str(self.airHumidity) +
-                "}"
-        )
-        return json
+    def queryAllStation(self):
+        querysation = "SELECT sta_name,sta_longitude, sta_latitude, sta_installDate FROM station;"
+        self.sqlCommand = querysation
+
+    def queryAllSensorType(self):
+        querySensorType = "SELECT st_type FROM sensorType;"
+        self.sqlCommand = querySensorType
+
+    def getSQL(self):
+        return self.sqlCommand

@@ -46,6 +46,25 @@ class InsertMysqlDB(SqlCommand.SqlCommand):
         command = "INSERT INTO measure(m_date, m_value, s_id) VALUE (" + str(date) + "," + str(value) + "," + str(s_id) + ");"
         self.sqlCommand.append(command)
 
+    def insertIntoUser(self,lastName,firstName,description):
+        command = "INSERT INTO user(u_lastName, u_firstName, u_description) VALUE "\
+                                  "('" + lastName + "', '" + firstName + "', '" + description + "');"
+        self.sqlCommand.append(command)
+
+    def insertIntoConnection(self,userId,login, password, adminKey):
+        if (adminKey == None):
+            command = "INSERT INTO connection(u_id, c_login, c_password) VALUE "\
+                                            "('" + userId + "', '" + login + "', '" + password + "');"
+        else:
+            command = "INSERT INTO connection(u_id, c_login, c_password, c_adminKey) VALUE "\
+                                            "('" + userId + "', '" + login + "', '" + password + "', '" + adminKey + "');"
+        self.sqlCommand.append(command)
+
+    def insertIntoStationAccess(self,userId,stationId):
+        command = "INSERT INTO stationAccess(u_id, sta_id) VALUE "\
+                                           "(" + userId + "," + stationId + ");"
+        self.sqlCommand.append(command)
+
     def getSQL(self):
 
         return self.sqlCommand

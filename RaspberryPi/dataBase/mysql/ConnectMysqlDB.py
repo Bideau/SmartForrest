@@ -22,7 +22,7 @@ __version__ = "1.0"
 
 import mysql.connector
 
-class ConnectMysqlDb(object):
+class ConnectMysqlDB(object):
 
     def __init__(self, host,user, password, namedb):
 
@@ -51,6 +51,8 @@ class ConnectMysqlDb(object):
         self.cursor.execute(commande)
         self.connection.commit()
 
+    def sendQuery(self,query):
+        self.cursor.execute(query)
 
     def close(self):
         self.connection.close()
