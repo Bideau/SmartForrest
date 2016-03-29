@@ -506,10 +506,10 @@ function initProfileAdministrateur() {
                         document.getElementById("DivAjouterUtilisateur").innerHTML = '<a onclick="AjouterUtilisateur()" class="button">Ajouter Utilisateur</a>';
                         document.getElementById("DivSupprimerUtilisateur").innerHTML = '<a onclick="SupprimerUtilisateur()" class="button">Supprimer Utilisateur</a>';
                         document.getElementById("DivAjoutTypeCapteur").innerHTML = '<a onclick="PageAjouterTypeCapteur()" class="button">Ajouter Capteur</a>';
-                        document.getElementById("DivModificationSonde").innerHTML = '<a onclick="PageAjouterSonde()" class="button">Ajouter Sonde</a>';
+                        document.getElementById("DivModificationSonde").innerHTML = '<a onclick="PageAjouterSonde()" class="button">Ajouter station</a>';
                         document.getElementById("DivDroitsUtilisateur").innerHTML = '<a onclick="PageModificationDroitsUtilisateur()" class="button">Modifier Utilisateur</a>';
-                        document.getElementById("DivAjouterCapteurSurSonde").innerHTML = '<a onclick="pageAjouterCapteurSurSonde()" class="button">Ajouter capteur sur sonde</a>';
-                        document.getElementById("DivSupprimerCapteurSurSonde").innerHTML = '<a onclick="pageSupprimerCapteurSurSonde()" class="button">Supprimer capteur sur sonde</a>';
+                        document.getElementById("DivAjouterCapteurSurSonde").innerHTML = '<a onclick="pageAjouterCapteurSurSonde()" class="button">Ajouter capteur sur station</a>';
+                        document.getElementById("DivSupprimerCapteurSurSonde").innerHTML = '<a onclick="pageSupprimerCapteurSurSonde()" class="button">Supprimer capteur sur station</a>';
                     }
                 }
             default:
