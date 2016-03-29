@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Capteur/Sonde</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <script type="text/javascript" src="assets/js/MyJs.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+</head>
+<body onload="initSupprimerCapteurSurSonde()">
+
+<!-- Header -->
+<section id="header">
+    <header>
+        <span class="image avatar"><img class="imageProfil" src="images/Profil.png" alt=""
+                                        onclick='window.location.href="profil.html";'/></span>
+        <h1 id="logo">Default</h1>
+        <p id="Description_Utilisateur">Default Description</p>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="#one" class="active">Capteur/Sonde</a></li>
+            <li><a class="imageProfil" alt="" onclick='window.location.href="menu.html";'>Menu</a></li>
+
+        </ul>
+    </nav>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <!-- One -->
+        <section id="one">
+
+            <div class="container">
+
+                <header class="major">
+                    <h2>Supprimer type de capteur</h2>
+                </header>
+
+                <div class="menu-container">
+                    <div class="row uniform">
+                        <div class="12u">
+                            <div class="select-wrapper" style="width:120%">
+                                <span id="listeSonde"></span><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-container">
+                    <div class="row uniform">
+                        <div class="12u">
+                            <div class="select-wrapper" style="width:120%">
+                                <span id="listeCapteur"></span><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row uniform">
+                    <div class="12u">
+                        <ul class="actions">
+                            <li><input type="button" class="special" value="Supprimer"
+                                       onclick="supprimerCapteurSurSonde()"/>
+                            </li>
+                            <!--<li><input type="button" class="special" value="Auto" onclick="remplissageAutomatiqueEnregistrement()"/></li>
+                            <li><input type="reset" value="Reset Form"/></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+        </div>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+
+<!--
+<script type="text/javascript">
+    alert("POUET");
+    window.StkFunc(InitialisationUtilisateur);
+</script>
+-->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollzer.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
