@@ -1,0 +1,3 @@
+toto	toto-module.html
+toto.add	toto-module.html#add
+toto.__package__	toto-module.html#__package__

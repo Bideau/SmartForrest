@@ -21,12 +21,24 @@ __author__ = "Christophe Aubert"
 __version__ = "1.0"
 
 import InsertMysqlDB
-import ConnectMysqlDb
+import ConnectMysqlDB
 import CreateMysqlTable
 import random
 import time
 
-myconnect = ConnectMysqlDb.ConnectMysqlDb("localhost","root","azerty","smartforest")
+import QueryMysqlDB
+
+host = "localhost"
+user = "root"
+password = "azerty"
+db = "smartforest"
+
+# host = "srvmysql.imerir.com"
+# user = "SmartForest"
+# password = "LjcX7vWRMs84jJ3h"
+# db = "SmartForest"
+
+myconnect = ConnectMysqlDB.ConnectMysqlDB(host, user, password, db)
 myconnect.connect()
 
 #init
@@ -39,6 +51,11 @@ createTable.createTable()
 for command in createTable.getSQL():
     myconnect.sendCommand(command)
 
+#preparation user
+
+myInsert.insertIntoUser("Bes","Arnaud", "Chef de projet")
+myInsert.insertIntoConnection("1","abe","f71dbe52628a3f83a77ab494817525c6", "1")
+
 #preparation insert sensortype
 
 myInsert.insertIntoSensorType("ozone")
@@ -49,34 +66,68 @@ myInsert.insertIntoSensorType("waterLevel")
 myInsert.insertIntoSensorType("waterTemperature")
 
 #preparation insert station
-for a in range(0,9):
+for station in range(0,10):
 
-    namestation = "station " + str(a)
+    namestation = "station " + str(station)
     latitude = 42.674475
     longitude = 2.847765
-    installdate = time.time()
+    installdate = 1454281200
 
     myInsert.insertIntoStation(namestation,longitude, latitude,installdate)
+    stationId = 1 + station
+    myInsert.insertIntoStationAccess("1", str(stationId))
 
 #preparation insert sensor
-for b in range(1,4):
-    for c in range(1,10):
-        myInsert.insertIntoSensor(c,b)
+#TODO revoir code probleme insert bdd
+cptSensor = 0
+for station in range(1,11):
+    for sensor in range(1,5):
+        cptSensor += 1
+        myInsert.insertIntoSensor(station,sensor)
+
+
+cptSensor += 1
+print cptSensor
+
 
 #preparation insert measure
-for d in range(1,100):
+# date = 1454281200
+# cpt = 0
+# for measures in range (0,10):
+#     cpt+=1
+#     for measure in range(1,cptSensor):
+#
+#         value = random.uniform(10,80)
+#         myInsert.insertIntoMeasure(date,value,measure)
+#     date += 360
 
-        date = time.time()
-        ozone = random.uniform(40,70)
+date = 1454281200
+
+for period in range(0,2400):
+
+    print "iteration : " + str(period)
+    #boucle for pour 1 enregistrement sur 10 station de 4 capteur
+    cptsensor2 = 1
+    for station in range(1,11):
+        print "iteration station : " + str(station)
+        #first station sensor
+        ozone = random.uniform(10,80)
+        myInsert.insertIntoMeasure(date,ozone,cptsensor2)
+        cptsensor2 += 1
+        #2
         temperature = random.uniform(20,30)
-        airHumidity = random.uniform(10,60)
-        groundHumidity = random.uniform(10,60)
+        myInsert.insertIntoMeasure(date,temperature,cptsensor2)
+        cptsensor2 += 1
+        #3
+        airHumidity = random.uniform(15,40)
+        myInsert.insertIntoMeasure(date,airHumidity,cptsensor2)
+        cptsensor2 += 1
+        #4
+        groundHulidity  = random.uniform(10,35)
+        myInsert.insertIntoMeasure(date,groundHulidity,cptsensor2)
+        cptsensor2 += 1
 
-        myInsert.insertIntoMeasure(date,ozone,1)
-        myInsert.insertIntoMeasure(date,temperature,2)
-        myInsert.insertIntoMeasure(date,airHumidity,3)
-        myInsert.insertIntoMeasure(date,groundHumidity,4)
-        time.sleep(1)
+    date += 360
 
 #execution de toute les commande insert
 for command in myInsert.getSQL():
@@ -85,4 +136,11 @@ for command in myInsert.getSQL():
     myconnect.sendCommand(command)
 
 
+# myquerry = QueryMysqlDB.QueryMysqlDB()
+# myquerry.queryStation()
+# print myquerry.getSQL()
+# myconnect.sendQuery(myquerry.getSQL())
+# row = myconnect.cursor.fetchall()
+
+print
 myconnect.close()

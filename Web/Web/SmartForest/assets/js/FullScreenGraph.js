@@ -2,7 +2,7 @@
  * Created by Arnaud on 11/02/2016.
  */
 
-var adresseIPServeur = "http://172.30.0.103:8080/";
+var adresseIPServeur = "http://172.30.0.234:8080/";
 
 function FullScreenGraph(){
     GetSensorData();
@@ -51,7 +51,7 @@ function GetSensorData() {
 
                 break;
             case 1006:
-                document.getElementById("Invalid_Graph").innerHTML = "Balise inconnue";
+                alert("Balise inconnue");
                 result = false;
                 break;
             case 1007:

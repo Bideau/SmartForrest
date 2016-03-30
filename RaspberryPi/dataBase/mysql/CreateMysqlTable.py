@@ -37,60 +37,108 @@ class CreateMysqlTable(SqlCommand.SqlCommand):
                                   "st_type VARCHAR (50) NOT NULL ,"\
                                   "PRIMARY KEY (st_id )"\
                      ")ENGINE=InnoDB;"
-        print sensorType
         self.sqlCommand.append(sensorType)
 
         #------------------------------------------------------------
         # Table: measure
         #------------------------------------------------------------
 
-        tableMeasure = "CREATE TABLE measure( "\
-                                    "m_id    INT (11) Auto_increment  NOT NULL ,"\
-                                    "m_date  DATE NOT NULL ,"\
-                                    "m_value FLOAT NOT NULL ,"\
-                                    "s_id    INT NOT NULL ,"\
-                                    "PRIMARY KEY (m_id )"\
-                       ")ENGINE=InnoDB;"
-        self.sqlCommand.append(tableMeasure)
+        measure = "CREATE TABLE measure( "\
+                               "m_id    INT (11) Auto_increment  NOT NULL ,"\
+                               "m_date  INT NOT NULL ,"\
+                               "m_value FLOAT NOT NULL ,"\
+                               "s_id    INT NOT NULL ,"\
+                               "PRIMARY KEY (m_id )"\
+                  ")ENGINE=InnoDB;"
+        self.sqlCommand.append(measure)
 
         #------------------------------------------------------------
         # Table: sensor
         #------------------------------------------------------------
 
-        tableSensor = "CREATE TABLE sensor( "\
-                                   "s_id   INT (11) Auto_increment  NOT NULL , "\
-                                   "st_id  INT NOT NULL , "\
-                                   "sta_id INT NOT NULL , "\
-                                   "PRIMARY KEY (s_id ) "\
-                      ")ENGINE=InnoDB;"
-        self.sqlCommand.append(tableSensor)
+        sensor = "CREATE TABLE sensor( "\
+                              "s_id   INT (11) Auto_increment  NOT NULL , "\
+                              "st_id  INT NOT NULL , "\
+                              "sta_id INT NOT NULL , "\
+                              "PRIMARY KEY (s_id ) "\
+                 ")ENGINE=InnoDB;"
+        self.sqlCommand.append(sensor)
 
         #------------------------------------------------------------
         # Table: station
         #------------------------------------------------------------
 
-        tableStation = "CREATE TABLE station( "\
-                                    "sta_id        INT (11) Auto_increment  NOT NULL , "\
-                                    "sta_name      VARCHAR (50) NOT NULL , "\
-                                    "sta_longitude FLOAT NOT NULL , "\
-                                    "sta_latitude  FLOAT NOT NULL, "\
-                                    "sta_installDate FLOAT NOT NULL, "\
-                                    "PRIMARY KEY (sta_id ) "\
-                       ")ENGINE=InnoDB;"
-        self.sqlCommand.append(tableStation)
+        station = "CREATE TABLE station( "\
+                               "sta_id        INT (11) Auto_increment  NOT NULL , "\
+                               "sta_name      VARCHAR (50) NOT NULL , "\
+                               "sta_longitude FLOAT NOT NULL , "\
+                               "sta_latitude  FLOAT NOT NULL, "\
+                               "sta_installDate INT NOT NULL, "\
+                               "PRIMARY KEY (sta_id ) "\
+                  ")ENGINE=InnoDB;"
+        self.sqlCommand.append(station)
 
+        #------------------------------------------------------------
+        # Table: user
+        #------------------------------------------------------------
+
+        user = "CREATE TABLE user ( "\
+                            "u_id          INT (11) Auto_increment NOT NULL,"\
+                            "u_lastName    VARCHAR(30) NOT NULL,"\
+                            "u_firstName   VARCHAR(30) NOT NULL,"\
+                            "u_description VARCHAR(200) NOT NULL,"\
+                            "PRIMARY KEY (u_id)"\
+               ")ENGINE=InnoDB;"
+        self.sqlCommand.append(user)
+
+        #------------------------------------------------------------
+        # Table: connection
+        #------------------------------------------------------------
+        connection = "CREATE TABLE connection ( "\
+                                  "c_id       INT (11) Auto_increment NOT NULL,"\
+                                  "u_id       INT NOT NULL,"\
+                                  "c_login    VARCHAR(30) NOT NULL,"\
+                                  "c_password VARCHAR (50) NOT NULL ,"\
+                                  "c_adminKey BOOLEAN DEFAULT NULL,"\
+                                  "PRIMARY KEY(c_id)"\
+                     ")ENGINE=InnoDB;"
+        self.sqlCommand.append(connection)
+
+        stationAccess = "CREATE TABLE stationAccess ( "\
+                                      "staa_id INT (11) Auto_increment NOT NULL,"\
+                                      "u_id INT NOT NULL ,"\
+                                      "sta_id INT NOT NULL ,"\
+                                      "PRIMARY KEY(staa_id)"\
+                        ")ENGINE=InnoDB;"
+        self.sqlCommand.append(stationAccess)
         #------------------------------------------------------------
         # ALTER TABLE
         #------------------------------------------------------------
 
-        atMeasure = "ALTER TABLE measure ADD CONSTRAINT FK_measure_s_id FOREIGN KEY (s_id) REFERENCES sensor(s_id);"
+        atMeasure = "ALTER TABLE measure ADD CONSTRAINT FK_measure_s_id "\
+                                        "FOREIGN KEY (s_id) REFERENCES sensor(s_id);"
         self.sqlCommand.append(atMeasure)
 
-        atsensor = "ALTER TABLE sensor ADD CONSTRAINT FK_sensor_st_id FOREIGN KEY (st_id) REFERENCES sensorType(st_id);"
+        atsensor = "ALTER TABLE sensor ADD CONSTRAINT FK_sensor_st_id "\
+                                      "FOREIGN KEY (st_id) REFERENCES sensorType(st_id);"
         self.sqlCommand.append(atsensor)
 
-        atsensor2 = "ALTER TABLE sensor ADD CONSTRAINT FK_sensor_sta_id FOREIGN KEY (sta_id) REFERENCES station(sta_id);"
+        atsensor2 = "ALTER TABLE sensor ADD CONSTRAINT FK_sensor_sta_id "\
+                                       "FOREIGN KEY (sta_id) REFERENCES station(sta_id);"
         self.sqlCommand.append(atsensor2)
+
+        atConnection = "ALTER TABLE connection  ADD CONSTRAINT FK_connection_u_id "\
+                                               "FOREIGN KEY (u_id) REFERENCES user(u_id)"
+        self.sqlCommand.append(atConnection)
+
+        atstationAccess  = "ALTER TABLE stationAccess ADD CONSTRAINT FK_stationAccess_u_id "\
+                                                     "FOREIGN KEY (u_id) REFERENCES user(u_id)"
+        self.sqlCommand.append(atstationAccess)
+
+        atstationAccess2 = "ALTER TABLE stationAccess ADD CONSTRAINT FK_stationAccess_sta_id "\
+                                                      "FOREIGN KEY (sta_id) REFERENCES station(sta_id)"
+        self.sqlCommand.append(atstationAccess2)
+
 
     def getSQL(self):
         return self.sqlCommand

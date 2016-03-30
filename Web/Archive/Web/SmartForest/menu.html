@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>SmartForest</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favico.ico" />
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <script type="text/javascript" src="assets/js/MyJs.js"></script>
+    <script type="text/javascript" src="assets/js/x2js.js"></script>
+    <script type="text/javascript" src="assets/js/download.js"></script>
+
+    <!-- AMCHARTS for Graphics -->
+    <script src="amcharts/amcharts.js" type="text/javascript"></script>
+    <script src="amcharts/serial.js" type="text/javascript"></script>
+    <script src="amcharts/themes/light.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="amcharts/images/style.css" type="text/css">
+
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+</head>
+<body onload="initMenu()">
+
+<!-- Header -->
+<section id="header">
+    <header>
+        <span class="image avatar"><img class="imageProfil" src="images/Profil.png" alt=""
+                                        onclick='window.location.href="profil.html";'/></span>
+        <h1 id="logo"></h1>
+        <p id="Description_Utilisateur"></p>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="#one" class="active">Accueil</a></li>
+            <li><a href="#two">Données Massane</a></li>
+        </ul>
+    </nav>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <!-- One -->
+        <section id="one">
+
+            <div class="container">
+
+                <header class="major">
+                    <h2>Accueil</h2>
+                    <p>SmartForest</p>
+                </header>
+                <p>Cette page permet d'intéragir avec les capteurs misent en place à la Massane.</p>
+                <div id="id01"></div>
+                <!--<a onclick="HttpTestGet()" class="button">Get</a> <br/> <br/>
+                <a onclick="HttpTestPost()" class="button">Post</a> <br/><br/>-->
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section >
+            <div class="container">
+                <h3 id="two">Données</h3>
+                <br /> <br />
+
+                <!--<div><input type="date" name="anniversaire">  à <input type="date" name="anniversaire"></div>-->
+
+                <div class="row uniform">
+                    <p> Station</p>
+                    <div class="6u 12u(xsmall)"><input type="number" id="capteurId" value="1" min="0"/></div>
+                </div>
+
+                <div class="row uniform">
+
+                    <ul>
+                        <div class="4u 12u(medium)">
+                            <input type="radio" id="temperature" name="demo-priority" checked>
+                            <label for="temperature">Température</label>
+                        </div>
+
+                        <div class="4u 12u(medium)">
+                            <input type="radio" id="ozone" name="demo-priority">
+                            <label for="ozone">Ozone</label>
+                        </div>
+
+                        <div class="4u 12u(medium)">
+                            <input type="radio" id="humidite" name="demo-priority">
+                            <label for="humidite">Humidité</label>
+                        </div>
+
+                        <div class="4u 12u(medium)">
+                            <input type="radio" id="hygrometrie" name="demo-priority">
+                            <label for="hygrometrie">Hygrometrie</label>
+                        </div>
+
+                    </ul>
+                </div>
+
+                <p>
+                    Données entre
+                    <span class="marge1"><input type="date" id="dateDebut" value="2016-02-01"></span>
+                    <span class="marge1">et</span>
+                    <span class="marge1"><input type="date" id="dateFin" value="2016-02-02"></span>
+                </p>
+
+                <a onclick='GetSensorData("Graphique")' class="button">Graphique</a>
+                <a onclick='PageFullScreenGraph()' class="button">Pleine page</a>
+                <a onclick='GetSensorData("CSV")' class="button">Export CSV</a>
+                <a onclick='GetSensorData("XML")' class="button">Export XML</a>
+                <p id="Invalid_Graph" class="badrequest"></p>
+                <br /><br />
+
+                <!--<div id="chartdiv" style="width: 640px; height: 400px;"></div>-->
+                <div id="chartdiv"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+        </div>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+
+<!--
+<script type="text/javascript">
+    alert("POUET");
+    window.StkFunc(InitialisationUtilisateur);
+</script>
+-->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollzer.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
