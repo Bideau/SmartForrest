@@ -8,6 +8,9 @@
 
 date
 ARGS=$1
+#########################################################
+## A modifier par l'utilisateur 
+
 # Adresse Ip du serveur 
 SERVER=192.168.1.104
 # User du serveur
@@ -21,6 +24,8 @@ DIR_SCRIPT=/home/smartforest/Script
 DIR_DATA=~/Rapberry/server/data
 # Dossier temporaire sur le raspberry, le repertoire ne doit pas exister
 DIR_ARCH=~/Raspberry/server/tmp
+
+###########################################################
 
 timestamp=$(date +%F-%H-%M)
 
