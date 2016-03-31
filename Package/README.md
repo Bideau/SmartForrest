@@ -19,6 +19,8 @@ Les fichiers Scripts qui sont deployer sur le serveur et sur le raspberry.
 
 1) Remplir le fichier config.ini
 
-2) Lancer make mysql (mise en place du site web et creation complete de la base de donnees)
+2) Modifier dans le fichier sendServer.sh les differents informations necessaires a l'execution du script
 
-3) Lancer make (configuration de l'adresse ip et lancement du serveur python)
+3) Lancer make mysql (mise en place du site web et creation complete de la base de donnees)
+
+4) Lancer make (configuration de l'adresse ip et lancement du serveur python)
