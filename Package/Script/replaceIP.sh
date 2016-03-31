@@ -1,4 +1,5 @@
 #!/bin/bash
+# Script pour mettre a jour les adresses ip du serveur Web
 MY_PATH=$(pwd)
 if [[ -d $MY_PATH/Script ]] ; then
 	MY_PATH=$MY_PATH/Script
