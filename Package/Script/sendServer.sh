@@ -8,12 +8,18 @@
 
 date
 ARGS=$1
+# Adresse Ip du serveur 
 SERVER=192.168.1.104
+# User du serveur
 HOSTNAME=smartforest
 
+# Dossier destination sur le serveur
 DIR_DEST=/home/smartforest/data/
+# Dossier des scripts sur le serveur
 DIR_SCRIPT=/home/smartforest/Script
+# Dossier sur le raspberry des fichiers JSON
 DIR_DATA=~/Rapberry/server/data
+# Dossier temporaire sur le raspberry, le repertoire ne doit pas exister
 DIR_ARCH=~/Raspberry/server/tmp
 
 timestamp=$(date +%F-%H-%M)
@@ -43,7 +49,9 @@ done
 
 echo "Compressing Phase"
 cd $DIR_DATA
-mkdir $DIR_ARCH
+if [[! -d $DIR_ARCH ]] ; then
+	mkdir $DIR_ARCH
+fi
 tar -c --xz -f $DIR_ARCH/data_$timestamp.tar.xz ./* && xz -t $DIR_ARCH/data_$timestamp.tar.xz
 
 echo "Sending Phase"

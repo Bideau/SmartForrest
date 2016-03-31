@@ -45,7 +45,7 @@ for file in $(find ~/tmp -name *.json) ; do
 
 	# Parcours du fichier
 	for i in `seq 1 $ELEM_NB` ; do
-		ELEM_ID=$(echo "$JSONFILE" | jq .[$i].PROBE )
+		ELEM_ID=$(echo "$JSONFILE" | jq .[$i].STATION )
 		ELEM_DATE=$(echo "$JSONFILE" | jq .[$i].DATE )
 		JQ_PARAM=".[$i]|keys "
 		JQ_RESULT=$(echo "$JSONFILE" | jq $JQ_PARAM | sed -e s'/,//'g -e s'/\"//'g )
