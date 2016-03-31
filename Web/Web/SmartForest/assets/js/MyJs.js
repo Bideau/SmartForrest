@@ -207,6 +207,8 @@ function initMenu() {
 // Récupération des informations demandées par l'utilisateur pour créer le graphique
 function GetSensorData(choix) {
 
+    document.getElementById("Invalid_Graph").innerHTML = "";
+
     var stop = false;
 
     var xmlhttp = new XMLHttpRequest();
@@ -332,7 +334,7 @@ function GetSensorData(choix) {
                     alert("Erreur inconnue : " + xmlhttp.status);
                 }
         }
-    };
+    }; 
 }
 
 // Fonction de sauvegarde des données et d'ouverture d'une nouvelle page
