@@ -3,7 +3,7 @@
  */
 
 // Adresse IP du serveur hebergant le programme Python
-var adresseIPServeur = "http://172.30.0.103:8080/" ;
+var adresseIPServeur = "http://172.30.0.103:8080/";
 
 //*******************************************************************//
 //****************** FONCTIONS DE RESET DES CHAMPS ******************//
@@ -160,6 +160,44 @@ function initMenu() {
         alert("Veuillez activer les cookies de votre naviguateur avant de continuer.");
         basculerEtatChampsDeSaisie();
     }
+
+    // Récupération de la liste des différents types de capteurs
+    var xmlhttp = new XMLHttpRequest();
+    var url = adresseIPServeur + "sensorList";
+
+    var stop = false;
+
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+
+        switch (xmlhttp.status) {
+            case 200:
+                if (xmlhttp.readyState == 4 && xmlhttp.responseText != "" && stop == false) {
+
+                    stop = true;
+
+                    var myArr = JSON.parse(xmlhttp.responseText);
+
+                    document.getElementById("listeCapteur").innerHTML = "";
+
+                    // Génération du selecteur avec les différents types de capteurs
+                    var chaine = '<select name="demo-category" id="sensorList">';
+
+                    for (var i = 0; i < myArr.capteur.length; i++) {
+                        chaine = chaine + '<option value="">' + myArr.capteur[i] + '</option>';
+                    }
+
+                    chaine = chaine + '</select>';
+
+                    // Génération dans la page HTML
+                    document.getElementById("listeCapteur").innerHTML += chaine;
+                }
+                break;
+        }
+    };
+
 }
 
 //**********************************************************//
@@ -179,8 +217,12 @@ function GetSensorData(choix) {
     var dateDebutValue = document.getElementById("dateDebut").value;
     var dateFinValue = document.getElementById("dateFin").value;
 
-    var $radio = $('input[name=demo-priority]:checked');
-    var mesure = $radio.attr('id');
+    //var $radio = $('input[name=demo-priority]:checked');
+    //var mesure = $radio.attr('id');
+
+    // Récupération de l'identifiant sélectionné dans le selecteur
+    var index = document.getElementById("sensorList");
+    var mesure = index.options[index.selectedIndex].text;
 
     // Conversion Date to Timestamp
     var myDateDebut = new Date(dateDebutValue);
@@ -506,10 +548,10 @@ function initProfileAdministrateur() {
                         document.getElementById("DivAjouterUtilisateur").innerHTML = '<a onclick="AjouterUtilisateur()" class="button">Ajouter Utilisateur</a>';
                         document.getElementById("DivSupprimerUtilisateur").innerHTML = '<a onclick="SupprimerUtilisateur()" class="button">Supprimer Utilisateur</a>';
                         document.getElementById("DivAjoutTypeCapteur").innerHTML = '<a onclick="PageAjouterTypeCapteur()" class="button">Ajouter Capteur</a>';
-                        document.getElementById("DivModificationSonde").innerHTML = '<a onclick="PageAjouterSonde()" class="button">Ajouter Sonde</a>';
+                        document.getElementById("DivModificationSonde").innerHTML = '<a onclick="PageAjouterSonde()" class="button">Ajouter station</a>';
                         document.getElementById("DivDroitsUtilisateur").innerHTML = '<a onclick="PageModificationDroitsUtilisateur()" class="button">Modifier Utilisateur</a>';
-                        document.getElementById("DivAjouterCapteurSurSonde").innerHTML = '<a onclick="pageAjouterCapteurSurSonde()" class="button">Ajouter capteur sur sonde</a>';
-                        document.getElementById("DivSupprimerCapteurSurSonde").innerHTML = '<a onclick="pageSupprimerCapteurSurSonde()" class="button">Supprimer capteur sur sonde</a>';
+                        document.getElementById("DivAjouterCapteurSurSonde").innerHTML = '<a onclick="pageAjouterCapteurSurSonde()" class="button">Ajouter capteur sur station</a>';
+                        document.getElementById("DivSupprimerCapteurSurSonde").innerHTML = '<a onclick="pageSupprimerCapteurSurSonde()" class="button">Supprimer capteur sur station</a>';
                     }
                 }
             default:

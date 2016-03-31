@@ -18,10 +18,20 @@
  *
  *****************************************************************************
  */
+
+ /*
+  * 
+  * Modified by Quentin Faivre
+  * 
+  * 
+  * 
+  */
  
 // Include the SX1272
 #include "SX1272.h"
 #include <EEPROM.h>
+#include <HCSR04.h>
+#include <DHT.h>
 
 // IMPORTANT
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -43,8 +53,10 @@
 //#define BAND900
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#include <HCSR04.h>
-#include <DHT.h>
+// define here which sensor you have on this station
+#define SENSOR_HCS
+#define SENSOR_DHT
+#define SENSOR_OZONE
 
 #define WITH_EEPROM
 #define WITH_APPKEY
@@ -55,7 +67,7 @@
 //#define WITH_AES
 
 #define DEFAULT_DEST_ADDR 1
-#define LORAMODE  4
+#define LORAMODE  3
 #define node_addr 6
 #define field_index 3
 //#define node_addr 10
@@ -106,8 +118,16 @@ unsigned long long int aes_iv = 36753562;
 LASDevice loraLAS(node_addr,LAS_DEFAULT_ALPHA,DEFAULT_DEST_ADDR);
 #endif
 
+#ifdef SENSOR_HCS
 HCSR04 myProximitySensor(4,3);
+#endif
+#ifdef SENSOR_DHT
 DHT myDhtSensor;
+#endif
+#ifdef SENSOR_OZONE
+int ozone_value_pin = 0;
+#endif
+
 double temp;
 unsigned long lastTransmissionTime=0;
 unsigned long delayBeforeTransmit=0;
@@ -129,7 +149,7 @@ uint8_t CAD_value[11]={0, 62, 31, 16, 16, 8, 9, 5, 3, 1, 1};
 #endif
 
 uint8_t my_appKey[4]={5, 6, 7, 8};
-String probe_number = "1";
+String station_number = "1";
 
 #ifdef WITH_EEPROM
 struct sx1272config {
@@ -458,8 +478,8 @@ void loop(void)
       //temp = temp - 0.5;
       temp = temp / 10.0;
 
-      Serial.print(F("(Temp is "));
-      Serial.println(temp);
+      //Serial.print(F("(Temp is "));
+      //Serial.println(temp);
 
 #ifdef WITH_APPKEY
       app_key_offset = sizeof(my_appKey);
@@ -472,36 +492,40 @@ void loop(void)
       app_key_offset++;
 #endif
 
-      // Get measures
+//----------------------- let's make the message ---------------------------------
+      String messageToSend;
+      //header
+      messageToSend = String("ST:"+station_number);
+
+// add sensor's measures
+#ifdef SENSOR_HCS
       // Proximity sensor
       myProximitySensor.measure();
-      //long proximityDistance = myProximitySensor.getCm();
       String proximityDist = String(myProximitySensor.getCm(),DEC);
-      //ltoa(proximityDistance,proximityDist,10);
+      messageToSend = String(messageToSend + ";WL:" + proximityDist);
+#endif
 
+#ifdef SENSOR_DHT
       // DHT sensor
-      delay(myDhtSensor.getMinimumSamplingPeriod());
+      //delay(myDhtSensor.getMinimumSamplingPeriod());
       float humidity = myDhtSensor.getHumidity();
       float temperature = myDhtSensor.getTemperature();
       String dhtTemperature = String(temperature);
       String dhtHumidity = String(humidity);
+      messageToSend = String(messageToSend + ";TE:" + dhtTemperature + ";AH:" + dhtHumidity);
+#endif
 
-      
-      
+#ifdef SENSOR_OZONE
+      // MQ-131 Ozone sensor
+      int mq_value = analogRead(ozone_value_pin);
+      String mqOzoneValue = String(mq_value,DEC);
+      messageToSend = String(messageToSend + ";OZ:" + mqOzoneValue);
+#endif
+
       uint8_t r_size;
-
-      char float_rand[3];
-      
-      String messageToSend;
-      messageToSend = String("PR:" + probe_number + ";" + "WL:" + proximityDist + ";" + "TE:" + dhtTemperature + ";" + "AH:" + dhtHumidity);
-      //"OZ:99.9;TE:99.9;AH:24.8;GH:33.6;WL:22.4;WT:");
+      // format of the message
+      //"PR:1;OZ:99.9;TE:99.9;AH:24.8;GH:33.6;WL:22.4;WT:18.4"
       messageToSend.toCharArray(float_str,NB_MESSAGE_LENGTH);
-      //ftoa(float_str,temp,2);
-      int valueRand = rand();
-      //itoa(valueRand,float_rand,3);
-      //strcpy(float_str,"PR:1;OZ:20.4;TE:12.6;AH:24.8;GH:33.6;WL:22.4;WT:18.4");
-      //strcpy(float_str,"PR:1;OZ:20.4;TE:12.6;AH:24.8;GH:33.6;WL:22.4;WT:");
-      strncat(float_str,float_rand,4);
       r_size=sprintf((char*)message+app_key_offset, "\\!#%d#%s", field_index, float_str);
 
       Serial.print(F("Sending "));
@@ -511,7 +535,8 @@ void loop(void)
       Serial.println(r_size);
       
       int pl=r_size+app_key_offset;
-      
+//-------------------- Message send -----------------------------------
+
 #ifdef WITH_AES
       byte iv[N_BLOCK] ;
       byte cipher [48] ;
@@ -670,7 +695,7 @@ void loop(void)
       //delay(120000);
       //delay(600000+random(15,60)*1000);  
       lastTransmissionTime=millis();
-      delayBeforeTransmit=10000;
+      delayBeforeTransmit=2000;
       //delayBeforeTransmit=600000+random(15,60)*1000;
   }
 #endif
