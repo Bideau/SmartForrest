@@ -2,7 +2,7 @@
  * Created by Arnaud on 11/02/2016.
  */
 
-var adresseIPServeur = "http://172.30.0.234:8080/";
+var adresseIPServeur = "http://172.30.0.103:8080/";
 
 function FullScreenGraph(){
     GetSensorData();
