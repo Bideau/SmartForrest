@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Réinitialisation mot de passe</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favico.ico" />
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <script type="text/javascript" src="assets/js/MyJs.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+</head>
+<body>
+<div class="container">
+    <br />
+    <h2>Réinitialisation mot de passe</h2>
+
+    <form method="post" action="#">
+        <div class="row uniform">
+
+            <div class="6u 12u(xsmall)"><input type="text" name="name" id="login" placeholder="Login"/>
+                <p id="Wrong_login_connexion" class="badrequest"></p>
+            </div>
+            <br/>
+        </div>
+
+        <p id="invalid_login" class="badrequest"></p>
+
+        <div class="row uniform">
+            <div class="6u 12u(xsmall)"><input type="email" name="mail" id="mail" placeholder="Mail"/>
+                <p id="Wrong_password_connexion" class="badrequest"></p>
+            </div>
+            <br/>
+        </div>
+
+        <p id="invalid_password" class="badrequest"></p>
+
+        <div class="row uniform">
+            <div class="12u">
+                <ul class="actions">
+                    <li><input type="button" class="special" value="Réinitialiser" onclick="reinitialisationMotDePasse()"/>
+                        <input type="button" class="special" value="Retour connexion" onclick='document.location.href = "index.html";'/>
+                    </li>
+                    <!--<li><input type="reset" value="Reset Form"/></li>-->
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

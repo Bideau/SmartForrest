@@ -41,17 +41,17 @@ class JsonFile(object):
     def writeToJson(self):
 
         fichier = open("test.json","w")
-        _i = 0
-        _jsonData = ""
-        _json = "["
+        i = 0
+        jsonData = ""
+        json = "["
 
-        while(_i != (self.data.__len__()-2)):
+        while(i != (self.data.__len__()-2)):
 
-            _jsonData += self.data[_i] + ","
-            _i+= 1
+            jsonData += self.data[i] + ","
+            i+= 1
 
-        _jsonData += self.data[self.data.__len__()-1]
-        _json = _json + _jsonData + "]"
+        jsonData += self.data[self.data.__len__()-1]
+        json = json + jsonData + "]"
 
-        fichier.write(_json)
+        fichier.write(json)
         fichier.close()

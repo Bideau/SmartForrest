@@ -22,7 +22,6 @@ __version__ = "1.0"
 
 
 class ProbeData(object):
-
     """
 
     """
@@ -35,7 +34,7 @@ class ProbeData(object):
         self.airHumidity = None
         self.probe = None
 
-    def setValue(self,probe,date,ozone,temperature,humidity,hygrometry):
+    def setValue(self, probe, date, ozone, temperature, humidity, hygrometry):
         self.date = date
         self.ozone = ozone
         self.temperature = temperature
@@ -44,13 +43,13 @@ class ProbeData(object):
         self.probe = probe
 
     def toJson(self):
-        _json = ("{" +
-                 "probeID" + ":" + str(self.probe) + "," +
-                 "date" + ":" + str(self.date) + "," +
-                 "ozone" ":" + str(self.ozone) + "," +
-                 "temperature" + ":" + str(self.temperature) + "," +
-                 "groundHumidity" + ":" + str(self.groundHumidity) + "," +
-                 "airHumidity" + ":" + str(self.airHumidity) +
-                 "}"
-                 )
-        return _json
+        json = ("{" +
+                "\"probeID\"" + ":" + str(self.probe) + ", " +
+                "\"date\"" + ":" + str(self.date) + "," +
+                "\"ozone\"" ":" + str(self.ozone) + "," +
+                "\"temperature\"" + ":" + str(self.temperature) + "," +
+                "\"groundHumidity\"" + ":" + str(self.groundHumidity) + "," +
+                "\"airHumidity\"" + ":" + str(self.airHumidity) +
+                "}"
+        )
+        return json
