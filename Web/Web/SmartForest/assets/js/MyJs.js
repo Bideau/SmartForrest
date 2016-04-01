@@ -236,6 +236,8 @@ function GetSensorData(choix) {
     // Trame pour récupérer les informations d'un capteur
     var trame = '{"login": "' + login + '","capteurId": "' + capteurId + '","dateDebut": "' + dateDebut + '","dateFin": "' + dateFin + '","mesure": "' + mesure + '"}';
 
+    alert(trame);
+
     // Protocole d'ouverture de connexion et d'envoi de données en HTTP
     xmlhttp.open("POST", adresseIPServeur + "capteur");
 
@@ -251,6 +253,8 @@ function GetSensorData(choix) {
 
                     // Dans le cas où l'utilisateur souhaite voir un aperçu du graphique sur la page
                     if (choix == "Graphique") {
+
+                        alert(xmlhttp.responseText);
 
                         var donnees = [];
                         var dates = [];
@@ -334,7 +338,7 @@ function GetSensorData(choix) {
                     alert("Erreur inconnue : " + xmlhttp.status);
                 }
         }
-    }; 
+    };
 }
 
 // Fonction de sauvegarde des données et d'ouverture d'une nouvelle page
@@ -347,8 +351,9 @@ function PageFullScreenGraph() {
     var dateDebutValue = document.getElementById("dateDebut").value;
     var dateFinValue = document.getElementById("dateFin").value;
 
-    var $radio = $('input[name=demo-priority]:checked');
-    var mesure = $radio.attr('id');
+    // Récupération de l'identifiant sélectionné dans le selecteur
+    var index = document.getElementById("sensorList");
+    var mesure = index.options[index.selectedIndex].text;
 
     // Conversion Date to Timestamp
     var myDateDebut = new Date(dateDebutValue);

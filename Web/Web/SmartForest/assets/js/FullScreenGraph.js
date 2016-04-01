@@ -22,6 +22,8 @@ function GetSensorData() {
 
     var trame = '{"login": "' + login + '","capteurId": "' + capteurId + '","dateDebut": "' + dateDebut + '","dateFin": "' + dateFin + '","mesure": "' + mesure + '"}';
 
+    alert(trame);
+
     xmlhttp.open("POST", adresseIPServeur + "capteur");
 
     xmlhttp.send(trame);
@@ -36,8 +38,12 @@ function GetSensorData() {
                     var donnees = [];
                     var dates = [];
 
+                    alert(xmlhttp.responseText);
+
                     // JSON Parsing
                     var myArr = JSON.parse(xmlhttp.responseText);
+
+                    alert("mesure : " + myArr.releve[0].mesure);
 
                     for (var i = 0; i < myArr.releve.length; i++) {
                         var counter = myArr.releve[i];
@@ -46,6 +52,10 @@ function GetSensorData() {
                         donnees.push(myArr.releve[i].mesure);
                         dates.push(myArr.releve[i].dateReleve);
                     }
+
+                    alert(donnees);
+                    alert(dates);
+
                     CreateGraphic(donnees, dates);
                 }
 
